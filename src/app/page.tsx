@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
@@ -5,6 +7,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center mb-4">
           Welcome to My Portfolio
         </h1>
+        <Button>Click me</Button>
         <p className="text-center text-lg text-gray-600">
           Built with Next.js, TypeScript, and Tailwind CSS
         </p>
