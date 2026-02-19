@@ -2,16 +2,28 @@ import type { Translations } from "@/lib/i18n/types";
 
 export const en: Translations = {
   meta: {
-    title: "Portfolio",
-    description: "Personal portfolio",
+    title: "Fhen – Product Designer",
+    description: "Product designer from Buenos Aires",
   },
   hero: {
-    greeting: "Welcome to My Portfolio",
-    tagline: "Built with Next.js, TypeScript, and Tailwind CSS",
+    introPrefix: "I'm Federico, but people call me ",
+    heading: "I design purposeful digital products.",
+    tagline: "From deep problem understanding to production-ready execution.",
+    role: "Product Designer",
+    location: "Buenos Aires, Argentina",
   },
   nav: {
     projects: "Projects",
     cv: "CV",
     contact: "Contact",
+  },
+  contact: {
+    title: "Let's talk",
+    linkedin: "Linkedin",
+    email: "Email",
+    calendar: "Calendar",
+  },
+  projects: {
+    comingSoon: "Coming soon",
   },
 };

@@ -4,4 +4,5 @@ export type Project = {
   year: string;
   coverImage: string;
   coverImageAlt?: string;
+  comingSoon?: boolean;
 };

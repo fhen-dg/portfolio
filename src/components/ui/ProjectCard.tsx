@@ -11,7 +11,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project, className }: ProjectCardProps) {
   return (
-    <Link href={`/work/${project.slug}`} className="block group">
+    <Link href={`/work/${project.slug}`} className="block w-full group">
       <div
         className={cn(
           "bg-neutral-white border border-neutral-400 rounded-[12px] p-6 flex flex-col items-start",
