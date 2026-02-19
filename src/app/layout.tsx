@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
+import { Wix_Madefor_Text } from "next/font/google";
 import "@/styles/globals.css";
+
+const wixMadeforText = Wix_Madefor_Text({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -12,7 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${wixMadeforText.variable} ${wixMadeforText.className}`}
+    >
       <body>{children}</body>
     </html>
   );
