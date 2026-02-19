@@ -10,6 +10,7 @@ import { Separator } from "@/components/ui/separator";
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuItem,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
@@ -91,9 +92,28 @@ export function Navbar() {
         </div>
 
         {/* Right: contact button */}
-        <Button asChild>
-          <a href="#contact">{t.nav.contact}</a>
-        </Button>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button>{t.nav.contact}</Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem asChild>
+              <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <a href="mailto:your.email@example.com">
+                Email
+              </a>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <a href="https://calendly.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                Calendar
+              </a>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </nav>
     </header>
   );
