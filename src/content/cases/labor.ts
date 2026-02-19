@@ -20,21 +20,21 @@ export const laborCaseStudy: CaseStudy = {
         emphasis: true,
       },
       {
-        text: " in Argentina is ",
+        text: " in Argentina is still ",
       },
       {
-        text: "fragmented and informal.",
+        text: "fragmented and informal. ",
         emphasis: true,
       },
       {
-        text: " Most transactions happen through word-of-mouth or disconnected channels — making it hard to ",
+        text: "Producers struggle to ",
       },
       {
-        text: "find reliable services",
+        text: "find reliable services, ",
         emphasis: true,
       },
       {
-        text: " at the right time, in the right place.",
+        text: "while contractors lack visibility and consistent demand.",
       },
     ],
   },
