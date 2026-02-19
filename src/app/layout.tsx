@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Wix_Madefor_Text } from "next/font/google";
 import { LocaleProvider } from "@/components/ui/LocaleProvider";
 import { Navbar } from "@/components/sections/Navbar";
+import { Footer } from "@/components/sections/Footer";
 import "@/styles/globals.css";
 
 const wixMadeforText = Wix_Madefor_Text({
@@ -28,6 +29,7 @@ export default function RootLayout({
         <LocaleProvider>
           <Navbar />
           {children}
+          <Footer />
         </LocaleProvider>
       </body>
     </html>

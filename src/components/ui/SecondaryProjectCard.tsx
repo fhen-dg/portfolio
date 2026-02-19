@@ -24,7 +24,7 @@ export function SecondaryProjectCard({ project, comingSoonLabel, className }: Se
         </Badge>
       )}
 
-      <div className="h-[120px] lg:h-[221px] opacity-40 relative rounded-[8px] shrink-0 w-full overflow-hidden">
+      <div className="h-[120px] lg:h-[221px] opacity-15 relative rounded-[8px] shrink-0 w-full overflow-hidden">
         <Image
           src={project.coverImage}
           alt={project.coverImageAlt ?? project.title}

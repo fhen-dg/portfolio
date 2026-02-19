@@ -27,10 +27,9 @@ export function CaseOverviewSection({
         )}
 
         <div className="flex flex-col gap-[40px] lg:gap-[52px] items-center">
-          <Button variant="ghost" asChild className="border border-neutral-400 rounded-[8px]">
+          <Button variant="ghost" asChild>
             <a href={link.href} target="_blank" rel="noopener noreferrer">
               {link.label}
-              <ArrowUpRight className="ml-1" />
             </a>
           </Button>
 

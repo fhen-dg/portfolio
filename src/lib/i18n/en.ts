@@ -26,4 +26,11 @@ export const en: Translations = {
   projects: {
     comingSoon: "Coming soon",
   },
+  footer: {
+    brand: "Fhen",
+    fullName: "Federico Cohen Correa",
+    location: "Buenos Aires, Argentina",
+    year: "2026",
+    timezone: "Timezone GMT-3",
+  },
 };

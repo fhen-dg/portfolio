@@ -26,4 +26,11 @@ export type Translations = {
   projects: {
     comingSoon: string;
   };
+  footer: {
+    brand: string;
+    fullName: string;
+    location: string;
+    year: string;
+    timezone: string;
+  };
 };
