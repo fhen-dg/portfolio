@@ -20,7 +20,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
           className
         )}
       >
-        <div className="aspect-[976/485] relative w-full rounded-[12px] overflow-hidden shrink-0">
+        <div className="aspect-[287/202] lg:aspect-[976/485] relative w-full rounded-[12px] overflow-hidden shrink-0">
           <Image
             src={project.coverImage}
             alt={project.coverImageAlt ?? project.title}
@@ -37,7 +37,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
         <div className="h-10 w-full shrink-0" />
 
         <div className="flex items-center justify-between w-full px-2 shrink-0">
-          <p className="title1 text-neutral-800 overflow-hidden text-ellipsis">
+          <p className="lg:title1 title3 text-neutral-800 overflow-hidden text-ellipsis">
             {project.title}
           </p>
           <p className="body3-bold text-neutral-600 shrink-0">

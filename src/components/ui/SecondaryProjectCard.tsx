@@ -24,7 +24,7 @@ export function SecondaryProjectCard({ project, comingSoonLabel, className }: Se
         </Badge>
       )}
 
-      <div className="h-[221px] opacity-40 relative rounded-[8px] shrink-0 w-full overflow-hidden">
+      <div className="h-[120px] lg:h-[221px] opacity-40 relative rounded-[8px] shrink-0 w-full overflow-hidden">
         <Image
           src={project.coverImage}
           alt={project.coverImageAlt ?? project.title}
@@ -41,7 +41,7 @@ export function SecondaryProjectCard({ project, comingSoonLabel, className }: Se
       <div className="h-10 w-full shrink-0" />
 
       <div className="flex items-center justify-between opacity-20 px-[8px] w-full shrink-0">
-        <p className="title3 text-neutral-800 overflow-hidden text-ellipsis">
+        <p className="lg:title3 title4 text-neutral-800 overflow-hidden text-ellipsis">
           {project.title}
         </p>
         <div className="flex gap-[8px] items-center shrink-0">

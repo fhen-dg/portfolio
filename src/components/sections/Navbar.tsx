@@ -16,6 +16,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+function scrollToSection(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+}
+
 export function Navbar() {
   const { t, locale, setLocale } = useLocale();
 
@@ -72,8 +76,8 @@ export function Navbar() {
       <nav className="relative hidden items-center justify-between px-[72px] py-5 md:flex">
         {/* Left: nav links + separator + language */}
         <div className="flex items-center gap-1">
-          <Button variant="ghost" asChild>
-            <a href="#projects">{t.nav.projects}</a>
+          <Button variant="ghost" onClick={() => scrollToSection("projects")}>
+            {t.nav.projects}
           </Button>
           <Button variant="ghost" asChild>
             <a href="#cv">{t.nav.cv}</a>
