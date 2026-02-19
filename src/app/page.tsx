@@ -1,15 +1,26 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function Home() {
+  const { t, locale, setLocale } = useLocale();
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between text-sm">
-        <h1 className="text-center mb-4 header1 text-primary-base">
-          Welcome to My Portfolio
+        <div className="flex justify-end mb-8">
+          <Button
+            onClick={() => setLocale(locale === "en" ? "es" : "en")}
+          >
+            {locale === "en" ? "ES" : "EN"}
+          </Button>
+        </div>
+        <h1 className="text-center mb-4 header1 text-neutral-800">
+          {t.hero.greeting}
         </h1>
-        <Button>Click me</Button>
-        <p className="text-center text-lg text-neutral-400">
-          Built with Next.js, TypeScript, and Tailwind CSS
+        <p className="text-center supporting2 text-neutral-600">
+          {t.hero.tagline}
         </p>
       </div>
     </main>
