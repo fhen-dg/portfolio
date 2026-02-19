@@ -10,8 +10,8 @@ export const en: Translations = {
     tagline: "Built with Next.js, TypeScript, and Tailwind CSS",
   },
   nav: {
-    work: "Work",
-    about: "About",
+    projects: "Projects",
+    cv: "CV",
     contact: "Contact",
   },
 };

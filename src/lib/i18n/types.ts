@@ -10,8 +10,8 @@ export type Translations = {
     tagline: string;
   };
   nav: {
-    work: string;
-    about: string;
+    projects: string;
+    cv: string;
     contact: string;
   };
 };
