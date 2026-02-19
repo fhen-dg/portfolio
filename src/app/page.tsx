@@ -12,6 +12,16 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ProjectCard } from "@/components/ui/ProjectCard";
+import type { Project } from "@/lib/types";
+
+const dummyProject: Project = {
+  slug: "labor",
+  title: "Labor",
+  year: "2026",
+  coverImage: "https://www.figma.com/api/mcp/asset/230b1c08-3825-43dd-bb52-16be7b9ddbac",
+  coverImageAlt: "Labor – agricultural services marketplace",
+};
 
 export default function Home() {
   const { t, locale, setLocale } = useLocale();
@@ -45,9 +55,11 @@ export default function Home() {
         <h1 className="text-center mb-4 header1 text-neutral-800">
           {t.hero.greeting}
         </h1>
-        <p className="text-center supporting2 text-neutral-600">
+        <p className="text-center supporting2 text-neutral-600 mb-12">
           {t.hero.tagline}
         </p>
+
+        <ProjectCard project={dummyProject} />
       </div>
     </main>
   );
