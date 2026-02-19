@@ -1,6 +1,7 @@
 "use client";
 
 import { IconButton } from "@/components/ui/iconButton"
+import { Badge } from "@/components/ui/badge"
 import { Languages } from "lucide-react"
 import { useLocale } from "@/hooks/useLocale";
 import type { Locale } from "@/lib/i18n/types";
@@ -37,7 +38,10 @@ export default function Home() {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        
+
+        <Badge variant="default">
+          {locale === "en" ? "English" : "Español"}
+        </Badge>
         <h1 className="text-center mb-4 header1 text-neutral-800">
           {t.hero.greeting}
         </h1>
