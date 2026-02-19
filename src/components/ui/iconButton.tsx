@@ -3,9 +3,10 @@ import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
+import { buttonVariants } from "./button"
 
-const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md body3-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+const iconButtonVariants = cva(
+  "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -13,7 +14,7 @@ const buttonVariants = cva(
         ghost: "lg:hover:bg-neutral-200 text-neutral-black lg:hover:text-primary-base",
       },
       size: {
-        default: "h-10 px-5 py-2",
+        default: "h-[40px] w-[40px] rounded-[6px]",
       },
     },
     defaultVariants: {
@@ -23,24 +24,24 @@ const buttonVariants = cva(
   }
 )
 
-export interface ButtonProps
+export interface IconButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+    VariantProps<typeof iconButtonVariants> {
   asChild?: boolean
 }
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button"
     return (
       <Comp
-        className={cn(buttonVariants({ variant, size, className }))}
+        className={cn(iconButtonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
       />
     )
   }
 )
-Button.displayName = "Button"
+IconButton.displayName = "IconButton"
 
-export { Button, buttonVariants }
+export { IconButton, iconButtonVariants }
