@@ -1,0 +1,78 @@
+import Image from "next/image";
+import type { CaseShowcaseItem } from "@/lib/types";
+
+type CaseShowcaseSectionProps = {
+  items: CaseShowcaseItem[];
+};
+
+function ShowcaseItem({
+  item,
+  index,
+}: {
+  item: CaseShowcaseItem;
+  index: number;
+}) {
+  const isImageLeft = item.imagePosition === "left";
+
+  const imageBlock = item.image ? (
+    <div className="relative w-full lg:w-[480px] shrink-0 aspect-square rounded-[12px] overflow-hidden">
+      <Image
+        src={item.image}
+        alt={item.imageAlt}
+        fill
+        className="object-cover"
+      />
+    </div>
+  ) : (
+    <div className="w-full lg:w-[480px] shrink-0 aspect-square rounded-[12px]" />
+  );
+
+  const textBlock = (
+    <div className="flex flex-col gap-[20px] lg:gap-[24px] flex-1">
+      <div className="flex flex-col gap-[12px]">
+        <h3 className="title4 text-neutral-800">{item.title}</h3>
+        <p className="body1 text-neutral-600">{item.description}</p>
+      </div>
+      <ul className="flex flex-col gap-[8px]">
+        {item.bullets.map((bullet, i) => (
+          <li key={i} className="flex items-start gap-[12px] body1 text-neutral-600">
+            <span className="mt-[10px] w-[4px] h-[4px] rounded-full bg-neutral-500 shrink-0" />
+            {bullet}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+
+  return (
+    <div
+      className={`flex flex-col gap-[40px] lg:gap-[60px] lg:items-center ${
+        isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse"
+      }`}
+    >
+      {isImageLeft ? (
+        <>
+          {imageBlock}
+          {textBlock}
+        </>
+      ) : (
+        <>
+          {textBlock}
+          {imageBlock}
+        </>
+      )}
+    </div>
+  );
+}
+
+export function CaseShowcaseSection({ items }: CaseShowcaseSectionProps) {
+  return (
+    <section className="flex justify-center w-full">
+      <div className="flex flex-col gap-[80px] lg:gap-[120px] max-w-[960px] w-full">
+        {items.map((item, i) => (
+          <ShowcaseItem key={i} item={item} index={i} />
+        ))}
+      </div>
+    </section>
+  );
+}

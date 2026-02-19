@@ -14,6 +14,7 @@ export const primaryProjects: Project[] = [
     year: "2026",
     coverImage: "https://www.figma.com/api/mcp/asset/230b1c08-3825-43dd-bb52-16be7b9ddbac",
     coverImageAlt: "Labor – agricultural services marketplace",
+    href: "/case/laborapp",
   },
 ];
 
