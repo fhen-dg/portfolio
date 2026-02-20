@@ -1,4 +1,3 @@
-import { cvData } from "@/content/cv";
 import { CVProfileHeader } from "@/components/sections/cv/CVProfileHeader";
 import { CVAboutSection } from "@/components/sections/cv/CVAboutSection";
 import { CVExperienceSection } from "@/components/sections/cv/CVExperienceSection";
@@ -10,12 +9,17 @@ export default function CVPage() {
     <main className="flex flex-col items-center px-5 py-[40px] lg:py-[60px] lg:px-[72px]">
       <div className="flex justify-center w-full">
         <div className="flex flex-col gap-[48px] items-center max-w-[600px] w-full">
-          <CVProfileHeader profile={cvData.profile} />
-          <CVAboutSection about={cvData.about} />
+          <CVProfileHeader
+            name="Federico Cohen Correa"
+            nickname="Fhen"
+            image="/images/profile/CVPhoto.png"
+            imageAlt="Federico Cohen Correa"
+          />
+          <CVAboutSection />
           <div className="w-full border-b border-neutral-400" />
-          <CVExperienceSection experience={cvData.experience} />
+          <CVExperienceSection />
           <div className="w-full border-b border-neutral-400" />
-          <CVEducationSection education={cvData.education} />
+          <CVEducationSection />
           <div className="w-full border-b border-neutral-400" />
           <ContactFooter />
           <div className="w-full h-[60px] lg:h-[120px]" />

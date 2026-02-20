@@ -1,13 +1,55 @@
-import type { CVExperience } from "@/lib/types";
+"use client";
 
-type CVExperienceSectionProps = {
-  experience: CVExperience[];
+import { useLocale } from "@/hooks/useLocale";
+
+type ExperienceItem = {
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  responsibilities: string[];
+  featuredProjects?: Array<{ name: string; description: string }>;
+  moreProjects?: Array<{ name: string; type: string }>;
 };
 
-export function CVExperienceSection({ experience }: CVExperienceSectionProps) {
+export function CVExperienceSection() {
+  const { t } = useLocale();
+
+  const amalgamaExperience: ExperienceItem = {
+    role: t.cv.experience.amalgama.role,
+    company: "Amalgama",
+    period: "2020 – 2026",
+    location: "Buenos Aires",
+    responsibilities: t.cv.experience.amalgama.responsibilities,
+    featuredProjects: [
+      { name: "Viramos", description: t.cv.experience.amalgama.featuredProjects.viramos },
+      { name: "Labor", description: t.cv.experience.amalgama.featuredProjects.labor },
+      { name: "Theo AI", description: t.cv.experience.amalgama.featuredProjects.theoAI },
+      { name: "Verybusy", description: t.cv.experience.amalgama.featuredProjects.verybusy },
+    ],
+    moreProjects: [
+      { name: "Qote", type: t.cv.experience.amalgama.moreProjects.qote },
+      { name: "VenueApp", type: t.cv.experience.amalgama.moreProjects.venueApp },
+      { name: "CoachRx", type: t.cv.experience.amalgama.moreProjects.coachRx },
+      { name: "Crypto Insights Group", type: t.cv.experience.amalgama.moreProjects.cryptoInsightsGroup },
+      { name: "Revealed Travel Guides", type: t.cv.experience.amalgama.moreProjects.revealedTravelGuides },
+      { name: "Wilco", type: t.cv.experience.amalgama.moreProjects.wilco },
+    ],
+  };
+
+  const freelanceExperience: ExperienceItem = {
+    role: t.cv.experience.freelance.role,
+    company: "Freelance",
+    period: "2023 – 2026",
+    location: "Buenos Aires",
+    responsibilities: t.cv.experience.freelance.responsibilities,
+  };
+
+  const experience: ExperienceItem[] = [amalgamaExperience, freelanceExperience];
+
   return (
     <section className="flex flex-col gap-[24px] items-start w-full">
-      <h2 className="body3 text-neutral-500 text-left">Experience</h2>
+      <h2 className="body3 text-neutral-500 text-left">{t.cv.sections.experience}</h2>
       <div className="flex flex-col gap-[40px] items-start w-full">
         {experience.map((job, index) => (
           <div key={index} className="flex flex-col gap-[24px] items-start w-full">
@@ -35,7 +77,7 @@ export function CVExperienceSection({ experience }: CVExperienceSectionProps) {
             {/* Featured Projects */}
             {job.featuredProjects && job.featuredProjects.length > 0 && (
               <div className="flex flex-col gap-[12px] items-start w-full">
-                <h4 className="body3 text-neutral-500 text-left">Featured projects</h4>
+                <h4 className="body3 text-neutral-500 text-left">{t.cv.sections.featuredProjects}</h4>
                 <div className="flex flex-col gap-[8px] items-start w-full">
                   {job.featuredProjects.map((project, idx) => (
                     <div key={idx} className="flex flex-col items-start gap-1 w-full">
@@ -50,7 +92,7 @@ export function CVExperienceSection({ experience }: CVExperienceSectionProps) {
             {/* More Projects */}
             {job.moreProjects && job.moreProjects.length > 0 && (
               <div className="flex flex-col gap-[12px] items-start w-full">
-                <h4 className="body3 text-neutral-500 text-left">More Projects</h4>
+                <h4 className="body3 text-neutral-500 text-left">{t.cv.sections.moreProjects}</h4>
                 <div className="flex flex-col gap-[8px] items-start w-full">
                   {job.moreProjects.map((project, idx) => (
                     <div key={idx} className="flex flex-wrap gap-[8px] items-start">

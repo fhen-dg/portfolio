@@ -6,7 +6,7 @@ export const cvData: CVData = {
     imageAlt: "Federico Cohen Correa",
     name: "Federico Cohen Correa",
     nickname: "Fhen",
-    role: "Senior Product Designer",
+    role: "Senior Product Designer in Buenos Aires, Argentina",
   },
   about: [
     "Senior Product Designer with 5+ years of experience designing digital products for U.S. and LATAM startups and mid-size companies.",
