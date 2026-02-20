@@ -1,6 +1,6 @@
 "use client";
 
-import { Languages, Menu, SendHorizontal } from "lucide-react";
+import { Languages, SendHorizontal } from "lucide-react";
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { useLocale } from "@/hooks/useLocale";
@@ -23,6 +23,7 @@ import {
   DrawerClose,
   DrawerTitle,
 } from "@/components/ui/drawer";
+import { MobileMenuSheet } from "@/components/sections/MobileMenuSheet";
 
 export function Navbar() {
   const { t, locale, setLocale } = useLocale();
@@ -226,9 +227,7 @@ export function Navbar() {
       <nav className="relative flex items-center justify-between p-5 md:hidden">
         {/* Left: hamburger + separator + language */}
         <div className="flex items-center gap-1">
-          <IconButton variant="ghost" aria-label="Open menu">
-            <Menu />
-          </IconButton>
+          <MobileMenuSheet />
 
           <div className="mx-3 flex h-6 items-center">
             <Separator orientation="vertical" className="bg-neutral-400" />

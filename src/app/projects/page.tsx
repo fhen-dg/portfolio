@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   const { t } = useLocale();
 
   return (
-    <main className="flex flex-col items-center px-5 py-[40px lg:py-[60px] lg:px-[72px]">
+    <main className="flex flex-col items-center px-5 py-[40px] lg:py-[60px] lg:px-[72px]">
       <div className="flex justify-center w-full">
         <div className="flex flex-col gap-[40px] items-center max-w-[1024px] w-full">
           <h1 className="title1 lg:header1 text-neutral-800 text-center w-full">
