@@ -222,7 +222,7 @@ const laborCaseStudyEs: CaseStudy = {
           "Diseñamos una arquitectura flexible en lugar de segmentación rígida por perfiles. Esto redujo fricción, optimizó desarrollo y permitió a los usuarios alternar entre productor y contratista sin fricciones estructurales.",
       },
       {
-        title: "Diseño orientado a factibilidad técnica y velocidad",
+        title: "Diseño orientado a viabilidad técnica y velocidad",
         description:
           "Priorizamos integraciones de alto impacto para lanzar rápido sin sobre-ingeniería. Utilizamos Clerk, Vercel Blob y Google Maps para validar el núcleo del producto con viabilidad técnica desde el inicio.",
       },

@@ -3,7 +3,7 @@ import type { Translations } from "@/lib/i18n/types";
 export const es: Translations = {
   meta: {
     title: "Fhen – Diseñador de Producto",
-    description: "Diseñador de producto desde Buenos Aires",
+    description: "Diseñador de producto en Buenos Aires, Argentina",
   },
   hero: {
     introPrefix: "Soy Federico, pero me llaman ",
@@ -59,7 +59,7 @@ export const es: Translations = {
     },
     about: [
       "Senior Product Designer con más de 5 años de experiencia diseñando productos digitales para startups y empresas medianas en Estados Unidos y Latinoamérica.",
-      "Trabajo en la intersección entre diseño, estrategia y tecnología, conectando necesidades de usuario, objetivos de negocio y factibilidad técnica.",
+      "Trabajo en la intersección entre diseño, estrategia y tecnología, conectando necesidades de usuario, objetivos de negocio y viabilidad técnica.",
       "Tengo experiencia en research, UX/UI, design systems y productos impulsados por IA en industrias como wellness, fintech, real estate y legal tech. Me interesa construir productos significativos, con impacto real y sostenible en el tiempo.",
     ],
     experience: {
