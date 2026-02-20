@@ -2,6 +2,7 @@
 
 import { useLocale } from "@/hooks/useLocale";
 import { getLaborCaseStudy } from "@/content/cases/labor";
+import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { CaseHeroSection } from "@/components/sections/case/CaseHeroSection";
 import { CaseProblemSection } from "@/components/sections/case/CaseProblemSection";
 import { CaseComplexitiesSection } from "@/components/sections/case/CaseComplexitiesSection";
@@ -17,57 +18,71 @@ export function LaborCaseContent() {
 
   return (
     <>
-      <CaseHeroSection
-        heroImage={cs.heroImage}
-        heroImageAlt={cs.heroImageAlt}
-        title={cs.title}
-        description={cs.description}
-        roles={cs.roles}
-      />
+      <RevealOnScroll className="w-full">
+        <CaseHeroSection
+          heroImage={cs.heroImage}
+          heroImageAlt={cs.heroImageAlt}
+          title={cs.title}
+          description={cs.description}
+          roles={cs.roles}
+        />
+      </RevealOnScroll>
 
-      <div className="h-[80px] lg:h-[160px] w-full" />
+      <div className="h-[200px] md:h-[320px] w-full" />
 
-      <CaseProblemSection
-        body={cs.problem.body}
-        heading={t.caseSections.problem}
-      />
+      <RevealOnScroll className="w-full">
+        <CaseProblemSection
+          body={cs.problem.body}
+          heading={t.caseSections.problem}
+        />
+      </RevealOnScroll>
 
-      <div className="h-[80px] lg:h-[120px] w-full" />
+      <div className="h-[120px] md:h-[200px] w-full" />
 
-      <CaseComplexitiesSection
-        items={cs.complexities}
-        heading={t.caseSections.complexities}
-      />
+      <RevealOnScroll className="w-full">
+        <CaseComplexitiesSection
+          items={cs.complexities}
+          heading={t.caseSections.complexities}
+        />
+      </RevealOnScroll>
 
-      <div className="h-[80px] lg:h-[160px] w-full" />
+      <div className="h-[200px] lg:h-[320px] w-full" />
 
-      <CaseStrategicAlignmentSection
-        intro={cs.strategicAlignment.intro}
-        items={cs.strategicAlignment.items}
-        heading={t.caseSections.strategicAlignment}
-      />
+      <RevealOnScroll className="w-full">
+        <CaseStrategicAlignmentSection
+          intro={cs.strategicAlignment.intro}
+          items={cs.strategicAlignment.items}
+          heading={t.caseSections.strategicAlignment}
+        />
+      </RevealOnScroll>
 
-      <div className="h-[80px] lg:h-[160px] w-full" />
+      <div className="h-[200px] lg:h-[320px] w-full" />
 
-      <CaseSolutionSection
-        body={cs.solution.body}
-        heading={t.caseSections.solution}
-      />
+      <RevealOnScroll className="w-full">
+        <CaseSolutionSection
+          body={cs.solution.body}
+          heading={t.caseSections.solution}
+        />
+      </RevealOnScroll>
 
-      <div className="h-[80px] lg:h-[120px] w-full" />
+      <div className="h-[120px] lg:h-[200px] w-full" />
 
-      <CaseShowcaseSection items={cs.showcase} />
+      <RevealOnScroll className="w-full">
+        <CaseShowcaseSection items={cs.showcase} />
+      </RevealOnScroll>
 
-      <div className="h-[80px] lg:h-[160px] w-full" />
+      <div className="h-[120px] lg:h-[200px] w-full" />
 
-      <CaseOverviewSection
-        image={cs.overview.image}
-        imageAlt={cs.overview.imageAlt}
-        link={cs.overview.link}
-        tools={cs.overview.tools}
-      />
+      <RevealOnScroll className="w-full">
+        <CaseOverviewSection
+          image={cs.overview.image}
+          imageAlt={cs.overview.imageAlt}
+          link={cs.overview.link}
+          tools={cs.overview.tools}
+        />
+      </RevealOnScroll>
 
-      <div className="h-[80px] lg:h-[120px] w-full" />
+      <div className="h-[120px] lg:h-[120px] w-full" />
 
       <ContactFooter />
 

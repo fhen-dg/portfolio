@@ -8,12 +8,12 @@ type CaseProblemSectionProps = {
 export function CaseProblemSection({ body, heading = "The Problem" }: CaseProblemSectionProps) {
   return (
     <section className="flex justify-center w-full">
-      <div className="flex flex-col gap-[40px] lg:gap-[52px] max-w-[960px] w-full">
-        <h2 className="title1 lg:header1 text-neutral-800">{heading}</h2>
-        <p className="supporting1 text-neutral-600">
+      <div className="flex flex-col gap-[20px] md:gap-[32px] max-w-[960px] w-full">
+        <h2 className="title1 md:header1 text-neutral-800">{heading}</h2>
+        <p className="supporting2 md:supporting1 text-neutral-600">
           {body.map((segment, i) =>
             segment.emphasis ? (
-              <span key={i} className="supporting1-medium text-neutral-800">
+              <span key={i} className="supporting2-medium md:supporting1-medium text-neutral-800">
                 {segment.text}
               </span>
             ) : (

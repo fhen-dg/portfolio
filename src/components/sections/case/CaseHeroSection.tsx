@@ -19,7 +19,7 @@ export function CaseHeroSection({
     <section className="flex justify-center w-full">
       <div className="flex flex-col gap-[28px] max-w-[960px] w-full h-[calc(100vh-140px)]">
         {heroImage ? (
-          <div className="relative w-full lg:min-h-[400px] min-h-[320px] h-[400px] rounded-[12px] overflow-hidden">
+          <div className="relative w-full lg:min-h-[400px] min-h-[200px] h-[400px] rounded-[12px] overflow-hidden">
             <Image
               src={heroImage}
               alt={heroImageAlt}
@@ -33,10 +33,10 @@ export function CaseHeroSection({
         )}
 
         <div className="flex flex-col gap-[20px] h-full">
-          <h1 className="title1 lg:title1 text-neutral-800 text-center">{title}</h1>
+          <h1 className="title2 lg:title1 text-neutral-800 text-center">{title}</h1>
           <p className="body1 lg:supporting2 text-neutral-800 text-center">{description}</p>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-x-[16px] gap-y-[4px] body1 text-neutral-600">
+        <div className="flex flex-wrap justify-center items-center gap-x-[16px] gap-y-[4px] md:body1 body3 text-neutral-600">
             {roles.map((role, i) => (
               <span key={i} className="flex items-center gap-[16px]">
                 {i > 0 && <span className="hidden lg:inline lg:body1 text-neutral-600">•</span>}

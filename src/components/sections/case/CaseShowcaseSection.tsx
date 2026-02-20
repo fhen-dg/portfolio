@@ -38,13 +38,13 @@ function ShowcaseItem({
   const textBlock = (
     <div className="flex flex-col gap-[20px] lg:gap-[24px] flex-1">
       <div className="flex flex-col gap-[12px]">
-        <h3 className="title4 text-neutral-800">{item.title}</h3>
-        <p className="body1 text-neutral-600">{item.description}</p>
+        <h3 className="md:title4 title5 text-neutral-800">{item.title}</h3>
+        <p className="md:body1 body2 text-neutral-600">{item.description}</p>
       </div>
       <ul className="flex flex-col gap-[8px]">
         {item.bullets.map((bullet, i) => (
-          <li key={i} className="flex items-start gap-[12px] body1 text-neutral-600">
-            <span className="mt-[10px] w-[4px] h-[4px] rounded-full bg-neutral-500 shrink-0" />
+          <li key={i} className="flex items-start gap-[12px] md:body1 body2 text-neutral-600">
+            <span className="mt-[10px] w-[4px] h-[4px] rounded-full bg-neutral-600 shrink-0" />
             {bullet}
           </li>
         ))}
@@ -54,21 +54,12 @@ function ShowcaseItem({
 
   return (
     <div
-      className={`flex flex-col gap-[40px] lg:gap-[60px] lg:items-center ${
-        isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse"
+      className={`flex flex-col gap-[32px] md:gap-[60px] md:items-center ${
+        isImageLeft ? "md:flex-row" : "md:flex-row-reverse"
       }`}
     >
-      {isImageLeft ? (
-        <>
-          {mediaBlock}
-          {textBlock}
-        </>
-      ) : (
-        <>
-          {textBlock}
-          {mediaBlock}
-        </>
-      )}
+      {mediaBlock}
+      {textBlock}
     </div>
   );
 }
@@ -76,7 +67,7 @@ function ShowcaseItem({
 export function CaseShowcaseSection({ items }: CaseShowcaseSectionProps) {
   return (
     <section className="flex justify-center w-full">
-      <div className="flex flex-col gap-[80px] lg:gap-[120px] max-w-[960px] w-full">
+      <div className="flex flex-col gap-[104px] lg:gap-[120px] max-w-[960px] w-full">
         {items.map((item, i) => (
           <ShowcaseItem key={i} item={item} index={i} />
         ))}
