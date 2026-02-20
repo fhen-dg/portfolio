@@ -16,7 +16,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
         className={cn(
           "bg-neutral-white border border-neutral-400 rounded-[12px] p-6 flex flex-col items-start",
           "transition-colors duration-200",
-          "group-hover:border-neutral-600",
+          "md:group-hover:border-neutral-600",
           className
         )}
       >
