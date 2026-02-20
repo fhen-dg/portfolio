@@ -164,102 +164,95 @@ const laborCaseStudyEs: CaseStudy = {
   heroImage: "https://www.figma.com/api/mcp/asset/230b1c08-3825-43dd-bb52-16be7b9ddbac",
   heroImageAlt: "Labor – marketplace de servicios agropecuarios",
   description:
-    "Una plataforma de confianza crítica que conecta productores agropecuarios con contratistas, habilitando el descubrimiento directo y la publicación de servicios.",
+    "Una plataforma diseñada para generar confianza entre productores y contratistas agropecuarios, facilitando la contratación directa sin intermediarios.",
   roles: [
-    "Estrategia de producto y diseño",
-    "UX y UI orientados a sistemas",
-    "Entrega completa del MVP",
+    "Estrategia y diseño de producto",
+    "UX y UI con enfoque sistémico",
+    "Desarrollo y entrega de MVP end-to-end",
   ],
   problem: {
     body: [
-      { text: "La contratación de servicios agropecuarios", emphasis: true },
-      { text: " en Argentina sigue siendo " },
+      { text: "La contratación de servicios agropecuarios en Argentina es " },
       { text: "fragmentada e informal. ", emphasis: true },
-      { text: "Los productores tienen dificultades para " },
-      { text: "encontrar servicios confiables, ", emphasis: true },
-      {
-        text: "mientras que los contratistas carecen de visibilidad y demanda constante.",
-      },
+      { text: "Los productores " },
+      { text: "no encuentran servicios confiables", emphasis: true },
+      { text: " y los contratistas " },
+      { text: "carecen de visibilidad y demanda constante.", emphasis: true },
     ],
   },
   complexities: [
     {
       title: "Restricciones del MVP",
       description:
-        "Un presupuesto limitado exigió enfocarse solo en lo que hacía la plataforma verdaderamente funcional de extremo a extremo.",
+        "Un presupuesto acotado exigía enfocarnos únicamente en aquello que hiciera a la plataforma verdaderamente funcional de punta a punta.",
     },
     {
       title: "Roles híbridos",
       description:
-        "Los usuarios podían actuar como productores, contratistas o ambos, dependiendo de su contexto real.",
+        "Los usuarios podían desempeñarse como productores, contratistas o ambos, según su contexto real de trabajo.",
     },
     {
       title: "Descubrimiento basado en ubicación",
       description:
-        "Los servicios debían ser relevantes para donde los usuarios operan realmente, no solo para lo que ofrecen.",
+        "Los servicios debían ser relevantes en función de dónde operan los usuarios, no solo en función de lo que ofrecen.",
     },
     {
       title: "Lógica específica del dominio",
       description:
-        "Los servicios agropecuarios requerían comprender conceptos matizados para diseñar flujos con sentido para quienes trabajan en el campo.",
+        "Los servicios agropecuarios implican comprender conceptos técnicos y matices propios del sector para diseñar flujos coherentes con la realidad del campo.",
     },
     {
       title: "Confianza sin intermediarios",
       description:
-        "El producto necesitaba una forma de establecer confianza entre usuarios sin depender de intermediarios tradicionales.",
+        "El producto debía generar confianza entre usuarios sin depender de intermediarios tradicionales.",
     },
   ],
   strategicAlignment: {
     intro:
-      "A través de sesiones colaborativas con el equipo fundador, alineamos cuatro decisiones estratégicas que dieron forma a cada elección de diseño y producto.",
+      "El proceso se apoyó en una colaboración estrecha con la Product Owner, stakeholders y expertos del dominio. Para asegurar que mantuviéramos el foco en nuestro objetivo central — generar valor operativo inmediato — tomamos una serie de decisiones estratégicas.",
     items: [
       {
-        title: "Priorizar el ajuste problema-solución sobre la monetización",
+        title: "Priorizar el encaje problema-solución por sobre la monetización",
         description:
-          "En lugar de construir mecanismos de ingresos temprano, nos enfocamos completamente en señales de confianza y utilidad central — demostrando el valor de la plataforma antes de extraerlo.",
+          "Postergamos la monetización para enfocarnos en adquisición y construcción de confianza. Invertimos en señales esenciales — imágenes verificables, descripciones guiadas y prueba social — como impulsores de adopción temprana.",
       },
       {
-        title: "Modelo de participación fluida",
+        title: "Modelo de participación fluido",
         description:
-          "En lugar de forzar a los usuarios a un rol fijo, diseñamos una arquitectura flexible donde el contexto determina si alguien es productor, contratista o ambos.",
+          "Diseñamos una arquitectura flexible en lugar de segmentación rígida por perfiles. Esto redujo fricción, optimizó desarrollo y permitió a los usuarios alternar entre productor y contratista sin fricciones estructurales.",
       },
       {
-        title: "Diseño para viabilidad técnica y velocidad",
+        title: "Diseño orientado a factibilidad técnica y velocidad",
         description:
-          "Alcanzamos el MVP a lo que el stack podía soportar — Clerk para auth, Vercel Blob para media y Google Maps para ubicación — sin sacrificar la experiencia central.",
+          "Priorizamos integraciones de alto impacto para lanzar rápido sin sobre-ingeniería. Utilizamos Clerk, Vercel Blob y Google Maps para validar el núcleo del producto con viabilidad técnica desde el inicio.",
       },
       {
         title: "Métricas centradas en validación",
         description:
-          "El éxito se definió por señales de activación: creación de publicaciones, inicio de contacto y visitas de retorno — no métricas de vanidad.",
+          "Definimos el éxito en función de publicaciones activas e inicio de contacto directo. Esto mantuvo el foco en valor operativo real por sobre funcionalidades secundarias.",
       },
     ],
   },
   solution: {
     body: [
-      { text: "Labor es un " },
-      { text: "marketplace de participación fluida", emphasis: true },
+      { text: "Un " },
+      { text: "marketplace flexible", emphasis: true },
       {
-        text: " donde productores agropecuarios y contratistas se descubren y conectan directamente. Un ",
+        text: " que integra publicación guiada, descubrimiento contextual y señales esenciales de confianza para ",
       },
-      {
-        text: "flujo de publicación guiado con descubrimiento basado en servicio y ubicación",
-        emphasis: true,
-      },
-      { text: " y un ciclo de confianza liviano diseñado para " },
       { text: "validar el núcleo del producto", emphasis: true },
-      { text: " antes de escalar." },
+      { text: " bajo restricciones de MVP." },
     ],
   },
   showcase: [
     {
       title: "Publicación unificada",
       description:
-        "Un flujo guiado que se adapta a la intención del usuario — ya sea publicando una oferta de servicio o buscando una — desde un único punto de entrada compartido.",
+        "Un flujo guiado que se adapta a la intención del usuario en cada momento, utilizando microcopy contextual para mejorar claridad y confianza sin generar fricción innecesaria.",
       bullets: [
-        "Inicio compartido como punto de entrada único",
-        "Rol definido contextualmente, no preseleccionado",
-        "Campos condicionales con orientación UX centrada en confianza",
+        "Un único home compartido como punto de entrada",
+        "El rol se define contextualmente, no de forma previa",
+        "Campos condicionales con guía orientada a generar confianza",
       ],
       image: "",
       imageAlt: "Flujo de publicación unificada",
@@ -267,30 +260,30 @@ const laborCaseStudyEs: CaseStudy = {
       imagePosition: "right",
     },
     {
-      title: "Descubrimiento por ubicación y servicio",
+      title: "Descubrimiento por servicio y ubicación",
       description:
-        "Una arquitectura de relevancia primero anclada en la ubicación del usuario, asegurando que los resultados sean inmediatamente accionables para personas que trabajan en regiones específicas.",
+        "Arquitectura centrada en relevancia, anclada en la ubicación del usuario y en filtros contextuales.",
       bullets: [
-        "Prefiltrado por contexto del usuario",
+        "Pre-filtrado según contexto del usuario",
         "Taxonomía jerárquica de servicios",
         "Contacto directo externalizado para validar interacción real",
       ],
       image: "",
-      imageAlt: "Descubrimiento por ubicación y servicio",
+      imageAlt: "Descubrimiento por servicio y ubicación",
       video: "/images/projects/laborapp/LaborDiscovery.mp4",
       imagePosition: "left",
     },
     {
-      title: "Ciclo de confianza liviano",
+      title: "Sistema de confianza simple",
       description:
-        "Un conjunto de señales livianas que ayudan a los usuarios a tomar decisiones con confianza sin requerir garantías mediadas por la plataforma.",
+        "Señales esenciales diseñadas para validar credibilidad antes de escalar hacia infraestructuras de verificación más complejas.",
       bullets: [
-        "Imágenes del servicio (hasta 3 fotos)",
-        "Descripciones guiadas del servicio",
-        "Reseñas de pares visibles en el perfil",
+        "Imágenes del servicio (hasta 3)",
+        "Descripciones guiadas",
+        "Reseñas visibles en el perfil",
       ],
       image: "/images/projects/laborapp/TrustLoopImage.png",
-      imageAlt: "Ciclo de confianza liviano",
+      imageAlt: "Sistema de confianza simple",
       imagePosition: "right",
     },
   ],

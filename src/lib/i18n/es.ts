@@ -21,7 +21,7 @@ export const es: Translations = {
     title: "Hablemos",
     linkedin: "Linkedin",
     email: "Email",
-    calendar: "Calendario",
+    calendar: "Calendar",
   },
   projects: {
     comingSoon: "Próximamente",
@@ -34,9 +34,9 @@ export const es: Translations = {
     timezone: "Zona horaria GMT-3",
   },
   caseSections: {
-    problem: "El Problema",
+    problem: "El problema",
     complexities: "Complejidades",
-    strategicAlignment: "Alineamiento Estratégico",
-    solution: "La Solución",
+    strategicAlignment: "Alineación estratégica",
+    solution: "La solución",
   },
 };
