@@ -1,7 +1,4 @@
-"use client";
-
-import { useLocale } from "@/hooks/useLocale";
-import { getLaborCaseStudy } from "@/content/cases/labor";
+import { getViramosCaseStudy } from "@/content/cases/viramos";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { CaseHeroSection } from "@/components/sections/case/CaseHeroSection";
 import { CaseStatementSection } from "@/components/sections/case/CaseStatementSection";
@@ -11,9 +8,8 @@ import { CaseShowcaseSection } from "@/components/sections/case/CaseShowcaseSect
 import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSection";
 import { ContactFooter } from "@/components/sections/ContactFooter";
 
-export function LaborCaseContent() {
-  const { t, locale } = useLocale();
-  const cs = getLaborCaseStudy(locale);
+export function ViramosCaseContent() {
+  const cs = getViramosCaseStudy();
 
   return (
     <>
@@ -31,8 +27,8 @@ export function LaborCaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseStatementSection
-          body={cs.problem.body}
-          heading={t.caseSections.problem}
+          body={cs.opportunity.body}
+          heading="The Opportunity"
         />
       </RevealOnScroll>
 
@@ -40,8 +36,8 @@ export function LaborCaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseDisplayBreakdownSection
-          items={cs.complexities}
-          heading={t.caseSections.complexities}
+          items={cs.earlyValidation}
+          heading="Early validation (No-code phase)"
         />
       </RevealOnScroll>
 
@@ -49,9 +45,9 @@ export function LaborCaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseDescriptiveBreakdownSection
-          intro={cs.strategicAlignment.intro}
-          items={cs.strategicAlignment.items}
-          heading={t.caseSections.strategicAlignment}
+          intro={cs.contextImmersion.intro}
+          items={cs.contextImmersion.items}
+          heading="Context immersion — SIVI (Brazil)"
         />
       </RevealOnScroll>
 
@@ -59,13 +55,23 @@ export function LaborCaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseStatementSection
-          body={cs.solution.body}
-          heading={t.caseSections.solution}
+          body={cs.inflectionPoint.body}
+          heading="Inflection Point"
           align="center"
         />
       </RevealOnScroll>
 
       <div className="h-[120px] lg:h-[200px] w-full" />
+
+      <RevealOnScroll className="w-full">
+        <CaseDescriptiveBreakdownSection
+          intro={cs.reArchitecting.intro}
+          items={cs.reArchitecting.items}
+          heading="Re-architecting for scale"
+        />
+      </RevealOnScroll>
+
+      <div className="h-[200px] lg:h-[320px] w-full" />
 
       <RevealOnScroll className="w-full">
         <CaseShowcaseSection items={cs.showcase} />

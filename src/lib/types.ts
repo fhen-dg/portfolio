@@ -33,6 +33,38 @@ export type CaseShowcaseItem = {
   imagePosition: "left" | "right";
 };
 
+export type ViramosCaseStudy = {
+  slug: string;
+  title: string;
+  year: string;
+  heroImage: string;
+  heroImageAlt: string;
+  description: string;
+  roles: string[];
+  opportunity: {
+    body: RichTextSegment[];
+  };
+  earlyValidation: CaseComplexityItem[];
+  contextImmersion: {
+    intro: string;
+    items: CaseStrategyItem[];
+  };
+  inflectionPoint: {
+    body: RichTextSegment[];
+  };
+  reArchitecting: {
+    intro: string;
+    items: CaseStrategyItem[];
+  };
+  showcase: CaseShowcaseItem[];
+  overview: {
+    image: string;
+    imageAlt: string;
+    link: { label: string; href: string };
+    tools: string[];
+  };
+};
+
 export type CaseStudy = {
   slug: string;
   title: string;

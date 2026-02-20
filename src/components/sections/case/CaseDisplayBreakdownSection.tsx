@@ -1,11 +1,14 @@
 import type { CaseComplexityItem } from "@/lib/types";
 
-type CaseComplexitiesSectionProps = {
+type CaseDisplayBreakdownSectionProps = {
   items: CaseComplexityItem[];
   heading?: string;
 };
 
-export function CaseComplexitiesSection({ items, heading = "Complexities" }: CaseComplexitiesSectionProps) {
+export function CaseDisplayBreakdownSection({
+  items,
+  heading,
+}: CaseDisplayBreakdownSectionProps) {
   return (
     <section className="flex justify-center w-full">
       <div className="flex flex-col gap-[40px] lg:gap-[52px] max-w-[960px] w-full">

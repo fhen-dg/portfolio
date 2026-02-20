@@ -1,22 +1,22 @@
 import type { CaseStrategyItem } from "@/lib/types";
 
-type CaseStrategicAlignmentSectionProps = {
-  intro: string;
+type CaseDescriptiveBreakdownSectionProps = {
+  intro?: string;
   items: CaseStrategyItem[];
   heading?: string;
 };
 
-export function CaseStrategicAlignmentSection({
+export function CaseDescriptiveBreakdownSection({
   intro,
   items,
-  heading = "Strategic Alignment",
-}: CaseStrategicAlignmentSectionProps) {
+  heading,
+}: CaseDescriptiveBreakdownSectionProps) {
   return (
     <section className="flex justify-center w-full">
-      <div className="flex flex-col gap-[60px] lg:gap-[60px] max-w-[960px] w-full">
+      <div className="flex flex-col gap-[60px] max-w-[960px] w-full">
         <div className="flex flex-col gap-[20px]">
           <h2 className="md:title1 title2 text-neutral-800">{heading}</h2>
-          <p className="md:supporting2 body1 text-neutral-600">{intro}</p>
+          {intro && <p className="md:supporting2 body1 text-neutral-600">{intro}</p>}
         </div>
         <div className="flex flex-col gap-[32px] lg:gap-[44px]">
           {items.map((item, i) => (
