@@ -15,7 +15,7 @@ export function ContactFooter() {
         <div className="flex flex-wrap gap-[20px] items-start justify-center w-full">
           <Button asChild>
             <a
-              href="https://www.linkedin.com/in/fhen"
+              href="https://www.linkedin.com/in/federico-cohen-correa/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -23,13 +23,13 @@ export function ContactFooter() {
             </a>
           </Button>
           <Button asChild>
-            <a href="mailto:federicoh@hey.com">
+            <a href="mailto:federico.cohen.c@gmail.com">
               {t.contact.email}
             </a>
           </Button>
           <Button asChild>
             <a
-              href="https://cal.com/fhen"
+              href="https://calendar.app.google/M4aXEZ4oTvXxnsZy6"
               target="_blank"
               rel="noopener noreferrer"
             >

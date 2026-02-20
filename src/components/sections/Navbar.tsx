@@ -1,6 +1,7 @@
 "use client";
 
 import { Languages, Menu, SendHorizontal } from "lucide-react";
+import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { useLocale } from "@/hooks/useLocale";
 import type { Locale } from "@/lib/i18n/types";
@@ -15,10 +16,6 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
-function scrollToSection(id: string) {
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-}
 
 export function Navbar() {
   const { t, locale, setLocale } = useLocale();
@@ -76,8 +73,8 @@ export function Navbar() {
       <nav className="relative hidden items-center justify-between px-[72px] py-5 md:flex">
         {/* Left: nav links + separator + language */}
         <div className="flex items-center gap-1">
-          <Button variant="ghost" onClick={() => scrollToSection("projects")}>
-            {t.nav.projects}
+          <Button variant="ghost" asChild>
+            <Link href="/projects">{t.nav.projects}</Link>
           </Button>
           <Button variant="ghost" asChild>
             <a href="#cv">{t.nav.cv}</a>
@@ -102,17 +99,17 @@ export function Navbar() {
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuItem asChild>
-              <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/federico-cohen-correa/" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </DropdownMenuItem>
             <DropdownMenuItem asChild>
-              <a href="mailto:your.email@example.com">
+              <a href="mailto:federico.cohen.c@gmail.com">
                 Email
               </a>
             </DropdownMenuItem>
             <DropdownMenuItem asChild>
-              <a href="https://calendly.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendar.app.google/M4aXEZ4oTvXxnsZy6" target="_blank" rel="noopener noreferrer">
                 Calendar
               </a>
             </DropdownMenuItem>
