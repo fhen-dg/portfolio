@@ -30,11 +30,11 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
           />
         </div>
 
-        <div className="h-10 w-full shrink-0" />
+        <div className="h-6 w-full shrink-0" />
 
         <Separator className="bg-neutral-400" />
 
-        <div className="h-10 w-full shrink-0" />
+        <div className="h-6 w-full shrink-0" />
 
         <div className="flex items-center justify-between w-full px-2 shrink-0">
           <p className="lg:title1 title3 text-neutral-800 overflow-hidden text-ellipsis">
