@@ -1,9 +1,7 @@
-import type { Metadata } from "next";
 import { viramosCaseStudy } from "@/content/cases/viramos";
 import { ViramosCaseContent } from "@/components/sections/case/ViramosCaseContent";
 
-export const metadata: Metadata = {
-  title: "Viramos – Portfolio",
+export const metadata = {
   description: viramosCaseStudy.description,
 };
 
