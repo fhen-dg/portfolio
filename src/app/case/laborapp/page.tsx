@@ -1,9 +1,7 @@
-import type { Metadata } from "next";
 import { laborCaseStudy } from "@/content/cases/labor";
 import { LaborCaseContent } from "@/components/sections/case/LaborCaseContent";
 
-export const metadata: Metadata = {
-  title: "Labor – Portfolio",
+export const metadata = {
   description: laborCaseStudy.description,
 };
 

@@ -11,7 +11,7 @@ const wixMadeforText = Wix_Madefor_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Federico Cohen Correa - Portfolio",
   description: "Personal portfolio",
 };
 
