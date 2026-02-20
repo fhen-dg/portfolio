@@ -39,4 +39,11 @@ export type Translations = {
     strategicAlignment: string;
     solution: string;
   };
+  viramosSections: {
+    opportunity: string;
+    earlyValidation: string;
+    contextImmersion: string;
+    inflectionPoint: string;
+    reArchitecting: string;
+  };
 };

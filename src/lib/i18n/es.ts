@@ -19,7 +19,7 @@ export const es: Translations = {
   },
   contact: {
     title: "Hablemos",
-    linkedin: "Linkedin",
+    linkedin: "LinkedIn",
     email: "Email",
     calendar: "Calendar",
   },
@@ -38,5 +38,12 @@ export const es: Translations = {
     complexities: "Complejidades",
     strategicAlignment: "Alineación estratégica",
     solution: "La solución",
+  },
+  viramosSections: {
+    opportunity: "La oportunidad",
+    earlyValidation: "Validación temprana (fase no-code)",
+    contextImmersion: "Inmersión contextual — SIVI (Brasil)",
+    inflectionPoint: "Punto de inflexión",
+    reArchitecting: "Re-arquitectura para escalar",
   },
 };

@@ -1,3 +1,6 @@
+"use client";
+
+import { useLocale } from "@/hooks/useLocale";
 import { getViramosCaseStudy } from "@/content/cases/viramos";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { CaseHeroSection } from "@/components/sections/case/CaseHeroSection";
@@ -10,7 +13,8 @@ import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSect
 import { ContactFooter } from "@/components/sections/ContactFooter";
 
 export function ViramosCaseContent() {
-  const cs = getViramosCaseStudy();
+  const { t, locale } = useLocale();
+  const cs = getViramosCaseStudy(locale);
 
   return (
     <>
@@ -29,7 +33,7 @@ export function ViramosCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseStatementSection
           body={cs.opportunity.body}
-          heading="The Opportunity"
+          heading={t.viramosSections.opportunity}
         />
       </RevealOnScroll>
 
@@ -38,7 +42,7 @@ export function ViramosCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseDisplayBreakdownSection
           items={cs.earlyValidation}
-          heading="Early validation (No-code phase)"
+          heading={t.viramosSections.earlyValidation}
         />
       </RevealOnScroll>
 
@@ -48,7 +52,7 @@ export function ViramosCaseContent() {
         <CaseDescriptiveBreakdownSection
           intro={cs.contextImmersion.intro}
           items={cs.contextImmersion.items}
-          heading="Context immersion — SIVI (Brazil)"
+          heading={t.viramosSections.contextImmersion}
         />
       </RevealOnScroll>
 
@@ -57,7 +61,7 @@ export function ViramosCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseStatementSection
           body={cs.inflectionPoint.body}
-          heading="Inflection Point"
+          heading={t.viramosSections.inflectionPoint}
           align="center"
         />
       </RevealOnScroll>
@@ -68,7 +72,7 @@ export function ViramosCaseContent() {
         <CaseDescriptiveBreakdownSection
           intro={cs.reArchitecting.intro}
           items={cs.reArchitecting.items}
-          heading="Re-architecting for scale"
+          heading={t.viramosSections.reArchitecting}
         />
       </RevealOnScroll>
 

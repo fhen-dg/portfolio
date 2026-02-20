@@ -39,4 +39,11 @@ export const en: Translations = {
     strategicAlignment: "Strategic Alignment",
     solution: "The Solution",
   },
+  viramosSections: {
+    opportunity: "The Opportunity",
+    earlyValidation: "Early validation (No-code phase)",
+    contextImmersion: "Context immersion — SIVI (Brazil)",
+    inflectionPoint: "Inflection Point",
+    reArchitecting: "Re-architecting for scale",
+  },
 };

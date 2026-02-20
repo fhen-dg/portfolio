@@ -1,6 +1,7 @@
 import type { ViramosCaseStudy } from "@/lib/types";
+import type { Locale } from "@/lib/i18n/types";
 
-const viramosCaseStudy: ViramosCaseStudy = {
+const viramosCaseStudyEn: ViramosCaseStudy = {
   slug: "viramos",
   title: "Viramos",
   year: "2025",
@@ -186,8 +187,194 @@ const viramosCaseStudy: ViramosCaseStudy = {
   },
 };
 
-export function getViramosCaseStudy(): ViramosCaseStudy {
-  return viramosCaseStudy;
+const viramosCaseStudyEs: ViramosCaseStudy = {
+  slug: "viramos",
+  title: "Viramos",
+  year: "2025",
+  heroImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
+  heroImageAlt: "Viramos – sistema operativo para regatas",
+  description:
+    "Un sistema operativo para regatas multi-rol que conecta navegantes, jueces, clubes y asociaciones en toda Latinoamérica.",
+  roles: [
+    "Product design & strategy",
+    "Arquitectura de sistema",
+    "UX y UI",
+    "Design system alineado a código",
+  ],
+  opportunity: {
+    body: [
+      {
+        text: "Las regatas en Latinoamérica operaban con sistemas desconectados y coordinación manual, ",
+      },
+      {
+        text: "lo que generaba ineficiencias operativas y experiencias inconsistentes.",
+        emphasis: true,
+      },
+      { text: " La oportunidad era construir un " },
+      { text: "sistema operativo para regatas", emphasis: true },
+      {
+        text: ": una capa digital unificada que acompañara todo el ciclo de vida del campeonato, desde la inscripción hasta la publicación de resultados.",
+      },
+    ],
+  },
+  earlyValidation: [
+    {
+      title: "Testeando el modelo operativo",
+      description:
+        "Viramos comenzó como un MVP no-code (Bubble), validando inscripciones, pagos, solicitudes y resultados.",
+    },
+    {
+      title: "Señal para re-arquitectura",
+      description:
+        "La adopción confirmó el valor del producto, pero la escala evidenció la necesidad de una reconstrucción estructural.",
+    },
+  ],
+  contextImmersion: {
+    intro:
+      "SIVI, el campeonato de vela más grande de Latinoamérica, se convirtió en un stress test real del producto a escala. Viajar a Brasil y formar parte del torneo permitió exponer dinámicas operativas que las entrevistas remotas no lograban revelar.",
+    items: [
+      {
+        title: "Realidad mobile-first",
+        description:
+          "Los navegantes dependían exclusivamente del acceso móvil mientras se movían entre muelles y áreas de regata. Quedó claro que las suposiciones centradas en desktop no eran relevantes para este rol.",
+      },
+      {
+        title: "Flujos regulatorios formales",
+        description:
+          "Los jueces operaban bajo marcos procedimentales estrictos. Protestas, audiencias y fallos seguían pasos regulatorios definidos que requerían información estructurada, trazabilidad y comunicación clara entre las partes.",
+      },
+      {
+        title: "Presión operativa en tiempo real",
+        description:
+          "Los equipos administrativos gestionaban tareas sensibles al tiempo — inscripciones, actualizaciones y comunicaciones — mientras la competencia estaba en curso. Velocidad, claridad y jerarquía de información se volvieron críticas.",
+      },
+      {
+        title: "Definición de roles en condiciones reales",
+        description:
+          "SIVI expuso el espectro completo de roles involucrados en un campeonato. Cada uno tenía permisos y autoridad de decisión diferenciados. Comprender estos límites — y cómo se intersectaban en competencia en vivo — redefinió la arquitectura del sistema.",
+      },
+    ],
+  },
+  inflectionPoint: {
+    body: [
+      { text: "El product–market fit estaba validado. La arquitectura no.", emphasis: true },
+      {
+        text: " La base no-code no podía sostener la escala, la complejidad de roles ni las demandas de performance de campeonatos de gran magnitud. Viramos necesitaba evolucionar hacia una ",
+      },
+      { text: "infraestructura operativa confiable.", emphasis: true },
+    ],
+  },
+  reArchitecting: {
+    intro:
+      "Reconstruimos Viramos en Next.js bajo un enfoque system-first, priorizando claridad, escalabilidad y confiabilidad operativa.",
+    items: [
+      {
+        title: "Arquitectura basada en permisos",
+        description:
+          "Los roles se redefinieron como capas de permisos, no como simples tipos de usuario. Las interacciones se mapearon según reglas explícitas de autoridad y visibilidad.",
+      },
+      {
+        title: "Motor modular de campeonatos",
+        description:
+          "Los formularios se convirtieron en el núcleo del sistema. Inscripciones, protestas y resultados fueron estructurados como módulos reutilizables capaces de soportar múltiples configuraciones de campeonato.",
+      },
+      {
+        title: "Rediseño mobile-first",
+        description:
+          "Los flujos principales para navegantes fueron optimizados para uso en muelle, mejorando jerarquía, velocidad y accesibilidad.",
+      },
+      {
+        title: "Design system alineado a desarrollo",
+        description:
+          "Un design system basado en shadcn aseguró paridad entre componentes de UI e implementación frontend, reduciendo fricción y acelerando el delivery.",
+      },
+    ],
+  },
+  showcase: [
+    {
+      title: "Configuración de campeonato (Clubes)",
+      description:
+        "Una arquitectura de formularios estructurada permite configuraciones consistentes entre categorías, reduciendo errores administrativos.",
+      bullets: [
+        "Creación modular de campeonatos alineada a requerimientos regulatorios",
+        "Gestión centralizada de participantes, solicitudes y resultados",
+        "Accesos basados en permisos para roles internos del club",
+      ],
+      image: "",
+      imageAlt: "Configuración de campeonato para clubes",
+      video: "/images/projects/viramos/ViramosClubs.mp4",
+      imagePosition: "right",
+    },
+    {
+      title: "Flujo de protesta y audiencia (Jueces)",
+      description:
+        "Workflows regulatorios formalizados en interacciones estructuradas y trazables, alineadas con procedimientos reales.",
+      bullets: [
+        "Envío guiado de protestas con inputs estructurados",
+        "Referencias de participantes buscables (nombre o número de vela)",
+        "Fallos trazables con visibilidad controlada según rol",
+      ],
+      image: "/images/projects/viramos/ViramosJudges.png",
+      imageAlt: "Flujo de protesta y audiencia para jueces",
+      imagePosition: "left",
+    },
+    {
+      title: "Experiencia mobile en muelle (Navegantes)",
+      description:
+        "Interfaz mobile-first diseñada para uso en tiempo real durante la competencia.",
+      bullets: [
+        "Acceso simplificado a resultados, avisos y actualizaciones",
+        "Menor profundidad de navegación en momentos de alta atención",
+        "Layouts responsivos optimizados para uso en movimiento",
+      ],
+      image: "",
+      imageAlt: "Experiencia mobile en muelle para navegantes",
+      video: "/images/projects/viramos/ViramosSailors.mp4",
+      imagePosition: "right",
+    },
+  ],
+  metrics: {
+    heading: "Impacto",
+    intro:
+      "Viramos evolucionó de MVP a infraestructura operativa adoptada por clubes líderes en Latinoamérica.",
+    rows: [
+      [
+        { value: "43.000", label: "Usuarios únicos" },
+        { value: "157.000", label: "Sesiones" },
+      ],
+      [
+        { value: "81", label: "Campeonatos" },
+        { value: "21", label: "Clubes y asociaciones" },
+        { value: "5", label: "Países (LATAM)" },
+      ],
+    ],
+    conclusion:
+      "Hoy, Viramos opera como la columna vertebral digital de los campeonatos de vela competitiva en la región.",
+    footnote: "Métricas 2025",
+  },
+  overview: {
+    image: "/images/projects/viramos/ViramosUIOverview.png",
+    imageAlt: "Resumen de la plataforma Viramos",
+    link: {
+      label: "viramos.com",
+      href: "https://viramos.com",
+    },
+    tools: [
+      "Figma",
+      "Figjam",
+      "Notion",
+      "Google Workspace",
+      "Slack",
+      "Bubble",
+      "GPT",
+      "VS Code",
+      "Github",
+    ],
+  },
+};
+
+export function getViramosCaseStudy(locale: Locale): ViramosCaseStudy {
+  return locale === "es" ? viramosCaseStudyEs : viramosCaseStudyEn;
 }
 
-export { viramosCaseStudy };
+export const viramosCaseStudy = viramosCaseStudyEn;
