@@ -33,4 +33,10 @@ export const es: Translations = {
     year: "2026",
     timezone: "Zona horaria GMT-3",
   },
+  caseSections: {
+    problem: "El Problema",
+    complexities: "Complejidades",
+    strategicAlignment: "Alineamiento Estratégico",
+    solution: "La Solución",
+  },
 };

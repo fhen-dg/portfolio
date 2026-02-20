@@ -33,4 +33,10 @@ export type Translations = {
     year: string;
     timezone: string;
   };
+  caseSections: {
+    problem: string;
+    complexities: string;
+    strategicAlignment: string;
+    solution: string;
+  };
 };
