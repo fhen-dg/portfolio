@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { CaseShowcaseItem } from "@/lib/types";
+import { AutoplayVideo } from "@/components/ui/AutoplayVideo";
 
 type CaseShowcaseSectionProps = {
   items: CaseShowcaseItem[];
@@ -14,8 +15,15 @@ function ShowcaseItem({
 }) {
   const isImageLeft = item.imagePosition === "left";
 
-  const imageBlock = item.image ? (
-    <div className="relative w-full lg:w-[480px] shrink-0 aspect-square rounded-[12px] overflow-hidden">
+  const mediaBlock = item.video ? (
+    <div className="w-full lg:w-[480px] ring-1 ring-neutral-400 shrink-0 aspect-square rounded-[12px] overflow-hidden">
+      <AutoplayVideo
+        src={item.video}
+        className="w-full h-full object-cover"
+      />
+    </div>
+  ) : item.image ? (
+    <div className="relative w-full lg:w-[480px] ring-1 ring-neutral-400 shrink-0 aspect-square rounded-[12px] overflow-hidden">
       <Image
         src={item.image}
         alt={item.imageAlt}
@@ -52,13 +60,13 @@ function ShowcaseItem({
     >
       {isImageLeft ? (
         <>
-          {imageBlock}
+          {mediaBlock}
           {textBlock}
         </>
       ) : (
         <>
           {textBlock}
-          {imageBlock}
+          {mediaBlock}
         </>
       )}
     </div>

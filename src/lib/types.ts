@@ -29,6 +29,7 @@ export type CaseShowcaseItem = {
   bullets: string[];
   image: string;
   imageAlt: string;
+  video?: string;
   imagePosition: "left" | "right";
 };
 

@@ -131,6 +131,7 @@ export const laborCaseStudy: CaseStudy = {
       ],
       image: "",
       imageAlt: "Unified publishing flow",
+      video: "/images/projects/laborapp/LaborPublishing.mp4",
       imagePosition: "right",
     },
     {
@@ -144,6 +145,7 @@ export const laborCaseStudy: CaseStudy = {
       ],
       image: "",
       imageAlt: "Location and service-driven discovery",
+      video: "/images/projects/laborapp/LaborDiscovery.mp4",
       imagePosition: "left",
     },
     {
@@ -155,7 +157,7 @@ export const laborCaseStudy: CaseStudy = {
         "Guided service descriptions",
         "Peer reviews surfaced on profile",
       ],
-      image: "",
+      image: "/images/projects/laborapp/TrustLoopImage.png",
       imageAlt: "Lightweight trust loop",
       imagePosition: "right",
     },
