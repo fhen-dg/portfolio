@@ -5,6 +5,7 @@ import { CaseStatementSection } from "@/components/sections/case/CaseStatementSe
 import { CaseDisplayBreakdownSection } from "@/components/sections/case/CaseDisplayBreakdownSection";
 import { CaseDescriptiveBreakdownSection } from "@/components/sections/case/CaseDescriptiveBreakdownSection";
 import { CaseShowcaseSection } from "@/components/sections/case/CaseShowcaseSection";
+import { CaseMetricsSection } from "@/components/sections/case/CaseMetricsSection";
 import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSection";
 import { ContactFooter } from "@/components/sections/ContactFooter";
 
@@ -73,8 +74,12 @@ export function ViramosCaseContent() {
 
       <div className="h-[200px] lg:h-[320px] w-full" />
 
+      <CaseShowcaseSection items={cs.showcase} />
+
+      <div className="h-[120px] lg:h-[200px] w-full" />
+
       <RevealOnScroll className="w-full">
-        <CaseShowcaseSection items={cs.showcase} />
+        <CaseMetricsSection metrics={cs.metrics} />
       </RevealOnScroll>
 
       <div className="h-[120px] lg:h-[200px] w-full" />

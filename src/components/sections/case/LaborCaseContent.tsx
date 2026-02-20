@@ -67,9 +67,7 @@ export function LaborCaseContent() {
 
       <div className="h-[120px] lg:h-[200px] w-full" />
 
-      <RevealOnScroll className="w-full">
-        <CaseShowcaseSection items={cs.showcase} />
-      </RevealOnScroll>
+      <CaseShowcaseSection items={cs.showcase} />
 
       <div className="h-[120px] lg:h-[200px] w-full" />
 

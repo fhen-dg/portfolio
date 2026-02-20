@@ -33,6 +33,19 @@ export type CaseShowcaseItem = {
   imagePosition: "left" | "right";
 };
 
+export type CaseMetric = {
+  value: string;
+  label: string;
+};
+
+export type CaseMetrics = {
+  heading: string;
+  intro: string;
+  rows: CaseMetric[][];
+  conclusion: string;
+  footnote?: string;
+};
+
 export type ViramosCaseStudy = {
   slug: string;
   title: string;
@@ -57,6 +70,7 @@ export type ViramosCaseStudy = {
     items: CaseStrategyItem[];
   };
   showcase: CaseShowcaseItem[];
+  metrics: CaseMetrics;
   overview: {
     image: string;
     imageAlt: string;

@@ -146,6 +146,25 @@ const viramosCaseStudy: ViramosCaseStudy = {
       imagePosition: "right",
     },
   ],
+  metrics: {
+    heading: "Impact",
+    intro:
+      "Viramos evolved from MVP to operational infrastructure adopted by leading clubs across Latin America.",
+    rows: [
+      [
+        { value: "43.000", label: "Unique users" },
+        { value: "157.000", label: "Sessions" },
+      ],
+      [
+        { value: "81", label: "Championships" },
+        { value: "21", label: "Clubs & associations" },
+        { value: "5", label: "Countries (LATAM)" },
+      ],
+    ],
+    conclusion:
+      "Viramos operates today as the digital backbone for competitive sailing championships in the region.",
+    footnote: "2025 metrics",
+  },
   overview: {
     image: "/images/projects/viramos/ViramosUIOverview.png",
     imageAlt: "Viramos platform overview",
