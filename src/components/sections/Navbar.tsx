@@ -254,7 +254,7 @@ export function Navbar() {
             <Link href="/projects">{t.nav.projects}</Link>
           </Button>
           <Button variant="ghost" asChild>
-            <a href="#cv">{t.nav.cv}</a>
+            <Link href="/cv">{t.nav.cv}</Link>
           </Button>
 
           <div className="mx-3 flex h-6 items-center">

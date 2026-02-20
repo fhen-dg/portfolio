@@ -106,3 +106,48 @@ export type CaseStudy = {
     tools: string[];
   };
 };
+
+export type CVExperience = {
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  responsibilities: string[];
+  featuredProjects?: CVFeaturedProject[];
+  moreProjects?: CVMoreProject[];
+};
+
+export type CVEducation = {
+  degree: string;
+  institution: string;
+  period: string;
+  location: string;
+};
+
+export type CVFeaturedProject = {
+  name: string;
+  description: string;
+};
+
+export type CVMoreProject = {
+  name: string;
+  type?: string;
+};
+
+export type CVSkills = {
+  [category: string]: string[];
+};
+
+export type CVData = {
+  profile: {
+    image: string;
+    imageAlt: string;
+    name: string;
+    nickname: string;
+    role: string;
+  };
+  about: string[];
+  experience: CVExperience[];
+  education: CVEducation[];
+  skills: CVSkills;
+};
