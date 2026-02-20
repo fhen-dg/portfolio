@@ -5,8 +5,9 @@ export const primaryProjects: Project[] = [
     slug: "viramos",
     title: "Viramos",
     year: "2025",
-    coverImage: "https://www.figma.com/api/mcp/asset/95f49fc5-9cf7-40bc-afd8-74f4de1a0984",
-    coverImageAlt: "Viramos project cover",
+    coverImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
+    coverImageAlt: "Viramos – regatta operating system",
+    href: "/case/viramos",
   },
   {
     slug: "labor",

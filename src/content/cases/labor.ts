@@ -5,7 +5,7 @@ const laborCaseStudyEn: CaseStudy = {
   slug: "laborapp",
   title: "Labor",
   year: "2026",
-  heroImage: "https://www.figma.com/api/mcp/asset/230b1c08-3825-43dd-bb52-16be7b9ddbac",
+  heroImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
   heroImageAlt: "Labor – agricultural services marketplace",
   description:
     "A trust-critical platform that connects agricultural producers and contractors, enabling direct discovery and service publishing.",
@@ -131,13 +131,13 @@ const laborCaseStudyEn: CaseStudy = {
         "Guided service descriptions",
         "Peer reviews surfaced on profile",
       ],
-      image: "/images/projects/laborapp/TrustLoopImage.png",
+      image: "/images/projects/laborapp/LaborTrustLoop.png",
       imageAlt: "Lightweight trust loop",
       imagePosition: "right",
     },
   ],
   overview: {
-    image: "/images/projects/laborapp/UIOverview.png",
+    image: "/images/projects/laborapp/LaborUIOverview.png",
     imageAlt: "Labor platform overview",
     link: {
       label: "laborapp.com.ar",
@@ -161,7 +161,7 @@ const laborCaseStudyEs: CaseStudy = {
   slug: "laborapp",
   title: "Labor",
   year: "2026",
-  heroImage: "https://www.figma.com/api/mcp/asset/230b1c08-3825-43dd-bb52-16be7b9ddbac",
+  heroImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
   heroImageAlt: "Labor – marketplace de servicios agropecuarios",
   description:
     "Una plataforma diseñada para generar confianza entre productores y contratistas agropecuarios, facilitando la contratación directa sin intermediarios.",
@@ -282,13 +282,13 @@ const laborCaseStudyEs: CaseStudy = {
         "Descripciones guiadas",
         "Reseñas visibles en el perfil",
       ],
-      image: "/images/projects/laborapp/TrustLoopImage.png",
+      image: "/images/projects/laborapp/LaborTrustLoop.png",
       imageAlt: "Sistema de confianza simple",
       imagePosition: "right",
     },
   ],
   overview: {
-    image: "/images/projects/laborapp/UIOverview.png",
+    image: "/images/projects/laborapp/LaborUIOverview.png",
     imageAlt: "Resumen de la plataforma Labor",
     link: {
       label: "laborapp.com.ar",

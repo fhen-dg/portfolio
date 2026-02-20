@@ -20,7 +20,7 @@ export function CaseOverviewSection({
       <div className="flex flex-col gap-[40px] lg:gap-[52px] max-w-[960px] w-full">
         {image ? (
           <div className="relative w-full aspect-[16/9] rounded-[12px] overflow-hidden">
-            <Image src={image} alt={imageAlt} fill className="object-cover" />
+            <Image src={image} alt={imageAlt} fill className="object-contain" />
           </div>
         ) : (
           <div className="w-full aspect-[16/9] rounded-[12px]" />

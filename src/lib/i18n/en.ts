@@ -19,7 +19,7 @@ export const en: Translations = {
   },
   contact: {
     title: "Let's talk",
-    linkedin: "Linkedin",
+    linkedin: "LinkedIn",
     email: "Email",
     calendar: "Calendar",
   },
