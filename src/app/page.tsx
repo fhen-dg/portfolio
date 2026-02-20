@@ -1,17 +1,16 @@
-import { Button } from "@/components/ui/button";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { ContactFooter } from "@/components/sections/ContactFooter";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-        <h1 className="text-4xl font-bold text-center mb-4">
-          Welcome to My Portfolio
-        </h1>
-        <Button>Click me</Button>
-        <p className="text-center text-lg text-gray-600">
-          Built with Next.js, TypeScript, and Tailwind CSS
-        </p>
-      </div>
+    <main className="flex flex-col items-center px-5 py-[40px] lg:px-[72px]">
+      <HeroSection />
+      <div className="h-[120px] lg:h-[200px] w-full" />
+      <ProjectsSection />
+      <div className="h-[120px] lg:h-[200px] w-full" />
+      <ContactFooter />
+      <div className="h-[120px] w-full" />
     </main>
   );
 }
