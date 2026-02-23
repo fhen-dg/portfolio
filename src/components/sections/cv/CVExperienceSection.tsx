@@ -7,9 +7,8 @@ type ExperienceItem = {
   company: string;
   period: string;
   location: string;
+  summary?: string;
   responsibilities: string[];
-  featuredProjects?: Array<{ name: string; description: string }>;
-  moreProjects?: Array<{ name: string; type: string }>;
 };
 
 export function CVExperienceSection() {
@@ -18,23 +17,10 @@ export function CVExperienceSection() {
   const amalgamaExperience: ExperienceItem = {
     role: t.cv.experience.amalgama.role,
     company: "Amalgama",
-    period: "2020 – 2026",
-    location: "Buenos Aires",
+    period: t.cv.experience.amalgama.period,
+    location: t.cv.experience.amalgama.location,
+    summary: t.cv.experience.amalgama.summary,
     responsibilities: t.cv.experience.amalgama.responsibilities,
-    featuredProjects: [
-      { name: "Viramos", description: t.cv.experience.amalgama.featuredProjects.viramos },
-      { name: "Labor", description: t.cv.experience.amalgama.featuredProjects.labor },
-      { name: "Theo AI", description: t.cv.experience.amalgama.featuredProjects.theoAI },
-      { name: "Verybusy", description: t.cv.experience.amalgama.featuredProjects.verybusy },
-    ],
-    moreProjects: [
-      { name: "Qote", type: t.cv.experience.amalgama.moreProjects.qote },
-      { name: "VenueApp", type: t.cv.experience.amalgama.moreProjects.venueApp },
-      { name: "CoachRx", type: t.cv.experience.amalgama.moreProjects.coachRx },
-      { name: "Crypto Insights Group", type: t.cv.experience.amalgama.moreProjects.cryptoInsightsGroup },
-      { name: "Revealed Travel Guides", type: t.cv.experience.amalgama.moreProjects.revealedTravelGuides },
-      { name: "Wilco", type: t.cv.experience.amalgama.moreProjects.wilco },
-    ],
   };
 
   const freelanceExperience: ExperienceItem = {
@@ -42,6 +28,7 @@ export function CVExperienceSection() {
     company: "Freelance",
     period: "2023 – 2026",
     location: "Buenos Aires",
+    summary: t.cv.experience.freelance.summary,
     responsibilities: t.cv.experience.freelance.responsibilities,
   };
 
@@ -65,48 +52,19 @@ export function CVExperienceSection() {
               </p>
             </div>
 
-            {/* Responsibilities */}
-            <ul className="flex flex-col gap-[8px] items-start list-disc pl-4">
-              {job.responsibilities.map((responsibility, idx) => (
-                <li key={idx} className="body3 text-neutral-600">
-                  {responsibility}
-                </li>
-              ))}
-            </ul>
-
-            {/* Featured Projects */}
-            {job.featuredProjects && job.featuredProjects.length > 0 && (
-              <div className="flex flex-col gap-[12px] items-start w-full">
-                <h4 className="body3 text-neutral-500 text-left">{t.cv.sections.featuredProjects}</h4>
-                <div className="flex flex-col gap-[8px] items-start w-full">
-                  {job.featuredProjects.map((project, idx) => (
-                    <div key={idx} className="flex flex-col items-start gap-1 w-full">
-                      <span className="body3-bold text-neutral-800">{project.name}</span>
-                      <p className="body3 text-neutral-600">{project.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            {job.summary && (
+              <p className="body3 text-neutral-600">{job.summary}</p>
             )}
 
-            {/* More Projects */}
-            {job.moreProjects && job.moreProjects.length > 0 && (
-              <div className="flex flex-col gap-[12px] items-start w-full">
-                <h4 className="body3 text-neutral-500 text-left">{t.cv.sections.moreProjects}</h4>
-                <div className="flex flex-col gap-[8px] items-start w-full">
-                  {job.moreProjects.map((project, idx) => (
-                    <div key={idx} className="flex flex-wrap gap-[8px] items-start">
-                      <span className="body3 font-medium text-neutral-600">{project.name}</span>
-                      {project.type && (
-                        <>
-                          <span className="body3-bold text-neutral-500">•</span>
-                          <p className="body3 text-neutral-600">{project.type}</p>
-                        </>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
+            {/* Responsibilities */}
+            {job.responsibilities.length > 0 && (
+              <ul className="flex flex-col gap-[8px] items-start list-disc pl-4">
+                {job.responsibilities.map((responsibility, idx) => (
+                  <li key={idx} className="body3 text-neutral-600">
+                    {responsibility}
+                  </li>
+                ))}
+              </ul>
             )}
           </div>
         ))}
