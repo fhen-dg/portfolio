@@ -50,8 +50,8 @@ export type Translations = {
     sections: {
       about: string;
       experience: string;
-      featuredProjects: string;
-      moreProjects: string;
+      projects: string;
+      projectsOther: string;
       certifications: string;
     };
     profile: {
@@ -61,27 +61,27 @@ export type Translations = {
     experience: {
       amalgama: {
         role: string;
+        period: string;
+        location: string;
+        summary: string;
         responsibilities: string[];
-        featuredProjects: {
-          viramos: string;
-          labor: string;
-          theoAI: string;
-          verybusy: string;
-        };
-        moreProjects: {
-          qote: string;
-          venueApp: string;
-          coachRx: string;
-          cryptoInsightsGroup: string;
-          revealedTravelGuides: string;
-          wilco: string;
-        };
       };
       freelance: {
         role: string;
+        summary: string;
         responsibilities: string[];
       };
     };
+    projectsList: Array<{
+      name: string;
+      role: string;
+      year: string;
+      summary: string;
+      bullets: string[];
+      caseStudyLabel?: string;
+      caseStudyUrl?: string;
+    }>;
+    projectsOtherList: Array<{ name: string; type: string }>;
     education: {
       productStrategy: string;
       uiDesignSystems: string;
