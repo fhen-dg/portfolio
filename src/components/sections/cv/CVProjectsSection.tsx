@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useLocale } from "@/hooks/useLocale";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 export function CVProjectsSection() {
   const { t } = useLocale();
