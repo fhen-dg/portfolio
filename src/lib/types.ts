@@ -53,7 +53,11 @@ export type ViramosCaseStudy = {
   heroImage: string;
   heroImageAlt: string;
   description: string;
-  roles: string[];
+  snapshot: {
+    role: string;
+    duration: string;
+    team: string;
+  };
   opportunity: {
     body: RichTextSegment[];
   };
@@ -86,7 +90,11 @@ export type CaseStudy = {
   heroImage: string;
   heroImageAlt: string;
   description: string;
-  roles: string[];
+  snapshot: {
+    role: string;
+    duration: string;
+    team: string;
+  };
   problem: {
     body: RichTextSegment[];
   };

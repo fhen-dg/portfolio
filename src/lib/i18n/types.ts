@@ -39,6 +39,11 @@ export type Translations = {
     strategicAlignment: string;
     solution: string;
   };
+  caseSnapshot: {
+    role: string;
+    duration: string;
+    team: string;
+  };
   viramosSections: {
     opportunity: string;
     earlyValidation: string;

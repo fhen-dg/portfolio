@@ -9,11 +9,11 @@ const laborCaseStudyEn: CaseStudy = {
   heroImageAlt: "Labor – agricultural services marketplace",
   description:
     "A trust-critical platform that connects agricultural producers and contractors, enabling direct discovery and service publishing.",
-  roles: [
-    "Product strategy & design",
-    "Systems-driven UX and UI",
-    "End-to-end MVP delivery",
-  ],
+  snapshot: {
+    role: "Product Designer / Design Engineer",
+    duration: "2 months",
+    team: "Product Owner, Designer (me), Developer (for weekly consulting)",
+  },
   problem: {
     body: [
       { text: "Hiring agricultural services", emphasis: true },
@@ -165,11 +165,11 @@ const laborCaseStudyEs: CaseStudy = {
   heroImageAlt: "Labor – marketplace de servicios agropecuarios",
   description:
     "Una plataforma diseñada para generar confianza entre productores y contratistas agropecuarios, facilitando la contratación directa sin intermediarios.",
-  roles: [
-    "Estrategia y diseño de producto",
-    "UX y UI con enfoque sistémico",
-    "Desarrollo y entrega de MVP end-to-end",
-  ],
+  snapshot: {
+    role: "Product Designer / Design Engineer",
+    duration: "2 meses",
+    team: "Product Owner, Designer (yo), Developer (consultoría semanal)",
+  },
   problem: {
     body: [
       { text: "La contratación de servicios agropecuarios en Argentina es " },

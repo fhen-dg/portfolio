@@ -39,6 +39,11 @@ export const es: Translations = {
     strategicAlignment: "Alineación estratégica",
     solution: "La solución",
   },
+  caseSnapshot: {
+    role: "Rol",
+    duration: "Duración",
+    team: "Equipo",
+  },
   viramosSections: {
     opportunity: "La oportunidad",
     earlyValidation: "Validación temprana (fase no-code)",

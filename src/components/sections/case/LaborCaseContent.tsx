@@ -4,6 +4,7 @@ import { useLocale } from "@/hooks/useLocale";
 import { getLaborCaseStudy } from "@/content/cases/labor";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { CaseHeroSection } from "@/components/sections/case/CaseHeroSection";
+import { CaseSnapshotSection } from "@/components/sections/case/CaseSnapshotSection";
 import { CaseStatementSection } from "@/components/sections/case/CaseStatementSection";
 import { CaseDisplayBreakdownSection } from "@/components/sections/case/CaseDisplayBreakdownSection";
 import { CaseDescriptiveBreakdownSection } from "@/components/sections/case/CaseDescriptiveBreakdownSection";
@@ -25,7 +26,18 @@ export function LaborCaseContent() {
           heroImageAlt={cs.heroImageAlt}
           title={cs.title}
           description={cs.description}
-          roles={cs.roles}
+          year={cs.year}
+        />
+      </RevealOnScroll>
+
+      <div className="h-[80px] lg:h-[120px] w-full" />
+
+      <RevealOnScroll className="w-full">
+        <CaseSnapshotSection
+          labels={t.caseSnapshot}
+          role={cs.snapshot.role}
+          duration={cs.snapshot.duration}
+          team={cs.snapshot.team}
         />
       </RevealOnScroll>
 
