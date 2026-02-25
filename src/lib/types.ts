@@ -24,6 +24,10 @@ export type CaseResponsibilityIcon =
   | "square-code"
   | "component"
   | "layout-template"
+  | "workflow"
+  | "shield-check"
+  | "compass"
+  | "layers"
   | "network"
   | "bar-chart-3"
   | "sparkles";

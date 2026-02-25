@@ -11,9 +11,64 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
     "A multi-role regatta operating system connecting sailors, judges, clubs and associations across Latin America.",
   snapshot: {
     role: "Product Designer",
-    duration: "10 months",
+    duration: "11 months",
     team: "Product Owner, Scrum Master (part-time), Designer (me), Engineering team, QC",
   },
+  summary: [
+    { text: "Viramos is a " },
+    { text: "regatta management SaaS operative system", emphasis: true },
+    {
+      text: " used by sailing clubs and championship organizers across multiple countries.",
+    },
+    { type: "break", count: 2 },
+    { text: "After launching an initial " },
+    { text: "no-code MVP", emphasis: true },
+    {
+      text: ", it became clear that the system architecture could not support the operational complexity of large-scale championships.",
+    },
+    { type: "break", count: 2 },
+    { text: "The project evolved into a " },
+    { text: "full platform rebuild designed for scalability", emphasis: true },
+    {
+      text: ", supporting multi-stage competitions, regulatory workflows, and role-based operations.",
+    },
+  ],
+  responsibilities: [
+    {
+      icon: "layout-template",
+      title: "Product architecture",
+      description:
+        "Defined the championship lifecycle model, domain structure, and scalable interaction patterns.",
+    },
+    {
+      icon: "workflow",
+      title: "Workflow re-architecture",
+      description: "Re-structured complex competition flows into modular, role-aware systems.",
+    },
+    {
+      icon: "shield-check",
+      title: "Role & permission model",
+      description:
+        "Designed flexible role-based access layers to support overlapping operational responsibilities.",
+    },
+    {
+      icon: "component",
+      title: "Complete UI system",
+      description:
+        "Redesigned core screens and evolved the UI component system aligned with engineering constraints.",
+    },
+    {
+      icon: "compass",
+      title: "Field research & domain immersion",
+      description:
+        "Conducted on-site research during live championship events to validate operational realities.",
+    },
+    {
+      icon: "layers",
+      title: "Structural rebuild strategy",
+      description: "Played a key role in transitioning from MVP limitations to a scalable system architecture.",
+    },
+  ],
   opportunity: {
     body: [
       {
@@ -196,9 +251,66 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
     "Un sistema operativo para regatas multi-rol que conecta navegantes, jueces, clubes y asociaciones en toda Latinoamérica.",
   snapshot: {
     role: "Product Designer",
-    duration: "10 meses",
+    duration: "11 meses",
     team: "Product owner, Scrum master (part-time), Diseñador (yo), equipo de ingeniería, QC",
   },
+  summary: [
+    { text: "Viramos es un " },
+    { text: "sistema operativo SaaS de gestión de regatas", emphasis: true },
+    {
+      text: " utilizada por clubes de vela y organizadores de campeonatos en múltiples países.",
+    },
+    { type: "break", count: 2 },
+    { text: "Luego de lanzar un " },
+    { text: "MVP no-code", emphasis: true },
+    {
+      text: " inicial, quedó claro que la arquitectura del sistema no podía soportar la complejidad operativa de campeonatos a gran escala.",
+    },
+    { type: "break", count: 2 },
+    { text: "El proyecto evolucionó hacia una " },
+    { text: "reconstrucción completa de la plataforma diseñada para escalar", emphasis: true },
+    {
+      text: ", capaz de soportar competencias multi-etapa, flujos regulatorios y operaciones basadas en roles.",
+    },
+  ],
+  responsibilities: [
+    {
+      icon: "layout-template",
+      title: "Arquitectura de producto",
+      description:
+        "Definí el modelo del ciclo de vida del campeonato, la estructura de dominio y patrones de interacción escalables.",
+    },
+    {
+      icon: "workflow",
+      title: "Re-arquitectura de workflows",
+      description:
+        "Reestructuré flujos complejos de competencia en sistemas modulares y conscientes del rol.",
+    },
+    {
+      icon: "shield-check",
+      title: "Modelo de roles y permisos",
+      description:
+        "Diseñé capas de acceso flexibles basadas en roles para soportar responsabilidades operativas superpuestas.",
+    },
+    {
+      icon: "component",
+      title: "Sistema de UI completo",
+      description:
+        "Rediseñé pantallas clave y evolucioné el sistema de componentes alineado con restricciones de ingeniería.",
+    },
+    {
+      icon: "compass",
+      title: "Research de campo e inmersión de dominio",
+      description:
+        "Realicé investigación on-site durante eventos en vivo para validar realidades operativas.",
+    },
+    {
+      icon: "layers",
+      title: "Estrategia de reconstrucción estructural",
+      description:
+        "Cumplí un rol clave en la transición desde limitaciones del MVP hacia una arquitectura de sistema escalable.",
+    },
+  ],
   opportunity: {
     body: [
       {

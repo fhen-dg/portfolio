@@ -3,11 +3,15 @@ import { Separator } from "@/components/ui/separator";
 import type { LucideIcon } from "lucide-react";
 import {
   BarChart3,
+  Compass,
   Component as ComponentIcon,
   LayoutTemplate,
+  Layers,
   Network,
   Sparkles,
+  ShieldCheck,
   SquareCode,
+  Workflow,
 } from "lucide-react";
 
 export type CaseResponsibilitiesSectionProps = {
@@ -19,6 +23,10 @@ const iconByKey: Record<CaseResponsibilityIcon, LucideIcon> = {
   "square-code": SquareCode,
   component: ComponentIcon,
   "layout-template": LayoutTemplate,
+  workflow: Workflow,
+  "shield-check": ShieldCheck,
+  compass: Compass,
+  layers: Layers,
   network: Network,
   "bar-chart-3": BarChart3,
   sparkles: Sparkles,
