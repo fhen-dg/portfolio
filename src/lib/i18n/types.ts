@@ -35,9 +35,15 @@ export type Translations = {
   };
   caseSections: {
     problem: string;
+    responsibilities: string;
     complexities: string;
     strategicAlignment: string;
     solution: string;
+  };
+  caseSnapshot: {
+    role: string;
+    duration: string;
+    team: string;
   };
   viramosSections: {
     opportunity: string;

@@ -5,7 +5,7 @@ export type CaseHeroSectionProps = {
   heroImageAlt: string;
   title: string;
   description: string;
-  roles: string[];
+  year: string;
 };
 
 export function CaseHeroSection({
@@ -13,37 +13,32 @@ export function CaseHeroSection({
   heroImageAlt,
   title,
   description,
-  roles,
+  year,
 }: CaseHeroSectionProps) {
   return (
-    <section className="flex justify-center w-full">
-      <div className="flex flex-col gap-[28px] max-w-[960px] w-full h-[calc(100vh-140px)]">
+    <section className="flex justify-center w-full py-[20px]">
+      <div className="flex flex-col items-center gap-[24px] max-w-[960px] w-full">
         {heroImage ? (
-          <div className="relative w-full lg:min-h-[400px] min-h-[200px] h-[400px] rounded-[12px] overflow-hidden">
+          <div className="relative w-full rounded-[12px] overflow-hidden aspect-[634/447] lg:aspect-auto lg:h-[478px]">
             <Image
               src={heroImage}
               alt={heroImageAlt}
               fill
-              className="object-contain"
+              className="object-contain lg:object-contain"
               priority
             />
           </div>
         ) : (
-          <div className="w-full aspect-[2/1] rounded-[12px]" />
+          <div className="w-full rounded-[12px] bg-neutral-100 aspect-[634/447] lg:aspect-auto lg:h-[478px]" />
         )}
 
-        <div className="flex flex-col gap-[20px] h-full">
-          <h1 className="title2 lg:title1 text-neutral-800 text-center">{title}</h1>
-          <p className="body1 lg:supporting2 text-neutral-800 text-center">{description}</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-x-[16px] gap-y-[4px] md:body1 body3 text-neutral-600">
-            {roles.map((role, i) => (
-              <span key={i} className="flex items-center gap-[16px]">
-                {i > 0 && <span className="hidden lg:inline lg:body1 text-neutral-600">•</span>}
-                {role}
-              </span>
-            ))}
+        <div className="flex flex-col items-center text-center w-full gap-[44px] lg:gap-[40px]">
+          <div className="flex flex-col items-center w-full text-center gap-[12px] lg:gap-[20px]">
+            <h1 className="title2 lg:title1 text-neutral-800">{title}</h1>
+            <p className="body1 lg:supporting2 text-neutral-800">{description}</p>
           </div>
+          <p className="body3 lg:body1 text-neutral-600">{year}</p>
+        </div>
       </div>
     </section>
   );

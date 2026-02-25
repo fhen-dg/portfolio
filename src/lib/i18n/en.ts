@@ -35,9 +35,15 @@ export const en: Translations = {
   },
   caseSections: {
     problem: "The Problem",
+    responsibilities: "My Responsibilities",
     complexities: "Complexities",
     strategicAlignment: "Strategic Alignment",
     solution: "The Solution",
+  },
+  caseSnapshot: {
+    role: "Role",
+    duration: "Duration",
+    team: "Team",
   },
   viramosSections: {
     opportunity: "The Opportunity",

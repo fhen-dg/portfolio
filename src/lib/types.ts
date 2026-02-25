@@ -18,6 +18,20 @@ export type CaseComplexityItem = {
   description: string;
 };
 
+export type CaseResponsibilityIcon =
+  | "square-code"
+  | "component"
+  | "layout-template"
+  | "network"
+  | "bar-chart-3"
+  | "sparkles";
+
+export type CaseResponsibilityItem = {
+  icon: CaseResponsibilityIcon;
+  title: string;
+  description: string;
+};
+
 export type CaseStrategyItem = {
   title: string;
   description: string;
@@ -53,7 +67,12 @@ export type ViramosCaseStudy = {
   heroImage: string;
   heroImageAlt: string;
   description: string;
-  roles: string[];
+  snapshot: {
+    role: string;
+    duration: string;
+    team: string;
+  };
+  responsibilities?: CaseResponsibilityItem[];
   opportunity: {
     body: RichTextSegment[];
   };
@@ -86,7 +105,12 @@ export type CaseStudy = {
   heroImage: string;
   heroImageAlt: string;
   description: string;
-  roles: string[];
+  snapshot: {
+    role: string;
+    duration: string;
+    team: string;
+  };
+  responsibilities?: CaseResponsibilityItem[];
   problem: {
     body: RichTextSegment[];
   };

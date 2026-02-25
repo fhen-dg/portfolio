@@ -9,12 +9,11 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
   heroImageAlt: "Viramos – regatta operating system",
   description:
     "A multi-role regatta operating system connecting sailors, judges, clubs and associations across Latin America.",
-  roles: [
-    "Product design & strategy",
-    "System architecture",
-    "UX and UI",
-    "Code-aligned design system",
-  ],
+  snapshot: {
+    role: "Product Designer",
+    duration: "10 months",
+    team: "Product Owner, Scrum Master (part-time), Designer (me), Engineering team, QC",
+  },
   opportunity: {
     body: [
       {
@@ -195,12 +194,11 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
   heroImageAlt: "Viramos – sistema operativo para regatas",
   description:
     "Un sistema operativo para regatas multi-rol que conecta navegantes, jueces, clubes y asociaciones en toda Latinoamérica.",
-  roles: [
-    "Product design & strategy",
-    "Arquitectura de sistema",
-    "UX y UI",
-    "Design system alineado a código",
-  ],
+  snapshot: {
+    role: "Product Designer",
+    duration: "10 meses",
+    team: "Product owner, Scrum master (part-time), Diseñador (yo), equipo de ingeniería, QC",
+  },
   opportunity: {
     body: [
       {
