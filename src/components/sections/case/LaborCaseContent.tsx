@@ -5,6 +5,7 @@ import { getLaborCaseStudy } from "@/content/cases/labor";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { CaseHeroSection } from "@/components/sections/case/CaseHeroSection";
 import { CaseSnapshotSection } from "@/components/sections/case/CaseSnapshotSection";
+import { CaseResponsibilitiesSection } from "@/components/sections/case/CaseResponsibilitiesSection";
 import { CaseStatementSection } from "@/components/sections/case/CaseStatementSection";
 import { CaseDisplayBreakdownSection } from "@/components/sections/case/CaseDisplayBreakdownSection";
 import { CaseDescriptiveBreakdownSection } from "@/components/sections/case/CaseDescriptiveBreakdownSection";
@@ -41,6 +42,15 @@ export function LaborCaseContent() {
         />
       </RevealOnScroll>
 
+      <div className="h-[120px] md:h-[200px] w-full" />
+
+      <RevealOnScroll className="w-full">
+        <CaseResponsibilitiesSection
+          heading={t.caseSections.responsibilities}
+          items={cs.responsibilities ?? []}
+        />
+      </RevealOnScroll>
+
       <div className="h-[200px] md:h-[320px] w-full" />
 
       <RevealOnScroll className="w-full">
@@ -50,9 +60,9 @@ export function LaborCaseContent() {
         />
       </RevealOnScroll>
 
-      <div className="h-[120px] md:h-[200px] w-full" />
+      <div className="h-[120px] md:h-[200px] w-full hidden" />
 
-      <RevealOnScroll className="w-full">
+      <RevealOnScroll className="w-full hidden">
         <CaseDisplayBreakdownSection
           items={cs.complexities}
           heading={t.caseSections.complexities}
@@ -83,7 +93,7 @@ export function LaborCaseContent() {
 
       <CaseShowcaseSection items={cs.showcase} />
 
-      <div className="h-[120px] lg:h-[200px] w-full" />
+      <div className="h-[140px] lg:h-[260px] w-full" />
 
       <RevealOnScroll className="w-full">
         <CaseOverviewSection

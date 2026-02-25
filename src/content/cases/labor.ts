@@ -14,6 +14,38 @@ const laborCaseStudyEn: CaseStudy = {
     duration: "2 months",
     team: "Product Owner, Designer (me), Developer (for weekly consulting)",
   },
+  responsibilities: [
+    {
+      icon: "square-code",
+      title: "Vibe-coded implementation",
+      description: "Built 50% of all production features and layouts directly in code.",
+    },
+    {
+      icon: "component",
+      title: "Complete UI system",
+      description: "All screens and UI patterns designed in Figma.",
+    },
+    {
+      icon: "layout-template",
+      title: "Product architecture",
+      description: "Core domain model, flows, and interaction loop definition.",
+    },
+    {
+      icon: "network",
+      title: "Service taxonomy",
+      description: "Information structure and category logic for discovery.",
+    },
+    {
+      icon: "bar-chart-3",
+      title: "Validation metrics",
+      description: "Defined early activation signals with client marketing.",
+    },
+    {
+      icon: "sparkles",
+      title: "AI-assisted workflow",
+      description: "Used AI for copy, technical exploration, and iteration speed.",
+    },
+  ],
   problem: {
     body: [
       { text: "Hiring agricultural services", emphasis: true },
@@ -170,6 +202,39 @@ const laborCaseStudyEs: CaseStudy = {
     duration: "2 meses",
     team: "Product Owner, Designer (yo), Developer (consultoría semanal)",
   },
+  responsibilities: [
+    {
+      icon: "square-code",
+      title: "Implementación vibe-codeada",
+      description:
+        "Construí el 50% de todas las features y layouts de producción directamente en código.",
+    },
+    {
+      icon: "component",
+      title: "Sistema de UI completo",
+      description: "Diseñé todas las pantallas y patrones de UI en Figma.",
+    },
+    {
+      icon: "layout-template",
+      title: "Arquitectura de producto",
+      description: "Definición del modelo de dominio, flujos y loop de interacción.",
+    },
+    {
+      icon: "network",
+      title: "Taxonomía de servicios",
+      description: "Estructura de información y lógica de categorías para discovery.",
+    },
+    {
+      icon: "bar-chart-3",
+      title: "Métricas de validación",
+      description: "Definí señales tempranas de activación junto al equipo de marketing.",
+    },
+    {
+      icon: "sparkles",
+      title: "Workflow asistido por IA",
+      description: "Usé IA para copy, exploración técnica y acelerar iteración.",
+    },
+  ],
   problem: {
     body: [
       { text: "La contratación de servicios agropecuarios en Argentina es " },

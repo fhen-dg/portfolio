@@ -35,6 +35,7 @@ export type Translations = {
   };
   caseSections: {
     problem: string;
+    responsibilities: string;
     complexities: string;
     strategicAlignment: string;
     solution: string;

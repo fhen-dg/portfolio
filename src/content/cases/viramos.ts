@@ -12,7 +12,7 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
   snapshot: {
     role: "Product Designer",
     duration: "10 months",
-    team: "Product Owner, Scrum Master (part-time), Designer (me), Full Stack Developer, QC",
+    team: "Product Owner, Scrum Master (part-time), Designer (me), Engineering team, QC",
   },
   opportunity: {
     body: [
@@ -197,7 +197,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
   snapshot: {
     role: "Product Designer",
     duration: "10 meses",
-    team: "Product owner, Scrum master (part-time), Designer (yo), Full Stack Developer, QC",
+    team: "Product owner, Scrum master (part-time), Diseñador (yo), equipo de ingeniería, QC",
   },
   opportunity: {
     body: [

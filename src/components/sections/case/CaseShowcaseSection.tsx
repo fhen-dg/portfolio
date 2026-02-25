@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { CaseShowcaseItem } from "@/lib/types";
 import { AutoplayVideo } from "@/components/ui/AutoplayVideo";
+import { Separator } from "@/components/ui/separator";
 
 type CaseShowcaseSectionProps = {
   items: CaseShowcaseItem[];
@@ -67,9 +68,16 @@ function ShowcaseItem({
 export function CaseShowcaseSection({ items }: CaseShowcaseSectionProps) {
   return (
     <section className="flex justify-center w-full">
-      <div className="flex flex-col gap-[104px] lg:gap-[120px] max-w-[960px] w-full">
+      <div className="flex flex-col max-w-[960px] w-full">
         {items.map((item, i) => (
-          <ShowcaseItem key={i} item={item} index={i} />
+          <div key={`${item.title}-${i}`} className="flex flex-col">
+            <ShowcaseItem item={item} index={i} />
+            {i < items.length - 1 ? (
+              <div className="my-[52px] lg:my-[60px]">
+                <Separator className="bg-neutral-400" />
+              </div>
+            ) : null}
+          </div>
         ))}
       </div>
     </section>
