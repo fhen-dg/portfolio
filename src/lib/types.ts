@@ -13,6 +13,8 @@ export type RichTextSegment = {
   emphasis?: boolean;
 };
 
+export type CaseSummaryContentItem = (RichTextSegment & { type?: never }) | { type: "break"; count?: number };
+
 export type CaseComplexityItem = {
   title: string;
   description: string;
@@ -72,6 +74,7 @@ export type ViramosCaseStudy = {
     duration: string;
     team: string;
   };
+  summary?: CaseSummaryContentItem[];
   responsibilities?: CaseResponsibilityItem[];
   opportunity: {
     body: RichTextSegment[];
@@ -110,6 +113,7 @@ export type CaseStudy = {
     duration: string;
     team: string;
   };
+  summary?: CaseSummaryContentItem[];
   responsibilities?: CaseResponsibilityItem[];
   problem: {
     body: RichTextSegment[];

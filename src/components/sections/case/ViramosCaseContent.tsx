@@ -5,6 +5,7 @@ import { getViramosCaseStudy } from "@/content/cases/viramos";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { CaseHeroSection } from "@/components/sections/case/CaseHeroSection";
 import { CaseSnapshotSection } from "@/components/sections/case/CaseSnapshotSection";
+import { CaseSummarySection } from "@/components/sections/case/CaseSummarySection";
 import { CaseResponsibilitiesSection } from "@/components/sections/case/CaseResponsibilitiesSection";
 import { CaseStatementSection } from "@/components/sections/case/CaseStatementSection";
 import { CaseDisplayBreakdownSection } from "@/components/sections/case/CaseDisplayBreakdownSection";
@@ -43,9 +44,19 @@ export function ViramosCaseContent() {
         />
       </RevealOnScroll>
 
+      {cs.summary?.length ? (
+        <>
+          <div className="h-[200px] md:h-[320px] w-full" />
+
+          <RevealOnScroll className="w-full">
+            <CaseSummarySection items={cs.summary} />
+          </RevealOnScroll>
+        </>
+      ) : null}
+
       {cs.responsibilities?.length ? (
         <>
-          <div className="h-[120px] md:h-[200px] w-full" />
+          <div className="h-[160px] md:h-[280px] w-full" />
 
           <RevealOnScroll className="w-full">
             <CaseResponsibilitiesSection

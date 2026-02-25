@@ -5,6 +5,7 @@ import { getLaborCaseStudy } from "@/content/cases/labor";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { CaseHeroSection } from "@/components/sections/case/CaseHeroSection";
 import { CaseSnapshotSection } from "@/components/sections/case/CaseSnapshotSection";
+import { CaseSummarySection } from "@/components/sections/case/CaseSummarySection";
 import { CaseResponsibilitiesSection } from "@/components/sections/case/CaseResponsibilitiesSection";
 import { CaseStatementSection } from "@/components/sections/case/CaseStatementSection";
 import { CaseDisplayBreakdownSection } from "@/components/sections/case/CaseDisplayBreakdownSection";
@@ -42,7 +43,13 @@ export function LaborCaseContent() {
         />
       </RevealOnScroll>
 
-      <div className="h-[120px] md:h-[200px] w-full" />
+      <div className="h-[200px] md:h-[320px] w-full" />
+
+      <RevealOnScroll className="w-full">
+        <CaseSummarySection items={cs.summary ?? []} />
+      </RevealOnScroll>
+
+      <div className="h-[160px] md:h-[280px] w-full" />
 
       <RevealOnScroll className="w-full">
         <CaseResponsibilitiesSection

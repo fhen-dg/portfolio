@@ -57,7 +57,7 @@ export function CaseResponsibilitiesSection({ heading, items }: CaseResponsibili
   return (
     <section className="flex justify-center w-full">
       <div className="flex flex-col gap-[40px] md:gap-[60px] max-w-[960px] w-full">
-        <h2 className="title3 md:title1 text-neutral-800 text-center">{heading}</h2>
+        <h2 className="title3 md:title1 text-neutral-800 text-left md:text-center">{heading}</h2>
 
         {/* Mobile: 1 per row + separators between items */}
         <div className="md:hidden flex flex-col gap-[20px] w-full">

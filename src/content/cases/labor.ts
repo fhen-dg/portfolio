@@ -14,6 +14,24 @@ const laborCaseStudyEn: CaseStudy = {
     duration: "2 months",
     team: "Product Owner, Designer (me), Developer (for weekly consulting)",
   },
+  summary: [
+    { text: "Labor is a " },
+    { text: "0→1 marketplace MVP", emphasis: true },
+    {
+      text: " built to validate whether a fragmented agricultural service market could be transformed into a structured digital interaction model.",
+    },
+    { type: "break", count: 2 },
+    { text: "Built in 2 months", emphasis: true },
+    { text: ", the MVP centered around one core loop:" },
+    { type: "break" },
+    { text: "Publish service → Discover providers → Initiate direct contact" },
+    { type: "break", count: 2 },
+    { text: "With " },
+    { text: "early validation metrics", emphasis: true },
+    { text: " defined with the client to assess whether this loop generated " },
+    { text: "real engagement", emphasis: true },
+    { text: "." },
+  ],
   responsibilities: [
     {
       icon: "square-code",
@@ -202,6 +220,24 @@ const laborCaseStudyEs: CaseStudy = {
     duration: "2 meses",
     team: "Product Owner, Designer (yo), Developer (consultoría semanal)",
   },
+  summary: [
+    { text: "Labor es un " },
+    { text: "MVP 0→1 de marketplace", emphasis: true },
+    {
+      text: " creado para validar si un mercado fragmentado de servicios agropecuarios podía transformarse en un modelo de interacción digital estructurado.",
+    },
+    { type: "break", count: 2 },
+    { text: "Construido en 2 meses", emphasis: true },
+    { text: ", el MVP se centró en un loop central:" },
+    { type: "break" },
+    { text: "Publicar servicio → Descubrir proveedores → Iniciar contacto directo" },
+    { type: "break", count: 2 },
+    { text: "Con " },
+    { text: "métricas de validación temprana", emphasis: true },
+    { text: " definidas junto al cliente para evaluar si este loop generaba " },
+    { text: "engagement real", emphasis: true },
+    { text: "." },
+  ],
   responsibilities: [
     {
       icon: "square-code",
