@@ -105,7 +105,7 @@ export function Navbar() {
               <Languages />
             </IconButton>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="start">
+          <DropdownMenuContent align="end">
             {languageOptions}
           </DropdownMenuContent>
         </DropdownMenu>
@@ -222,33 +222,39 @@ export function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-neutral-400 bg-white/80 backdrop-blur-[50px]">
+    <header className="sticky top-0 z-50 w-full border-b border-neutral-400 bg-neutral-white">
       {/* ── Mobile nav (< md) ── */}
-      <nav className="relative flex items-center justify-between p-5 md:hidden">
-        {/* Left: hamburger + separator + language */}
-        <div className="flex items-center gap-1">
+      <nav className="flex items-center justify-between p-5 md:hidden">
+        {/* Left: logo */}
+        <Logo />
+
+        {/* Right: menu + language + contact */}
+        <div className="flex items-center">
           <MobileMenuSheet />
 
-          <div className="mx-3 flex h-6 items-center">
+          <div className="mx-2 flex h-6 items-center">
             <Separator orientation="vertical" className="bg-neutral-400" />
           </div>
 
           <LanguageSwitcher />
-        </div>
 
-        {/* Center: logo */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <Logo />
-        </div>
+          <div className="mx-2 flex h-6 items-center">
+            <Separator orientation="vertical" className="bg-neutral-400" />
+          </div>
 
-        {/* Right: contact icon */}
-        <ContactMenu />
+          <div className="pl-2">
+            <ContactMenu />
+          </div>
+        </div>
       </nav>
 
       {/* ── Desktop nav (≥ md) ── */}
-      <nav className="relative hidden items-center justify-between px-[72px] py-5 md:flex">
-        {/* Left: nav links + separator + language */}
-        <div className="flex items-center gap-1">
+      <nav className="hidden items-center justify-between px-[72px] py-5 md:flex">
+        {/* Left: logo */}
+        <Logo />
+
+        {/* Right: nav links + language + contact */}
+        <div className="flex items-center">
           <Button variant="ghost" asChild>
             <Link href="/projects">{t.nav.projects}</Link>
           </Button>
@@ -261,15 +267,15 @@ export function Navbar() {
           </div>
 
           <LanguageSwitcher />
-        </div>
 
-        {/* Center: logo */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <Logo />
-        </div>
+          <div className="mx-3 flex h-6 items-center">
+            <Separator orientation="vertical" className="bg-neutral-400" />
+          </div>
 
-        {/* Right: contact button */}
-        <ContactMenu />
+          <div className="pl-3">
+            <ContactMenu />
+          </div>
+        </div>
       </nav>
     </header>
   );
