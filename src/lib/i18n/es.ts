@@ -75,7 +75,7 @@ export const es: Translations = {
         period: "Ago 2020 – Ene 2026",
         location: "Buenos Aires (Híbrido)",
         summary:
-          "Lideré el diseño y la entrega de 10+ productos digitales técnicamente complejos para startups de EE. UU. y LATAM — plataformas SaaS, marketplaces y sistemas impulsados por IA — gestionando el proceso end-to-end desde la arquitectura del sistema hasta el despliegue en producción.",
+          "Lideré el diseño y la entrega de más de 10 productos digitales técnicamente complejos para startups de EE. UU. y LATAM — plataformas SaaS, marketplaces y sistemas impulsados por IA — gestionando el proceso end-to-end desde la arquitectura del sistema hasta el despliegue en producción.",
         responsibilities: [
           "Lideré iniciativas de producto end-to-end, desde la definición del problema y discovery hasta el diseño de arquitectura, modelado de interacciones e implementación en producción.",
           "Definí arquitecturas de producto y sistemas de diseño escalables, alineados con restricciones técnicas y mantenibilidad a largo plazo.",
