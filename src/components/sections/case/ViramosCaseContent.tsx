@@ -78,16 +78,22 @@ export function ViramosCaseContent() {
         />
       </RevealOnScroll>
 
-      <div className="h-[120px] md:h-[200px] w-full" />
+      {cs.earlyValidation?.length ? (
+        <>
+          <div className="h-[120px] md:h-[200px] w-full" />
 
-      <RevealOnScroll className="w-full">
-        <CaseDisplayBreakdownSection
-          items={cs.earlyValidation}
-          heading={t.viramosSections.earlyValidation}
-        />
-      </RevealOnScroll>
+          <RevealOnScroll className="w-full">
+            <CaseDisplayBreakdownSection
+              items={cs.earlyValidation}
+              heading={t.viramosSections.earlyValidation}
+            />
+          </RevealOnScroll>
 
-      <div className="h-[200px] lg:h-[320px] w-full" />
+          <div className="h-[200px] lg:h-[320px] w-full" />
+        </>
+      ) : (
+        <div className="h-[200px] lg:h-[320px] w-full" />
+      )}
 
       <RevealOnScroll className="w-full">
         <CaseDescriptiveBreakdownSection

@@ -29,8 +29,10 @@ export type CaseResponsibilityIcon =
   | "compass"
   | "layers"
   | "network"
+  | "database"
   | "bar-chart-3"
-  | "sparkles";
+  | "sparkles"
+  | "lightbulb";
 
 export type CaseResponsibilityItem = {
   icon: CaseResponsibilityIcon;
@@ -83,7 +85,7 @@ export type ViramosCaseStudy = {
   opportunity: {
     body: RichTextSegment[];
   };
-  earlyValidation: CaseComplexityItem[];
+  earlyValidation?: CaseComplexityItem[];
   contextImmersion: {
     intro: string;
     items: CaseStrategyItem[];

@@ -2,14 +2,15 @@ import type { Translations } from "@/lib/i18n/types";
 
 export const en: Translations = {
   meta: {
-    title: "Fhen – Product Designer",
-    description: "Product designer from Buenos Aires",
+    title: "Fhen – Senior Product Designer",
+    description:
+      "Senior Product Designer with 5+ years building complex technical products — SaaS platforms, role-based systems, and AI-driven tools — from architecture to production code.",
   },
   hero: {
     introPrefix: "I'm Federico, but people call me ",
-    heading: "I design purposeful digital products.",
-    tagline: "From deep problem understanding to production-ready execution.",
-    role: "Product Designer",
+    heading: "I design systems, not just interfaces.",
+    tagline: "System architecture, design systems, and production-ready code.",
+    role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },
   nav: {
@@ -64,9 +65,9 @@ export const en: Translations = {
       role: "Senior Product Designer in Buenos Aires, Argentina",
     },
     about: [
-      "Senior Product Designer with 5+ years of experience designing digital products for U.S. and LATAM startups and mid-size companies.",
-      "I operate at the intersection of product, design, and engineering, leveraging AI strategically across the full product lifecycle, from problem framing and research synthesis to prototyping, validation, and production-level implementation.",
-      "I actively vibecode functional prototypes and production features using modern web tooling and AI-assisted development, accelerating iteration and reducing dependency on traditional handoff cycles.",
+      "Senior Product Designer with 5+ years building complex technical products for U.S. and LATAM startups — SaaS platforms, AI systems, and technically demanding software at scale.",
+      "I think in systems: role-based architectures, permission models, and scalable interaction patterns for products where operational complexity is the baseline. I connect user needs, engineering constraints, and business goals into decisions that hold at scale.",
+      "I vibecode production features using Next.js, Vercel, and AI-assisted tooling — shipping design decisions directly in code and eliminating traditional handoff cycles.",
     ],
     experience: {
       amalgama: {
@@ -74,7 +75,7 @@ export const en: Translations = {
         period: "Aug 2020 – Jan 2026",
         location: "Buenos Aires (Hybrid)",
         summary:
-          "Led and contributed to the design and delivery of 10+ digital products across US and LATAM startups and mid-size companies, spanning SaaS platforms, marketplaces, and AI-driven systems.",
+          "Led design and delivery of 10+ technically complex digital products for US and LATAM startups — SaaS platforms, marketplaces, and AI-driven systems — owning end-to-end process from system architecture through production deployment.",
         responsibilities: [
           "Led end-to-end product initiatives from problem definition and discovery through system architecture design, interaction modeling, and production deployment.",
           "Defined scalable product architectures and design systems aligned with engineering constraints and long-term maintainability.",
@@ -97,12 +98,12 @@ export const en: Translations = {
         role: "Product Designer / Design Engineer",
         year: "2026",
         summary:
-          "Co-defined and co-built a 0→1 marketplace MVP connecting agricultural producers and contractors in Argentina.",
+          "Co-designed and vibecoded a 0→1 marketplace MVP end-to-end — built in 2 months on Next.js, deployed on Vercel, with Supabase (Postgres via Vercel integration), Clerk auth, and Google Maps.",
         bullets: [
-          "Designed the full product architecture, service taxonomy, complete UI system, and core marketplace interaction model.",
-          "Vibecoded the complete MVP alongside a Product Owner, building all core features and layouts directly in code.",
-          "Implemented end-to-end product functionality using Next.js, Vercel, Vercel Blob, Clerk, Postgres, and Google Maps integrations.",
-          "Defined and aligned early-stage validation metrics with client marketing teams to measure user engagement and transaction signals.",
+          "Designed full product architecture, service taxonomy, UI system, and core marketplace interaction model.",
+          "Built 50% of all production features directly in code using Next.js, Cursor, and AI-assisted workflows.",
+          "Fully integrated Vercel Blob (asset pipeline), Supabase via Vercel integration (Postgres), and Clerk (auth) — owning the complete infrastructure layer end-to-end.",
+          "Defined early validation metrics with client marketing: listing creation rate, contact initiation, and return visit signals.",
         ],
         caseStudyLabel: "See case study",
         caseStudyUrl: "/case/laborapp",
@@ -112,12 +113,12 @@ export const en: Translations = {
         role: "Product Designer",
         year: "2025",
         summary:
-          "Redesigned the core architecture of a regatta management SaaS used by sailing clubs and championship organizers.",
+          "Led the full architectural redesign of a multi-role operational SaaS — from a no-code MVP to a scalable, role-based permission system rebuilt in Next.js with a shadcn design system.",
         bullets: [
-          "Re-structured platform workflows into a role-based, lifecycle-driven system aligned with real-world operational complexity.",
-          "Defined scalable interaction models to support multi-stage championships and regulatory processes.",
-          "Conducted on-site field research during live championship events to validate constraints and workflow realities.",
-          "Designed and architected core workflows for a platform supporting 80+ championship events, serving 40k+ registered participants and 150k+ sessions.",
+          "Designed a role-based permission architecture mapping explicit authority, visibility rules, and decision boundaries across multiple overlapping operational roles.",
+          "Re-structured complex multi-stage workflows into modular, lifecycle-driven systems supporting regulatory processes and structured data traceability.",
+          "Built with Next.js and a shadcn-based design system ensuring direct component parity between design and frontend implementation.",
+          "Shipped production platform now supporting 81 championships and 43k+ users across 5 LATAM countries.",
         ],
         caseStudyLabel: "See case study",
         caseStudyUrl: "/case/viramos",

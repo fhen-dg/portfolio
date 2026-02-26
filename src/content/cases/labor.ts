@@ -8,7 +8,7 @@ const laborCaseStudyEn: CaseStudy = {
   heroImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
   heroImageAlt: "Labor – agricultural services marketplace",
   description:
-    "A trust-critical platform that connects agricultural producers and contractors, enabling direct discovery and service publishing.",
+    "A 0→1 marketplace built in 2 months and shipped to production — vibecoded on Next.js, deployed on Vercel, with Vercel Blob, Supabase, Clerk auth, and Google Maps integration.",
   snapshot: {
     role: "Product Designer / Design Engineer",
     duration: "2 months",
@@ -17,14 +17,11 @@ const laborCaseStudyEn: CaseStudy = {
   summary: [
     { text: "Labor is a " },
     { text: "0→1 marketplace MVP", emphasis: true },
-    {
-      text: " built to validate whether a fragmented agricultural service market could be transformed into a structured digital interaction model.",
-    },
+    { text: " — a structured digital interaction model built to validate a core hypothesis." },
     { type: "break", count: 2 },
-    { text: "Built in 2 months", emphasis: true },
-    { text: ", the MVP centered around one core loop:" },
+    { text: "The MVP centered around one core loop:" },
     { type: "break" },
-    { text: "Publish service → Discover providers → Initiate direct contact" },
+    { text: "Publish service → Discover providers → Initiate direct contact", emphasis: true },
     { type: "break", count: 2 },
     { text: "With " },
     { text: "early validation metrics", emphasis: true },
@@ -36,42 +33,46 @@ const laborCaseStudyEn: CaseStudy = {
     {
       icon: "square-code",
       title: "Vibe-coded implementation",
-      description: "Built 50% of all production features and layouts directly in code.",
+      description: "Built 50% of all production features directly in code, including auth flows, publishing forms, geo-filtered search, and all third-party integrations.",
     },
     {
       icon: "component",
       title: "Complete UI system",
-      description: "All screens and UI patterns designed in Figma.",
+      description: "All screens and UI patterns designed in Figma, aligned with shadcn components used in production, ensuring direct parity between design and implementation.",
     },
     {
       icon: "layout-template",
       title: "Product architecture",
-      description: "Core domain model, flows, and interaction loop definition.",
+      description: "Defined the core domain model, user flows, and interaction loop, structuring the entire platform around a single publish-discover-contact cycle.",
+    },
+    {
+      icon: "database",
+      title: "Data model design",
+      description: "Designed the database schema: table structure, entity relationships, and data architecture aligned with the platform's service taxonomy and user flows.",
     },
     {
       icon: "network",
       title: "Service taxonomy",
-      description: "Information structure and category logic for discovery.",
-    },
-    {
-      icon: "bar-chart-3",
-      title: "Validation metrics",
-      description: "Defined early activation signals with client marketing.",
+      description: "Designed the information hierarchy and category logic for filtering services by type and geolocation, making results immediately actionable for users in specific regions.",
     },
     {
       icon: "sparkles",
       title: "AI-assisted workflow",
-      description: "Used AI for copy, technical exploration, and iteration speed.",
+      description: "Used AI to research stack decisions, explore technical architecture, and accelerate iteration, including identifying and proposing Vercel Blob as the asset pipeline solution.",
+    },
+    {
+      icon: "bar-chart-3",
+      title: "Validation metrics",
+      description: "Aligned with client marketing to define early activation signals: listing creation rate, contact initiation, and return visits, measuring whether the core loop generated real engagement.",
     },
   ],
   problem: {
     body: [
-      { text: "Hiring agricultural services", emphasis: true },
-      { text: " in Argentina is still " },
-      { text: "fragmented and informal. ", emphasis: true },
-      { text: "Producers struggle to " },
-      { text: "find reliable services, ", emphasis: true },
-      { text: "while contractors lack visibility and consistent demand." },
+      { text: "A fragmented market with " },
+      { text: "no structured interaction model, ", emphasis: true },
+      { text: "fluid user roles, and a " },
+      { text: "trust gap to bridge", emphasis: true },
+      { text: " — without the safety net of intermediaries, established patterns, or extended timelines." },
     ],
   },
   complexities: [
@@ -89,11 +90,6 @@ const laborCaseStudyEn: CaseStudy = {
       title: "Location-based discovery",
       description:
         "Services needed to be relevant to where users actually operate, not just what they offer.",
-    },
-    {
-      title: "Domain-specific logic",
-      description:
-        "Agricultural services required understanding nuanced concepts to design flows that made sense for people working in the field.",
     },
     {
       title: "Trust without intermediaries",
@@ -118,7 +114,7 @@ const laborCaseStudyEn: CaseStudy = {
       {
         title: "Design for technical feasibility & speed",
         description:
-          "We scoped the MVP to what the stack could support — Clerk for auth, Vercel Blob for media, and Google Maps for location — without sacrificing the core experience.",
+          "We scoped the MVP around Vercel's native integrations — Vercel Blob for the full asset pipeline (self-integrated), Supabase via Vercel integration for Postgres, Clerk for auth, and Google Maps for location — without sacrificing the core experience.",
       },
       {
         title: "Validation-centric metrics",
@@ -129,11 +125,9 @@ const laborCaseStudyEn: CaseStudy = {
   },
   solution: {
     body: [
-      { text: "Labor is a " },
+      { text: "A " },
       { text: "fluid participation marketplace", emphasis: true },
-      {
-        text: " where agricultural producers and contractors discover and connect directly. A ",
-      },
+      { text: " where role is defined by context, not pre-selection. A " },
       {
         text: "guided publishing flow with service & location-based discovery",
         emphasis: true,
@@ -199,10 +193,13 @@ const laborCaseStudyEn: CaseStudy = {
       "Notion",
       "Google Workspace",
       "Slack",
+      "Next.js",
+      "Vercel",
+      "Supabase",
+      "Clerk",
       "GPT",
       "Cursor",
       "Github",
-      "Vercel",
     ],
   },
 };
@@ -223,14 +220,11 @@ const laborCaseStudyEs: CaseStudy = {
   summary: [
     { text: "Labor es un " },
     { text: "MVP 0→1 de marketplace", emphasis: true },
-    {
-      text: " creado para validar si un mercado fragmentado de servicios agropecuarios podía transformarse en un modelo de interacción digital estructurado.",
-    },
+    { text: " — un modelo de interacción digital estructurado construido para validar una hipótesis central." },
     { type: "break", count: 2 },
-    { text: "Construido en 2 meses", emphasis: true },
-    { text: ", el MVP se centró en un loop central:" },
+    { text: "El MVP se centró en un loop central:" },
     { type: "break" },
-    { text: "Publicar servicio → Descubrir proveedores → Iniciar contacto directo" },
+    { text: "Publicar servicio → Descubrir proveedores → Iniciar contacto directo", emphasis: true },
     { type: "break", count: 2 },
     { text: "Con " },
     { text: "métricas de validación temprana", emphasis: true },
@@ -243,42 +237,46 @@ const laborCaseStudyEs: CaseStudy = {
       icon: "square-code",
       title: "Implementación vibe-codeada",
       description:
-        "Construí el 50% de todas las features y layouts de producción directamente en código.",
+        "Construí el 50% de todas las features de producción directamente en código, incluyendo flujos de auth, formularios de publicación, búsqueda con filtro geográfico y todas las integraciones.",
     },
     {
       icon: "component",
       title: "Sistema de UI completo",
-      description: "Diseñé todas las pantallas y patrones de UI en Figma.",
+      description: "Diseñé todas las pantallas y patrones de UI en Figma, alineados con los componentes shadcn usados en producción, asegurando paridad directa entre diseño e implementación.",
     },
     {
       icon: "layout-template",
       title: "Arquitectura de producto",
-      description: "Definición del modelo de dominio, flujos y loop de interacción.",
+      description: "Definí el modelo de dominio, flujos de usuario y loop de interacción, estructurando la plataforma alrededor de un único ciclo publicar-descubrir-contactar.",
+    },
+    {
+      icon: "database",
+      title: "Diseño del modelo de datos",
+      description: "Diseñé el schema de base de datos: estructura de tablas, relaciones entre entidades y arquitectura de datos alineada con la taxonomía de servicios y los flujos de usuario.",
     },
     {
       icon: "network",
       title: "Taxonomía de servicios",
-      description: "Estructura de información y lógica de categorías para discovery.",
-    },
-    {
-      icon: "bar-chart-3",
-      title: "Métricas de validación",
-      description: "Definí señales tempranas de activación junto al equipo de marketing.",
+      description: "Diseñé la jerarquía de información y lógica de categorías para filtrar servicios por tipo y geolocalización, haciendo los resultados inmediatamente accionables para usuarios en regiones específicas.",
     },
     {
       icon: "sparkles",
       title: "Workflow asistido por IA",
-      description: "Usé IA para copy, exploración técnica y acelerar iteración.",
+      description: "Usé IA para investigar decisiones de stack, explorar arquitectura técnica y acelerar iteración, incluyendo identificar y proponer Vercel Blob como solución para el pipeline de assets.",
+    },
+    {
+      icon: "bar-chart-3",
+      title: "Métricas de validación",
+      description: "Alineé con el equipo de marketing para definir señales tempranas de activación: tasa de publicación, inicio de contacto y visitas recurrentes, midiendo si el core loop generaba engagement real.",
     },
   ],
   problem: {
     body: [
-      { text: "La contratación de servicios agropecuarios en Argentina es " },
-      { text: "fragmentada e informal. ", emphasis: true },
-      { text: "Los productores " },
-      { text: "no encuentran servicios confiables", emphasis: true },
-      { text: " y los contratistas " },
-      { text: "carecen de visibilidad y demanda constante.", emphasis: true },
+      { text: "Un mercado fragmentado " },
+      { text: "sin modelo de interacción estructurado, ", emphasis: true },
+      { text: "roles de usuario fluidos y una " },
+      { text: "brecha de confianza por resolver", emphasis: true },
+      { text: " — sin intermediarios, patrones establecidos ni plazos extendidos." },
     ],
   },
   complexities: [
@@ -296,11 +294,6 @@ const laborCaseStudyEs: CaseStudy = {
       title: "Descubrimiento basado en ubicación",
       description:
         "Los servicios debían ser relevantes en función de dónde operan los usuarios, no solo en función de lo que ofrecen.",
-    },
-    {
-      title: "Lógica específica del dominio",
-      description:
-        "Los servicios agropecuarios implican comprender conceptos técnicos y matices propios del sector para diseñar flujos coherentes con la realidad del campo.",
     },
     {
       title: "Confianza sin intermediarios",
@@ -401,10 +394,13 @@ const laborCaseStudyEs: CaseStudy = {
       "Notion",
       "Google Workspace",
       "Slack",
+      "Next.js",
+      "Vercel",
+      "Supabase",
+      "Clerk",
       "GPT",
       "Cursor",
       "Github",
-      "Vercel",
     ],
   },
 };

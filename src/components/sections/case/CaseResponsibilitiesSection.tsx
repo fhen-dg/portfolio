@@ -5,8 +5,10 @@ import {
   BarChart3,
   Compass,
   Component as ComponentIcon,
+  Database,
   LayoutTemplate,
   Layers,
+  Lightbulb,
   Network,
   Sparkles,
   ShieldCheck,
@@ -28,8 +30,10 @@ const iconByKey: Record<CaseResponsibilityIcon, LucideIcon> = {
   compass: Compass,
   layers: Layers,
   network: Network,
+  database: Database,
   "bar-chart-3": BarChart3,
   sparkles: Sparkles,
+  lightbulb: Lightbulb,
 };
 
 function chunkBy<T>(items: T[], size: number): T[][] {

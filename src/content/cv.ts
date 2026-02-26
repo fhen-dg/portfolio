@@ -9,9 +9,9 @@ export const cvData: CVData = {
     role: "Senior Product Designer in Buenos Aires, Argentina",
   },
   about: [
-    "Senior Product Designer with 5+ years of experience designing digital products for U.S. and LATAM startups and mid-size companies.",
-    "I work at the intersection of design, strategy, and technology, bridging user needs, business goals, and technical feasibility.",
-    "I am experienced in research, UX/UI design, design systems, and AI-driven products across diverse industries such as wellness, fintech, real estate, and legal tech. I am passionate about building meaningful products with real impact.",
+    "Senior Product Designer with 5+ years building complex technical products for U.S. and LATAM startups — SaaS platforms, AI systems, and technically demanding software at scale.",
+    "I think in systems: role-based architectures, permission models, and scalable interaction patterns are my natural territory. I bring structure to operational complexity and translate it into interfaces that work in the real world.",
+    "I vibecode production features directly in Next.js using AI-assisted workflows, eliminating handoff cycles and shipping design decisions at engineering speed.",
   ],
   experience: [
     {
@@ -20,9 +20,9 @@ export const cvData: CVData = {
       period: "2020 – 2026",
       location: "Buenos Aires",
       responsibilities: [
-        "Led and contributed to the UX/UI design of 10+ digital products, owning the process end-to-end from discovery through delivery and continuous iteration. Collaborated closely with product and engineering to define viable solutions and ensured smooth handoff and implementation.",
-        "Designed and maintained design systems and component libraries in Figma, ensuring visual consistency, scalability, and team efficiency. Contributed to and refined design systems directly in code to maintain high UI quality across products.",
-        "Conceptualized and designed MVPs from inception, aligning business objectives, client expectations, and user needs to guide product decisions. Co-built and shipped the MVP of a web application (Laborapp) alongside a Product Owner, leveraging AI tools to integrate APIs, structure the database, and accelerate time-to-market through to production.",
+        "Led design and delivery of 10+ technically complex digital products for US and LATAM startups — SaaS platforms, marketplaces, and AI-driven systems — owning end-to-end process from system architecture through production deployment.",
+        "Designed role-based permission architectures and scalable interaction systems for products with high operational complexity. Built and maintained design systems in Figma and code, including shadcn-based component libraries aligned with frontend implementation.",
+        "Vibecoded production features and 0→1 MVPs using Next.js, Vercel, and AI-assisted tooling — shipping design decisions directly in code and reducing engineering dependency from early stages.",
       ],
       featuredProjects: [
         {
