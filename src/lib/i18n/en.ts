@@ -9,7 +9,7 @@ export const en: Translations = {
   hero: {
     introPrefix: "I'm Federico, but people call me ",
     heading: "I design systems, not just interfaces.",
-    tagline: "System architecture, design systems, and production-ready code.",
+    tagline: "Product strategy, system architecture, design systems, and production-ready code.",
     role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },
@@ -77,19 +77,11 @@ export const en: Translations = {
         summary:
           "Led design and delivery of 10+ technically complex digital products for US and LATAM startups — SaaS platforms, marketplaces, and AI-driven systems — owning end-to-end process from system architecture through production deployment.",
         responsibilities: [
-          "Led end-to-end product initiatives from problem definition and discovery through system architecture design, interaction modeling, and production deployment.",
-          "Defined scalable product architectures and design systems aligned with engineering constraints and long-term maintainability.",
-          "Vibecoded functional prototypes and production-ready features using modern web tooling and AI-assisted workflows, enabling rapid architectural validation and reducing early-stage engineering dependency.",
-          "Co-built and shipped multiple 0→1 MVPs, contributing to product strategy, technical feasibility, and architectural decisions.",
-          "Leveraged AI across research synthesis, competitive analysis, product definition, prototyping, and refinement workflows to increase speed, clarity, and iteration depth.",
-          "Partnered with founders, product owners, scrum masters, QCs, and engineers to align business goals, user needs, and technical feasibility into scalable product solutions.",
+          "Led end-to-end design and delivery for 10+ products and multiple 0→1 MVPs — from problem definition and system architecture through production deployment.",
+          "Designed role-based permission architectures and shadcn-based design systems for products with high operational complexity, ensuring direct parity between design and frontend implementation.",
+          "Vibecoded production features directly in Next.js using AI-assisted workflows, shipping design decisions in code and eliminating traditional handoff cycles.",
+          "Leveraged AI across research, product definition, prototyping, and iteration — increasing speed and decision quality throughout the entire product lifecycle.",
         ],
-      },
-      freelance: {
-        role: "Product, UX, UI & Graphic Designer",
-        summary:
-          "Delivered UX & UI design for web platforms, email campaigns and branding for diverse clients.",
-        responsibilities: [],
       },
     },
     projectsList: [

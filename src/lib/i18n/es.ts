@@ -9,7 +9,7 @@ export const es: Translations = {
   hero: {
     introPrefix: "Soy Federico, pero me llaman ",
     heading: "Diseño sistemas, no solo interfaces.",
-    tagline: "Arquitectura de sistemas, design systems y código listo para producción.",
+    tagline: "Estrategia de producto, arquitectura de sistemas, design systems y código listo para producción.",
     role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },
@@ -77,19 +77,11 @@ export const es: Translations = {
         summary:
           "Lideré el diseño y la entrega de más de 10 productos digitales técnicamente complejos para startups de EE. UU. y LATAM — plataformas SaaS, marketplaces y sistemas impulsados por IA — gestionando el proceso end-to-end desde la arquitectura del sistema hasta el despliegue en producción.",
         responsibilities: [
-          "Lideré iniciativas de producto end-to-end, desde la definición del problema y discovery hasta el diseño de arquitectura, modelado de interacciones e implementación en producción.",
-          "Definí arquitecturas de producto y sistemas de diseño escalables, alineados con restricciones técnicas y mantenibilidad a largo plazo.",
-          "Vibecodeé prototipos funcionales y features productivas utilizando herramientas modernas de desarrollo y flujos asistidos por IA, habilitando validación temprana y reduciendo fricción con ingeniería.",
-          "Co-construí y lancé múltiples MVPs 0→1, participando en decisiones de estrategia de producto, factibilidad técnica y arquitectura.",
-          "Apliqué IA en procesos de research, análisis competitivo, definición de producto, prototipado y refinamiento para aumentar velocidad, claridad e iteración.",
-          "Trabajé junto a founders, product owners, scrum masters, QA y equipos de ingeniería para alinear objetivos de negocio, necesidades de usuario y factibilidad técnica en soluciones escalables.",
+          "Lideré el diseño y la entrega end-to-end de más de 10 productos y múltiples MVPs 0→1 — desde la definición del problema y la arquitectura del sistema hasta el despliegue en producción.",
+          "Diseñé arquitecturas de permisos basadas en roles y design systems con shadcn para productos de alta complejidad operativa, asegurando paridad directa entre diseño e implementación frontend.",
+          "Vibecodeé features productivas directamente en Next.js usando flujos asistidos por IA, enviando decisiones de diseño en código y eliminando ciclos de handoff tradicionales.",
+          "Apliqué IA en research, definición de producto, prototipado e iteración — aumentando velocidad y calidad de decisión a lo largo de todo el ciclo de vida del producto.",
         ],
-      },
-      freelance: {
-        role: "Product, UX, UI & Graphic Designer",
-        summary:
-          "Diseño UX y UI para plataformas web, campañas de email y branding para diversos clientes.",
-        responsibilities: [],
       },
     },
     projectsList: [

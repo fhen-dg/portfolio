@@ -20,9 +20,10 @@ export const cvData: CVData = {
       period: "2020 – 2026",
       location: "Buenos Aires",
       responsibilities: [
-        "Led design and delivery of 10+ technically complex digital products for US and LATAM startups — SaaS platforms, marketplaces, and AI-driven systems — owning end-to-end process from system architecture through production deployment.",
-        "Designed role-based permission architectures and scalable interaction systems for products with high operational complexity. Built and maintained design systems in Figma and code, including shadcn-based component libraries aligned with frontend implementation.",
-        "Vibecoded production features and 0→1 MVPs using Next.js, Vercel, and AI-assisted tooling — shipping design decisions directly in code and reducing engineering dependency from early stages.",
+        "Led end-to-end design and delivery for 10+ products and multiple 0→1 MVPs — from problem definition and system architecture through production deployment.",
+        "Designed role-based permission architectures and shadcn-based design systems for products with high operational complexity, ensuring direct parity between design and frontend implementation.",
+        "Vibecoded production features directly in Next.js using AI-assisted workflows, shipping design decisions in code and eliminating traditional handoff cycles.",
+        "Leveraged AI across research, product definition, prototyping, and iteration — increasing speed and decision quality throughout the entire product lifecycle.",
       ],
       featuredProjects: [
         {
@@ -49,15 +50,6 @@ export const cvData: CVData = {
         { name: "Crypto Insights Group", type: "Fintech platform for crypto funds" },
         { name: "Revealed Travel Guides", type: "Travel & tourism mobile app" },
         { name: "Wilco", type: "Community & social mobile app" },
-      ],
-    },
-    {
-      role: "Product, UX, UI & Graphic Designer",
-      company: "Freelance",
-      period: "2023 – 2026",
-      location: "Buenos Aires",
-      responsibilities: [
-        "Delivered UX & UI design for web platforms, email campaigns and branding for diverse clients.",
       ],
     },
   ],
