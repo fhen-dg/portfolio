@@ -3,6 +3,7 @@ import { Separator } from "@/components/ui/separator";
 import type { LucideIcon } from "lucide-react";
 import {
   BarChart3,
+  BrainCircuit,
   Compass,
   Component as ComponentIcon,
   Database,
@@ -10,9 +11,11 @@ import {
   Layers,
   Lightbulb,
   Network,
-  Sparkles,
+  Scale,
+  ShieldAlert,
   ShieldCheck,
   SquareCode,
+  Sparkles,
   Workflow,
 } from "lucide-react";
 
@@ -34,6 +37,9 @@ const iconByKey: Record<CaseResponsibilityIcon, LucideIcon> = {
   "bar-chart-3": BarChart3,
   sparkles: Sparkles,
   lightbulb: Lightbulb,
+  "shield-alert": ShieldAlert,
+  "brain-circuit": BrainCircuit,
+  scale: Scale,
 };
 
 function chunkBy<T>(items: T[], size: number): T[][] {

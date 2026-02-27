@@ -34,7 +34,10 @@ export type CaseResponsibilityIcon =
   | "database"
   | "bar-chart-3"
   | "sparkles"
-  | "lightbulb";
+  | "lightbulb"
+  | "shield-alert"
+  | "brain-circuit"
+  | "scale";
 
 export type CaseResponsibilityItem = {
   icon: CaseResponsibilityIcon;
@@ -116,6 +119,34 @@ export type TheoAICaseStudy = {
   heroImage: string;
   heroImageAlt: string;
   description: string;
+  snapshot: {
+    role: string;
+    duration: string;
+    team: string;
+  };
+  summary: CaseSummaryContentItem[];
+  context: {
+    heading: string;
+    body: RichTextSegment[];
+  };
+  workstreamsOverview: {
+    heading: string;
+    items: CaseComplexityItem[];
+  };
+  workstream1: {
+    heading: string;
+    items: CaseStrategyItem[];
+  };
+  workstream2: {
+    heading: string;
+    intro: string;
+    items: CaseStrategyItem[];
+  };
+  finding: {
+    heading: string;
+    body: RichTextSegment[];
+  };
+  responsibilities: CaseResponsibilityItem[];
 };
 
 export type LaborCaseStudy = {

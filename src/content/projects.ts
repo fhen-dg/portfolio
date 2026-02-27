@@ -21,17 +21,18 @@ export const primaryProjects: Project[] = [
     coverImageAlt: "Labor – agricultural services marketplace",
     href: "/case/laborapp",
   },
-];
-
-export const secondaryProjects: Project[] = [
   {
     slug: "theo-ai",
     title: "Theo AI",
+    tagline: "Research tools and interfaces for an early-stage litigation AI startup in Palo Alto, serving GC executives managing portfolio risk and attorneys navigating active cases.",
     year: "2025",
-    coverImage: "https://www.figma.com/api/mcp/asset/b750479a-d2f2-4d7d-a4e5-02bd7e8c4263",
-    coverImageAlt: "Theo AI project cover",
-    comingSoon: true,
+    coverImage: "/images/projects/theo-ai/TheoAICaseCover.png",
+    coverImageAlt: "Theo AI – litigation intelligence platform",
+    href: "/case/theo-ai",
   },
+];
+
+export const secondaryProjects: Project[] = [
   {
     slug: "verybusy",
     title: "Verybusy",
