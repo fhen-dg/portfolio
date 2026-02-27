@@ -109,7 +109,16 @@ export type ViramosCaseStudy = {
   };
 };
 
-export type CaseStudy = {
+export type TheoAICaseStudy = {
+  slug: string;
+  title: string;
+  year: string;
+  heroImage: string;
+  heroImageAlt: string;
+  description: string;
+};
+
+export type LaborCaseStudy = {
   slug: string;
   title: string;
   year: string;

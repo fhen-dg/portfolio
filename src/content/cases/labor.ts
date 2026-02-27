@@ -1,7 +1,7 @@
-import type { CaseStudy } from "@/lib/types";
+import type { LaborCaseStudy } from "@/lib/types";
 import type { Locale } from "@/lib/i18n/types";
 
-const laborCaseStudyEn: CaseStudy = {
+const laborCaseStudyEn: LaborCaseStudy = {
   slug: "laborapp",
   title: "Labor",
   year: "2026",
@@ -204,7 +204,7 @@ const laborCaseStudyEn: CaseStudy = {
   },
 };
 
-const laborCaseStudyEs: CaseStudy = {
+const laborCaseStudyEs: LaborCaseStudy = {
   slug: "laborapp",
   title: "Labor",
   year: "2026",
@@ -405,7 +405,7 @@ const laborCaseStudyEs: CaseStudy = {
   },
 };
 
-export function getLaborCaseStudy(locale: Locale): CaseStudy {
+export function getLaborCaseStudy(locale: Locale): LaborCaseStudy {
   return locale === "es" ? laborCaseStudyEs : laborCaseStudyEn;
 }
 
