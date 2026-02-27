@@ -16,7 +16,7 @@ export function ProjectsSection() {
             <ProjectCard key={project.slug} project={project} />
           ))}
 
-          <div className="flex flex-col lg:flex-row gap-[20px] w-full">
+          <div className="flex flex-col lg:flex-row gap-[20px] w-full hidden">
             {secondaryProjects.map((project) => (
               <SecondaryProjectCard
                 key={project.slug}

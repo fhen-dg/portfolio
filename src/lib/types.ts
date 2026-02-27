@@ -1,8 +1,10 @@
 export type Project = {
   slug: string;
   title: string;
+  tagline?: string;
   year: string;
   coverImage: string;
+  coverImageMobile?: string;
   coverImageAlt?: string;
   comingSoon?: boolean;
   href?: string;

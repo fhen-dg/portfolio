@@ -118,7 +118,7 @@ export function LaborCaseContent() {
       <div className="h-[120px] w-full" />
 
       <RevealOnScroll className="w-full">
-        <div className="max-w-[600px] mx-auto">
+        <div className="max-w-[600px] mx-auto hidden">
           <ProjectCard project={primaryProjects.find((p) => p.slug === "viramos")!} />
         </div>
       </RevealOnScroll>
