@@ -4,10 +4,13 @@ import type { LucideIcon } from "lucide-react";
 import {
   BarChart3,
   BrainCircuit,
+  ChartScatter,
   Compass,
+  GitBranch,
   Component as ComponentIcon,
   Database,
   LayoutTemplate,
+  LayoutPanelTop,
   Layers,
   Lightbulb,
   Network,
@@ -40,6 +43,9 @@ const iconByKey: Record<CaseResponsibilityIcon, LucideIcon> = {
   "shield-alert": ShieldAlert,
   "brain-circuit": BrainCircuit,
   scale: Scale,
+  "git-branch": GitBranch,
+  "chart-scatter": ChartScatter,
+  "layout-panel-top": LayoutPanelTop,
 };
 
 function chunkBy<T>(items: T[], size: number): T[][] {

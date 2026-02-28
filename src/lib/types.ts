@@ -37,7 +37,10 @@ export type CaseResponsibilityIcon =
   | "lightbulb"
   | "shield-alert"
   | "brain-circuit"
-  | "scale";
+  | "scale"
+  | "git-branch"
+  | "chart-scatter"
+  | "layout-panel-top";
 
 export type CaseResponsibilityItem = {
   icon: CaseResponsibilityIcon;

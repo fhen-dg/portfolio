@@ -36,7 +36,7 @@ export const es: Translations = {
   },
   caseSections: {
     problem: "El problema",
-    responsibilities: "Mis responsabilidades",
+    responsibilities: "Mi Ownership",
     complexities: "Complejidades",
     strategicAlignment: "Alineación estratégica",
     solution: "La solución",

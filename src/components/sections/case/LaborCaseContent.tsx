@@ -14,7 +14,7 @@ import { CaseShowcaseSection } from "@/components/sections/case/CaseShowcaseSect
 import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSection";
 import { ContactFooter } from "@/components/sections/ContactFooter";
 import { ProjectCard } from "@/components/ui/ProjectCard";
-import { primaryProjects } from "@/content/projects";
+import { getPrimaryProjects } from "@/content/projects";
 
 export function LaborCaseContent() {
   const { t, locale } = useLocale();
@@ -119,7 +119,7 @@ export function LaborCaseContent() {
 
       <RevealOnScroll className="w-full">
         <div className="max-w-[600px] mx-auto hidden">
-          <ProjectCard project={primaryProjects.find((p) => p.slug === "viramos")!} />
+          <ProjectCard project={getPrimaryProjects(locale).find((p) => p.slug === "viramos")!} />
         </div>
       </RevealOnScroll>
 

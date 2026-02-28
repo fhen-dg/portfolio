@@ -49,7 +49,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
 
         <div className="h-6 w-full shrink-0" />
 
-        <div className="flex flex-col md:flex-row md:items-end gap-[6px] md:gap-[80px] lg:gap-[320px] w-full px-2 shrink-0">
+        <div className="flex flex-col md:flex-row md:items-end gap-[6px] md:gap-[80px] lg:gap-[240px] w-full px-2 shrink-0">
           <div className="flex flex-col gap-[6px] items-start w-full">
             <p className="md:title1 title3 text-neutral-800 overflow-hidden text-ellipsis w-full">
               {project.title}
