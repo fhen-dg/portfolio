@@ -2,6 +2,7 @@ import Image from "next/image";
 
 export type CaseHeroSectionProps = {
   heroImage: string;
+  heroImageMobile?: string;
   heroImageAlt: string;
   title: string;
   description: string;
@@ -10,21 +11,31 @@ export type CaseHeroSectionProps = {
 
 export function CaseHeroSection({
   heroImage,
+  heroImageMobile,
   heroImageAlt,
   title,
   description,
   year,
 }: CaseHeroSectionProps) {
   return (
-    <section className="flex justify-center w-full py-[20px]">
+    <section className="flex justify-center w-full pb-[28px] lg:h-[calc(100vh-104px)] h-fit">
       <div className="flex flex-col items-center gap-[24px] max-w-[960px] w-full">
         {heroImage ? (
           <div className="relative w-full rounded-[12px] overflow-hidden aspect-[634/447] lg:aspect-auto lg:h-[478px]">
+            {heroImageMobile && (
+              <Image
+                src={heroImageMobile}
+                alt={heroImageAlt}
+                fill
+                className="object-contain lg:hidden"
+                priority
+              />
+            )}
             <Image
               src={heroImage}
               alt={heroImageAlt}
               fill
-              className="object-contain lg:object-contain"
+              className={`object-contain ${heroImageMobile ? "hidden lg:block" : ""}`}
               priority
             />
           </div>

@@ -72,7 +72,7 @@ export type Translations = {
         summary: string;
         responsibilities: string[];
       };
-      freelance: {
+      freelance?: {
         role: string;
         summary: string;
         responsibilities: string[];

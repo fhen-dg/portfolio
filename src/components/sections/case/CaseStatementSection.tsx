@@ -1,7 +1,7 @@
-import type { RichTextSegment } from "@/lib/types";
+import type { CaseSummaryContentItem } from "@/lib/types";
 
 type CaseStatementSectionProps = {
-  body: RichTextSegment[];
+  body: CaseSummaryContentItem[];
   heading?: string;
   align?: "left" | "center";
 };
@@ -25,7 +25,9 @@ export function CaseStatementSection({
           className={`supporting2 md:supporting1 text-neutral-600${align === "center" ? " text-center" : ""}`}
         >
           {body.map((segment, i) =>
-            segment.emphasis ? (
+            "type" in segment && segment.type === "break" ? (
+              Array.from({ length: segment.count ?? 1 }).map((_, j) => <br key={`${i}-${j}`} />)
+            ) : segment.emphasis ? (
               <span key={i} className="supporting2-medium md:supporting1-medium text-neutral-800">
                 {segment.text}
               </span>

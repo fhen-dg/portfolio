@@ -1,25 +1,21 @@
 "use client";
 
 import { useLocale } from "@/hooks/useLocale";
-import { getLaborCaseStudy } from "@/content/cases/labor";
+import { getTheoAICaseStudy } from "@/content/cases/theo-ai";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { CaseHeroSection } from "@/components/sections/case/CaseHeroSection";
 import { CaseSnapshotSection } from "@/components/sections/case/CaseSnapshotSection";
 import { CaseSummarySection } from "@/components/sections/case/CaseSummarySection";
 import { CaseResponsibilitiesSection } from "@/components/sections/case/CaseResponsibilitiesSection";
 import { CaseStatementSection } from "@/components/sections/case/CaseStatementSection";
-import { CaseDisplayBreakdownSection } from "@/components/sections/case/CaseDisplayBreakdownSection";
 import { CaseDescriptiveBreakdownSection } from "@/components/sections/case/CaseDescriptiveBreakdownSection";
-import { CaseShowcaseSection } from "@/components/sections/case/CaseShowcaseSection";
 import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSection";
 import { ContactFooter } from "@/components/sections/ContactFooter";
-import { ProjectCard } from "@/components/ui/ProjectCard";
-import { getPrimaryProjects } from "@/content/projects";
 import { Separator } from "@/components/ui/separator";
 
-export function LaborCaseContent() {
+export function TheoAICaseContent() {
   const { t, locale } = useLocale();
-  const cs = getLaborCaseStudy(locale);
+  const cs = getTheoAICaseStudy(locale);
 
   return (
     <>
@@ -48,7 +44,7 @@ export function LaborCaseContent() {
       <div className="h-[200px] md:h-[320px] w-full" />
 
       <RevealOnScroll className="w-full">
-        <CaseSummarySection items={cs.summary ?? []} />
+        <CaseSummarySection items={cs.summary} />
       </RevealOnScroll>
 
       <div className="h-[160px] md:h-[280px] w-full" />
@@ -56,7 +52,7 @@ export function LaborCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseResponsibilitiesSection
           heading={t.caseSections.responsibilities}
-          items={cs.responsibilities ?? []}
+          items={cs.responsibilities}
         />
       </RevealOnScroll>
 
@@ -64,17 +60,8 @@ export function LaborCaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseStatementSection
-          body={cs.problem.body}
-          heading={t.caseSections.problem}
-        />
-      </RevealOnScroll>
-
-      <div className="h-[120px] md:h-[200px] w-full hidden" />
-
-      <RevealOnScroll className="w-full hidden">
-        <CaseDisplayBreakdownSection
-          items={cs.complexities}
-          heading={t.caseSections.complexities}
+          heading={cs.context.heading}
+          body={cs.context.body}
         />
       </RevealOnScroll>
 
@@ -82,9 +69,21 @@ export function LaborCaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseDescriptiveBreakdownSection
-          intro={cs.strategicAlignment.intro}
-          items={cs.strategicAlignment.items}
-          heading={t.caseSections.strategicAlignment}
+          supporting3={cs.workstream1.supporting3}
+          heading={cs.workstream1.heading}
+          intro={cs.workstream1.intro}
+          items={cs.workstream1.items}
+        />
+      </RevealOnScroll>
+
+      <div className="h-[200px] lg:h-[320px] w-full" />
+
+      <RevealOnScroll className="w-full">
+        <CaseDescriptiveBreakdownSection
+          supporting3={cs.workstream2.supporting3}
+          heading={cs.workstream2.heading}
+          intro={cs.workstream2.intro}
+          items={cs.workstream2.items}
         />
       </RevealOnScroll>
 
@@ -92,17 +91,13 @@ export function LaborCaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseStatementSection
-          body={cs.solution.body}
-          heading={t.caseSections.solution}
+          heading={cs.finding.heading}
+          body={cs.finding.body}
           align="center"
         />
       </RevealOnScroll>
 
-      <div className="h-[120px] lg:h-[200px] w-full" />
-
-      <CaseShowcaseSection items={cs.showcase} />
-
-      <div className="h-[140px] lg:h-[260px] w-full" />
+      <div className="h-[80px] lg:h-[120px] w-full" />
 
       <RevealOnScroll className="w-full">
         <CaseOverviewSection
@@ -122,14 +117,6 @@ export function LaborCaseContent() {
       <ContactFooter />
 
       <div className="h-[80px] lg:h-[120px] w-full" />
-
-      <RevealOnScroll className="w-full">
-        <div className="max-w-[600px] mx-auto hidden">
-          <ProjectCard project={getPrimaryProjects(locale).find((p) => p.slug === "viramos")!} />
-        </div>
-      </RevealOnScroll>
-
-      <div className="h-[120px] w-full hidden" />
     </>
   );
 }

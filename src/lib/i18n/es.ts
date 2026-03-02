@@ -2,14 +2,15 @@ import type { Translations } from "@/lib/i18n/types";
 
 export const es: Translations = {
   meta: {
-    title: "Fhen – Diseñador de Producto",
-    description: "Diseñador de producto en Buenos Aires, Argentina",
+    title: "Fhen – Senior Product Designer",
+    description:
+      "Senior Product Designer con más de 5 años construyendo productos técnicos complejos — plataformas SaaS, sistemas basados en roles y herramientas impulsadas por IA — desde la arquitectura hasta código en producción.",
   },
   hero: {
     introPrefix: "Soy Federico, pero me llaman ",
-    heading: "Diseño productos digitales con propósito.",
-    tagline: "Desde la comprensión profunda del problema hasta la ejecución lista para producción.",
-    role: "Diseñador de Producto",
+    heading: "Diseño sistemas, no solo interfaces.",
+    tagline: "Estrategia de producto, arquitectura de sistemas, design systems y código listo para producción.",
+    role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },
   nav: {
@@ -35,7 +36,7 @@ export const es: Translations = {
   },
   caseSections: {
     problem: "El problema",
-    responsibilities: "Mis responsabilidades",
+    responsibilities: "Mi Ownership",
     complexities: "Complejidades",
     strategicAlignment: "Alineación estratégica",
     solution: "La solución",
@@ -64,9 +65,9 @@ export const es: Translations = {
       role: "Senior Product Designer en Buenos Aires, Argentina",
     },
     about: [
-      "Senior Product Designer con más de 5 años de experiencia diseñando productos digitales para startups y empresas medianas de Estados Unidos y LATAM.",
-      "Trabajo en la intersección entre producto, diseño e ingeniería, utilizando inteligencia artificial de forma estratégica a lo largo de todo el ciclo de vida del producto, desde la definición del problema y la síntesis de research hasta el prototipado, validación e implementación en producción.",
-      "Además, vibecodeo prototipos funcionales y features productivas utilizando herramientas modernas de desarrollo web y flujos asistidos por IA, acelerando iteraciones y reduciendo la dependencia del handoff tradicional.",
+      "Senior Product Designer con más de 5 años construyendo productos técnicos complejos para startups de EE. UU. y LATAM — plataformas SaaS, sistemas de IA y software técnicamente exigente a escala.",
+      "Pienso en sistemas: arquitecturas basadas en roles, modelos de permisos y patrones de interacción escalables para productos donde la complejidad operativa es la base. Conecto necesidades de usuario, restricciones de ingeniería y objetivos de negocio en decisiones que se sostienen a escala.",
+      "Vibecodeo features en producción usando Next.js, Vercel y tooling asistido por IA — llevando decisiones de diseño directamente al código y eliminando ciclos tradicionales de handoff.",
     ],
     experience: {
       amalgama: {
@@ -74,21 +75,13 @@ export const es: Translations = {
         period: "Ago 2020 – Ene 2026",
         location: "Buenos Aires (Híbrido)",
         summary:
-          "Lideré y participé en el diseño y entrega de más de 10 productos digitales para startups y empresas medianas de Estados Unidos y LATAM, incluyendo plataformas SaaS, marketplaces y sistemas basados en IA.",
+          "Lideré el diseño y la entrega de más de 10 productos digitales técnicamente complejos para startups de EE. UU. y LATAM — plataformas SaaS, marketplaces y sistemas impulsados por IA — gestionando el proceso end-to-end desde la arquitectura del sistema hasta el despliegue en producción.",
         responsibilities: [
-          "Lideré iniciativas de producto end-to-end, desde la definición del problema y discovery hasta el diseño de arquitectura, modelado de interacciones e implementación en producción.",
-          "Definí arquitecturas de producto y sistemas de diseño escalables, alineados con restricciones técnicas y mantenibilidad a largo plazo.",
-          "Vibecodeé prototipos funcionales y features productivas utilizando herramientas modernas de desarrollo y flujos asistidos por IA, habilitando validación temprana y reduciendo fricción con ingeniería.",
-          "Co-construí y lancé múltiples MVPs 0→1, participando en decisiones de estrategia de producto, factibilidad técnica y arquitectura.",
-          "Apliqué IA en procesos de research, análisis competitivo, definición de producto, prototipado y refinamiento para aumentar velocidad, claridad e iteración.",
-          "Trabajé junto a founders, product owners, scrum masters, QA y equipos de ingeniería para alinear objetivos de negocio, necesidades de usuario y factibilidad técnica en soluciones escalables.",
+          "Lideré el diseño y la entrega end-to-end de más de 10 productos y múltiples MVPs 0→1 — desde la definición del problema y la arquitectura del sistema hasta el despliegue en producción.",
+          "Diseñé arquitecturas de permisos basadas en roles y design systems con shadcn para productos de alta complejidad operativa, asegurando paridad directa entre diseño e implementación frontend.",
+          "Vibecodeé features productivas directamente en Next.js usando flujos asistidos por IA, enviando decisiones de diseño en código y eliminando ciclos de handoff tradicionales.",
+          "Apliqué IA en research, definición de producto, prototipado e iteración — aumentando velocidad y calidad de decisión a lo largo de todo el ciclo de vida del producto.",
         ],
-      },
-      freelance: {
-        role: "Product, UX, UI & Graphic Designer",
-        summary:
-          "Diseño UX y UI para plataformas web, campañas de email y branding para diversos clientes.",
-        responsibilities: [],
       },
     },
     projectsList: [
@@ -97,12 +90,12 @@ export const es: Translations = {
         role: "Product Designer / Design Engineer",
         year: "2026",
         summary:
-          "Co-definí y co-construí un MVP 0→1 de un marketplace que conecta productores agropecuarios y contratistas en Argentina.",
+          "Co-diseñé y vibecodeé un MVP de marketplace 0→1 end-to-end — construido en 2 meses con Next.js, desplegado en Vercel, con Supabase (Postgres vía integración de Vercel), autenticación con Clerk y Google Maps.",
         bullets: [
           "Diseñé la arquitectura completa del producto, la taxonomía de servicios, el sistema de UI y el modelo central de interacción del marketplace.",
-          "Vibecodeé el MVP completo junto a una Product Owner, desarrollando todas las features y layouts directamente en código.",
-          "Implementé la funcionalidad end-to-end utilizando Next.js, Vercel, Vercel Blob, Clerk, Postgres e integraciones con Google Maps.",
-          "Definí y alineé métricas tempranas de validación junto al equipo de marketing del cliente para medir engagement y señales de transacción.",
+          "Construí el 50% de las features en producción directamente en código usando Next.js, Cursor y flujos asistidos por IA.",
+          "Integré por completo Vercel Blob (pipeline de assets), Supabase vía integración de Vercel (Postgres) y Clerk (auth), asumiendo la capa de infraestructura end-to-end.",
+          "Definí métricas tempranas de validación con marketing del cliente: tasa de creación de publicaciones, inicio de contacto y señales de retorno.",
         ],
         caseStudyLabel: "Ver caso de estudio",
         caseStudyUrl: "/case/laborapp",
@@ -112,12 +105,12 @@ export const es: Translations = {
         role: "Product Designer",
         year: "2025",
         summary:
-          "Rediseñé la arquitectura central de una plataforma SaaS de gestión de regatas utilizada por clubes y organizadores de campeonatos.",
+          "Lideré el rediseño arquitectónico completo de un SaaS operativo multi-rol — de un MVP no-code a un sistema de permisos escalable basado en roles, reconstruido en Next.js con un design system shadcn.",
         bullets: [
-          "Reestructuré los flujos de la plataforma hacia un sistema basado en roles y ciclos de campeonato alineados con la complejidad operativa real.",
-          "Definí modelos de interacción escalables para soportar campeonatos multi-etapa y procesos regulatorios.",
-          "Realicé investigación de campo durante campeonatos en vivo para validar restricciones y dinámicas reales de uso.",
-          "Diseñé y arquitecturé flujos centrales en una plataforma que soporta más de 80 campeonatos, 40.000 usuarios registrados y 150.000 sesiones.",
+          "Diseñé una arquitectura de permisos basada en roles mapeando autoridad explícita, reglas de visibilidad y límites de decisión entre múltiples roles operativos superpuestos.",
+          "Reestructuré workflows complejos de múltiples etapas en sistemas modulares impulsados por ciclo de vida, soportando procesos regulatorios y trazabilidad de datos estructurados.",
+          "Construido con Next.js y un design system basado en shadcn, asegurando paridad directa de componentes entre diseño e implementación frontend.",
+          "Plataforma en producción que hoy soporta 81 campeonatos y 43k+ usuarios en 5 países de LATAM.",
         ],
         caseStudyLabel: "Ver caso de estudio",
         caseStudyUrl: "/case/viramos",

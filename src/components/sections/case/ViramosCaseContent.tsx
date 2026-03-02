@@ -15,7 +15,8 @@ import { CaseMetricsSection } from "@/components/sections/case/CaseMetricsSectio
 import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSection";
 import { ContactFooter } from "@/components/sections/ContactFooter";
 import { ProjectCard } from "@/components/ui/ProjectCard";
-import { primaryProjects } from "@/content/projects";
+import { getPrimaryProjects } from "@/content/projects";
+import { Separator } from "@/components/ui/separator";
 
 export function ViramosCaseContent() {
   const { t, locale } = useLocale();
@@ -26,6 +27,7 @@ export function ViramosCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseHeroSection
           heroImage={cs.heroImage}
+          heroImageMobile={cs.heroImageMobile}
           heroImageAlt={cs.heroImageAlt}
           title={cs.title}
           description={cs.description}
@@ -78,16 +80,22 @@ export function ViramosCaseContent() {
         />
       </RevealOnScroll>
 
-      <div className="h-[120px] md:h-[200px] w-full" />
+      {cs.earlyValidation?.length ? (
+        <>
+          <div className="h-[120px] md:h-[200px] w-full" />
 
-      <RevealOnScroll className="w-full">
-        <CaseDisplayBreakdownSection
-          items={cs.earlyValidation}
-          heading={t.viramosSections.earlyValidation}
-        />
-      </RevealOnScroll>
+          <RevealOnScroll className="w-full">
+            <CaseDisplayBreakdownSection
+              items={cs.earlyValidation}
+              heading={t.viramosSections.earlyValidation}
+            />
+          </RevealOnScroll>
 
-      <div className="h-[200px] lg:h-[320px] w-full" />
+          <div className="h-[200px] lg:h-[320px] w-full" />
+        </>
+      ) : (
+        <div className="h-[200px] lg:h-[320px] w-full" />
+      )}
 
       <RevealOnScroll className="w-full">
         <CaseDescriptiveBreakdownSection
@@ -138,19 +146,23 @@ export function ViramosCaseContent() {
         />
       </RevealOnScroll>
 
-      <div className="h-[120px] lg:h-[120px] w-full" />
+      <div className="h-[120px] lg:h-[200px] w-full" />
+
+      <Separator />
+
+      <div className="h-[80px] lg:h-[120px] w-full" />
 
       <ContactFooter />
 
-      <div className="h-[120px] w-full" />
+      <div className="h-[80px] lg:h-[120px] w-full" />
 
       <RevealOnScroll className="w-full">
-        <div className="max-w-[600px] mx-auto">
-          <ProjectCard project={primaryProjects.find((p) => p.slug === "labor")!} />
+        <div className="max-w-[1024px] mx-auto hidden">
+          <ProjectCard project={getPrimaryProjects(locale).find((p) => p.slug === "labor")!} />
         </div>
       </RevealOnScroll>
 
-      <div className="h-[120px] w-full" />
+      <div className="h-[120px] w-full hidden" />
     </>
   );
 }

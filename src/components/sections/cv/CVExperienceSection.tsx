@@ -23,16 +23,7 @@ export function CVExperienceSection() {
     responsibilities: t.cv.experience.amalgama.responsibilities,
   };
 
-  const freelanceExperience: ExperienceItem = {
-    role: t.cv.experience.freelance.role,
-    company: "Freelance",
-    period: "2023 – 2026",
-    location: "Buenos Aires",
-    summary: t.cv.experience.freelance.summary,
-    responsibilities: t.cv.experience.freelance.responsibilities,
-  };
-
-  const experience: ExperienceItem[] = [amalgamaExperience, freelanceExperience];
+  const experience: ExperienceItem[] = [amalgamaExperience];
 
   return (
     <section className="flex flex-col gap-[24px] items-start w-full">

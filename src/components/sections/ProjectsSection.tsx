@@ -3,20 +3,20 @@
 import { useLocale } from "@/hooks/useLocale";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { SecondaryProjectCard } from "@/components/ui/SecondaryProjectCard";
-import { primaryProjects, secondaryProjects } from "@/content/projects";
+import { getPrimaryProjects, secondaryProjects } from "@/content/projects";
 
 export function ProjectsSection() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
 
   return (
     <section id="projects" className="flex justify-center w-full">
       <div className="flex flex-col gap-[40px] items-center max-w-[1024px] w-full">
         <div className="flex flex-col gap-[20px] lg:gap-[40px] items-start w-full">
-          {primaryProjects.map((project) => (
+          {getPrimaryProjects(locale).map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
 
-          <div className="flex flex-col lg:flex-row gap-[20px] w-full">
+          <div className="flex flex-col lg:flex-row gap-[20px] w-full hidden">
             {secondaryProjects.map((project) => (
               <SecondaryProjectCard
                 key={project.slug}

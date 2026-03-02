@@ -1,8 +1,10 @@
 export type Project = {
   slug: string;
   title: string;
+  tagline?: string;
   year: string;
   coverImage: string;
+  coverImageMobile?: string;
   coverImageAlt?: string;
   comingSoon?: boolean;
   href?: string;
@@ -29,8 +31,16 @@ export type CaseResponsibilityIcon =
   | "compass"
   | "layers"
   | "network"
+  | "database"
   | "bar-chart-3"
-  | "sparkles";
+  | "sparkles"
+  | "lightbulb"
+  | "shield-alert"
+  | "brain-circuit"
+  | "scale"
+  | "git-branch"
+  | "chart-scatter"
+  | "layout-panel-top";
 
 export type CaseResponsibilityItem = {
   icon: CaseResponsibilityIcon;
@@ -71,6 +81,7 @@ export type ViramosCaseStudy = {
   title: string;
   year: string;
   heroImage: string;
+  heroImageMobile: string;
   heroImageAlt: string;
   description: string;
   snapshot: {
@@ -83,7 +94,7 @@ export type ViramosCaseStudy = {
   opportunity: {
     body: RichTextSegment[];
   };
-  earlyValidation: CaseComplexityItem[];
+  earlyValidation?: CaseComplexityItem[];
   contextImmersion: {
     intro: string;
     items: CaseStrategyItem[];
@@ -105,11 +116,59 @@ export type ViramosCaseStudy = {
   };
 };
 
-export type CaseStudy = {
+export type TheoAICaseStudy = {
   slug: string;
   title: string;
   year: string;
   heroImage: string;
+  heroImageMobile: string;
+  heroImageAlt: string;
+  description: string;
+  snapshot: {
+    role: string;
+    duration: string;
+    team: string;
+  };
+  summary: CaseSummaryContentItem[];
+  context: {
+    heading: string;
+    body: RichTextSegment[];
+  };
+  workstreamsOverview: {
+    heading: string;
+    items: CaseComplexityItem[];
+  };
+  workstream1: {
+    supporting3?: string;
+    heading: string;
+    intro: string;
+    items: CaseStrategyItem[];
+  };
+  workstream2: {
+    supporting3?: string;
+    heading: string;
+    intro: string;
+    items: CaseStrategyItem[];
+  };
+  finding: {
+    heading: string;
+    body: CaseSummaryContentItem[];
+  };
+  overview: {
+    image: string;
+    imageAlt: string;
+    link: { label: string; href: string };
+    tools: string[];
+  };
+  responsibilities: CaseResponsibilityItem[];
+};
+
+export type LaborCaseStudy = {
+  slug: string;
+  title: string;
+  year: string;
+  heroImage: string;
+  heroImageMobile: string;
   heroImageAlt: string;
   description: string;
   snapshot: {

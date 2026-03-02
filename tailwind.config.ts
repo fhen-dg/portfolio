@@ -128,6 +128,15 @@ const config: Config = {
           lineHeight: "175%",
           fontWeight: "500",
         },
+        ".supporting3": {
+          fontSize: "20px",
+          lineHeight: "175%",
+        },
+        ".supporting3-medium": {
+          fontSize: "20px",
+          lineHeight: "175%",
+          fontWeight: "500",
+        },
         ".body1": {
           fontSize: "18px",
           lineHeight: "175%",
