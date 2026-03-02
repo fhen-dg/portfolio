@@ -6,6 +6,7 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
   title: "Viramos",
   year: "2025",
   heroImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
+  heroImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
   heroImageAlt: "Viramos – regatta operating system",
   description:
     "A multi-role operational SaaS — rebuilt from a no-code MVP into a role-based, permission-driven platform serving 5 countries across Latin America.",
@@ -235,6 +236,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
   title: "Viramos",
   year: "2025",
   heroImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
+  heroImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
   heroImageAlt: "Viramos – sistema operativo para regatas",
   description:
     "Un sistema operativo para regatas multi-rol que conecta navegantes, jueces, clubes y asociaciones en toda Latinoamérica.",

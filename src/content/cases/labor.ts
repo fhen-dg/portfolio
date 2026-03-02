@@ -6,6 +6,7 @@ const laborCaseStudyEn: LaborCaseStudy = {
   title: "Labor",
   year: "2026",
   heroImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
+  heroImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
   heroImageAlt: "Labor – agricultural services marketplace",
   description:
     "A 0→1 marketplace built in 2 months and shipped to production — vibecoded on Next.js, deployed on Vercel, with Vercel Blob, Supabase, Clerk auth, and Google Maps integration.",
@@ -209,6 +210,7 @@ const laborCaseStudyEs: LaborCaseStudy = {
   title: "Labor",
   year: "2026",
   heroImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
+  heroImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
   heroImageAlt: "Labor – marketplace de servicios agropecuarios",
   description:
     "Una plataforma diseñada para generar confianza entre productores y contratistas agropecuarios, facilitando la contratación directa sin intermediarios.",

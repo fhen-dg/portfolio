@@ -6,6 +6,7 @@ const theoAICaseStudyEn: TheoAICaseStudy = {
   title: "Theo AI",
   year: "2025  —  Visual assets not shown due to NDA",
   heroImage: "/images/projects/theo-ai/TheoAICaseCover.png",
+  heroImageMobile: "/images/projects/theo-ai/TheoAICaseCoverMobile.png",
   heroImageAlt: "Theo AI – litigation intelligence platform",
   description:
     "Rapid product exploration at an early-stage legal AI startup: prompt-engineered research tooling and multi-format design for high-friction enterprise users.",
@@ -137,6 +138,7 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
   title: "Theo AI",
   year: "2025",
   heroImage: "/images/projects/theo-ai/TheoAICaseCover.png",
+  heroImageMobile: "/images/projects/theo-ai/TheoAICaseCoverMobile.png",
   heroImageAlt: "Theo AI – plataforma de inteligencia para litigios",
   description:
     "Exploración de producto acelerada en una startup de IA legal en etapa temprana: herramientas de investigación con prompt engineering y diseño multi-formato para usuarios enterprise de alta fricción.",

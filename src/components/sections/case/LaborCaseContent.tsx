@@ -26,6 +26,7 @@ export function LaborCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseHeroSection
           heroImage={cs.heroImage}
+          heroImageMobile={cs.heroImageMobile}
           heroImageAlt={cs.heroImageAlt}
           title={cs.title}
           description={cs.description}

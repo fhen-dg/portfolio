@@ -81,6 +81,7 @@ export type ViramosCaseStudy = {
   title: string;
   year: string;
   heroImage: string;
+  heroImageMobile: string;
   heroImageAlt: string;
   description: string;
   snapshot: {
@@ -120,6 +121,7 @@ export type TheoAICaseStudy = {
   title: string;
   year: string;
   heroImage: string;
+  heroImageMobile: string;
   heroImageAlt: string;
   description: string;
   snapshot: {
@@ -164,6 +166,7 @@ export type LaborCaseStudy = {
   title: string;
   year: string;
   heroImage: string;
+  heroImageMobile: string;
   heroImageAlt: string;
   description: string;
   snapshot: {
