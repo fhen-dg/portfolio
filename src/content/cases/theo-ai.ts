@@ -19,18 +19,22 @@ const theoAICaseStudyEn: TheoAICaseStudy = {
     { text: "litigation intelligence platform", emphasis: true },
     { text: ". Back then, there was no defined interface, just two open workstreams." },
     { type: "break", count: 2 },
-    { text: "The first took shape as " },
-    { text: "a prompt-based prototype", emphasis: true },
-    { text: ", built to validate a new solution direction fast." },
+    { text: "The first, a " },
+    { text: "case discovery tool", emphasis: true },
+    { text: ", took shape as a prompt-based prototype, built to validate a new solution direction fast." },
     { type: "break", count: 2 },
-    { text: "The second had to live within a " },
-    { text: "workflow-rigid, high-friction environment", emphasis: true },
-    { text: " where the question was format, not features." },
+    { text: "The second, a " },
+    { text: "case prediction product", emphasis: true },
+    { text: ", had to live within a workflow-rigid, high-friction environment where the question was format, not features." },
   ],
   context: {
-    heading: "The context",
+    heading: "The Context",
     body: [
-      { text: "Theo AI is building litigation intelligence infrastructure for the legal industry. When I joined, the product was pre-interface: a clear problem space, strong domain knowledge from the CPO, and two workstreams that needed to go from zero to testable fast. The environment was high-velocity, early-stage, and operating in a domain that is inherently conservative. Legal professionals with deeply entrenched workflows, high privacy requirements, and very low tolerance for new tools that add friction." },
+      { text: "Theo AI had the technology but an open market direction. The mandate: " },
+      { text: "test fast", emphasis: true },
+      { text: ". In the legal domain, institutional inertia is structural: " },
+      { text: "security reviews, compliance cycles, and IT approvals", emphasis: true },
+      { text: " make tool adoption hard regardless of product quality." },
     ],
   },
   workstreamsOverview: {
@@ -47,47 +51,57 @@ const theoAICaseStudyEn: TheoAICaseStudy = {
     ],
   },
   workstream1: {
-    heading: "Workstream 1. Litigation case discovery",
+    heading: "Case Discovery: Decision architecture over interface design",
+    intro: "The product needed to exist before any interface was built, which meant the design work was entirely about structure: what information to surface, what criteria to apply, and what the output needed to contain for someone to act on it.",
     items: [
       {
-        title: "The problem",
-        description: "Litigation funding companies identify which civil cases to finance by scanning news, court filings, and law firm publications for cases that meet strict investment criteria. The process is manual, inconsistent, and hard to scale.",
+        title: "Case discovery was manual, inconsistent and hard to scale",
+        description: "Litigation funding companies identify cases to finance by manually scanning news, court filings, and law firm publications. The process is inconsistent and hard to scale.",
       },
       {
-        title: "The approach",
-        description: "Rather than designing a UI first, the prototype was the prompt itself. We built a structured GPT research agent that scanned public sources, filtered results against mandatory legal and procedural criteria, and cross-referenced multiple sources to reduce hallucinations. The output was a structured case brief with enough information for a funding decision-maker to act on.",
+        title: "An agent instead of a wireframe",
+        description: "A structured GPT research agent that scanned public sources, filtered results against mandatory criteria, and cross-referenced multiple sources to reduce hallucinations. The output was a structured case brief with enough information for a decision-maker to act on.",
       },
       {
-        title: "The design decision",
-        description: "The challenge was not the interface. It was the decision architecture: what criteria are mandatory vs. optional, what signals indicate funding potential, and what does the output need to contain for someone to make a real investment call. The prompt was the product.",
+        title: "The prompt was the product",
+        description: "The challenge was not the interface. It was the decision architecture: what criteria are mandatory vs. optional, what signals indicate funding potential, and what the output needs to contain for someone to make a real investment call.",
       },
     ],
   },
   workstream2: {
-    heading: "Workstream 2. GC interface exploration",
-    intro: "GC executives needed a way to access AI-predicted litigation outcomes without disrupting how they already work. The question was not just what to show, but where and how, given that GC workflows are structured, private, and highly bureaucratic.",
+    heading: "Case Prediction: Format as adoption problem",
+    intro: "Three delivery formats were prototyped and tested with large in-house legal teams to find which could best surface high-stakes AI predictions into their existing workflows with the least friction.",
     items: [
       {
-        title: "Platform",
-        description: "A dedicated interface with full case data, filters, and portfolio views. The most powerful option on paper. It generated interest in testing but lost. GCs saw the value but could not justify adding a new tool to an environment where security reviews, IT approvals, and organizational inertia make adoption genuinely hard.",
+        title: "Platform: Best on paper, lost to adoption cost.",
+        description: "Generated real interest in testing. Lost not because users didn't see value, but because they couldn't justify adding a new tool to an environment where security reviews, IT approvals, and organizational inertia make adoption genuinely costly.",
       },
       {
-        title: "Chat",
-        description: "A conversational AI interface for querying case outcomes and exploring litigation scenarios. Got the least traction. The open-ended format did not match the structured, decision-oriented nature of GC work.",
+        title: "Chat: Open-ended format, wrong fit.",
+        description: "The open-ended format didn't match the structured, decision-oriented nature of how these users work. A conversational AI assumes exploratory intent; GC work is structured and outcome-driven.",
       },
       {
-        title: "Email digest",
-        description: "A structured case intelligence brief delivered directly to the inbox, formatted like something a GC might already receive. No new tool to adopt, no behavior to change. It arrived where GCs already were and fit into a workflow they were not willing to break.",
+        title: "Email digest: No new tool, no behavior change. Won.",
+        description: "No new tool to adopt, no behavior to change, no security review to clear. It arrived where users already were and fit into a workflow they were not willing to break. The most capable format lost to the most adoptable one.",
       },
     ],
   },
   finding: {
-    heading: "The finding",
+    heading: "The Findings",
     body: [
-      { text: "In conservative, high-stakes domains, " },
-      { text: "the right medium is the one that does not ask users to notice it.", emphasis: true },
-      { text: " The email won not because it was the most capable format, but because it required zero behavior change. The most powerful solution loses if adoption never happens." },
+      { text: "Case discovery: The prototype ran, got in front of users, and returned a clear answer: " },
+      { text: "output quality wasn't robust enough to convince.", emphasis: true },
+      { type: "break", count: 2 },
+      { text: "Case prediction: In a high-friction environment, " },
+      { text: "adoptability outweighs capability.", emphasis: true },
+      { text: " The email won not because it was the best format, but because it was already there." },
     ],
+  },
+  overview: {
+    image: "/images/projects/theo-ai/TheoAICaseOverview.png",
+    imageAlt: "Theo AI brand screen – dark background with the tagline 'Know it. Resolve it.' and the Theo AI logo",
+    link: { label: "theo.ai", href: "https://theoai.ai/" },
+    tools: ["Figma", "GPT", "Gemini", "Notion", "Google Workspace", "Slack"],
   },
   responsibilities: [
     {
@@ -98,7 +112,7 @@ const theoAICaseStudyEn: TheoAICaseStudy = {
     {
       icon: "chart-scatter",
       title: "Complex data interface design",
-      description: "Structured complex operational data into a legible, actionable dashboard: risk overview, portfolio tracking, case analysis, and financial exposure, integrating AI predictions alongside factual case data.",
+      description: "Translated complex AI predictions into legible, actionable outputs across three delivery formats: a full operational dashboard, a chart-based chat interface, and a structured email digest.",
     },
     {
       icon: "shield-alert",
@@ -136,17 +150,22 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
     { text: "plataforma de inteligencia para litigios", emphasis: true },
     { text: ". Cuando me uní, no había una interfaz definida, solo dos líneas de trabajo abiertas." },
     { type: "break", count: 2 },
-    { text: "La primera era una herramienta de investigación para financiadores de litigios cuyo proceso de descubrimiento de casos era completamente manual y difícil de escalar, " },
-    { text: "requiriendo validación antes de construir cualquier interfaz.", emphasis: true },
+    { text: "La primera, una " },
+    { text: "herramienta de descubrimiento de casos", emphasis: true },
+    { text: ", tomó forma como un prototipo basado en prompts, construido para validar una nueva dirección de solución rápidamente." },
     { type: "break", count: 2 },
-    { text: "La segunda abordaba grandes equipos legales internos interesados en predicciones de IA: un " },
-    { text: "entorno rígido en flujos de trabajo y de alta fricción", emphasis: true },
-    { text: " donde la pregunta era el formato, no las funcionalidades." },
+    { text: "La segunda, un " },
+    { text: "producto de predicción de casos", emphasis: true },
+    { text: ", tenía que vivir dentro de un entorno rígido en flujos de trabajo y de alta fricción donde la pregunta era el formato, no las funcionalidades." },
   ],
   context: {
     heading: "El contexto",
     body: [
-      { text: "Theo AI está construyendo infraestructura de inteligencia para litigios en la industria legal. Cuando me uní, el producto estaba en etapa pre-interfaz: un espacio de problema claro, conocimiento de dominio sólido por parte del CPO, y dos líneas de trabajo que necesitaban ir de cero a testeable rápidamente. El entorno era de alta velocidad, etapa temprana, y operando en un dominio inherentemente conservador. Profesionales legales con flujos de trabajo profundamente establecidos, altos requisitos de privacidad, y muy baja tolerancia a nuevas herramientas que generan fricción." },
+      { text: "Theo AI tenía la tecnología pero una dirección de mercado abierta. El mandato: " },
+      { text: "testear rápido", emphasis: true },
+      { text: ". En el dominio legal, la inercia institucional es estructural: " },
+      { text: "revisiones de seguridad, ciclos de compliance y aprobaciones de IT", emphasis: true },
+      { text: " dificultan la adopción de herramientas independientemente de la calidad del producto." },
     ],
   },
   workstreamsOverview: {
@@ -164,36 +183,37 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
   },
   workstream1: {
     heading: "Línea 1. Descubrimiento de casos para litigios",
+    intro: "El producto tenía que existir antes de construir cualquier interfaz, lo que significaba que el trabajo de diseño era completamente sobre estructura: qué información surfacear, qué criterios aplicar y qué debía contener el output para que alguien pudiera actuar sobre él.",
     items: [
       {
-        title: "El problema",
-        description: "Las empresas de financiamiento de litigios identifican qué casos civiles financiar escaneando noticias, expedientes judiciales y publicaciones de estudios jurídicos. El proceso es manual, inconsistente y difícil de escalar.",
+        title: "El descubrimiento de casos es manual, inconsistente y difícil de escalar",
+        description: "Las empresas de financiamiento de litigios identifican los casos a financiar escaneando manualmente noticias, expedientes judiciales y publicaciones de estudios jurídicos. El proceso es inconsistente y difícil de escalar.",
       },
       {
-        title: "El enfoque",
-        description: "En lugar de diseñar una UI primero, el prototipo fue el prompt en sí mismo. Construimos un agente de investigación GPT estructurado que escaneaba fuentes públicas, filtraba resultados contra criterios legales y procesales obligatorios, y cruzaba múltiples fuentes para reducir alucinaciones. El output era un brief de caso estructurado con la información suficiente para que un tomador de decisiones de inversión pueda actuar.",
+        title: "Un agente GPT, no un wireframe",
+        description: "Un agente de investigación GPT estructurado que escaneaba fuentes públicas, filtraba resultados contra criterios obligatorios y cruzaba múltiples fuentes para reducir alucinaciones. El output era un brief de caso estructurado con la información suficiente para que un tomador de decisiones pueda actuar.",
       },
       {
-        title: "La decisión de diseño",
-        description: "El desafío no era la interfaz. Era la arquitectura de decisión: qué criterios son obligatorios vs. opcionales, qué señales indican potencial de financiamiento, y qué debe contener el output para que alguien pueda tomar una decisión real de inversión. El prompt era el producto.",
+        title: "El prompt era el producto",
+        description: "El desafío no era la interfaz. Era la arquitectura de decisión: qué criterios son obligatorios vs. opcionales, qué señales indican potencial de financiamiento, y qué debe contener el output para que alguien pueda tomar una decisión real de inversión.",
       },
     ],
   },
   workstream2: {
-    heading: "Línea 2. Exploración de interfaz para GC",
-    intro: "Los ejecutivos GC necesitaban una forma de acceder a predicciones de litigios impulsadas por IA sin interrumpir cómo ya trabajan. La pregunta no era solo qué mostrar, sino dónde y cómo, dado que los flujos de trabajo GC son estructurados, privados y altamente burocráticos.",
+    heading: "Producto General Counsel: el formato como problema de adopción",
+    intro: "Se prototiparon y testaron tres formatos de entrega con grandes equipos legales internos para encontrar cuál podía integrar las predicciones de IA en sus flujos de trabajo existentes con la menor fricción.",
     items: [
       {
-        title: "Plataforma",
-        description: "Una interfaz dedicada con datos completos de casos, filtros y vistas de portafolio. La opción más poderosa sobre el papel. Generó interés en los tests pero perdió. Los GC veían el valor pero no podían justificar agregar una nueva herramienta a un entorno donde las revisiones de seguridad, aprobaciones de IT e inercia organizacional hacen que la adopción sea genuinamente difícil.",
+        title: "Plataforma: La más capaz sobre el papel, perdió por el costo de adopción.",
+        description: "Generó interés real en los tests. Perdió no porque los usuarios no vieran el valor, sino porque no podían justificar agregar una nueva herramienta a un entorno donde las revisiones de seguridad, las aprobaciones de IT y la inercia organizacional hacen que la adopción sea genuinamente costosa.",
       },
       {
-        title: "Chat",
-        description: "Una interfaz de IA conversacional para consultar outcomes de casos y explorar escenarios de litigios. Obtuvo la menor tracción. El formato abierto no coincidía con la naturaleza estructurada y orientada a decisiones del trabajo GC.",
+        title: "Chat: Obtuvo la menor tracción. Formato abierto, encaje incorrecto.",
+        description: "El formato abierto no coincidía con la naturaleza estructurada y orientada a decisiones de cómo trabajan estos usuarios. Una IA conversacional asume intención exploratoria; el trabajo GC es estructurado y orientado a resultados.",
       },
       {
-        title: "Email digest",
-        description: "Un brief de inteligencia de caso estructurado entregado directamente al inbox, formateado como algo que un GC ya podría recibir. Sin nueva herramienta que adoptar, sin comportamiento que cambiar. Llegaba donde los GC ya estaban y encajaba en un flujo de trabajo que no estaban dispuestos a romper.",
+        title: "Email digest: Sin nueva herramienta, sin cambio de comportamiento. Ganó.",
+        description: "Sin nueva herramienta que adoptar, sin comportamiento que cambiar, sin revisión de seguridad que superar. Llegaba donde los usuarios ya estaban y encajaba en un flujo de trabajo que no estaban dispuestos a romper. El formato más capaz perdió ante el más adoptable.",
       },
     ],
   },
@@ -205,6 +225,12 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
       { text: " El email ganó no porque fuera el formato más capaz, sino porque requería cero cambio de comportamiento. La solución más poderosa pierde si la adopción nunca ocurre." },
     ],
   },
+  overview: {
+    image: "/images/projects/theo-ai/TheoAICaseOverview.png",
+    imageAlt: "Pantalla de marca de Theo AI – fondo oscuro con el tagline 'Know it. Resolve it.' y el logotipo de Theo AI",
+    link: { label: "theo.ai", href: "https://theoai.ai/" },
+    tools: ["Figma", "GPT", "Gemini", "Notion", "Google Workspace", "Slack"],
+  },
   responsibilities: [
     {
       icon: "brain-circuit",
@@ -214,7 +240,7 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
     {
       icon: "chart-scatter",
       title: "Diseño de interfaz para datos complejos",
-      description: "Estructuré datos operacionales complejos en un dashboard legible y accionable: resumen de riesgo, seguimiento de portafolio, análisis de casos y exposición financiera, integrando predicciones de IA junto a datos factuales.",
+      description: "Traduje predicciones complejas de IA en outputs legibles y accionables a través de tres formatos de entrega: un dashboard operacional completo, una interfaz de chat basada en gráficos y un email digest estructurado.",
     },
     {
       icon: "shield-alert",

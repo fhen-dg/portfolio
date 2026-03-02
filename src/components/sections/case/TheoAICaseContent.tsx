@@ -8,9 +8,10 @@ import { CaseSnapshotSection } from "@/components/sections/case/CaseSnapshotSect
 import { CaseSummarySection } from "@/components/sections/case/CaseSummarySection";
 import { CaseResponsibilitiesSection } from "@/components/sections/case/CaseResponsibilitiesSection";
 import { CaseStatementSection } from "@/components/sections/case/CaseStatementSection";
-import { CaseDisplayBreakdownSection } from "@/components/sections/case/CaseDisplayBreakdownSection";
 import { CaseDescriptiveBreakdownSection } from "@/components/sections/case/CaseDescriptiveBreakdownSection";
+import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSection";
 import { ContactFooter } from "@/components/sections/ContactFooter";
+import { Separator } from "@/components/ui/separator";
 
 export function TheoAICaseContent() {
   const { t, locale } = useLocale();
@@ -66,17 +67,9 @@ export function TheoAICaseContent() {
       <div className="h-[200px] lg:h-[320px] w-full" />
 
       <RevealOnScroll className="w-full">
-        <CaseDisplayBreakdownSection
-          heading={cs.workstreamsOverview.heading}
-          items={cs.workstreamsOverview.items}
-        />
-      </RevealOnScroll>
-
-      <div className="h-[200px] lg:h-[320px] w-full" />
-
-      <RevealOnScroll className="w-full">
         <CaseDescriptiveBreakdownSection
           heading={cs.workstream1.heading}
+          intro={cs.workstream1.intro}
           items={cs.workstream1.items}
         />
       </RevealOnScroll>
@@ -103,9 +96,24 @@ export function TheoAICaseContent() {
 
       <div className="h-[80px] lg:h-[120px] w-full" />
 
+      <RevealOnScroll className="w-full">
+        <CaseOverviewSection
+          image={cs.overview.image}
+          imageAlt={cs.overview.imageAlt}
+          link={cs.overview.link}
+          tools={cs.overview.tools}
+        />
+      </RevealOnScroll>
+
+      <div className="h-[120px] lg:h-[200px] w-full" />
+
+      <Separator />
+
+      <div className="h-[80px] lg:h-[120px] w-full" />
+
       <ContactFooter />
 
-      <div className="h-[120px] w-full" />
+      <div className="h-[80px] lg:h-[120px] w-full" />
     </>
   );
 }

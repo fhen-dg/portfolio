@@ -16,6 +16,7 @@ import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSect
 import { ContactFooter } from "@/components/sections/ContactFooter";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { getPrimaryProjects } from "@/content/projects";
+import { Separator } from "@/components/ui/separator";
 
 export function ViramosCaseContent() {
   const { t, locale } = useLocale();
@@ -144,11 +145,15 @@ export function ViramosCaseContent() {
         />
       </RevealOnScroll>
 
-      <div className="h-[120px] lg:h-[120px] w-full" />
+      <div className="h-[120px] lg:h-[200px] w-full" />
+
+      <Separator />
+
+      <div className="h-[80px] lg:h-[120px] w-full" />
 
       <ContactFooter />
 
-      <div className="h-[120px] w-full" />
+      <div className="h-[80px] lg:h-[120px] w-full" />
 
       <RevealOnScroll className="w-full">
         <div className="max-w-[1024px] mx-auto hidden">
@@ -156,7 +161,7 @@ export function ViramosCaseContent() {
         </div>
       </RevealOnScroll>
 
-      <div className="h-[120px] w-full" />
+      <div className="h-[120px] w-full hidden" />
     </>
   );
 }

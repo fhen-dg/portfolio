@@ -138,6 +138,7 @@ export type TheoAICaseStudy = {
   };
   workstream1: {
     heading: string;
+    intro: string;
     items: CaseStrategyItem[];
   };
   workstream2: {
@@ -147,7 +148,13 @@ export type TheoAICaseStudy = {
   };
   finding: {
     heading: string;
-    body: RichTextSegment[];
+    body: CaseSummaryContentItem[];
+  };
+  overview: {
+    image: string;
+    imageAlt: string;
+    link: { label: string; href: string };
+    tools: string[];
   };
   responsibilities: CaseResponsibilityItem[];
 };
