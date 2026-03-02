@@ -8,8 +8,8 @@ export const es: Translations = {
   },
   hero: {
     introPrefix: "Soy Federico, pero me llaman ",
-    heading: "Diseño sistemas, no solo interfaces.",
-    tagline: "Estrategia de producto, arquitectura de sistemas, design systems y código listo para producción.",
+    heading: "Diseño y construyo productos digitales como sistemas",
+    tagline: "Desde la estrategia de producto hasta código listo para producción, pasando por arquitectura de sistemas y design systems pensados para escalar.",
     role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },

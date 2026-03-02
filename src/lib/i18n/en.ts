@@ -8,8 +8,8 @@ export const en: Translations = {
   },
   hero: {
     introPrefix: "I'm Federico, but people call me ",
-    heading: "I design systems, not just interfaces.",
-    tagline: "Product strategy, system architecture, design systems, and production-ready code.",
+    heading: "I design, build and ship digital products as systems",
+    tagline: "From product strategy through scalable architecture and design systems to production-ready code.",
     role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },
