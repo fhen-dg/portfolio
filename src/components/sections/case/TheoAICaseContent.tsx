@@ -69,6 +69,7 @@ export function TheoAICaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseDescriptiveBreakdownSection
+          supporting3={cs.workstream1.supporting3}
           heading={cs.workstream1.heading}
           intro={cs.workstream1.intro}
           items={cs.workstream1.items}
@@ -79,6 +80,7 @@ export function TheoAICaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseDescriptiveBreakdownSection
+          supporting3={cs.workstream2.supporting3}
           heading={cs.workstream2.heading}
           intro={cs.workstream2.intro}
           items={cs.workstream2.items}

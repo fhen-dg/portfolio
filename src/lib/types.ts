@@ -139,11 +139,13 @@ export type TheoAICaseStudy = {
     items: CaseComplexityItem[];
   };
   workstream1: {
+    supporting3?: string;
     heading: string;
     intro: string;
     items: CaseStrategyItem[];
   };
   workstream2: {
+    supporting3?: string;
     heading: string;
     intro: string;
     items: CaseStrategyItem[];
