@@ -14,7 +14,7 @@ export function HeroSection() {
             {t.hero.introPrefix}
             <span className="font-medium text-primary-base">Fhen</span>
           </p>
-          <p className="title1 lg:header1 w-full">
+          <p className="title2 lg:header1 w-full">
             {t.hero.heading}
           </p>
           <p className="body1 lg:supporting2 w-full">

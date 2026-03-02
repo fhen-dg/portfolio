@@ -103,7 +103,7 @@ export const en: Translations = {
       {
         name: "Viramos",
         role: "Product Designer",
-        year: "2025",
+        year: "2024 - 2025",
         summary:
           "Led the full architectural redesign of a multi-role operational SaaS — from a no-code MVP to a scalable, role-based permission system rebuilt in Next.js with a shadcn design system.",
         bullets: [

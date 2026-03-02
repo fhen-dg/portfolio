@@ -4,7 +4,7 @@ import type { Locale } from "@/lib/i18n/types";
 const viramosCaseStudyEn: ViramosCaseStudy = {
   slug: "viramos",
   title: "Viramos",
-  year: "2025",
+  year: "2024 - 2025",
   heroImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
   heroImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
   heroImageAlt: "Viramos – regatta operating system",
@@ -234,12 +234,12 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
 const viramosCaseStudyEs: ViramosCaseStudy = {
   slug: "viramos",
   title: "Viramos",
-  year: "2025",
+  year: "2024 - 2025",
   heroImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
   heroImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
   heroImageAlt: "Viramos – sistema operativo para regatas",
   description:
-    "Un sistema operativo para regatas multi-rol que conecta navegantes, jueces, clubes y asociaciones en toda Latinoamérica.",
+    "SaaS operativo multirol, reconstruido desde un MVP no-code hacia una plataforma robusta basada en roles y permisos, con operación en 5 países de Latinoamérica.",
   snapshot: {
     role: "Product Designer",
     duration: "11 meses",

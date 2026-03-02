@@ -9,7 +9,7 @@ export function ContactFooter() {
   return (
     <section id="contact" className="flex justify-center w-full">
       <div className="flex flex-col gap-[32px] items-center max-w-[1024px] w-full">
-        <p className="title1 text-neutral-800 text-center w-full">
+        <p className="lg:title1 title2 text-neutral-800 text-center w-full">
           {t.contact.title}
         </p>
         <div className="flex flex-wrap gap-[20px] items-start justify-center w-full">

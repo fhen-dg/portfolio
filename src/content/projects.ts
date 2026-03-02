@@ -6,7 +6,7 @@ const primaryProjectsEn: Project[] = [
     slug: "viramos",
     title: "Viramos",
     tagline: "Architectural rebuild of a multi-role operational SaaS — from no-code MVP to permission-driven platform serving 5 LATAM countries.",
-    year: "2025",
+    year: "2024 - 2025",
     coverImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
     coverImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
     coverImageAlt: "Viramos – regatta operating system",
@@ -38,8 +38,8 @@ const primaryProjectsEs: Project[] = [
   {
     slug: "viramos",
     title: "Viramos",
-    tagline: "Un sistema operativo para regatas multi-rol que conecta navegantes, jueces, clubes y asociaciones en toda Latinoamérica.",
-    year: "2025",
+    tagline: "SaaS operativo multirol, reconstruido desde un MVP no-code hacia una plataforma robusta basada en roles y permisos, con operación en 5 países de Latinoamérica.",
+    year: "2024 - 2025",
     coverImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
     coverImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
     coverImageAlt: "Viramos – sistema operativo para regatas",
@@ -48,7 +48,7 @@ const primaryProjectsEs: Project[] = [
   {
     slug: "labor",
     title: "Labor",
-    tagline: "Una plataforma diseñada para generar confianza entre productores y contratistas agropecuarios, facilitando la contratación directa sin intermediarios.",
+    tagline: "Marketplace 0 a 1 construido y llevado a producción en 2 meses, vibe-codeada en Next.js y deployada en Vercel, con Vercel Blob para gestión de archivos, Supabase como base de datos, autenticación con Clerk e integración con Google Maps.",
     year: "2026",
     coverImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
     coverImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",

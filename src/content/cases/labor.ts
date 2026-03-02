@@ -213,7 +213,7 @@ const laborCaseStudyEs: LaborCaseStudy = {
   heroImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
   heroImageAlt: "Labor – marketplace de servicios agropecuarios",
   description:
-    "Una plataforma diseñada para generar confianza entre productores y contratistas agropecuarios, facilitando la contratación directa sin intermediarios.",
+    "Marketplace 0 a 1 construido y llevado a producción en 2 meses, vibe-codeada en Next.js y deployada en Vercel, con Vercel Blob para gestión de archivos, Supabase como base de datos, autenticación con Clerk e integración con Google Maps.",
   snapshot: {
     role: "Product Designer / Design Engineer",
     duration: "2 meses",
