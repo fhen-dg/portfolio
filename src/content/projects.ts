@@ -32,6 +32,16 @@ const primaryProjectsEn: Project[] = [
     coverImageAlt: "Theo AI – litigation intelligence platform",
     href: "/case/theo-ai",
   },
+  {
+    slug: "verybusy",
+    title: "Verybusy",
+    tagline: "A professional image proofing SaaS — designed the permission architecture, workspace model, and feature-gating strategy that made an active product monetizable.",
+    year: "2023 – 2024",
+    coverImage: "/images/projects/verybusy/VerybusyCaseCover.png",
+    coverImageMobile: "/images/projects/verybusy/VerybusyCaseCover.png",
+    coverImageAlt: "VeryBusy – professional image proofing platform",
+    href: "/case/verybusy",
+  },
 ];
 
 const primaryProjectsEs: Project[] = [
@@ -65,19 +75,20 @@ const primaryProjectsEs: Project[] = [
     coverImageAlt: "Theo AI – plataforma de inteligencia para litigios",
     href: "/case/theo-ai",
   },
+  {
+    slug: "verybusy",
+    title: "Verybusy",
+    tagline: "SaaS profesional de proofing de imágenes — diseñé la arquitectura de permisos, el modelo de workspace y la estrategia de feature-gating que hicieron monetizable un producto activo.",
+    year: "2023 – 2024",
+    coverImage: "/images/projects/verybusy/VerybusyCaseCover.png",
+    coverImageMobile: "/images/projects/verybusy/VerybusyCaseCover.png",
+    coverImageAlt: "VeryBusy – plataforma profesional de proofing de imágenes",
+    href: "/case/verybusy",
+  },
 ];
 
 export function getPrimaryProjects(locale: Locale): Project[] {
   return locale === "es" ? primaryProjectsEs : primaryProjectsEn;
 }
 
-export const secondaryProjects: Project[] = [
-  {
-    slug: "verybusy",
-    title: "Verybusy",
-    year: "2024",
-    coverImage: "https://www.figma.com/api/mcp/asset/c45f4164-276b-4cad-b4f5-0c1fd4bb2d33",
-    coverImageAlt: "Verybusy project cover",
-    comingSoon: true,
-  },
-];
+export const secondaryProjects: Project[] = [];

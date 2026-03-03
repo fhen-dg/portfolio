@@ -198,6 +198,39 @@ export type LaborCaseStudy = {
   };
 };
 
+export type VerybusyCaseStudy = {
+  slug: string;
+  title: string;
+  year: string;
+  heroImage: string;
+  heroImageMobile?: string;
+  heroImageAlt: string;
+  description: string;
+  snapshot: {
+    role: string;
+    duration: string;
+    team: string;
+  };
+  summary: CaseSummaryContentItem[];
+  responsibilities: CaseResponsibilityItem[];
+  situation: {
+    heading: string;
+    body: CaseSummaryContentItem[];
+  };
+  structuralDecisions: {
+    heading: string;
+    intro: string;
+    items: CaseStrategyItem[];
+  };
+  showcase: CaseShowcaseItem[];
+  overview: {
+    image: string;
+    imageAlt: string;
+    link: { label: string; href: string };
+    tools: string[];
+  };
+};
+
 export type CVExperience = {
   role: string;
   company: string;
