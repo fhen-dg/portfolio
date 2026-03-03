@@ -9,98 +9,92 @@ const verybusyCaseStudyEn: VerybusyCaseStudy = {
   heroImageMobile: "/images/projects/verybusy/VerybusyCaseCover.png",
   heroImageAlt: "VeryBusy – professional image proofing platform",
   description:
-    "A professional image proofing SaaS — designed the permission architecture, workspace model, and feature-gating strategy that made an active product monetizable.",
+    "Permission architecture, workspace model, and monetization layer for a professional image proofing SaaS: structural work on a live product with an active user base.",
   snapshot: {
     role: "Lead Product Designer",
     duration: "6 months",
-    team: "Founders (×2), Product Owner, Scrum Master, Engineering",
+    team: "Founders, Product Owner, Scrum Master, Engineers, QA, Designer (me)",
   },
   summary: [
-    { text: "VeryBusy had users and clear " },
-    { text: "product-market fit", emphasis: true },
-    { text: " in a niche professional market. What it didn't have: a scalable collaboration model, an explicit permission system, or a defined path to monetization." },
+    { text: "VeryBusy is a professional image proofing platform with an active user base. When I joined, " },
+    { text: "features kept shipping", emphasis: true },
+    { text: "." },
     { type: "break", count: 2 },
-    { text: "The work was structural — " },
-    { text: "role architecture and workspace model", emphasis: true },
-    { text: ", settings IA, design system foundations, interaction design across core workflows, and upgrade flows." },
+    { text: "What " },
+    { text: "it lacked was the structural layer", emphasis: true },
+    { text: ": a defined collaboration model and an explicit permission system that would make " },
+    { text: "a path to monetization", emphasis: true },
+    { text: " possible." },
+    { type: "break", count: 2 },
+    { text: "The product didn't need more features. It needed " },
+    { text: "the rules under which those features operated", emphasis: true },
+    { text: "." },
   ],
   responsibilities: [
     {
       icon: "shield-check",
       title: "Permission architecture",
       description:
-        "Designed the role system from scratch — 4 explicit roles with capability boundaries at workspace and project level, resolving a known architectural debt that limited the product's ability to serve professional teams.",
+        "Designed the role system from scratch: 4 explicit roles with independent capability boundaries at workspace and project level. Each role defined by one question: who pays, who manages, who produces, who reviews.",
     },
     {
-      icon: "layers",
+      icon: "folder-tree",
       title: "Workspace model",
       description:
-        "Defined the workspace as the organizational and billing unit, separating user identity from plan ownership. One account, multiple workspaces, each with its own plan and member set — unlocking multi-studio collaboration and giving the subscription model a clean anchor.",
+        "Defined the workspace as the organizational and billing unit, decoupling user identity from plan ownership. One login, multiple workspaces, each with its own plan and team. Restructured settings around this separation: two distinct contexts with independent scope.",
     },
     {
-      icon: "layout-template",
-      title: "Settings IA",
-      description:
-        "Restructured settings around the account/workspace distinction: two distinct contexts, each with its own tab structure and internal logic. Eliminated the confusion between what belonged to the user and what belonged to the plan.",
-    },
-    {
-      icon: "workflow",
-      title: "Workflow primitives",
-      description:
-        "Designed the label system as a flexible primitive — not a state machine. Teams define their own labels, load preset groups, and apply them in bulk. Approval remains a separate, explicit action. The system adapts to the team, not the other way around.",
-    },
-    {
-      icon: "component",
-      title: "Design system foundations",
-      description:
-        "Built missing components with autolayout aligned to code structure. Organized Figma color and type styles for system-wide consistency — pre-variables era, styles were the single source of truth for tokens. Restructured the file architecture for engineering handoff.",
-    },
-    {
-      icon: "bar-chart-3",
+      icon: "banknote",
       title: "Monetization design",
       description:
-        "Designed upgrade paths, paywalls, and plan selection flows. Contributed to strategic decisions about which features went behind the gate — in constant dialogue with founders and PO.",
+        "Designed upgrade paths, paywalls, and plan selection flows. Shaped the feature-gating strategy alongside founders and PO around one question: does it make the product worth paying for.",
     },
     {
-      icon: "layout-panel-top",
+      icon: "shuffle",
+      title: "Workflow primitives",
+      description:
+        "Designed the label system as a flexible workflow primitive, not a predefined state machine. Teams structure their own review pipelines: custom labels, reusable presets. Approval is a separate, explicit action.",
+    },
+    {
+      icon: "square-chevron-right",
+      title: "Handoff architecture",
+      description:
+        "Built and re-built components aligned with the codebase: naming conventions, layer hierarchy, and layout logic. System styles organized as shared reference between design and code. Restructured the Figma file to reduce handoff friction with engineering.",
+    },
+    {
+      icon: "mouse-pointer-click",
       title: "Interaction design",
       description:
-        "Shipped precision interaction improvements across professional workflows: OS-style multi-select with shift/cmd modifiers, drag-to-select across asset grids, nested context menus for asset actions, bulk label and action controls, and multi-email project invites — reducing high-friction repetitive operations throughout the product.",
+        "Shipped interaction improvements: OS-style multi-select, drag-to-select, nested context menus, bulk actions (approve, delete, download, comment), and simultaneous email invites. Each replaced a friction point with a pattern users already knew.",
     },
   ],
   situation: {
     heading: "The Situation",
     body: [
       {
-        text: "The product was functional and had active users — retouchers and art directors using it for real work. But the collaboration model was ",
+        text: "Retouchers and art directors were using it for real work, but the product was too informal to support professional workflows, and too undefined to charge for. ",
       },
-      { text: "too informal to support complex professional workflows", emphasis: true },
-      { text: ", and too undefined to charge for. Permissions were rudimentary, the account/workspace hierarchy didn't exist, and the design system wasn't structured for the pace of feature development the business needed." },
+      { text: "No permission system, no workspace hierarchy, no usage limits.", emphasis: true },
     ],
   },
   structuralDecisions: {
-    heading: "Structural Decisions",
-    intro: "Four decisions defined the collaboration model.",
+    heading: "The Structural Layer",
+    intro: "Three decisions that built the foundation for monetization: access control, organizational structure, and usage limits.",
     items: [
       {
-        title: "Role boundaries, not just permissions",
+        title: "Explicit roles over granular permissions",
         description:
-          "Before: a flat, informal permission model with no named roles, limited flexibility, and known gaps the team had deferred. The solution: 4 explicit roles — Owner, Manager, Editor, Reviewer — with capabilities defined independently at workspace and project level. The criterion: who pays, who manages, who produces, who reviews.",
+          "Granular permission models offer flexibility but transfer complexity to users and implementation. For a product where roles map directly to existing workflow actors, making them explicit was the right decision: four roles, defined capability sets, no overlap, no ambiguity.",
       },
       {
-        title: "Workspace as the unit of billing and trust",
+        title: "Decoupling identity from billing",
         description:
-          "A user account shouldn't be tied to a plan. The workspace model separated user identity from subscription ownership: one account, multiple workspaces, each with its own plan, members, and projects. A freelancer working across studios keeps one account; each studio operates its own workspace under its own plan.",
+          "Verybusy had user accounts but no workspace layer. Introducing workspace as the billing entity was the architectural prerequisite: one identity, multiple independent client relationships, each with its own plan.",
       },
       {
-        title: "Settings as a mental model problem",
+        title: "Gating around upgrade triggers",
         description:
-          "The original settings mixed user-level and workspace-level configuration without a clear hierarchy. The fix was conceptual: two distinct contexts — My Account and Workspace — each with its own tab structure and scope. What belongs to the person vs. what belongs to the plan became immediately legible.",
-      },
-      {
-        title: "External access without friction",
-        description:
-          "Collaborators join via email or link, with a role pre-assigned, no account required. A client reviewing a campaign sees only what they need — not internal comments, not version history. Multiple recipients invited in a single action. Before, each invite required closing and reopening a modal.",
+          "Gates were placed at both usage limits and feature access, designed from one direction: what would move a user on each tier to the next? Not what to restrict, but what creates genuine upgrade pressure at each boundary.",
       },
     ],
   },
@@ -168,7 +162,7 @@ const verybusyCaseStudyEs: VerybusyCaseStudy = {
   snapshot: {
     role: "Lead Product Designer",
     duration: "6 meses",
-    team: "Fundadores (×2), Product Owner, Scrum Master, Ingeniería",
+    team: "Fundadores, Product owner, Scrum master, Ingenieros, QA, Designer (yo)",
   },
   summary: [
     { text: "VeryBusy tenía usuarios y un claro " },

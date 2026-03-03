@@ -13,7 +13,7 @@ const laborCaseStudyEn: LaborCaseStudy = {
   snapshot: {
     role: "Product Designer / Design Engineer",
     duration: "2 months",
-    team: "Product Owner, Designer (me), Developer (for weekly consulting)",
+    team: "Founders, Product Owner, Engineering Advisor (for weekly consulting), Designer (me)",
   },
   summary: [
     { text: "Labor is a " },
@@ -217,7 +217,7 @@ const laborCaseStudyEs: LaborCaseStudy = {
   snapshot: {
     role: "Product Designer / Design Engineer",
     duration: "2 meses",
-    team: "Product Owner, Designer (yo), Developer (consultoría semanal)",
+    team: "Founders, Product owner, Asesor de desarrollo (consultoría semanal), Designer (yo)",
   },
   summary: [
     { text: "Labor es un " },

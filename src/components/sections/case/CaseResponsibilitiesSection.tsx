@@ -2,6 +2,7 @@ import type { CaseResponsibilityIcon, CaseResponsibilityItem } from "@/lib/types
 import { Separator } from "@/components/ui/separator";
 import type { LucideIcon } from "lucide-react";
 import {
+  Banknote,
   BarChart3,
   BrainCircuit,
   ChartScatter,
@@ -9,15 +10,19 @@ import {
   GitBranch,
   Component as ComponentIcon,
   Database,
+  FolderTree,
   LayoutTemplate,
   LayoutPanelTop,
   Layers,
   Lightbulb,
+  MousePointerClick,
   Network,
   Scale,
   ShieldAlert,
   ShieldCheck,
+  Shuffle,
   SquareCode,
+  SquareChevronRight,
   Sparkles,
   Workflow,
 } from "lucide-react";
@@ -46,6 +51,11 @@ const iconByKey: Record<CaseResponsibilityIcon, LucideIcon> = {
   "git-branch": GitBranch,
   "chart-scatter": ChartScatter,
   "layout-panel-top": LayoutPanelTop,
+  "square-chevron-right": SquareChevronRight,
+  "mouse-pointer-click": MousePointerClick,
+  banknote: Banknote,
+  shuffle: Shuffle,
+  "folder-tree": FolderTree,
 };
 
 function chunkBy<T>(items: T[], size: number): T[][] {

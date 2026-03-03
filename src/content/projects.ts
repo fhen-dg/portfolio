@@ -35,7 +35,7 @@ const primaryProjectsEn: Project[] = [
   {
     slug: "verybusy",
     title: "Verybusy",
-    tagline: "A professional image proofing SaaS — designed the permission architecture, workspace model, and feature-gating strategy that made an active product monetizable.",
+    tagline: "Permission architecture, workspace model, and monetization layer for a professional image proofing SaaS: structural work on a live product with an active user base.",
     year: "2023 – 2024",
     coverImage: "/images/projects/verybusy/VerybusyCaseCover.png",
     coverImageMobile: "/images/projects/verybusy/VerybusyCaseCover.png",

@@ -40,7 +40,12 @@ export type CaseResponsibilityIcon =
   | "scale"
   | "git-branch"
   | "chart-scatter"
-  | "layout-panel-top";
+  | "layout-panel-top"
+  | "square-chevron-right"
+  | "mouse-pointer-click"
+  | "banknote"
+  | "shuffle"
+  | "folder-tree";
 
 export type CaseResponsibilityItem = {
   icon: CaseResponsibilityIcon;
