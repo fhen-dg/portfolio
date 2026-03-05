@@ -60,7 +60,7 @@ export type CaseStrategyItem = {
 
 export type CaseShowcaseItem = {
   title: string;
-  description: string;
+  description?: string;
   bullets: string[];
   image: string;
   imageAlt: string;
