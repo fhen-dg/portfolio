@@ -66,6 +66,7 @@ export type CaseShowcaseItem = {
   imageAlt: string;
   video?: string;
   imagePosition: "left" | "right";
+  showRing?: boolean;
 };
 
 export type CaseMetric = {
@@ -114,8 +115,9 @@ export type ViramosCaseStudy = {
   showcase: CaseShowcaseItem[];
   metrics: CaseMetrics;
   overview: {
-    image: string;
+    image?: string;
     imageAlt: string;
+    video?: string;
     link: { label: string; href: string };
     tools: string[];
   };
@@ -196,8 +198,9 @@ export type LaborCaseStudy = {
   };
   showcase: CaseShowcaseItem[];
   overview: {
-    image: string;
+    image?: string;
     imageAlt: string;
+    video?: string;
     link: { label: string; href: string };
     tools: string[];
   };
@@ -228,9 +231,13 @@ export type VerybusyCaseStudy = {
     items: CaseStrategyItem[];
   };
   showcase: CaseShowcaseItem[];
+  outcome: {
+    body: CaseSummaryContentItem[];
+  };
   overview: {
-    image: string;
+    image?: string;
     imageAlt: string;
+    video?: string;
     link: { label: string; href: string };
     tools: string[];
   };

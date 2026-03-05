@@ -36,10 +36,11 @@ export const en: Translations = {
   },
   caseSections: {
     problem: "The Problem",
-    responsibilities: "My Ownership",
+    responsibilities: "My Role",
     complexities: "Complexities",
     strategicAlignment: "Strategic Alignment",
     solution: "The Solution",
+    showcase: "The Proposal",
   },
   caseSnapshot: {
     role: "Role",

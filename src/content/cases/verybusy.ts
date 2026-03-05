@@ -35,7 +35,7 @@ const verybusyCaseStudyEn: VerybusyCaseStudy = {
       icon: "shield-check",
       title: "Permission architecture",
       description:
-        "Designed the role system from scratch: 4 explicit roles with independent capability boundaries at workspace and project level. Each role defined by one question: who pays, who manages, who produces, who reviews.",
+        "Designed the role system from scratch: A two-level role system with independent capability boundaries: workspace roles controlling organizational access and billing, project roles controlling operational capabilities within each project.",
     },
     {
       icon: "folder-tree",
@@ -84,7 +84,7 @@ const verybusyCaseStudyEn: VerybusyCaseStudy = {
       {
         title: "Explicit roles over granular permissions",
         description:
-          "Granular permission models offer flexibility but transfer complexity to users and implementation. For a product where roles map directly to existing workflow actors, making them explicit was the right decision: four roles, defined capability sets, no overlap, no ambiguity.",
+          "Granular permission models offer flexibility but transfer complexity to users and implementation. For a product where roles map directly to existing workflow actors, making them explicit was the right decision: two levels, defined capability sets at each, no overlap, no ambiguity.",
       },
       {
         title: "Decoupling identity from billing",
@@ -100,53 +100,61 @@ const verybusyCaseStudyEn: VerybusyCaseStudy = {
   },
   showcase: [
     {
-      title: "External access model",
+      title: "Workspace-level roles and settings",
       description:
-        "Three access patterns, each scoping a different visibility layer. Email and link invites assign a role at entry — determining both what the collaborator can do and what they can see. The view-only presentation link goes further: external stakeholders see a curated asset presentation with no internal commentary. The working layer — comments, rounds, markups — stays hidden.",
+        "Each workspace is a self-contained unit: independent billing, team structure, and configuration.",
       bullets: [
-        "Email or link invite with role assignment at entry",
-        "No-account access for reviewers and editors",
-        "View-only presentation mode: assets visible, working layer hidden",
+        "Four workspace roles with independent capability sets: Owner, Admin, Manager, Member",
+        "One account, independent role per workspace: Owner at one studio, Manager at another",
+        "Settings scoped to the workspace: plan, billing, members, and projects",
       ],
-      image: "",
-      imageAlt: "External access model — email and link invite flows",
-      imagePosition: "right",
-    },
-    {
-      title: "Round comparison",
-      description:
-        "Two modes for reviewing visual differences between rounds: toggle in place for quick overlay, or compare side by side for precise diff review. Built for the precision professional retouching workflows require.",
-      bullets: [
-        "Toggle between rounds in the same viewport",
-        "Side-by-side comparison for detailed diff review",
-        "Round selector accessible from within the asset view",
-      ],
-      image: "",
-      imageAlt: "Round comparison — toggle and side-by-side diff review",
+      image: "/images/projects/verybusy/VerybusyShowcaseWorkspaceModel.png",
+      imageAlt: "Workspace-level roles and settings",
       imagePosition: "left",
+      showRing: false,
     },
     {
-      title: "Interaction design at scale",
+      title: "Project-level roles and access",
       description:
-        "OS-style asset selection — shift/cmd multi-select and drag-to-select — brings familiar interaction patterns to high-volume workflows. Bulk action controls surface when multiple assets are selected; nested context menus group related operations without visual noise.",
+        "Two access models, one permission chain: workspace roles flow down to project access, clients stay outside the plan.",
       bullets: [
-        "Shift/cmd multi-select and drag-to-select",
-        "Bulk label and action controls on multi-asset selection",
-        "Nested context menus with progressive disclosure",
+        "Project access assigned by the Manager, whose role was set at workspace level",
+        "All project roles count as workspace members: every invited collaborator consumes a seat",
+        "View-only link for clients: the only seat-free entry, no account required",
       ],
-      image: "",
-      imageAlt: "Interaction design — multi-select and bulk action controls",
+      image: "/images/projects/verybusy/VerybusyShowcaseRoles&Access.png",
+      imageAlt: "Role assignment and project access — email and link invite flows",
       imagePosition: "right",
+      showRing: false,
+    },
+    {
+      title: "Monetization layer: gates and upgrade paths",
+      description:
+        "Designed from one direction: what moves a user to the next tier.",
+      bullets: [
+        "Two upgrade paths from the same screen: add-ons within the plan, or a full plan change",
+        "Two gating mechanics: gradual friction at usage limits, hard stops at feature boundaries",
+      ],
+      image: "/images/projects/verybusy/VerybusyShowcaseMonetization.png",
+      imageAlt: "Monetization layer: gates and upgrade paths",
+      imagePosition: "left",
+      showRing: false,
     },
   ],
+  outcome: {
+    body: [
+      { text: "Shipped to production. Used today by professional imaging teams at brands including Lululemon, Target, and Benefit." },
+    ],
+  },
   overview: {
     image: "",
     imageAlt: "Verybusy platform overview",
+    video: "/images/projects/verybusy/VerybusyCaseOverviewVideo.mp4",
     link: {
       label: "verybusy.io",
       href: "https://verybusy.io",
     },
-    tools: ["Figma", "FigJam", "Notion", "Linear", "Slack"],
+    tools: ["Figma", "Figjam", "Notion", "Gitlab", "Slack"],
   },
 };
 
@@ -158,150 +166,152 @@ const verybusyCaseStudyEs: VerybusyCaseStudy = {
   heroImageMobile: "/images/projects/verybusy/VerybusyCaseCover.png",
   heroImageAlt: "VeryBusy – plataforma profesional de proofing de imágenes",
   description:
-    "SaaS profesional de proofing de imágenes — diseñé la arquitectura de permisos, el modelo de workspace y la estrategia de feature-gating que hicieron monetizable un producto activo.",
+    "Arquitectura de permisos, modelo de workspaces y capa de monetización para un SaaS de proofing de imágenes profesionales: trabajo estructural sobre un producto en producción con base de usuarios activa.",
   snapshot: {
     role: "Lead Product Designer",
     duration: "6 meses",
-    team: "Fundadores, Product owner, Scrum master, Ingenieros, QA, Designer (yo)",
+    team: "Founders, Product owner, Scrum master, Ingenieros, QA, Designer (yo)",
   },
   summary: [
-    { text: "VeryBusy tenía usuarios y un claro " },
-    { text: "product-market fit", emphasis: true },
-    { text: " en un mercado profesional de nicho. Lo que no tenía: un modelo de colaboración escalable, un sistema de permisos explícito ni un camino definido hacia la monetización." },
+    { text: "VeryBusy es una plataforma de proofing de imágenes para equipos profesionales, con una base de usuarios activa. Cuando me sumé al proyecto, el producto " },
+    { text: "seguía lanzando nuevas funcionalidades", emphasis: true },
+    { text: "." },
     { type: "break", count: 2 },
-    { text: "El trabajo fue estructural — " },
-    { text: "arquitectura de roles y modelo de workspace", emphasis: true },
-    { text: ", IA de configuración, bases del design system, diseño de interacción en flujos clave y upgrade flows." },
+    { text: "Lo que faltaba no eran más features, sino " },
+    { text: "la capa estructural", emphasis: true },
+    { text: ": un modelo de colaboración claro y un sistema explícito de permisos que hiciera posible " },
+    { text: "una estrategia de monetización", emphasis: true },
+    { text: "." },
+    { type: "break", count: 2 },
+    { text: "El producto no necesitaba más funcionalidades. Necesitaba " },
+    { text: "definir las reglas bajo las cuales esas funcionalidades operaban", emphasis: true },
+    { text: "." },
   ],
   responsibilities: [
     {
       icon: "shield-check",
       title: "Arquitectura de permisos",
       description:
-        "Diseñé el sistema de roles desde cero — 4 roles explícitos con límites de capacidad a nivel de workspace y proyecto, resolviendo una deuda arquitectónica conocida que limitaba la capacidad del producto para servir a equipos profesionales.",
+        "Diseñé el sistema de roles desde cero: un modelo de dos niveles con límites de capacidades independientes. Los roles de workspace controlan acceso organizacional y facturación, mientras que los roles de proyecto definen las capacidades operativas dentro de cada proyecto.",
     },
     {
-      icon: "layers",
+      icon: "folder-tree",
       title: "Modelo de workspace",
       description:
-        "Definí el workspace como la unidad organizacional y de facturación, separando la identidad del usuario de la propiedad del plan. Una cuenta, múltiples workspaces, cada uno con su propio plan y conjunto de miembros — habilitando la colaboración multi-estudio y dando al modelo de suscripción un anclaje claro.",
+        "Definí el workspace como la unidad organizacional y de facturación, desacoplando la identidad del usuario de la propiedad del plan. Una cuenta, múltiples workspaces, cada uno con su propio plan y equipo. Reorganicé la configuración del producto alrededor de esta separación: dos contextos claramente diferenciados con alcances independientes.",
     },
     {
-      icon: "layout-template",
-      title: "IA de configuración",
+      icon: "banknote",
+      title: "Estrategia de monetización",
       description:
-        "Reestructuré la configuración en torno a la distinción cuenta/workspace: dos contextos distintos, cada uno con su propia estructura de pestañas y lógica interna. Eliminé la confusión entre lo que pertenecía al usuario y lo que pertenecía al plan.",
+        "Diseñé los flujos de upgrade, paywalls y selección de planes. La estrategia de feature-gating se definió junto a los founders y el PO alrededor de una pregunta central: ¿esto hace que el producto valga la pena pagar por él?",
     },
     {
-      icon: "workflow",
-      title: "Primitivos de workflow",
+      icon: "shuffle",
+      title: "Componentes base del workflow",
       description:
-        "Diseñé el sistema de etiquetas como un primitivo flexible, no como una máquina de estados. Los equipos definen sus propias etiquetas, cargan grupos predefinidos y las aplican en masa. La aprobación sigue siendo una acción separada y explícita. El sistema se adapta al equipo, no al revés.",
+        "Diseñé el sistema de labels como un componente flexible del workflow, no como una máquina de estados predefinida. Los equipos pueden estructurar sus propios pipelines de revisión mediante etiquetas personalizadas y presets reutilizables. La aprobación es una acción separada y explícita.",
     },
     {
-      icon: "component",
-      title: "Bases del design system",
+      icon: "square-chevron-right",
+      title: "Arquitectura de implementación",
       description:
-        "Construí componentes faltantes con autolayout alineado a la estructura de código. Organicé estilos de color y tipografía en Figma para consistencia a nivel de sistema — en la era pre-variables, los estilos eran la única fuente de verdad para los tokens. Reestructuré la arquitectura del archivo para el handoff de ingeniería.",
+        "Construí y reconstruí componentes alineados con el codebase: convenciones de naming, jerarquía de capas y lógica de layout. Los estilos del sistema se organizaron como referencia compartida entre diseño y código. También reestructuré el archivo de Figma para reducir fricción en el handoff con ingeniería.",
     },
     {
-      icon: "bar-chart-3",
-      title: "Diseño de monetización",
-      description:
-        "Diseñé upgrade paths, paywalls y flujos de selección de plan. Contribuí a decisiones estratégicas sobre qué features quedaban detrás del gate — en diálogo constante con los fundadores y el PO.",
-    },
-    {
-      icon: "layout-panel-top",
+      icon: "mouse-pointer-click",
       title: "Diseño de interacción",
       description:
-        "Implementé mejoras de interacción de precisión en flujos profesionales: multi-selección estilo OS con modificadores shift/cmd, drag-to-select en grillas de assets, menús de contexto anidados para acciones de assets, controles de etiquetas y acciones en masa, e invitaciones multi-email para proyectos — reduciendo operaciones repetitivas de alta fricción en todo el producto.",
+        "Implementé mejoras en las interacciones clave del producto: multi-select estilo OS, selección por arrastre, menús contextuales anidados, acciones masivas (aprobar, eliminar, descargar, comentar), invitaciones por email simultáneas. Cada mejora reemplazó fricción por patrones de interacción que los usuarios ya conocían.",
     },
   ],
   situation: {
     heading: "La situación",
     body: [
       {
-        text: "El producto era funcional y tenía usuarios activos — retouchers y directores de arte que lo usaban para trabajo real. Pero el modelo de colaboración era ",
+        text: "Retouchers y directores de arte ya lo utilizaban para trabajo real, pero el producto era demasiado informal para soportar workflows profesionales y demasiado indefinido para poder cobrar por él. ",
       },
-      { text: "demasiado informal para soportar flujos de trabajo profesionales complejos", emphasis: true },
-      { text: ", y demasiado indefinido para cobrar. Los permisos eran rudimentarios, la jerarquía cuenta/workspace no existía, y el design system no estaba estructurado para el ritmo de desarrollo de features que el negocio necesitaba." },
+      { text: "No había sistema de permisos, ni jerarquía organizacional, ni límites de uso.", emphasis: true },
     ],
   },
   structuralDecisions: {
-    heading: "Decisiones estructurales",
-    intro: "Cuatro decisiones definieron el modelo de colaboración.",
+    heading: "La capa estructural",
+    intro: "Tres decisiones estructurales que construyeron la base de la monetización: control de acceso, estructura organizacional y límites de uso.",
     items: [
       {
-        title: "Límites de rol, no solo permisos",
+        title: "Roles explícitos en lugar de permisos granulares",
         description:
-          "Antes: un modelo de permisos plano e informal sin roles con nombre, flexibilidad limitada y brechas conocidas que el equipo había postergado. La solución: 4 roles explícitos — Owner, Manager, Editor, Reviewer — con capacidades definidas de forma independiente a nivel de workspace y proyecto. El criterio: quién paga, quién gestiona, quién produce, quién revisa.",
+          "Los modelos de permisos granulares ofrecen flexibilidad, pero trasladan la complejidad a los usuarios y a la implementación. En un producto donde los roles reflejan actores reales del workflow, hacerlos explícitos era la decisión correcta: dos niveles, conjuntos de capacidades definidos en cada uno, sin superposición ni ambigüedad.",
       },
       {
-        title: "El workspace como unidad de facturación y confianza",
+        title: "Separación entre identidad y facturación",
         description:
-          "Una cuenta de usuario no debería estar atada a un plan. El modelo de workspace separó la identidad del usuario de la propiedad de la suscripción: una cuenta, múltiples workspaces, cada uno con su propio plan, miembros y proyectos. Un freelancer que trabaja con varios estudios mantiene una sola cuenta; cada estudio opera su propio workspace bajo su propio plan.",
+          "VeryBusy tenía cuentas de usuario, pero no una capa de workspace. Introducir el workspace como entidad de facturación fue el prerrequisito arquitectónico: una identidad, múltiples relaciones independientes con clientes, cada una con su propio plan.",
       },
       {
-        title: "La configuración como problema de modelo mental",
+        title: "Límites diseñados para impulsar upgrades",
         description:
-          "La configuración original mezclaba configuración a nivel de usuario y de workspace sin una jerarquía clara. La solución fue conceptual: dos contextos distintos — Mi cuenta y Workspace — cada uno con su propia estructura de pestañas y alcance. Lo que pertenece a la persona vs. lo que pertenece al plan se volvió inmediatamente legible.",
-      },
-      {
-        title: "Acceso externo sin fricción",
-        description:
-          "Los colaboradores se unen vía email o enlace, con un rol pre-asignado, sin necesidad de cuenta. Un cliente revisando una campaña ve solo lo que necesita — sin comentarios internos, sin historial de versiones. Múltiples destinatarios invitados en una sola acción. Antes, cada invitación requería cerrar y reabrir un modal.",
+          "Las restricciones se colocaron tanto en límites de uso como en acceso a funcionalidades. El diseño partió de una sola pregunta: ¿qué hace que un usuario en cada plan avance al siguiente nivel? No se trataba de restringir por restringir, sino de generar presión real de upgrade en cada límite.",
       },
     ],
   },
   showcase: [
     {
-      title: "Modelo de acceso externo",
+      title: "Roles y configuración a nivel de workspace",
       description:
-        "Tres patrones de acceso, cada uno delimitando una capa de visibilidad diferente. Las invitaciones por email y enlace asignan un rol al ingreso — determinando tanto lo que el colaborador puede hacer como lo que puede ver. El enlace de presentación solo lectura va más lejos: los stakeholders externos ven una presentación curada de assets sin comentarios internos. La capa de trabajo — comentarios, rondas, marcas — permanece oculta.",
+        "Cada workspace es una unidad autocontenida: facturación independiente, estructura de equipo y configuración.",
       bullets: [
-        "Invitación por email o enlace con asignación de rol al ingreso",
-        "Acceso sin cuenta para revisores y editores",
-        "Modo de presentación solo lectura: assets visibles, capa de trabajo oculta",
+        "Cuatro roles de workspace con capacidades diferenciadas: Owner, Admin, Manager y Member",
+        "Una cuenta con roles independientes en cada workspace (Owner en un estudio, Manager en otro)",
+        "Configuración con alcance de workspace: plan, facturación, miembros y proyectos",
       ],
-      image: "",
-      imageAlt: "Modelo de acceso externo — flujos de invitación por email y enlace",
-      imagePosition: "right",
-    },
-    {
-      title: "Comparación de rondas",
-      description:
-        "Dos modos para revisar diferencias visuales entre rondas: alternar en el mismo viewport para una superposición rápida, o comparar lado a lado para una revisión de diferencias precisa. Construido para la precisión que requieren los flujos de trabajo profesionales de retoque.",
-      bullets: [
-        "Alternar entre rondas en el mismo viewport",
-        "Comparación lado a lado para revisión detallada de diferencias",
-        "Selector de ronda accesible desde la vista del asset",
-      ],
-      image: "",
-      imageAlt: "Comparación de rondas — toggle y revisión de diferencias lado a lado",
+      image: "/images/projects/verybusy/VerybusyShowcaseWorkspaceModel.png",
+      imageAlt: "Roles y configuración a nivel de workspace",
       imagePosition: "left",
+      showRing: false,
     },
     {
-      title: "Diseño de interacción a escala",
+      title: "Roles y acceso a nivel proyecto",
       description:
-        "La selección de assets estilo OS — multi-selección con shift/cmd y drag-to-select — lleva patrones de interacción familiares a flujos de trabajo de alto volumen. Los controles de acción en masa aparecen cuando se seleccionan múltiples assets; los menús de contexto anidados agrupan operaciones relacionadas sin ruido visual.",
+        "Dos modelos de acceso, una cadena de permisos: los roles del workspace fluyen hacia el acceso a proyectos, los clientes permanecen fuera del plan.",
       bullets: [
-        "Multi-selección con shift/cmd y drag-to-select",
-        "Controles de etiquetas y acciones en masa en selección múltiple",
-        "Menús de contexto anidados con divulgación progresiva",
+        "El acceso al proyecto lo asigna el Manager, cuyo rol fue definido a nivel workspace",
+        "Todos los roles de proyecto cuentan como miembros del workspace: cada colaborador invitado consume un seat",
+        "Link de solo visualización para clientes: el único punto de entrada sin seat, no requiere cuenta",
       ],
-      image: "",
-      imageAlt: "Diseño de interacción — multi-selección y controles de acción en masa",
+      image: "/images/projects/verybusy/VerybusyShowcaseRoles&Access.png",
+      imageAlt: "Roles y acceso a nivel proyecto — flujos de invitación por email y enlace",
       imagePosition: "right",
+      showRing: false,
+    },
+    {
+      title: "Capa de monetización: límites y caminos de upgrade",
+      description:
+        "La capa de monetización se diseñó desde una lógica clara: qué mueve a un usuario al siguiente plan.",
+      bullets: [
+        "Dos rutas de upgrade desde la misma pantalla: add-ons dentro del plan, o un cambio completo de plan",
+        "Dos mecánicas de gating: fricción gradual en límites de uso, paradas duras en límites de features",
+      ],
+      image: "/images/projects/verybusy/VerybusyShowcaseMonetization.png",
+      imageAlt: "Capa de monetización: gates y rutas de upgrade",
+      imagePosition: "right",
+      showRing: false,
     },
   ],
+  outcome: {
+    body: [
+      { text: "Enviado a producción. Usado hoy por equipos profesionales de imágenes en marcas incluyendo Lululemon, Target y Benefit." },
+    ],
+  },
   overview: {
     image: "",
     imageAlt: "Resumen de la plataforma Verybusy",
+    video: "/images/projects/verybusy/VerybusyCaseOverviewVideo.mp4",
     link: {
       label: "verybusy.io",
       href: "https://verybusy.io",
     },
-    tools: ["Figma", "FigJam", "Notion", "Linear", "Slack"],
+    tools: ["Figma", "Figjam", "Notion", "Gitlab", "Slack"],
   },
 };
 

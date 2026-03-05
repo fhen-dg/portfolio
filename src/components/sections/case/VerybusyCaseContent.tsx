@@ -78,7 +78,16 @@ export function VerybusyCaseContent() {
 
       <div className="h-[200px] lg:h-[320px] w-full" />
 
-      <CaseShowcaseSection items={cs.showcase} />
+      <CaseShowcaseSection items={cs.showcase} heading={t.caseSections.showcase} />
+
+      <div className="h-[140px] lg:h-[260px] w-full" />
+
+      <RevealOnScroll className="w-full">
+        <CaseStatementSection
+          body={cs.outcome.body}
+          align="center"
+        />
+      </RevealOnScroll>
 
       <div className="h-[140px] lg:h-[260px] w-full" />
 
@@ -86,6 +95,7 @@ export function VerybusyCaseContent() {
         <CaseOverviewSection
           image={cs.overview.image}
           imageAlt={cs.overview.imageAlt}
+          video={cs.overview.video}
           link={cs.overview.link}
           tools={cs.overview.tools}
         />
