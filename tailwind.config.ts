@@ -140,6 +140,7 @@ const config: Config = {
         ".body1": {
           fontSize: "18px",
           lineHeight: "175%",
+          fontWeight: "400",
         },
         ".body1-bold": {
           fontSize: "18px",
@@ -149,10 +150,12 @@ const config: Config = {
         ".body2": {
           fontSize: "16px",
           lineHeight: "175%",
+          fontWeight: "400",
         },
         ".body3": {
           fontSize: "14px",
           lineHeight: "175%",
+          fontWeight: "400",
         },
         ".body3-bold": {
           fontSize: "14px",

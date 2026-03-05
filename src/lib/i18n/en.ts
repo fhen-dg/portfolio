@@ -9,7 +9,7 @@ export const en: Translations = {
   hero: {
     introPrefix: "I'm Federico, but people call me ",
     heading: "I design, build and ship digital products as systems",
-    tagline: "From product strategy through scalable architecture and design systems to production-ready code.",
+    tagline: "From product strategy through system architecture and design systems to production-ready code.",
     role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },

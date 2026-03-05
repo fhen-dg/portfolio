@@ -22,11 +22,11 @@ const theoAICaseStudyEn: TheoAICaseStudy = {
     { type: "break", count: 2 },
     { text: "The first, a " },
     { text: "case discovery tool", emphasis: true },
-    { text: ", took shape as a prompt-based prototype, built to validate a new solution direction fast." },
+    { text: ", took shape as a prompt-based prototype, built to quickly validate a new product direction." },
     { type: "break", count: 2 },
     { text: "The second, a " },
     { text: "case prediction product", emphasis: true },
-    { text: ", had to live within a workflow-rigid, high-friction environment where the question was format, not features." },
+    { text: ", had to operate within a workflow-rigid, high-friction environment where the question was format, not features." },
   ],
   context: {
     heading: "The Context",
@@ -73,7 +73,7 @@ const theoAICaseStudyEn: TheoAICaseStudy = {
   workstream2: {
     supporting3: "Case prediction product",
     heading: "Format as the adoption problem",
-    intro: "Three delivery formats were prototyped and tested with large in-house legal teams to find which could best surface high-stakes AI predictions into their existing workflows with the least friction.",
+    intro: "Three delivery formats were prototyped and tested with large in-house legal teams to find which could best integrate high-stakes AI predictions into their existing workflows with the least friction.",
     items: [
       {
         title: "Platform: Best on paper, lost to adoption cost.",
@@ -115,7 +115,7 @@ const theoAICaseStudyEn: TheoAICaseStudy = {
     {
       icon: "chart-scatter",
       title: "Complex data interface design",
-      description: "Translated complex AI predictions into legible, actionable outputs across three delivery formats: a full operational dashboard, a chart-based chat interface, and a structured email digest.",
+      description: "Turned complex AI predictions into legible, actionable outputs across three delivery formats: a full operational dashboard, a chart-based chat interface, and a structured email digest.",
     },
     {
       icon: "shield-alert",
@@ -143,7 +143,7 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
   heroImageMobile: "/images/projects/theo-ai/TheoAICaseCoverMobile.png",
   heroImageAlt: "Theo AI – plataforma de inteligencia para litigios",
   description:
-    "Exploración rápida de producto en una startup de Legal AI en etapa temprana: herramienta de investigación basada en prompt engineering y diseño en múltiples formatos para usuarios corporativos con alta fricción de adopción.",
+    "Exploración rápida de producto en una startup de Legal AI en etapa temprana: herramienta de investigación basada en prompt engineering y diseño en múltiples formatos para usuarios corporativos en entornos con alta fricción de adopción.",
   snapshot: {
     role: "Product Designer",
     duration: "4 meses",
@@ -152,7 +152,7 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
   summary: [
     { text: "Theo AI estaba construyendo una " },
     { text: "plataforma de inteligencia para litigios", emphasis: true },
-    { text: ". En ese momento no existía una interfaz definida, sino dos líneas de trabajo abiertas." },
+    { text: ". En ese momento no existía una interfaz definida, sino dos frentes de trabajo abiertos." },
     { type: "break", count: 2 },
     { text: "La primera, una " },
     { text: "herramienta de descubrimiento de casos", emphasis: true },
@@ -230,7 +230,7 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
       { text: "la calidad del output todavía no era lo suficientemente robusta para generar confianza plena.", emphasis: true },
       { type: "break", count: 2 },
       { text: "Predicción de casos: En entornos con alta fricción organizacional, " },
-      { text: "la facilidad de adopción pesa más que la capacidad técnica.", emphasis: true },
+      { text: "la adopción pesa más que la capacidad técnica.", emphasis: true },
       { text: " El correo electrónico ganó no por ser el mejor formato, sino por estar ya integrado en el ecosistema operativo del usuario." },
     ],
   },
@@ -244,17 +244,17 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
     {
       icon: "brain-circuit",
       title: "Prompt como prototipo",
-      description: "Prototipé la herramienta de descubrimiento de casos como un prompt estructurado de GPT. Definí los criterios obligatorios, los filtros de señal y el formato de salida necesario para que una persona responsable de la decisión pudiera actuar sobre los resultados.",
+      description: "Prototipé la herramienta de descubrimiento de casos como un prompt estructurado de GPT. Definí los criterios obligatorios, los filtros de señal y el formato de salida necesario para que quien toma la decisión pudiera actuar sobre los resultados.",
     },
     {
       icon: "chart-scatter",
       title: "Diseño de interfaces para datos complejos",
-      description: "Traduje predicciones de IA de alta complejidad en resultados claros y accionables a través de tres formatos de entrega: un panel operativo completo, una interfaz tipo chat con visualización basada en gráficos y un resumen estructurado por correo electrónico.",
+      description: "Transformé predicciones de IA complejas en resultados claros y accionables a través de tres formatos de entrega: un panel operativo completo, una interfaz tipo chat con visualización basada en gráficos y un resumen estructurado por correo electrónico.",
     },
     {
       icon: "shield-alert",
       title: "Hipótesis de fricción de adopción",
-      description: "Antes de diseñar cualquier formato, planteé la restricción central: en un sector conservador, la fricción de adopción pesa más que la calidad de las funcionalidades. Esta hipótesis fue validada en sesiones con usuarios reales.",
+      description: "Antes de diseñar cualquier formato, planteé la restricción central: en un sector conservador, la fricción de adopción pesa más que la calidad de las funcionalidades. Validé esta hipótesis en sesiones con usuarios reales.",
     },
     {
       icon: "layout-panel-top",

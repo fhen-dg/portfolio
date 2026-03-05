@@ -9,6 +9,15 @@ import { Button } from "@/components/ui/button";
 import { IconButton } from "@/components/ui/iconButton";
 import { Separator } from "@/components/ui/separator";
 import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+} from "@/components/ui/navigation-menu";
+import { getPrimaryProjects } from "@/content/projects";
+import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
@@ -224,7 +233,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-neutral-400 bg-neutral-white">
       {/* ── Mobile nav (< md) ── */}
-      <nav className="flex items-center justify-between p-5 md:hidden">
+      <nav className="flex h-[72px] items-center justify-between px-5 md:hidden">
         {/* Left: logo */}
         <Logo />
 
@@ -255,12 +264,34 @@ export function Navbar() {
 
         {/* Right: nav links + language + contact */}
         <div className="flex items-center">
-          <Button variant="ghost" asChild>
-            <Link href="/projects">{t.nav.projects}</Link>
-          </Button>
-          <Button variant="ghost" asChild>
-            <Link href="/cv">{t.nav.cv}</Link>
-          </Button>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>{t.nav.projects}</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="w-[260px]">
+                    {getPrimaryProjects(locale).filter((p) => !!p.href).map((project) => (
+                      <li key={project.slug}>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            href={project.href!}
+                            className="relative flex cursor-pointer select-none items-center !justify-start w-full rounded-sm py-[10px] pl-[12px] outline-none transition-colors hover:bg-neutral-100 hover:text-primary-base !body3 text-left"
+                          >
+                            {project.title}
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                    ))}
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link href="/cv">{t.nav.cv}</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
 
           <div className="mx-3 flex h-6 items-center">
             <Separator orientation="vertical" className="bg-neutral-400" />

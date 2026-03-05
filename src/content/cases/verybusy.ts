@@ -4,9 +4,9 @@ import type { Locale } from "@/lib/i18n/types";
 const verybusyCaseStudyEn: VerybusyCaseStudy = {
   slug: "verybusy",
   title: "Verybusy",
-  year: "2023 – 2024",
+  year: "2023 - 2024",
   heroImage: "/images/projects/verybusy/VerybusyCaseCover.png",
-  heroImageMobile: "/images/projects/verybusy/VerybusyCaseCover.png",
+  heroImageMobile: "/images/projects/verybusy/VerybusyCaseCoverMobile.png",
   heroImageAlt: "VeryBusy – professional image proofing platform",
   description:
     "Permission architecture, workspace model, and monetization layer for a professional image proofing SaaS: structural work on a live product with an active user base.",
@@ -149,9 +149,9 @@ const verybusyCaseStudyEn: VerybusyCaseStudy = {
 const verybusyCaseStudyEs: VerybusyCaseStudy = {
   slug: "verybusy",
   title: "Verybusy",
-  year: "2023 – 2024",
+  year: "2023 - 2024",
   heroImage: "/images/projects/verybusy/VerybusyCaseCover.png",
-  heroImageMobile: "/images/projects/verybusy/VerybusyCaseCover.png",
+  heroImageMobile: "/images/projects/verybusy/VerybusyCaseCoverMobile.png",
   heroImageAlt: "VeryBusy – plataforma profesional de proofing de imágenes",
   description:
     "Arquitectura de permisos, modelo de workspaces y capa de monetización para un SaaS de proofing de imágenes profesionales: trabajo estructural sobre un producto en producción con base de usuarios activa.",
@@ -167,12 +167,12 @@ const verybusyCaseStudyEs: VerybusyCaseStudy = {
     { type: "break", count: 2 },
     { text: "Lo que faltaba no eran más features, sino " },
     { text: "la capa estructural", emphasis: true },
-    { text: ": un modelo de colaboración claro y un sistema explícito de permisos que hiciera posible " },
-    { text: "una estrategia de monetización", emphasis: true },
+    { text: ": un modelo de colaboración claro y un sistema explícito de permisos que " },
+    { text: "habilitara la monetización", emphasis: true },
     { text: "." },
     { type: "break", count: 2 },
     { text: "El producto no necesitaba más funcionalidades. Necesitaba " },
-    { text: "definir las reglas bajo las cuales esas funcionalidades operaban", emphasis: true },
+    { text: "definir las reglas que gobiernan esas funcionalidades", emphasis: true },
     { text: "." },
   ],
   responsibilities: [
@@ -186,7 +186,7 @@ const verybusyCaseStudyEs: VerybusyCaseStudy = {
       icon: "folder-tree",
       title: "Modelo de workspace",
       description:
-        "Definí el workspace como la unidad organizacional y de facturación, desacoplando la identidad del usuario de la propiedad del plan. Reorganicé la configuración alrededor de esta separación.",
+        "Definí el workspace como la unidad organizacional y de facturación, desacoplando la identidad del usuario de la propiedad del plan. Reorganicé la configuración del producto en función de esta separación.",
     },
     {
       icon: "banknote",
@@ -196,7 +196,7 @@ const verybusyCaseStudyEs: VerybusyCaseStudy = {
     },
     {
       icon: "shuffle",
-      title: "Labels primitivos para workflows",
+      title: "Labels como base del workflow",
       description:
         "Diseñé el sistema de labels como un building block configurable, no como un flujo predefinido: cada equipo define sus propias etapas de revisión con labels personalizados y presets reutilizables. La aprobación es una acción independiente.",
     },
@@ -228,12 +228,12 @@ const verybusyCaseStudyEs: VerybusyCaseStudy = {
       {
         title: "Separación entre identidad y facturación",
         description:
-          "VeryBusy tenía cuentas de usuario, pero no una capa de workspace. Introducir el workspace como entidad de facturación fue el prerrequisito arquitectónico: sin él, modelar relaciones de facturación independientes por cliente era imposible.",
+          "VeryBusy tenía cuentas de usuario, pero no una capa de workspace. Introducir el workspace como entidad de facturación fue el prerrequisito arquitectónico: sin él, gestionar relaciones de facturación independientes por cliente era imposible.",
       },
       {
         title: "Límites diseñados para impulsar upgrades",
         description:
-          "Las restricciones se colocaron en límites de uso y acceso a funcionalidades, diseñadas desde una dirección: ¿qué lleva al usuario de cada nivel al siguiente? No qué restringir, sino qué genera presión real de upgrade en cada límite.",
+          "Las restricciones se colocaron en límites de uso y acceso a funcionalidades, diseñadas a partir de una pregunta central: ¿qué lleva al usuario de cada nivel al siguiente? No qué restringir, sino qué genera presión real de upgrade en cada límite.",
       },
     ],
   },
@@ -266,7 +266,7 @@ const verybusyCaseStudyEs: VerybusyCaseStudy = {
       title: "Capa de monetización: límites y caminos de upgrade",
       bullets: [
         "Dos rutas de upgrade desde la misma pantalla: add-ons dentro del plan, o un cambio completo de plan",
-        "Dos mecánicas de gating: fricción gradual en límites de uso, paradas duras en límites de features",
+        "Dos mecánicas de gating: fricción gradual en límites de uso, bloqueos duros en funcionalidades",
       ],
       image: "/images/projects/verybusy/VerybusyShowcaseMonetization.png",
       imageAlt: "Capa de monetización: gates y rutas de upgrade",
