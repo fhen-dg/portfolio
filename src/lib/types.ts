@@ -40,7 +40,12 @@ export type CaseResponsibilityIcon =
   | "scale"
   | "git-branch"
   | "chart-scatter"
-  | "layout-panel-top";
+  | "layout-panel-top"
+  | "square-chevron-right"
+  | "mouse-pointer-click"
+  | "banknote"
+  | "shuffle"
+  | "folder-tree";
 
 export type CaseResponsibilityItem = {
   icon: CaseResponsibilityIcon;
@@ -61,6 +66,7 @@ export type CaseShowcaseItem = {
   imageAlt: string;
   video?: string;
   imagePosition: "left" | "right";
+  showRing?: boolean;
 };
 
 export type CaseMetric = {
@@ -109,8 +115,9 @@ export type ViramosCaseStudy = {
   showcase: CaseShowcaseItem[];
   metrics: CaseMetrics;
   overview: {
-    image: string;
+    image?: string;
     imageAlt: string;
+    video?: string;
     link: { label: string; href: string };
     tools: string[];
   };
@@ -191,8 +198,46 @@ export type LaborCaseStudy = {
   };
   showcase: CaseShowcaseItem[];
   overview: {
-    image: string;
+    image?: string;
     imageAlt: string;
+    video?: string;
+    link: { label: string; href: string };
+    tools: string[];
+  };
+};
+
+export type VerybusyCaseStudy = {
+  slug: string;
+  title: string;
+  year: string;
+  heroImage: string;
+  heroImageMobile?: string;
+  heroImageAlt: string;
+  description: string;
+  snapshot: {
+    role: string;
+    duration: string;
+    team: string;
+  };
+  summary: CaseSummaryContentItem[];
+  responsibilities: CaseResponsibilityItem[];
+  situation: {
+    heading: string;
+    body: CaseSummaryContentItem[];
+  };
+  structuralDecisions: {
+    heading: string;
+    intro: string;
+    items: CaseStrategyItem[];
+  };
+  showcase: CaseShowcaseItem[];
+  outcome: {
+    body: CaseSummaryContentItem[];
+  };
+  overview: {
+    image?: string;
+    imageAlt: string;
+    video?: string;
     link: { label: string; href: string };
     tools: string[];
   };

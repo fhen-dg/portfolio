@@ -4,7 +4,7 @@ import type { Locale } from "@/lib/i18n/types";
 const viramosCaseStudyEn: ViramosCaseStudy = {
   slug: "viramos",
   title: "Viramos",
-  year: "2025",
+  year: "2024 - 2025",
   heroImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
   heroImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
   heroImageAlt: "Viramos – regatta operating system",
@@ -13,7 +13,7 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
   snapshot: {
     role: "Product Designer",
     duration: "11 months",
-    team: "Product Owner, Scrum Master (part-time), Designer (me), Engineering team, QC",
+    team: "Founder, Sailing Advisor, Product Owner, Scrum Master (part-time), Engineers, QC, Designer (me)",
   },
   summary: [
     { text: "Viramos is a " },
@@ -55,9 +55,9 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
     },
     {
       icon: "component",
-      title: "Design system",
+      title: "Design system & UI",
       description:
-        "Built a complete design system in Figma, deeply aligned to shadcn's nomenclature, components, variables, and tokens, and made direct commits to the codebase to ensure aesthetic precision in the frontend implementation.",
+        "Designed all user interfaces across the platform and built a complete design system in Figma aligned to shadcn's components and tokens, also making direct code commits for implementation precision.",
     },
     {
       icon: "compass",
@@ -234,16 +234,16 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
 const viramosCaseStudyEs: ViramosCaseStudy = {
   slug: "viramos",
   title: "Viramos",
-  year: "2025",
+  year: "2024 - 2025",
   heroImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
   heroImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
   heroImageAlt: "Viramos – sistema operativo para regatas",
   description:
-    "Un sistema operativo para regatas multi-rol que conecta navegantes, jueces, clubes y asociaciones en toda Latinoamérica.",
+    "SaaS operativo multirol, reconstruido desde un MVP no-code hacia una plataforma robusta basada en roles y permisos, con operación en 5 países de Latinoamérica.",
   snapshot: {
     role: "Product Designer",
     duration: "11 meses",
-    team: "Product owner, Scrum master (part-time), Diseñador (yo), equipo de ingeniería, QC",
+    team: "Fundadora, asesor de navegación, Product owner, Scrum master (part-time), Ingenieros, QC, Designer (yo)",
   },
   summary: [
     { text: "Viramos es un " },
@@ -285,9 +285,9 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
     },
     {
       icon: "component",
-      title: "Design system",
+      title: "Design system y UI",
       description:
-        "Construí un design system completo en Figma, profundamente alineado a la nomenclatura, componentes, variables y tokens de shadcn, y realicé commits directos en el repositorio para asegurar precisión estética en la implementación frontend.",
+        "Diseñé todas las interfaces de usuario de la plataforma y construí un design system completo en Figma alineado a componentes y tokens de shadcn, también realizando commits directos en código para precisión en la implementación.",
     },
     {
       icon: "compass",

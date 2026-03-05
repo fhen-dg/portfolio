@@ -39,6 +39,7 @@ export type Translations = {
     complexities: string;
     strategicAlignment: string;
     solution: string;
+    showcase: string;
   };
   caseSnapshot: {
     role: string;

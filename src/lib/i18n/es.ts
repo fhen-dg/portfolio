@@ -8,8 +8,8 @@ export const es: Translations = {
   },
   hero: {
     introPrefix: "Soy Federico, pero me llaman ",
-    heading: "Diseño sistemas, no solo interfaces.",
-    tagline: "Estrategia de producto, arquitectura de sistemas, design systems y código listo para producción.",
+    heading: "Diseño y construyo productos digitales como sistemas",
+    tagline: "Desde la estrategia de producto hasta código listo para producción, pasando por arquitectura de sistemas y design systems pensados para escalar.",
     role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },
@@ -36,10 +36,11 @@ export const es: Translations = {
   },
   caseSections: {
     problem: "El problema",
-    responsibilities: "Mi Ownership",
+    responsibilities: "Mi rol",
     complexities: "Complejidades",
     strategicAlignment: "Alineación estratégica",
     solution: "La solución",
+    showcase: "La propuesta",
   },
   caseSnapshot: {
     role: "Rol",
@@ -103,7 +104,7 @@ export const es: Translations = {
       {
         name: "Viramos",
         role: "Product Designer",
-        year: "2025",
+        year: "2024 - 2025",
         summary:
           "Lideré el rediseño arquitectónico completo de un SaaS operativo multi-rol — de un MVP no-code a un sistema de permisos escalable basado en roles, reconstruido en Next.js con un design system shadcn.",
         bullets: [

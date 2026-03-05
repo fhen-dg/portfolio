@@ -2,9 +2,11 @@ import Image from "next/image";
 import type { CaseShowcaseItem } from "@/lib/types";
 import { AutoplayVideo } from "@/components/ui/AutoplayVideo";
 import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 
 type CaseShowcaseSectionProps = {
   items: CaseShowcaseItem[];
+  heading?: string;
 };
 
 function ShowcaseItem({
@@ -15,16 +17,27 @@ function ShowcaseItem({
   index: number;
 }) {
   const isImageLeft = item.imagePosition === "left";
+  const showRing = item.showRing !== false;
 
   const mediaBlock = item.video ? (
-    <div className="w-full lg:w-[480px] ring-1 ring-neutral-400 shrink-0 aspect-square rounded-[12px] overflow-hidden">
+    <div
+      className={cn(
+        "w-full lg:w-[480px] shrink-0 aspect-square rounded-[12px] overflow-hidden",
+        showRing && "ring-1 ring-neutral-400 shadow-md"
+      )}
+    >
       <AutoplayVideo
         src={item.video}
         className="w-full h-full object-cover"
       />
     </div>
   ) : item.image ? (
-    <div className="relative w-full lg:w-[480px] ring-1 ring-neutral-400 shrink-0 aspect-square rounded-[12px] overflow-hidden">
+    <div
+      className={cn(
+        "relative w-full lg:w-[480px] shrink-0 aspect-square rounded-[12px] overflow-hidden",
+        showRing && "ring-1 ring-neutral-400 shadow-md"
+      )}
+    >
       <Image
         src={item.image}
         alt={item.imageAlt}
@@ -45,7 +58,7 @@ function ShowcaseItem({
       <ul className="flex flex-col gap-[8px]">
         {item.bullets.map((bullet, i) => (
           <li key={i} className="flex items-start gap-[12px] md:body1 body2 text-neutral-600">
-            <span className="mt-[10px] w-[4px] h-[4px] rounded-full bg-neutral-600 shrink-0" />
+            <span className="mt-[16px] w-[4px] h-[4px] rounded-full bg-neutral-600 shrink-0" />
             {bullet}
           </li>
         ))}
@@ -65,10 +78,13 @@ function ShowcaseItem({
   );
 }
 
-export function CaseShowcaseSection({ items }: CaseShowcaseSectionProps) {
+export function CaseShowcaseSection({ items, heading }: CaseShowcaseSectionProps) {
   return (
     <section className="flex justify-center w-full">
-      <div className="flex flex-col max-w-[960px] w-full">
+      <div className="flex flex-col gap-[40px] md:gap-[60px] lg:gap-[80px] max-w-[960px] w-full">
+        {heading && (
+          <h2 className="title3 md:title1 text-neutral-800 text-left md:text-center">{heading}</h2>
+        )}
         {items.map((item, i) => (
           <div key={`${item.title}-${i}`} className="flex flex-col">
             <ShowcaseItem item={item} index={i} />

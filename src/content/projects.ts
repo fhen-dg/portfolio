@@ -6,7 +6,7 @@ const primaryProjectsEn: Project[] = [
     slug: "viramos",
     title: "Viramos",
     tagline: "Architectural rebuild of a multi-role operational SaaS — from no-code MVP to permission-driven platform serving 5 LATAM countries.",
-    year: "2025",
+    year: "2024 - 2025",
     coverImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
     coverImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
     coverImageAlt: "Viramos – regatta operating system",
@@ -32,14 +32,24 @@ const primaryProjectsEn: Project[] = [
     coverImageAlt: "Theo AI – litigation intelligence platform",
     href: "/case/theo-ai",
   },
+  {
+    slug: "verybusy",
+    title: "Verybusy",
+    tagline: "Permission architecture, workspace model, and monetization layer for a professional image proofing SaaS: structural work on a live product with an active user base.",
+    year: "2023 – 2024",
+    coverImage: "/images/projects/verybusy/VerybusyCaseCover.png",
+    coverImageMobile: "/images/projects/verybusy/VerybusyCaseCover.png",
+    coverImageAlt: "VeryBusy – professional image proofing platform",
+    href: "/case/verybusy",
+  },
 ];
 
 const primaryProjectsEs: Project[] = [
   {
     slug: "viramos",
     title: "Viramos",
-    tagline: "Un sistema operativo para regatas multi-rol que conecta navegantes, jueces, clubes y asociaciones en toda Latinoamérica.",
-    year: "2025",
+    tagline: "SaaS operativo multirol, reconstruido desde un MVP no-code hacia una plataforma robusta basada en roles y permisos, con operación en 5 países de Latinoamérica.",
+    year: "2024 - 2025",
     coverImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
     coverImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
     coverImageAlt: "Viramos – sistema operativo para regatas",
@@ -48,7 +58,7 @@ const primaryProjectsEs: Project[] = [
   {
     slug: "labor",
     title: "Labor",
-    tagline: "Una plataforma diseñada para generar confianza entre productores y contratistas agropecuarios, facilitando la contratación directa sin intermediarios.",
+    tagline: "Marketplace 0 a 1 construido y llevado a producción en 2 meses, vibe-codeada en Next.js y deployada en Vercel, con Vercel Blob para gestión de archivos, Supabase como base de datos, autenticación con Clerk e integración con Google Maps.",
     year: "2026",
     coverImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
     coverImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
@@ -65,19 +75,20 @@ const primaryProjectsEs: Project[] = [
     coverImageAlt: "Theo AI – plataforma de inteligencia para litigios",
     href: "/case/theo-ai",
   },
+  {
+    slug: "verybusy",
+    title: "Verybusy",
+    tagline: "SaaS profesional de proofing de imágenes — diseñé la arquitectura de permisos, el modelo de workspace y la estrategia de feature-gating que hicieron monetizable un producto activo.",
+    year: "2023 – 2024",
+    coverImage: "/images/projects/verybusy/VerybusyCaseCover.png",
+    coverImageMobile: "/images/projects/verybusy/VerybusyCaseCover.png",
+    coverImageAlt: "VeryBusy – plataforma profesional de proofing de imágenes",
+    href: "/case/verybusy",
+  },
 ];
 
 export function getPrimaryProjects(locale: Locale): Project[] {
   return locale === "es" ? primaryProjectsEs : primaryProjectsEn;
 }
 
-export const secondaryProjects: Project[] = [
-  {
-    slug: "verybusy",
-    title: "Verybusy",
-    year: "2024",
-    coverImage: "https://www.figma.com/api/mcp/asset/c45f4164-276b-4cad-b4f5-0c1fd4bb2d33",
-    coverImageAlt: "Verybusy project cover",
-    comingSoon: true,
-  },
-];
+export const secondaryProjects: Project[] = [];

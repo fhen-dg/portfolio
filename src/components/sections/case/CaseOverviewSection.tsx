@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import { AutoplayVideo } from "@/components/ui/AutoplayVideo";
 
 type CaseOverviewSectionProps = {
-  image: string;
+  image?: string;
   imageAlt: string;
+  video?: string;
   link: { label: string; href: string };
   tools: string[];
 };
@@ -12,13 +14,21 @@ type CaseOverviewSectionProps = {
 export function CaseOverviewSection({
   image,
   imageAlt,
+  video,
   link,
   tools,
 }: CaseOverviewSectionProps) {
   return (
     <section className="flex justify-center w-full">
-      <div className="flex flex-col gap-[40px] lg:gap-[52px] max-w-[960px] w-full">
-        {image ? (
+      <div className="flex flex-col gap-[40px] lg:gap-[52px] rounded-[12px] overflow-hidden max-w-[960px] w-full">
+        {video ? (
+          <div className="w-full aspect-[16/9] rounded-[12px] overflow-hidden">
+            <AutoplayVideo
+              src={video}
+              className="w-full h-full object-contain"
+            />
+          </div>
+        ) : image ? (
           <div className="relative w-full aspect-[16/9] rounded-[12px] overflow-hidden">
             <Image src={image} alt={imageAlt} fill className="object-contain" />
           </div>

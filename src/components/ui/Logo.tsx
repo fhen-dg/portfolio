@@ -17,8 +17,8 @@ export function Logo() {
       <Image
         src="/images/profile/FhenLogoFinal.svg"
         alt="fhen logo"
-        width={18}
-        height={44}
+        width={32}
+        height={32}
         priority
         className="hidden md:block"
       />
