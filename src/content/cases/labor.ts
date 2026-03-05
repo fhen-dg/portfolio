@@ -9,7 +9,7 @@ const laborCaseStudyEn: LaborCaseStudy = {
   heroImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
   heroImageAlt: "Labor – agricultural services marketplace",
   description:
-    "A 0→1 marketplace built in 2 months and shipped to production — vibecoded on Next.js, deployed on Vercel, with Vercel Blob, Supabase, Clerk auth, and Google Maps integration.",
+    "A 0→1 marketplace shipped to production in 2 months. Vibecoded on Next.js, deployed on Vercel with Vercel Blob, Supabase, Clerk auth, and Google Maps.",
   snapshot: {
     role: "Product Designer / Design Engineer",
     duration: "2 months",
@@ -18,7 +18,7 @@ const laborCaseStudyEn: LaborCaseStudy = {
   summary: [
     { text: "Labor is a " },
     { text: "0→1 marketplace MVP", emphasis: true },
-    { text: " — a structured digital interaction model built to validate a core hypothesis." },
+    { text: ". A structured digital interaction model built to validate a core hypothesis." },
     { type: "break", count: 2 },
     { text: "The MVP centered around one core loop:" },
     { type: "break" },
@@ -33,18 +33,18 @@ const laborCaseStudyEn: LaborCaseStudy = {
   responsibilities: [
     {
       icon: "square-code",
-      title: "Vibe-coded implementation",
-      description: "Built 50% of all production features directly in code, including auth flows, publishing forms, geo-filtered search, and all third-party integrations.",
+      title: "Vibecoded implementation",
+      description: "Built 50% of all production features directly in code, including authentication flows, publishing forms, geo-filtered search, and all third-party integrations.",
     },
     {
       icon: "component",
       title: "Complete UI system",
-      description: "All screens and UI patterns designed in Figma, aligned with shadcn components used in production, ensuring direct parity between design and implementation.",
+      description: "All screens and UI patterns designed in Figma, aligned with shadcn components used in production, ensuring full parity between design and implementation.",
     },
     {
       icon: "layout-template",
       title: "Product architecture",
-      description: "Defined the core domain model, user flows, and interaction loop, structuring the entire platform around a single publish-discover-contact cycle.",
+      description: "Defined the core domain model, user flows, and core loop, structuring the entire platform around a single publish-discover-contact cycle.",
     },
     {
       icon: "database",
@@ -59,7 +59,7 @@ const laborCaseStudyEn: LaborCaseStudy = {
     {
       icon: "sparkles",
       title: "AI-assisted workflow",
-      description: "Used AI to research stack decisions, explore technical architecture, and accelerate iteration, including identifying and proposing Vercel Blob as the asset pipeline solution.",
+      description: "Used AI to evaluate stack decisions, explore technical architecture, and accelerate iteration, including identifying and proposing Vercel Blob as the asset pipeline solution.",
     },
     {
       icon: "bar-chart-3",
@@ -73,7 +73,7 @@ const laborCaseStudyEn: LaborCaseStudy = {
       { text: "no structured interaction model, ", emphasis: true },
       { text: "fluid user roles, and a " },
       { text: "trust gap to bridge", emphasis: true },
-      { text: " — without the safety net of intermediaries, established patterns, or extended timelines." },
+      { text: ", without the safety net of intermediaries, established patterns, or extended timelines." },
     ],
   },
   complexities: [
@@ -105,7 +105,7 @@ const laborCaseStudyEn: LaborCaseStudy = {
       {
         title: "Prioritizing problem-solution fit over monetization",
         description:
-          "Rather than building revenue mechanisms early, we focused entirely on trust signals and core utility — proving the platform's value before extracting it.",
+          "Rather than building revenue mechanisms early, we focused entirely on trust signals and core utility, proving the platform's value before extracting it.",
       },
       {
         title: "Fluid participation model",
@@ -213,7 +213,7 @@ const laborCaseStudyEs: LaborCaseStudy = {
   heroImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
   heroImageAlt: "Labor – marketplace de servicios agropecuarios",
   description:
-    "Marketplace 0 a 1 construido y llevado a producción en 2 meses, vibe-codeada en Next.js y deployada en Vercel, con Vercel Blob para gestión de archivos, Supabase como base de datos, autenticación con Clerk e integración con Google Maps.",
+    "Marketplace 0 a 1 llevado a producción en 2 meses, vibecodeado en Next.js y deployado en Vercel, con Vercel Blob para gestión de archivos, Supabase como base de datos, autenticación con Clerk e integración con Google Maps.",
   snapshot: {
     role: "Product Designer / Design Engineer",
     duration: "2 meses",
@@ -222,7 +222,7 @@ const laborCaseStudyEs: LaborCaseStudy = {
   summary: [
     { text: "Labor es un " },
     { text: "MVP 0→1 de marketplace", emphasis: true },
-    { text: " — un modelo de interacción digital estructurado construido para validar una hipótesis central." },
+    { text: ". Un modelo de interacción digital estructurado construido para validar una hipótesis central." },
     { type: "break", count: 2 },
     { text: "El MVP se centró en un loop central:" },
     { type: "break" },
@@ -237,7 +237,7 @@ const laborCaseStudyEs: LaborCaseStudy = {
   responsibilities: [
     {
       icon: "square-code",
-      title: "Implementación vibe-codeada",
+      title: "Implementación vibecodeada",
       description:
         "Construí el 50% de todas las features de producción directamente en código, incluyendo flujos de auth, formularios de publicación, búsqueda con filtro geográfico y todas las integraciones.",
     },
@@ -278,7 +278,7 @@ const laborCaseStudyEs: LaborCaseStudy = {
       { text: "sin modelo de interacción estructurado, ", emphasis: true },
       { text: "roles de usuario fluidos y una " },
       { text: "brecha de confianza por resolver", emphasis: true },
-      { text: " — sin intermediarios, patrones establecidos ni plazos extendidos." },
+      { text: ", sin intermediarios, patrones establecidos ni plazos extendidos." },
     ],
   },
   complexities: [
@@ -310,7 +310,7 @@ const laborCaseStudyEs: LaborCaseStudy = {
       {
         title: "Priorizar el encaje problema-solución por sobre la monetización",
         description:
-          "Postergamos la monetización para enfocarnos en adquisición y construcción de confianza. Invertimos en señales esenciales — imágenes verificables, descripciones guiadas y prueba social — como impulsores de adopción temprana.",
+          "Postergamos la monetización para enfocarnos en adquisición y construcción de confianza. Invertimos en señales esenciales como imágenes verificables, descripciones guiadas y prueba social para impulsar la adopción temprana.",
       },
       {
         title: "Modelo de participación fluido",
