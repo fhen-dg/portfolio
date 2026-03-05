@@ -173,6 +173,7 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       image: "/images/projects/viramos/ViramosJudges.png",
       imageAlt: "Protest and hearing flow for judges",
       imagePosition: "left",
+      showRing: false,
     },
     {
       title: "Mobile-first field experience (Sailors)",
@@ -403,6 +404,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
       image: "/images/projects/viramos/ViramosJudges.png",
       imageAlt: "Flujo de protesta y audiencia para jueces",
       imagePosition: "left",
+      showRing: false,
     },
     {
       title: "Experiencia de campo mobile-first (Navegantes)",

@@ -151,7 +151,7 @@ const laborCaseStudyEn: LaborCaseStudy = {
       image: "",
       imageAlt: "Unified publishing flow",
       video: "/images/projects/laborapp/LaborPublishing.mp4",
-      imagePosition: "right",
+      imagePosition: "left",
     },
     {
       title: "Location & service-driven discovery",
@@ -165,7 +165,7 @@ const laborCaseStudyEn: LaborCaseStudy = {
       image: "",
       imageAlt: "Location and service-driven discovery",
       video: "/images/projects/laborapp/LaborDiscovery.mp4",
-      imagePosition: "left",
+      imagePosition: "right",
     },
     {
       title: "Lightweight trust loop",
@@ -178,7 +178,8 @@ const laborCaseStudyEn: LaborCaseStudy = {
       ],
       image: "/images/projects/laborapp/LaborTrustLoop.png",
       imageAlt: "Lightweight trust loop",
-      imagePosition: "right",
+      imagePosition: "left",
+      showRing: false,
     },
   ],
   overview: {
@@ -381,6 +382,7 @@ const laborCaseStudyEs: LaborCaseStudy = {
       image: "/images/projects/laborapp/LaborTrustLoop.png",
       imageAlt: "Sistema de confianza simple",
       imagePosition: "right",
+      showRing: false,
     },
   ],
   overview: {
