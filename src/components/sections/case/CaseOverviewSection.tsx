@@ -20,7 +20,7 @@ export function CaseOverviewSection({
 }: CaseOverviewSectionProps) {
   return (
     <section className="flex justify-center w-full">
-      <div className="flex flex-col gap-[40px] lg:gap-[52px] rounded-[12px] overflow-hidden max-w-[960px] w-full">
+      <div className="flex flex-col gap-[40px] lg:gap-[52px] rounded-[12px] overflow-hidden max-w-[1200px] w-full">
         {video ? (
           <div className="w-full aspect-[16/9] rounded-[12px] overflow-hidden">
             <AutoplayVideo

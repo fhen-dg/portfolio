@@ -22,7 +22,7 @@ function ShowcaseItem({
   const mediaBlock = item.video ? (
     <div
       className={cn(
-        "w-full lg:w-[480px] shrink-0 aspect-square rounded-[12px] overflow-hidden",
+        "w-full md:w-[380px] lg:w-[520px] xl:w-[640px] shrink-0 aspect-square rounded-[12px] overflow-hidden",
         showRing && "ring-1 ring-neutral-400 shadow-md"
       )}
     >
@@ -34,7 +34,7 @@ function ShowcaseItem({
   ) : item.image ? (
     <div
       className={cn(
-        "relative w-full lg:w-[480px] shrink-0 aspect-square rounded-[12px] overflow-hidden",
+        "relative w-full md:w-[380px] lg:w-[520px] xl:w-[640px] shrink-0 aspect-square rounded-[12px] overflow-hidden",
         showRing && "ring-1 ring-neutral-400 shadow-md"
       )}
     >
@@ -52,6 +52,9 @@ function ShowcaseItem({
   const textBlock = (
     <div className="flex flex-col gap-[20px] lg:gap-[24px] flex-1">
       <h3 className="md:title4 title5 text-neutral-800">{item.title}</h3>
+      {item.description && (
+        <p className="md:body1 body2 text-neutral-600">{item.description}</p>
+      )}
       <ul className="flex flex-col gap-[8px]">
         {item.bullets.map((bullet, i) => (
           <li key={i} className="flex items-start gap-[12px] md:body1 body2 text-neutral-600">
@@ -78,7 +81,7 @@ function ShowcaseItem({
 export function CaseShowcaseSection({ items, heading }: CaseShowcaseSectionProps) {
   return (
     <section className="flex justify-center w-full">
-      <div className="flex flex-col gap-[40px] md:gap-[60px] lg:gap-[80px] max-w-[960px] w-full">
+      <div className="flex flex-col gap-[40px] max-w-[1200px] w-full">
         {heading && (
           <h2 className="title3 md:title1 text-neutral-800 text-left md:text-center">{heading}</h2>
         )}
@@ -86,7 +89,7 @@ export function CaseShowcaseSection({ items, heading }: CaseShowcaseSectionProps
           <div key={`${item.title}-${i}`} className="flex flex-col">
             <ShowcaseItem item={item} index={i} />
             {i < items.length - 1 ? (
-              <div className="my-[52px] lg:my-[60px]">
+              <div className="my-[52px] lg:my-[60px] xl:my-[80px]">
                 <Separator className="bg-neutral-400" />
               </div>
             ) : null}
