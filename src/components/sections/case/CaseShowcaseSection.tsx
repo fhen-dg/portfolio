@@ -51,10 +51,7 @@ function ShowcaseItem({
 
   const textBlock = (
     <div className="flex flex-col gap-[20px] lg:gap-[24px] flex-1">
-      <div className="flex flex-col gap-[12px]">
-        <h3 className="md:title4 title5 text-neutral-800">{item.title}</h3>
-        <p className="md:body1 body2 text-neutral-600">{item.description}</p>
-      </div>
+      <h3 className="md:title4 title5 text-neutral-800">{item.title}</h3>
       <ul className="flex flex-col gap-[8px]">
         {item.bullets.map((bullet, i) => (
           <li key={i} className="flex items-start gap-[12px] md:body1 body2 text-neutral-600">
