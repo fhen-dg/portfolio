@@ -11,6 +11,7 @@ const wixMadeforText = Wix_Madefor_Text({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.fhendg.com"),
   title: "Federico Cohen Correa - Portfolio",
   description: "Senior Product Designer - Buenos Aires",
   openGraph: {
