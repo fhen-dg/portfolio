@@ -31,6 +31,9 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
     const stored = localStorage.getItem(STORAGE_KEY) as Locale | null;
     if (stored && stored in dictionaries) {
       setLocaleState(stored);
+    } else {
+      const browserLang = navigator.language.startsWith("es") ? "es" : "en";
+      setLocaleState(browserLang);
     }
   }, []);
 
