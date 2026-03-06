@@ -12,7 +12,23 @@ const wixMadeforText = Wix_Madefor_Text({
 
 export const metadata: Metadata = {
   title: "Federico Cohen Correa - Portfolio",
-  description: "Personal portfolio",
+  description: "Senior Product Designer - Buenos Aires",
+  openGraph: {
+    title: "Federico Cohen Correa - Portfolio",
+    description: "Senior Product Designer - Buenos Aires",
+    images: [
+      {
+        url: "/images/profile/FhenLogoFinal.png",
+        alt: "Federico Cohen Correa - Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Federico Cohen Correa - Portfolio",
+    description: "Senior Product Designer - Buenos Aires",
+    images: ["/images/profile/FhenLogoFinal.png"],
+  },
 };
 
 export default function RootLayout({
