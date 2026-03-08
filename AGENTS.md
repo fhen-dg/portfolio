@@ -3,16 +3,6 @@ description:
 alwaysApply: true
 ---
 
----
-description: 
-alwaysApply: true
----
-
----
-description: 
-alwaysApply: true
----
-
 # AI Agent Instructions: Next.js Portfolio Architecture
 
 *(Clean, AI-Friendly, Portfolio-Scoped)*
@@ -36,8 +26,8 @@ This repository is a **personal portfolio** built with **Next.js (App Router)**.
 - Static + content-driven pages
 - Typed data models for projects and content
 - Reusable UI components
-- Design assets living in the repository (Pencil, tokens, frames)
-- Fast design → code iteration using AI agents
+- Figma-sourced designs implemented via AI agents
+- Fast design → code iteration using the Figma MCP
 
 ### Out of scope (DO NOT IMPLEMENT)
 
@@ -57,7 +47,8 @@ If a feature requires any of the above, **do not implement it in this repo**.
 - **Predictable structure** so AI agents generate correct code
 - **Clear separation of concerns**
 - **Type-safe UI and content**
-- **Design artifacts live in the repo** to support design-in-code workflows
+- **Figma as the design source**, consumed via MCP during implementation
+- **Reference artifacts in `/design`** to support agent context and future iteration
 - Small, readable diffs and frequent commits
 
 ---
@@ -73,7 +64,7 @@ If a feature requires any of the above, **do not implement it in this repo**.
     │   ├── content/            # Project content (MDX or typed TS data)
     │   ├── lib/                # Shared utilities, types, constants
     │   └── styles/             # Global styles (if needed)
-    ├── design/                 # Pencil frames, tokens, design artifacts
+    ├── design/                 # Figma node references and visual rule artifacts
     └── public/                 # Static assets
 
 This structure is **mandatory**.  
@@ -146,13 +137,17 @@ This ensures content and UI stay decoupled.
 
 ---
 
-## 8. Design Assets (MANDATORY)
+## 8. Design Workflow (MANDATORY)
 
-- All design artifacts live in `/design`
-- Pencil frames, tokens, references belong here
-- Design is treated as **source material**, not screenshots
+Designs live in **Figma**. The `/design` folder holds markdown reference artifacts — Figma node IDs and visual rules captured during implementation.
 
-This repo follows a **design-in-code workflow**.
+When implementing or updating UI:
+
+- Use the **Figma MCP** (`get_design_context`) to pull node context directly into the agent
+- Do not manually export assets or redlines
+- If visual rules are non-obvious, document them as a markdown artifact in `/design`
+
+This repo follows a **Figma → MCP → code** workflow.
 
 ---
 
@@ -160,12 +155,13 @@ This repo follows a **design-in-code workflow**.
 
 When implementing or modifying UI:
 
-1. Add or update design artifact in `/design`
+1. Fetch design context via the Figma MCP using the relevant node ID
 2. Create or update components in `components/sections/*`
 3. Reuse primitives from `components/ui/*`
 4. Update route files in `src/app/*`
-5. Keep diffs small
-6. Commit frequently with clear messages
+5. If visual rules are complex, save a reference artifact in `/design`
+6. Keep diffs small
+7. Commit frequently with clear messages
 
 Agents must follow this order strictly.
 
