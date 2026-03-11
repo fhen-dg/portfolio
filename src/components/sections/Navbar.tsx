@@ -233,7 +233,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-neutral-400 bg-neutral-white">
       {/* ── Mobile nav (< md) ── */}
-      <nav className="flex h-[72px] items-center justify-between px-5 md:hidden">
+      <nav className="flex h-[68px] items-center justify-between px-5 md:hidden">
         {/* Left: logo */}
         <Logo />
 
@@ -258,7 +258,7 @@ export function Navbar() {
       </nav>
 
       {/* ── Desktop nav (≥ md) ── */}
-      <nav className="hidden items-center justify-between px-[72px] py-5 md:flex">
+      <nav className="hidden h-[68px] items-center justify-between px-[72px] py-5 md:flex">
         {/* Left: logo */}
         <Logo />
 

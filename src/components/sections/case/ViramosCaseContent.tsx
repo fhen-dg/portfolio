@@ -10,6 +10,7 @@ import { CaseResponsibilitiesSection } from "@/components/sections/case/CaseResp
 import { CaseStatementSection } from "@/components/sections/case/CaseStatementSection";
 import { CaseDisplayBreakdownSection } from "@/components/sections/case/CaseDisplayBreakdownSection";
 import { CaseDescriptiveBreakdownSection } from "@/components/sections/case/CaseDescriptiveBreakdownSection";
+import { CaseKeyValueSection } from "@/components/sections/case/CaseKeyValueSection";
 import { CaseShowcaseSection } from "@/components/sections/case/CaseShowcaseSection";
 import { CaseMetricsSection } from "@/components/sections/case/CaseMetricsSection";
 import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSection";
@@ -29,6 +30,7 @@ export function ViramosCaseContent() {
           heroImage={cs.heroImage}
           heroImageMobile={cs.heroImageMobile}
           heroImageAlt={cs.heroImageAlt}
+          heroVideo={cs.heroVideo}
           title={cs.title}
           description={cs.description}
           year={cs.year}
@@ -43,6 +45,7 @@ export function ViramosCaseContent() {
           role={cs.snapshot.role}
           duration={cs.snapshot.duration}
           team={cs.snapshot.team}
+          tools={cs.overview.tools}
         />
       </RevealOnScroll>
 
@@ -98,7 +101,7 @@ export function ViramosCaseContent() {
       )}
 
       <RevealOnScroll className="w-full">
-        <CaseDescriptiveBreakdownSection
+        <CaseKeyValueSection
           intro={cs.contextImmersion.intro}
           items={cs.contextImmersion.items}
           heading={t.viramosSections.contextImmersion}
@@ -111,14 +114,13 @@ export function ViramosCaseContent() {
         <CaseStatementSection
           body={cs.inflectionPoint.body}
           heading={t.viramosSections.inflectionPoint}
-          align="center"
         />
       </RevealOnScroll>
 
       <div className="h-[120px] lg:h-[200px] w-full" />
 
       <RevealOnScroll className="w-full">
-        <CaseDescriptiveBreakdownSection
+        <CaseKeyValueSection
           intro={cs.reArchitecting.intro}
           items={cs.reArchitecting.items}
           heading={t.viramosSections.reArchitecting}

@@ -86,9 +86,10 @@ export type ViramosCaseStudy = {
   slug: string;
   title: string;
   year: string;
-  heroImage: string;
-  heroImageMobile: string;
+  heroImage?: string;
+  heroImageMobile?: string;
   heroImageAlt: string;
+  heroVideo?: string;
   description: string;
   snapshot: {
     role: string;
@@ -127,9 +128,10 @@ export type TheoAICaseStudy = {
   slug: string;
   title: string;
   year: string;
-  heroImage: string;
-  heroImageMobile: string;
+  heroImage?: string;
+  heroImageMobile?: string;
   heroImageAlt: string;
+  heroVideo?: string;
   description: string;
   snapshot: {
     role: string;
@@ -174,9 +176,10 @@ export type LaborCaseStudy = {
   slug: string;
   title: string;
   year: string;
-  heroImage: string;
-  heroImageMobile: string;
+  heroImage?: string;
+  heroImageMobile?: string;
   heroImageAlt: string;
+  heroVideo?: string;
   description: string;
   snapshot: {
     role: string;
@@ -210,9 +213,10 @@ export type VerybusyCaseStudy = {
   slug: string;
   title: string;
   year: string;
-  heroImage: string;
+  heroImage?: string;
   heroImageMobile?: string;
   heroImageAlt: string;
+  heroVideo?: string;
   description: string;
   snapshot: {
     role: string;

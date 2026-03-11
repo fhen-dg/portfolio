@@ -8,6 +8,7 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
   heroImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
   heroImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
   heroImageAlt: "Viramos – regatta operating system",
+  heroVideo: "/images/projects/viramos/ViramosHeroVideo.mp4",
   description:
     "A multi-role operational SaaS — rebuilt from a no-code MVP into a role-based, permission-driven platform serving 5 countries across Latin America.",
   snapshot: {
@@ -39,13 +40,13 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       icon: "layout-template",
       title: "Product architecture",
       description:
-        "Co-defined the entire platform structure as part of a three-person decision team with the PO and tech lead, owning the championship lifecycle model, domain design, and information architecture.",
+        "Owned the platform architecture as part of a three-person decision team with the PO and tech lead: championship lifecycle model, domain design, and information architecture.",
     },
     {
       icon: "workflow",
       title: "Workflow re-architecture",
       description:
-        "Redesigned complex competition flows into modular, role-aware systems, translating real-world operational complexity into structured interaction patterns across multi-stage championships.",
+        "Redesigned complex competition flows into modular, role-aware systems across multi-stage championships.",
     },
     {
       icon: "shield-check",
@@ -57,32 +58,26 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       icon: "component",
       title: "Design system & UI",
       description:
-        "Designed all user interfaces across the platform and built a complete design system in Figma aligned to shadcn's components and tokens, also making direct code commits for implementation precision.",
+        "Built a shadcn-aligned design system in Figma with direct code commits, covering all platform interfaces and maintaining token consistency between design and production.",
     },
     {
       icon: "compass",
       title: "Field research & domain immersion",
       description:
-        "Conducted on-site research across multiple live championship events, including travel to SIVI in Brazil, building user personas for all key roles and surfacing operational realities that reshaped the system architecture.",
+        "Conducted on-site research across multiple live championship events, including travel to SIVI in Brazil, surfacing operational realities that directly reshaped the system architecture.",
     },
     {
       icon: "lightbulb",
       title: "Feature ideation",
       description:
-        "Ideated novel product features alongside the PO, grounded in deep user understanding from field research, including the check-in/check-out system that emerged directly from observing real championship operations.",
+        "Led feature definition alongside the PO, grounded in direct field observation, including the check-in/check-out system that emerged from real championship operations.",
     },
   ],
   opportunity: {
     body: [
-      { text: "A multi-stakeholder operational domain with " },
-      { text: "no unified system", emphasis: true },
-      {
-        text: " — clubs, organizers, judges, and sailors each relied on disconnected tools and manual coordination. The opportunity was to build a ",
-      },
-      { text: "unified championship platform", emphasis: true },
-      {
-        text: " — a structured operational layer connecting every role across the entire competition lifecycle, from registration to results.",
-      },
+      { text: "Clubs, organizers, judges, and sailors — four distinct permission domains operating in isolation, with " },
+      { text: "no shared operational backbone", emphasis: true },
+      { text: " across the championship lifecycle." },
     ],
   },
   contextImmersion: {
@@ -90,24 +85,24 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       "SIVI, the largest sailing championship in Latin America, became a live stress test for the system at scale. Traveling to Brazil and embedding in the tournament exposed the full range of operational realities — role dynamics, edge cases, and real-time pressures — that remote interviews alone could never surface.",
     items: [
       {
-        title: "Mobile-first reality",
+        title: "Mobile-first usage",
         description:
-          "Sailors relied entirely on mobile access while moving between docks and race areas. This confirmed that desktop assumptions were irrelevant for this user role.",
+          "Sailors moved between docks with no desktop access. Low-depth navigation and responsive layouts became hard constraints, not preferences.",
       },
       {
-        title: "Formal regulatory workflows",
+        title: "Structured regulatory workflows",
         description:
-          "Judges operated within strict procedural frameworks. Protests, hearings, and rulings followed defined regulatory steps that required structured information, traceability, and clear communication between parties.",
+          "Judges followed strict procedural frameworks: protests, hearings, and rulings required structured data capture, traceability, and controlled visibility across roles.",
       },
       {
         title: "Real-time operational pressure",
         description:
-          "Administrative teams managed time-sensitive tasks like inscriptions, updates, and communications while the competition was ongoing. Speed, clarity, and information hierarchy became critical.",
+          "Inscriptions, updates, and communications ran concurrently during live competition. Information hierarchy and response speed became system requirements.",
       },
       {
-        title: "Role definition under real conditions",
+        title: "Role boundaries under live conditions",
         description:
-          "SIVI exposed the full range of operational roles involved in a championship. Each role carried distinct permissions and decision-making authority. Understanding these boundaries — and how roles intersected during live competition — reshaped the system architecture.",
+          "Each role carried distinct permissions and decision-making authority. Seeing how these overlapped under live conditions directly informed the permission layer architecture.",
       },
     ],
   },
@@ -127,12 +122,12 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       {
         title: "Role-based architecture",
         description:
-          "Permission layers define what each role can see, trigger, and decide — independently of how roles overlap during live competition.",
+          "Permission layers define what each role can see, trigger, and decide, regardless of how roles overlap during live competition.",
       },
       {
         title: "Modular championship engine",
         description:
-          "Every event runs on the same reusable modules — inscriptions, disputes, and results configure consistently across categories and regulatory formats.",
+          "Every event runs on the same reusable modules: inscriptions, disputes, and results configure consistently across categories and regulatory formats.",
       },
       {
         title: "Mobile-first field experience",
@@ -140,9 +135,9 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
           "Sailor-facing flows are built for dock-side conditions: minimal navigation depth, clear hierarchy, and fast access to real-time updates.",
       },
       {
-        title: "Design system aligned with development",
+        title: "Design-to-dev alignment",
         description:
-          "Design and implementation share a single component language — Figma changes map directly to shadcn tokens in production, eliminating drift between design intent and final output.",
+          "Design and implementation share a single component language. Figma changes map directly to shadcn tokens in production, eliminating drift between design intent and final output.",
       },
     ],
   },
@@ -239,6 +234,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
   heroImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
   heroImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
   heroImageAlt: "Viramos – sistema operativo para regatas",
+  heroVideo: "/images/projects/viramos/ViramosHeroVideo.mp4",
   description:
     "SaaS operativo multirol, reconstruido desde un MVP no-code hacia una plataforma robusta basada en roles y permisos, con operación en 5 países de Latinoamérica.",
   snapshot: {
@@ -270,13 +266,13 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
       icon: "layout-template",
       title: "Arquitectura de producto",
       description:
-        "Co-definí la estructura completa de la plataforma como parte de un equipo de decisión de tres personas con la PO y el tech lead, liderando el modelo de ciclo de vida, el diseño de dominio y la arquitectura de información.",
+        "Lideré la arquitectura de la plataforma como parte de un equipo de decisión de tres personas con la PO y el tech lead: modelo de ciclo de vida del campeonato, diseño de dominio y arquitectura de información.",
     },
     {
       icon: "workflow",
       title: "Re-arquitectura de workflows",
       description:
-        "Rediseñé flujos complejos de competencia en sistemas modulares y conscientes del rol, traduciendo la complejidad operativa real en patrones de interacción estructurados para campeonatos multi-etapa.",
+        "Rediseñé flujos complejos de competencia en sistemas modulares y conscientes del rol para campeonatos multi-etapa.",
     },
     {
       icon: "shield-check",
@@ -288,19 +284,19 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
       icon: "component",
       title: "Design system y UI",
       description:
-        "Diseñé todas las interfaces de usuario de la plataforma y construí un design system completo en Figma alineado a componentes y tokens de shadcn, también realizando commits directos en código para precisión en la implementación.",
+        "Construí un design system alineado a shadcn en Figma con commits directos en código, cubriendo todas las interfaces de la plataforma y manteniendo consistencia de tokens entre diseño y producción.",
     },
     {
       icon: "compass",
       title: "Research de campo e inmersión de dominio",
       description:
-        "Realicé investigación on-site en múltiples campeonatos en vivo, incluyendo un viaje a SIVI en Brasil, construyendo user personas para todos los roles clave y exponiendo realidades operativas que redefinieron la arquitectura del sistema.",
+        "Realicé investigación on-site en múltiples campeonatos en vivo, incluyendo un viaje a SIVI en Brasil, exponiendo realidades operativas que redefinieron directamente la arquitectura del sistema.",
     },
     {
       icon: "lightbulb",
       title: "Ideación de features",
       description:
-        "Ideé features novedosas junto a la PO a partir del entendimiento profundo del usuario en campo, incluyendo el sistema de check-in/check-out que surgió directamente de observar operaciones reales de campeonato.",
+        "Lideré la definición de features junto a la PO, a partir de observación directa en campo, incluyendo el sistema de check-in/check-out que surgió de operaciones reales de campeonato.",
     },
   ],
   opportunity: {
@@ -318,27 +314,27 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
   },
   contextImmersion: {
     intro:
-      "SIVI, el campeonato de vela más grande de Latinoamérica, se convirtió en un stress test real del sistema a escala. Viajar a Brasil e integrarse al torneo permitió exponer el espectro completo de dinámicas operativas — roles en acción, edge cases y presión en tiempo real — que las entrevistas remotas nunca podrían revelar.",
+      "SIVI, el campeonato de vela más grande de Latinoamérica, fue un stress test real del sistema a escala. Viajar a Brasil e integrarse al torneo expuso el espectro completo de realidades operativas — dinámicas de rol, edge cases y presión en tiempo real — que las entrevistas remotas nunca podrían revelar.",
     items: [
       {
-        title: "Realidad mobile-first",
+        title: "Uso mobile-first",
         description:
-          "Los navegantes dependían exclusivamente del acceso móvil mientras se movían entre muelles y áreas de regata. Quedó claro que las suposiciones centradas en desktop no eran relevantes para este rol.",
+          "Los navegantes se movían entre muelles sin acceso a desktop. La navegación de poca profundidad y los layouts responsivos pasaron a ser restricciones del sistema, no preferencias.",
       },
       {
-        title: "Flujos regulatorios formales",
+        title: "Flujos regulatorios estructurados",
         description:
-          "Los jueces operaban bajo marcos procedimentales estrictos. Protestas, audiencias y fallos seguían pasos regulatorios definidos que requerían información estructurada, trazabilidad y comunicación clara entre las partes.",
+          "Los jueces operaban bajo marcos procedimentales estrictos: protestas, audiencias y fallos requerían captura estructurada de datos, trazabilidad y visibilidad controlada por rol.",
       },
       {
         title: "Presión operativa en tiempo real",
         description:
-          "Los equipos administrativos gestionaban tareas sensibles al tiempo — inscripciones, actualizaciones y comunicaciones — mientras la competencia estaba en curso. Velocidad, claridad y jerarquía de información se volvieron críticas.",
+          "Inscripciones, actualizaciones y comunicaciones corrían en paralelo durante la competencia. La jerarquía de información y la velocidad de respuesta se volvieron requisitos del sistema.",
       },
       {
-        title: "Definición de roles en condiciones reales",
+        title: "Límites de rol en condiciones reales",
         description:
-          "SIVI expuso el espectro completo de roles involucrados en un campeonato. Cada uno tenía permisos y autoridad de decisión diferenciados. Comprender estos límites — y cómo se intersectaban en competencia en vivo — redefinió la arquitectura del sistema.",
+          "Cada rol tenía permisos y autoridad de decisión diferenciados. Ver cómo se superponían en condiciones reales informó directamente la arquitectura de la capa de permisos.",
       },
     ],
   },
@@ -363,7 +359,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
       {
         title: "Motor modular de campeonatos",
         description:
-          "Cada evento corre sobre los mismos módulos reutilizables — inscripciones, protestas y resultados se configuran de forma consistente entre categorías y formatos regulatorios.",
+          "Cada evento corre sobre los mismos módulos reutilizables: inscripciones, protestas y resultados se configuran de forma consistente entre categorías y formatos regulatorios.",
       },
       {
         title: "Experiencia de campo mobile-first",
@@ -371,9 +367,9 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
           "Los flujos de los navegantes están construidos para condiciones en el muelle: mínima profundidad de navegación, jerarquía clara y acceso rápido a actualizaciones en tiempo real.",
       },
       {
-        title: "Design system alineado a desarrollo",
+        title: "Alineación diseño-dev",
         description:
-          "Diseño e implementación comparten un único lenguaje de componentes — los cambios en Figma se mapean directamente a los tokens de shadcn en producción, eliminando la divergencia entre diseño e implementación.",
+          "Diseño e implementación comparten un único lenguaje de componentes. Los cambios en Figma se mapean directamente a los tokens de shadcn en producción, eliminando la divergencia entre diseño e implementación.",
       },
     ],
   },

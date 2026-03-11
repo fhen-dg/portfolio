@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { ToolBadge } from "@/components/ui/ToolBadge";
 
 export type CaseSnapshotSectionProps = {
   labels: {
@@ -9,6 +10,7 @@ export type CaseSnapshotSectionProps = {
   role: string;
   duration: string;
   team: string;
+  tools?: string[];
 };
 
 function SnapshotItem({ label, value }: { label: string; value: string }) {
@@ -25,10 +27,11 @@ export function CaseSnapshotSection({
   role,
   duration,
   team,
+  tools,
 }: CaseSnapshotSectionProps) {
   return (
     <section className="flex justify-center w-full">
-      <div className="max-w-[960px] w-full">
+      <div className="max-w-[960px] w-full flex flex-col gap-[40px]">
         <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center overflow-hidden rounded-[8px] gap-[28px] md:gap-[40px] md:p-[24px]">
           <SnapshotItem label={labels.role} value={role} />
 
@@ -48,8 +51,15 @@ export function CaseSnapshotSection({
 
           <SnapshotItem label={labels.team} value={team} />
         </div>
+
+        {tools && tools.length > 0 && (
+          <div className="flex flex-wrap justify-center gap-[6px]">
+            {tools.map((tool) => (
+              <ToolBadge key={tool} name={tool} />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
 }
-

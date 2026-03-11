@@ -15,7 +15,7 @@ export const en: Translations = {
   },
   nav: {
     projects: "Projects",
-    cv: "CV",
+    cv: "Resume",
     contact: "Contact",
   },
   contact: {
