@@ -22,8 +22,8 @@ function ShowcaseItem({
   const mediaBlock = item.video ? (
     <div
       className={cn(
-        "w-full md:w-[380px] lg:w-[520px] xl:w-[640px] shrink-0 aspect-square rounded-[12px] overflow-hidden",
-        showRing && "ring-1 ring-neutral-400 shadow-md"
+        "w-full md:w-[380px] lg:w-[520px] xl:w-[720px] shrink-0 aspect-[1696/1080] rounded-[10px] overflow-hidden",
+        showRing && "ring-1 ring-neutral-400"
       )}
     >
       <AutoplayVideo
@@ -53,11 +53,11 @@ function ShowcaseItem({
     <div className="flex flex-col gap-[20px] lg:gap-[24px] flex-1">
       <h3 className="md:title4 title5 text-neutral-800">{item.title}</h3>
       {item.description && (
-        <p className="md:body1 body2 text-neutral-600">{item.description}</p>
+        <p className="md:body3 body3 text-neutral-600">{item.description}</p>
       )}
       <ul className="flex flex-col gap-[8px]">
         {item.bullets.map((bullet, i) => (
-          <li key={i} className="flex items-start gap-[12px] md:body1 body2 text-neutral-600">
+          <li key={i} className="flex items-start gap-[12px] md:body3 body3 text-neutral-600">
             <span className="mt-[16px] w-[4px] h-[4px] rounded-full bg-neutral-600 shrink-0" />
             {bullet}
           </li>

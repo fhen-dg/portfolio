@@ -54,7 +54,7 @@ export function ViramosCaseContent() {
           <div className="h-[200px] md:h-[320px] w-full" />
 
           <RevealOnScroll className="w-full">
-            <CaseSummarySection items={cs.summary} />
+            <CaseSummarySection items={cs.summary} title={t.viramosSections.context} />
           </RevealOnScroll>
         </>
       ) : null}
@@ -79,28 +79,33 @@ export function ViramosCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseStatementSection
           body={cs.opportunity.body}
-          heading={t.viramosSections.opportunity}
+          heading={t.viramosSections.solution}
+          align="center"
         />
       </RevealOnScroll>
 
+      <div className="h-[200px] lg:h-[320px] w-full" />
+
+      <CaseShowcaseSection items={cs.showcase} />
+
       {cs.earlyValidation?.length ? (
         <>
-          <div className="h-[120px] md:h-[200px] w-full" />
+          <div className="h-[120px] md:h-[200px] w-full hidden" />
 
-          <RevealOnScroll className="w-full">
+          <RevealOnScroll className="w-full hidden">
             <CaseDisplayBreakdownSection
               items={cs.earlyValidation}
               heading={t.viramosSections.earlyValidation}
             />
           </RevealOnScroll>
 
-          <div className="h-[200px] lg:h-[320px] w-full" />
+          <div className="h-[200px] lg:h-[320px] w-full hidden" />
         </>
       ) : (
-        <div className="h-[200px] lg:h-[320px] w-full" />
+        <div className="h-[200px] lg:h-[320px] w-full hidden" />
       )}
 
-      <RevealOnScroll className="w-full">
+      <RevealOnScroll className="w-full hidden">
         <CaseKeyValueSection
           intro={cs.contextImmersion.intro}
           items={cs.contextImmersion.items}
@@ -108,18 +113,18 @@ export function ViramosCaseContent() {
         />
       </RevealOnScroll>
 
-      <div className="h-[200px] lg:h-[320px] w-full" />
+      <div className="h-[200px] lg:h-[320px] w-full hidden" />
 
-      <RevealOnScroll className="w-full">
+      <RevealOnScroll className="w-full hidden">
         <CaseStatementSection
           body={cs.inflectionPoint.body}
           heading={t.viramosSections.inflectionPoint}
         />
       </RevealOnScroll>
 
-      <div className="h-[120px] lg:h-[200px] w-full" />
+      <div className="h-[120px] lg:h-[200px] w-full hidden" />
 
-      <RevealOnScroll className="w-full">
+      <RevealOnScroll className="w-full hidden">
         <CaseKeyValueSection
           intro={cs.reArchitecting.intro}
           items={cs.reArchitecting.items}
@@ -128,10 +133,6 @@ export function ViramosCaseContent() {
       </RevealOnScroll>
 
       <div className="h-[200px] lg:h-[320px] w-full" />
-
-      <CaseShowcaseSection items={cs.showcase} />
-
-      <div className="h-[120px] lg:h-[200px] w-full" />
 
       <RevealOnScroll className="w-full">
         <CaseMetricsSection metrics={cs.metrics} />

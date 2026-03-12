@@ -48,11 +48,13 @@ export const es: Translations = {
     team: "Equipo",
   },
   viramosSections: {
-    opportunity: "La oportunidad",
+    context: "Contexto",
+    solution: "Solución",
     earlyValidation: "Validación temprana (fase no-code)",
     contextImmersion: "Inmersión contextual — SIVI (Brasil)",
     inflectionPoint: "Punto de inflexión",
     reArchitecting: "Re-arquitectura para escalar",
+    coreExperience: "Experiencia central",
   },
   cv: {
     sections: {

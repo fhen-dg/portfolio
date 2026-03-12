@@ -31,7 +31,7 @@ export function CaseSnapshotSection({
 }: CaseSnapshotSectionProps) {
   return (
     <section className="flex justify-center w-full">
-      <div className="max-w-[960px] w-full flex flex-col gap-[40px]">
+      <div className="max-w-[960px] w-full flex flex-col gap-[60px]">
         <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center overflow-hidden rounded-[8px] gap-[28px] md:gap-[40px] md:p-[24px]">
           <SnapshotItem label={labels.role} value={role} />
 
@@ -53,9 +53,9 @@ export function CaseSnapshotSection({
         </div>
 
         {tools && tools.length > 0 && (
-          <div className="flex flex-wrap justify-center gap-[6px]">
+          <div className="flex flex-wrap justify-center gap-[6px] hidden">
             {tools.map((tool) => (
-              <ToolBadge key={tool} name={tool} />
+              <ToolBadge key={tool} name={tool} showIcon={true} />
             ))}
           </div>
         )}

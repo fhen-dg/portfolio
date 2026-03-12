@@ -41,7 +41,7 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName
 const NavigationMenuItem = NavigationMenuPrimitive.Item
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-10 w-max items-center justify-center whitespace-nowrap rounded-md px-5 py-2 body3-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-neutral-black lg:hover:bg-neutral-100 lg:hover:text-primary-base data-[state=open]:bg-neutral-100 data-[state=open]:text-primary-base"
+  "group inline-flex h-10 w-max items-center justify-center whitespace-nowrap rounded-md px-5 py-2 body3 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-neutral-black lg:hover:bg-neutral-100 lg:hover:text-primary-base data-[state=open]:bg-neutral-100 data-[state=open]:text-primary-base"
 )
 
 const NavigationMenuTrigger = React.forwardRef<
@@ -55,7 +55,7 @@ const NavigationMenuTrigger = React.forwardRef<
   >
     {children}{" "}
     <ChevronDown
-      className="relative top-[1px] ml-1 h-5 w-5 text-neutral-600 transition duration-200 group-data-[state=open]:rotate-180"
+      className="relative top-[1px] ml-1 h-4 w-4 text-neutral-600 transition duration-200 group-data-[state=open]:rotate-180"
       aria-hidden="true"
     />
   </NavigationMenuPrimitive.Trigger>
@@ -84,7 +84,7 @@ const NavigationMenuLink = React.forwardRef<
   <NavigationMenuPrimitive.Link
     ref={ref}
     className={cn(
-      "inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-md px-5 py-2 body3-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-neutral-black lg:hover:bg-neutral-100 lg:hover:text-primary-base",
+      "inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-md px-5 py-2 body3 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-neutral-black lg:hover:bg-neutral-100 lg:hover:text-primary-base",
       className
     )}
     {...props}

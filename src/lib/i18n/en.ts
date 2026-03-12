@@ -44,15 +44,17 @@ export const en: Translations = {
   },
   caseSnapshot: {
     role: "Role",
-    duration: "Duration",
+    duration: "Timeline",
     team: "Team",
   },
   viramosSections: {
-    opportunity: "The Opportunity",
+    context: "Context",
+    solution: "Solution",
     earlyValidation: "Early validation (No-code phase)",
     contextImmersion: "Context immersion — SIVI (Brazil)",
     inflectionPoint: "Inflection Point",
     reArchitecting: "Re-architecting for scale",
+    coreExperience: "Core Experience",
   },
   cv: {
     sections: {

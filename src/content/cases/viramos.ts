@@ -10,74 +10,70 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
   heroImageAlt: "Viramos – regatta operating system",
   heroVideo: "/images/projects/viramos/ViramosHeroVideo.mp4",
   description:
-    "A multi-role operational SaaS — rebuilt from a no-code MVP into a role-based, permission-driven platform serving 5 countries across Latin America.",
+    "A multi-role operational SaaS for sailing championships—rebuilt from a no-code MVP into a role-based, permission-driven platform serving 5 countries across Latin America.",
   snapshot: {
     role: "Product Designer",
-    duration: "11 months",
+    duration: "11 months\n2024 – 2025",
     team: "Founder, Sailing Advisor, Product Owner, Scrum Master (part-time), Engineers, QC, Designer (me)",
   },
   summary: [
-    { text: "Viramos is a " },
-    { text: "multi-role operational SaaS", emphasis: true },
     {
-      text: " used by sailing clubs and championship organizers across multiple countries.",
+      text: "Four distinct role domains—clubs, organizers, judges, and sailors—each with ",
     },
+    { text: "overlapping permissions", emphasis: true },
+    { text: " and " },
+    { text: "no shared operational backbone", emphasis: true },
+    { text: "." },
     { type: "break", count: 2 },
-    { text: "After launching an initial " },
-    { text: "no-code MVP", emphasis: true },
-    {
-      text: ", it became clear that the system architecture could not support the operational complexity of large-scale championships.",
-    },
-    { type: "break", count: 2 },
-    { text: "The project evolved into a " },
-    { text: "full platform rebuild designed for scalability", emphasis: true },
-    {
-      text: ", supporting multi-stage competitions, regulatory workflows, and role-based operations.",
-    },
+    { text: "The no-code MVP validated the market; " },
+    { text: "the architecture couldn't follow", emphasis: true },
+    { text: "." },
   ],
   responsibilities: [
     {
       icon: "layout-template",
-      title: "Product architecture",
+      title: "System architecture",
       description:
-        "Owned the platform architecture as part of a three-person decision team with the PO and tech lead: championship lifecycle model, domain design, and information architecture.",
+        "Owned the platform architecture alongside the PO and tech lead—from championship lifecycle model and domain design to a permission-aware structure built around four overlapping operational roles.",
     },
     {
       icon: "workflow",
       title: "Workflow re-architecture",
       description:
-        "Redesigned complex competition flows into modular, role-aware systems across multi-stage championships.",
+        "Restructured a multi-committee operational system into role-aware, reusable modules—each with distinct org-side and competitor-facing interactions, consistent across any championship category or regulatory format.",
     },
     {
       icon: "shield-check",
       title: "Role & permission model",
       description:
-        "Designed a layered permission architecture mapping explicit authority, visibility rules, and decision boundaries across all overlapping operational roles in a live championship context.",
+        "Designed a permission system defining explicit authority, visibility rules, and decision boundaries at the action level—enabling strict role separation for large championships and flexible overlap for smaller ones.",
     },
     {
       icon: "component",
       title: "Design system & UI",
       description:
-        "Built a shadcn-aligned design system in Figma with direct code commits, covering all platform interfaces and maintaining token consistency between design and production.",
+        "Built a shadcn-aligned design system in Figma with direct code commits—covering all platform interfaces with token consistency from Figma to production.",
     },
     {
       icon: "compass",
-      title: "Field research & domain immersion",
+      title: "Field research & on-site immersion",
       description:
-        "Conducted on-site research across multiple live championship events, including travel to SIVI in Brazil, surfacing operational realities that directly reshaped the system architecture.",
+        "Led research at SIVI—Latin America's largest sailing championship—and multiple live events, surfacing mobile-first constraints, regulatory workflows, and role dynamics that directly reshaped the architecture.",
     },
     {
       icon: "lightbulb",
-      title: "Feature ideation",
+      title: "Product definition",
       description:
-        "Led feature definition alongside the PO, grounded in direct field observation, including the check-in/check-out system that emerged from real championship operations.",
+        "Defined product features alongside the PO through direct field observation—the check-in/check-out system, for instance, emerged from watching actual championship operations in real-time.",
     },
   ],
   opportunity: {
     body: [
-      { text: "Clubs, organizers, judges, and sailors — four distinct permission domains operating in isolation, with " },
-      { text: "no shared operational backbone", emphasis: true },
-      { text: " across the championship lifecycle." },
+      { text: "We rebuilt Viramos in Next.js with a " },
+      { text: "system-first approach", emphasis: true },
+      { text: "—replacing workarounds with a permission-aware operational backbone that " },
+      { text: "scales across any championship format", emphasis: true },
+      { text: "." },
     ],
   },
   contextImmersion: {
@@ -188,7 +184,7 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
   metrics: {
     heading: "Impact",
     intro:
-      "Viramos evolved from MVP to operational infrastructure adopted by leading clubs across Latin America.",
+      "Viramos operates today as the digital backbone for competitive sailing championships in Latin America.",
     rows: [
       [
         { value: "43.000", label: "Unique users" },
@@ -201,7 +197,7 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       ],
     ],
     conclusion:
-      "Viramos operates today as the digital backbone for competitive sailing championships in the region.",
+      "",
     footnote: "2025 metrics",
   },
   overview: {
@@ -243,73 +239,63 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
     team: "Fundadora, asesor de navegación, Product owner, Scrum master (part-time), Ingenieros, QC, Designer (yo)",
   },
   summary: [
-    { text: "Viramos es un " },
-    { text: "SaaS operacional multi-rol", emphasis: true },
     {
-      text: " utilizado por clubes de vela y organizadores de campeonatos en múltiples países.",
+      text: "Cuatro dominios de roles distintos—clubes, organizadores, jueces y regatistas—cada uno con ",
     },
+    { text: "permisos superpuestos", emphasis: true },
+    { text: " y " },
+    { text: "sin columna vertebral operativa compartida", emphasis: true },
+    { text: "." },
     { type: "break", count: 2 },
-    { text: "Luego de lanzar un " },
-    { text: "MVP no-code", emphasis: true },
-    {
-      text: " inicial, quedó claro que la arquitectura del sistema no podía soportar la complejidad operativa de campeonatos a gran escala.",
-    },
-    { type: "break", count: 2 },
-    { text: "El proyecto evolucionó hacia una " },
-    { text: "reconstrucción completa de la plataforma diseñada para escalar", emphasis: true },
-    {
-      text: ", capaz de soportar competencias multi-etapa, flujos regulatorios y operaciones basadas en roles.",
-    },
+    { text: "El MVP no-code validó el mercado; " },
+    { text: "la arquitectura no pudo seguirle el ritmo", emphasis: true },
+    { text: "." },
   ],
   responsibilities: [
     {
       icon: "layout-template",
-      title: "Arquitectura de producto",
+      title: "Arquitectura de sistema",
       description:
-        "Lideré la arquitectura de la plataforma como parte de un equipo de decisión de tres personas con la PO y el tech lead: modelo de ciclo de vida del campeonato, diseño de dominio y arquitectura de información.",
+        "Lideré la arquitectura de la plataforma junto a la PO y el tech lead—desde el modelo de ciclo de vida del campeonato y el diseño de dominio hasta una estructura consciente de permisos construida en torno a cuatro roles operativos superpuestos.",
     },
     {
       icon: "workflow",
       title: "Re-arquitectura de workflows",
       description:
-        "Rediseñé flujos complejos de competencia en sistemas modulares y conscientes del rol para campeonatos multi-etapa.",
+        "Reestructuré un sistema operativo multi-comité en módulos reutilizables y conscientes del rol—cada uno con interacciones diferenciadas para el lado organizacional y el competidor, consistentes en cualquier categoría de campeonato o formato regulatorio.",
     },
     {
       icon: "shield-check",
       title: "Modelo de roles y permisos",
       description:
-        "Diseñé una arquitectura de permisos por capas que mapea autoridad explícita, reglas de visibilidad y límites de decisión entre todos los roles operativos superpuestos en el contexto de un campeonato en vivo.",
+        "Diseñé un sistema de permisos que define autoridad explícita, reglas de visibilidad y límites de decisión a nivel de acción—habilitando separación estricta de roles para campeonatos grandes y superposición flexible para los más pequeños.",
     },
     {
       icon: "component",
       title: "Design system y UI",
       description:
-        "Construí un design system alineado a shadcn en Figma con commits directos en código, cubriendo todas las interfaces de la plataforma y manteniendo consistencia de tokens entre diseño y producción.",
+        "Construí un design system alineado a shadcn en Figma con commits directos en código—cubriendo todas las interfaces de la plataforma con consistencia de tokens de Figma a producción.",
     },
     {
       icon: "compass",
-      title: "Research de campo e inmersión de dominio",
+      title: "Research de campo e inmersión on-site",
       description:
-        "Realicé investigación on-site en múltiples campeonatos en vivo, incluyendo un viaje a SIVI en Brasil, exponiendo realidades operativas que redefinieron directamente la arquitectura del sistema.",
+        "Lideré el research en SIVI—el campeonato de vela más grande de América Latina—y múltiples eventos en vivo, identificando restricciones mobile-first, flujos regulatorios y dinámicas de rol que redefinieron directamente la arquitectura.",
     },
     {
       icon: "lightbulb",
-      title: "Ideación de features",
+      title: "Definición de producto",
       description:
-        "Lideré la definición de features junto a la PO, a partir de observación directa en campo, incluyendo el sistema de check-in/check-out que surgió de operaciones reales de campeonato.",
+        "Definí features de producto junto a la PO a través de observación directa en campo—el sistema de check-in/check-out, por ejemplo, surgió de observar las operaciones reales de campeonatos en vivo.",
     },
   ],
   opportunity: {
     body: [
-      { text: "Un dominio operativo multi-stakeholder " },
-      { text: "sin sistema unificado", emphasis: true },
-      {
-        text: " — clubes, organizadores, jueces y navegantes operaban desde herramientas desconectadas y coordinación manual. La oportunidad era construir una ",
-      },
-      { text: "plataforma unificada de campeonatos", emphasis: true },
-      {
-        text: ": una capa operativa estructurada que conectara cada rol a lo largo del ciclo de vida completo de la competencia, desde el registro hasta la publicación de resultados.",
-      },
+      { text: "Reconstruimos Viramos en Next.js con un " },
+      { text: "enfoque system-first", emphasis: true },
+      { text: "—reemplazando workarounds con una columna vertebral operativa consciente de permisos que " },
+      { text: "escala en cualquier formato de campeonato", emphasis: true },
+      { text: "." },
     ],
   },
   contextImmersion: {
