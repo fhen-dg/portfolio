@@ -50,9 +50,9 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
     },
     {
       icon: "component",
-      title: "Design system & UI",
+      title: "Design system—Figma to production",
       description:
-        "Built a shadcn-aligned design system in Figma with direct code commits—covering all platform interfaces with token consistency from Figma to production.",
+        "Built a shadcn-aligned design system in Figma and contributed directly to the production codebase, aligning layout, components, and visual behavior with design intent where implementation diverged.",
     },
     {
       icon: "compass",
@@ -218,11 +218,11 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       "Figma",
       "Figjam",
       "GPT",
-      "Bubble",
       "Shadcn",
       "VS Code",
       "Github",
       "Next.js",
+      "Bubble",
       "Notion",
       "Google Workspace",
       "Slack",

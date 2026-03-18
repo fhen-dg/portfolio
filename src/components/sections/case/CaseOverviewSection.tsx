@@ -51,7 +51,7 @@ export function CaseOverviewSection({
 
         <div className="flex flex-col items-center gap-[24px] md:gap-[40px] lg:gap-[60px]">
           {tools && tools.length > 0 && (
-            <div className="flex flex-wrap max-w-[1368px] justify-center gap-[6px]">
+            <div className="flex flex-wrap max-w-[1368px] justify-center gap-[6px] hidden">
               {tools.map((tool) => (
                 <ToolBadge key={tool} name={tool} showIcon={true} />
               ))}
