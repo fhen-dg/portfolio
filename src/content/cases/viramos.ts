@@ -435,7 +435,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
     footnote: "Métricas 2025",
   },
   overview: {
-    image: "/images/projects/viramos/ViramosOverview1.png",
+    image: "/images/projects/viramos/ViramosOverview3.png",
     imageAlt: "Resumen de la plataforma Viramos",
     link: {
       label: "viramos.com",

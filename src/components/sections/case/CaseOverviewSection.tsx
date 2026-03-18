@@ -24,7 +24,7 @@ export function CaseOverviewSection({
 
   return (
     <section className="flex justify-center w-full">
-      <div className="flex flex-col gap-[40px] lg:gap-[80px] rounded-[12px] overflow-hidden max-w-[1368px] w-full">
+      <div className="flex flex-col gap-[40px] lg:gap-[120px] rounded-[12px] overflow-hidden max-w-[1368px] w-full">
         {video ? (
           <div className="w-full aspect-[16/9] rounded-[12px] overflow-hidden">
             <AutoplayVideo
