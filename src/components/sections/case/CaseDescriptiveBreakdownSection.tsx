@@ -5,20 +5,20 @@ type CaseDescriptiveBreakdownSectionProps = {
   intro?: string;
   items: CaseStrategyItem[];
   heading?: string;
-  supporting3?: string;
+  eyebrow?: string;
 };
 
 export function CaseDescriptiveBreakdownSection({
   intro,
   items,
   heading,
-  supporting3,
+  eyebrow,
 }: CaseDescriptiveBreakdownSectionProps) {
   return (
     <section className="flex justify-center w-full">
       <div className="flex flex-col gap-[40px] max-w-[960px] w-full">
         <div className="flex flex-col gap-[20px]">
-          {supporting3 && <p className="lg:supporting3 body2 text-neutral-500">{supporting3}</p>}
+          {eyebrow && <p className="lg:supporting3 body2 text-neutral-500">{eyebrow}</p>}
           <h2 className="md:title1 title2 text-neutral-800">{heading}</h2>
           {intro && <p className="md:supporting2 body1 text-neutral-600">{intro}</p>}
         </div>

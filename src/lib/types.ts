@@ -59,6 +59,7 @@ export type CaseStrategyItem = {
 };
 
 export type CaseShowcaseItem = {
+  eyebrow?: string;
   title: string;
   description?: string;
   bullets: string[];
@@ -150,13 +151,13 @@ export type TheoAICaseStudy = {
     items: CaseComplexityItem[];
   };
   workstream1: {
-    supporting3?: string;
+    eyebrow?: string;
     heading: string;
     intro: string;
     items: CaseStrategyItem[];
   };
   workstream2: {
-    supporting3?: string;
+    eyebrow?: string;
     heading: string;
     intro: string;
     items: CaseStrategyItem[];

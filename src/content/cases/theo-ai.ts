@@ -52,7 +52,7 @@ const theoAICaseStudyEn: TheoAICaseStudy = {
     ],
   },
   workstream1: {
-    supporting3: "Case discovery tool",
+    eyebrow: "Case discovery tool",
     heading: "Decision architecture over interface design",
     intro: "The product needed to exist before any interface was built, which meant the design work was entirely about structure: what information to surface, what criteria to apply, and what the output needed to contain for someone to act on it.",
     items: [
@@ -71,7 +71,7 @@ const theoAICaseStudyEn: TheoAICaseStudy = {
     ],
   },
   workstream2: {
-    supporting3: "Case prediction product",
+    eyebrow: "Case prediction product",
     heading: "Format as the adoption problem",
     intro: "Three delivery formats were prototyped and tested with large in-house legal teams to find which could best integrate high-stakes AI predictions into their existing workflows with the least friction.",
     items: [
@@ -186,7 +186,7 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
     ],
   },
   workstream1: {
-    supporting3: "Herramienta de descubrimiento de casos",
+    eyebrow: "Herramienta de descubrimiento de casos",
     heading: "Arquitectura de decisión antes que interfaz",
     intro: "El producto debía existir antes de cualquier interfaz visual. Eso implicó que el trabajo de diseño se centrara completamente en la estructura: qué información mostrar, qué criterios aplicar y qué debía incluir el resultado para habilitar una decisión real.",
     items: [
@@ -205,7 +205,7 @@ const theoAICaseStudyEs: TheoAICaseStudy = {
     ],
   },
   workstream2: {
-    supporting3: "Producto de predicción de casos",
+    eyebrow: "Producto de predicción de casos",
     heading: "El formato como problema de adopción",
     intro: "Prototipé y validé tres formatos con equipos legales internos de gran tamaño para identificar cuál podía integrar predicciones de IA de alto impacto en sus procesos actuales con la menor fricción posible.",
     items: [

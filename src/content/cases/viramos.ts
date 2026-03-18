@@ -139,13 +139,14 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
   },
   showcase: [
     {
-      title: "Role-based admin configuration (Clubs)",
+      eyebrow: "Clubs",
+      title: "Permission-based championship management",
       description:
-        "Structured form architecture enables consistent setup across categories while reducing administrative errors.",
+        "Modular architecture enables consistent setup across championship categories and regulatory formats.",
       bullets: [
-        "Modular championship creation aligned with regulatory requirements",
-        "Centralized management of participants, requests, and results",
-        "Permission-based access for internal club roles",
+        "Championship structure aligned with regulatory requirements",
+        "Action-level permission assignment per invited member",
+        "Centralized multi-scope publication control",
       ],
       image: "",
       imageAlt: "Championship configuration for clubs",
@@ -154,13 +155,14 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       showRing: true,
     },
     {
-      title: "Formalized regulatory workflows (Judges)",
+      eyebrow: "Committees",
+      title: "Formalized regulatory workflows",
       description:
-        "Regulatory workflows formalized into traceable, structured interactions aligned with real-world procedures.",
+        "Traceable, structured interactions built around real-world procedures and role boundaries.",
       bullets: [
-        "Guided protest submission with structured data inputs",
-        "Searchable participant references (name or sail number)",
-        "Traceable rulings with controlled visibility across roles",
+        "Configurable deadlines with submission windows",
+        "Committee-assigned resolutions with structured decision documentation",
+        "Traceable decisions with role-controlled visibility",
       ],
       image: "",
       imageAlt: "Protest and hearing flow for judges",
@@ -169,13 +171,14 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       showRing: true,
     },
     {
-      title: "Mobile-first field experience (Sailors)",
+      eyebrow: "Sailors",
+      title: "Dock-side real-time access",
       description:
         "Mobile-first interface designed for real-time usage during competition.",
       bullets: [
         "Simplified access to results, notices, and updates",
-        "Reduced navigation depth for high-attention moments",
-        "Responsive layouts optimized for on-the-move usage",
+        "Full competition request access from the field",
+        "Low navigation depth for high-attention, on-the-move usage",
       ],
       image: "",
       imageAlt: "Dock-side mobile experience for sailors",
@@ -365,6 +368,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
   },
   showcase: [
     {
+      eyebrow: "Clubes",
       title: "Configuración basada en permisos (Clubes)",
       description:
         "Una arquitectura de formularios estructurada permite configuraciones consistentes entre categorías, reduciendo errores administrativos.",
@@ -379,6 +383,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
       imagePosition: "right",
     },
     {
+      eyebrow: "Jueces",
       title: "Workflows regulatorios formalizados (Jueces)",
       description:
         "Workflows regulatorios formalizados en interacciones estructuradas y trazables, alineadas con procedimientos reales.",
@@ -394,6 +399,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
       showRing: true,
     },
     {
+      eyebrow: "Navegantes",
       title: "Experiencia de campo mobile-first (Navegantes)",
       description:
         "Interfaz mobile-first diseñada para uso en tiempo real durante la competencia.",

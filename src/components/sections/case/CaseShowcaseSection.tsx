@@ -63,7 +63,10 @@ function ShowcaseItem({
 
   const textBlock = (
     <div className="flex flex-col gap-[20px] lg:gap-[24px] w-full md:w-[420px] shrink-0">
-      <h3 className="md:title4 title5 text-neutral-800">{item.title}</h3>
+      <div className="flex flex-col gap-[8px]">
+        {item.eyebrow && <p className="body3 text-neutral-500">{item.eyebrow}</p>}
+        <h3 className="md:title4 title5 text-neutral-800">{item.title}</h3>
+      </div>
       {item.description && (
         <p className="md:body3 body3 text-neutral-600">{item.description}</p>
       )}
