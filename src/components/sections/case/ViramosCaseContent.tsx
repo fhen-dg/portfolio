@@ -143,6 +143,7 @@ export function ViramosCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseOverviewSection
           image={cs.overview.image}
+          images={cs.overview.images}
           imageAlt={cs.overview.imageAlt}
           link={cs.overview.link}
           tools={cs.overview.tools}

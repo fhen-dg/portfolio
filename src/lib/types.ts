@@ -65,6 +65,7 @@ export type CaseShowcaseItem = {
   image: string;
   imageAlt: string;
   video?: string;
+  videoFormat?: "desktop" | "mobile";
   imagePosition: "left" | "right";
   showRing?: boolean;
 };
@@ -117,6 +118,7 @@ export type ViramosCaseStudy = {
   metrics: CaseMetrics;
   overview: {
     image?: string;
+    images?: string[];
     imageAlt: string;
     video?: string;
     link: { label: string; href: string };
@@ -164,7 +166,8 @@ export type TheoAICaseStudy = {
     body: CaseSummaryContentItem[];
   };
   overview: {
-    image: string;
+    image?: string;
+    images?: string[];
     imageAlt: string;
     link: { label: string; href: string };
     tools: string[];
@@ -202,6 +205,7 @@ export type LaborCaseStudy = {
   showcase: CaseShowcaseItem[];
   overview: {
     image?: string;
+    images?: string[];
     imageAlt: string;
     video?: string;
     link: { label: string; href: string };
@@ -240,6 +244,7 @@ export type VerybusyCaseStudy = {
   };
   overview: {
     image?: string;
+    images?: string[];
     imageAlt: string;
     video?: string;
     link: { label: string; href: string };

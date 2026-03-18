@@ -96,6 +96,7 @@ export function VerybusyCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseOverviewSection
           image={cs.overview.image}
+          images={cs.overview.images}
           imageAlt={cs.overview.imageAlt}
           video={cs.overview.video}
           link={cs.overview.link}

@@ -6,7 +6,7 @@ export const toolIconMap: Record<string, string> = {
   Slack: "/images/tools/slack.png",
   Bubble: "/images/tools/bubble.png",
   "Next.js": "/images/tools/nextjs.png",
-  shadcn: "/images/tools/shadcn.png",
+  Shadcn: "/images/tools/shadcn.png",
   GPT: "/images/tools/gpt.png",
   Github: "/images/tools/github.png",
   Gemini: "/images/tools/gemini.png",
@@ -16,6 +16,6 @@ export const toolIconMap: Record<string, string> = {
   Claude: "/images/tools/claude.png",
   Midjourney: "/images/tools/midjourney.png",
   Gitlab: "",
-  "VS Code": "",
+  "VS Code": "/images/tools/vs-code.png",
   Clerk: "",
 };

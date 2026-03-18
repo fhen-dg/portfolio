@@ -151,6 +151,7 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       imageAlt: "Championship configuration for clubs",
       video: "/images/projects/viramos/ViramosClubs.mp4",
       imagePosition: "right",
+      showRing: true,
     },
     {
       title: "Formalized regulatory workflows (Judges)",
@@ -161,10 +162,11 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
         "Searchable participant references (name or sail number)",
         "Traceable rulings with controlled visibility across roles",
       ],
-      image: "/images/projects/viramos/ViramosJudges.png",
+      image: "",
       imageAlt: "Protest and hearing flow for judges",
+      video: "/images/projects/viramos/ViramosJudges.mp4",
       imagePosition: "left",
-      showRing: false,
+      showRing: true,
     },
     {
       title: "Mobile-first field experience (Sailors)",
@@ -179,6 +181,8 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
       imageAlt: "Dock-side mobile experience for sailors",
       video: "/images/projects/viramos/ViramosSailors.mp4",
       imagePosition: "right",
+      videoFormat: "mobile",
+      showRing: true,
     },
   ],
   metrics: {
@@ -201,7 +205,7 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
     footnote: "2025 metrics",
   },
   overview: {
-    image: "/images/projects/viramos/ViramosUIOverview.png",
+    image: "/images/projects/viramos/ViramosOverview3.png",
     imageAlt: "Viramos platform overview",
     link: {
       label: "viramos.com",
@@ -210,15 +214,15 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
     tools: [
       "Figma",
       "Figjam",
+      "GPT",
+      "Bubble",
+      "Shadcn",
+      "VS Code",
+      "Github",
+      "Next.js",
       "Notion",
       "Google Workspace",
       "Slack",
-      "Bubble",
-      "Next.js",
-      "shadcn",
-      "GPT",
-      "VS Code",
-      "Github",
     ],
   },
 };
@@ -383,10 +387,11 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
         "Referencias de participantes buscables (nombre o número de vela)",
         "Fallos trazables con visibilidad controlada según rol",
       ],
-      image: "/images/projects/viramos/ViramosJudges.png",
+      image: "",
       imageAlt: "Flujo de protesta y audiencia para jueces",
+      video: "/images/projects/viramos/ViramosJudges.mp4",
       imagePosition: "left",
-      showRing: false,
+      showRing: true,
     },
     {
       title: "Experiencia de campo mobile-first (Navegantes)",
@@ -401,6 +406,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
       imageAlt: "Experiencia mobile en muelle para navegantes",
       video: "/images/projects/viramos/ViramosSailors.mp4",
       imagePosition: "right",
+      videoFormat: "mobile",
     },
   ],
   metrics: {
@@ -423,7 +429,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
     footnote: "Métricas 2025",
   },
   overview: {
-    image: "/images/projects/viramos/ViramosUIOverview.png",
+    image: "/images/projects/viramos/ViramosOverview1.png",
     imageAlt: "Resumen de la plataforma Viramos",
     link: {
       label: "viramos.com",
