@@ -152,6 +152,11 @@ const config: Config = {
           lineHeight: "175%",
           fontWeight: "400",
         },
+        ".body2-bold": {
+          fontSize: "16px",
+          lineHeight: "175%",
+          fontWeight: "700",
+        },
         ".body3": {
           fontSize: "14px",
           lineHeight: "175%",

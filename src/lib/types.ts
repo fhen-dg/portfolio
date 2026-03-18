@@ -59,12 +59,14 @@ export type CaseStrategyItem = {
 };
 
 export type CaseShowcaseItem = {
+  eyebrow?: string;
   title: string;
   description?: string;
   bullets: string[];
   image: string;
   imageAlt: string;
   video?: string;
+  videoFormat?: "desktop" | "mobile";
   imagePosition: "left" | "right";
   showRing?: boolean;
 };
@@ -86,9 +88,10 @@ export type ViramosCaseStudy = {
   slug: string;
   title: string;
   year: string;
-  heroImage: string;
-  heroImageMobile: string;
+  heroImage?: string;
+  heroImageMobile?: string;
   heroImageAlt: string;
+  heroVideo?: string;
   description: string;
   snapshot: {
     role: string;
@@ -116,6 +119,7 @@ export type ViramosCaseStudy = {
   metrics: CaseMetrics;
   overview: {
     image?: string;
+    images?: string[];
     imageAlt: string;
     video?: string;
     link: { label: string; href: string };
@@ -127,9 +131,10 @@ export type TheoAICaseStudy = {
   slug: string;
   title: string;
   year: string;
-  heroImage: string;
-  heroImageMobile: string;
+  heroImage?: string;
+  heroImageMobile?: string;
   heroImageAlt: string;
+  heroVideo?: string;
   description: string;
   snapshot: {
     role: string;
@@ -146,13 +151,13 @@ export type TheoAICaseStudy = {
     items: CaseComplexityItem[];
   };
   workstream1: {
-    supporting3?: string;
+    eyebrow?: string;
     heading: string;
     intro: string;
     items: CaseStrategyItem[];
   };
   workstream2: {
-    supporting3?: string;
+    eyebrow?: string;
     heading: string;
     intro: string;
     items: CaseStrategyItem[];
@@ -162,7 +167,8 @@ export type TheoAICaseStudy = {
     body: CaseSummaryContentItem[];
   };
   overview: {
-    image: string;
+    image?: string;
+    images?: string[];
     imageAlt: string;
     link: { label: string; href: string };
     tools: string[];
@@ -174,9 +180,10 @@ export type LaborCaseStudy = {
   slug: string;
   title: string;
   year: string;
-  heroImage: string;
-  heroImageMobile: string;
+  heroImage?: string;
+  heroImageMobile?: string;
   heroImageAlt: string;
+  heroVideo?: string;
   description: string;
   snapshot: {
     role: string;
@@ -199,6 +206,7 @@ export type LaborCaseStudy = {
   showcase: CaseShowcaseItem[];
   overview: {
     image?: string;
+    images?: string[];
     imageAlt: string;
     video?: string;
     link: { label: string; href: string };
@@ -210,9 +218,10 @@ export type VerybusyCaseStudy = {
   slug: string;
   title: string;
   year: string;
-  heroImage: string;
+  heroImage?: string;
   heroImageMobile?: string;
   heroImageAlt: string;
+  heroVideo?: string;
   description: string;
   snapshot: {
     role: string;
@@ -236,6 +245,7 @@ export type VerybusyCaseStudy = {
   };
   overview: {
     image?: string;
+    images?: string[];
     imageAlt: string;
     video?: string;
     link: { label: string; href: string };

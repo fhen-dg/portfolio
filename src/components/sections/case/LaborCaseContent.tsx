@@ -28,6 +28,7 @@ export function LaborCaseContent() {
           heroImage={cs.heroImage}
           heroImageMobile={cs.heroImageMobile}
           heroImageAlt={cs.heroImageAlt}
+          heroVideo={cs.heroVideo}
           title={cs.title}
           description={cs.description}
           year={cs.year}
@@ -42,6 +43,7 @@ export function LaborCaseContent() {
           role={cs.snapshot.role}
           duration={cs.snapshot.duration}
           team={cs.snapshot.team}
+          tools={cs.overview.tools}
         />
       </RevealOnScroll>
 
@@ -107,6 +109,7 @@ export function LaborCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseOverviewSection
           image={cs.overview.image}
+          images={cs.overview.images}
           imageAlt={cs.overview.imageAlt}
           link={cs.overview.link}
           tools={cs.overview.tools}

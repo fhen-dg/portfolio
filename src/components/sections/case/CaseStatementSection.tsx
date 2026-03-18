@@ -14,7 +14,7 @@ export function CaseStatementSection({
   return (
     <section className="flex justify-center w-full">
       <div
-        className={`flex flex-col gap-[20px] md:gap-[32px] max-w-[960px] w-full${align === "center" ? " items-end" : ""}`}
+        className={`flex flex-col gap-[20px] md:gap-[32px] max-w-[800px] w-full${align === "center" ? " items-end" : ""}`}
       >
         <h2
           className={`title1 md:header1 text-neutral-800${align === "center" ? " w-full text-center" : ""}`}

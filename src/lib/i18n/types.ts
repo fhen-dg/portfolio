@@ -47,11 +47,13 @@ export type Translations = {
     team: string;
   };
   viramosSections: {
-    opportunity: string;
+    context: string;
+    solution: string;
     earlyValidation: string;
     contextImmersion: string;
     inflectionPoint: string;
     reArchitecting: string;
+    coreExperience: string;
   };
   cv: {
     sections: {

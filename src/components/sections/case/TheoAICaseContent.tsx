@@ -24,6 +24,7 @@ export function TheoAICaseContent() {
           heroImage={cs.heroImage}
           heroImageMobile={cs.heroImageMobile}
           heroImageAlt={cs.heroImageAlt}
+          heroVideo={cs.heroVideo}
           title={cs.title}
           description={cs.description}
           year={cs.year}
@@ -38,6 +39,7 @@ export function TheoAICaseContent() {
           role={cs.snapshot.role}
           duration={cs.snapshot.duration}
           team={cs.snapshot.team}
+          tools={cs.overview.tools}
         />
       </RevealOnScroll>
 
@@ -69,7 +71,7 @@ export function TheoAICaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseDescriptiveBreakdownSection
-          supporting3={cs.workstream1.supporting3}
+          eyebrow={cs.workstream1.eyebrow}
           heading={cs.workstream1.heading}
           intro={cs.workstream1.intro}
           items={cs.workstream1.items}
@@ -80,7 +82,7 @@ export function TheoAICaseContent() {
 
       <RevealOnScroll className="w-full">
         <CaseDescriptiveBreakdownSection
-          supporting3={cs.workstream2.supporting3}
+          eyebrow={cs.workstream2.eyebrow}
           heading={cs.workstream2.heading}
           intro={cs.workstream2.intro}
           items={cs.workstream2.items}
@@ -102,6 +104,7 @@ export function TheoAICaseContent() {
       <RevealOnScroll className="w-full">
         <CaseOverviewSection
           image={cs.overview.image}
+          images={cs.overview.images}
           imageAlt={cs.overview.imageAlt}
           link={cs.overview.link}
           tools={cs.overview.tools}

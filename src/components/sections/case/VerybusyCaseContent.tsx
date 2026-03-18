@@ -25,6 +25,7 @@ export function VerybusyCaseContent() {
           heroImage={cs.heroImage}
           heroImageMobile={cs.heroImageMobile}
           heroImageAlt={cs.heroImageAlt}
+          heroVideo={cs.heroVideo}
           title={cs.title}
           description={cs.description}
           year={cs.year}
@@ -39,6 +40,7 @@ export function VerybusyCaseContent() {
           role={cs.snapshot.role}
           duration={cs.snapshot.duration}
           team={cs.snapshot.team}
+          tools={cs.overview.tools}
         />
       </RevealOnScroll>
 
@@ -94,6 +96,7 @@ export function VerybusyCaseContent() {
       <RevealOnScroll className="w-full">
         <CaseOverviewSection
           image={cs.overview.image}
+          images={cs.overview.images}
           imageAlt={cs.overview.imageAlt}
           video={cs.overview.video}
           link={cs.overview.link}
