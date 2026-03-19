@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="flex flex-col gap-[40px] items-start max-w-[1024px] w-full text-center">
         {/* Main text block – grows to fill available space and centers content */}
         <div className="flex items-center justify-center w-full">
-          <Logo size={28} className="mb-[32px] mt-[20px]" />
+          <Logo size={32} className="mb-[32px] mt-[20px]" />
         </div>
         <div className="flex flex-1 flex-col mt-[-20px] gap-[28px] items-center justify-center w-full text-neutral-800">
           <p className="body3 text-neutral-500 lg:body3 w-full">

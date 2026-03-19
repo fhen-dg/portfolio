@@ -22,7 +22,6 @@ import { getPrimaryProjects, secondaryProjects } from "@/content/projects";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
@@ -125,26 +124,6 @@ export function Navbar() {
   };
 
   const ContactMenu = () => {
-    const contactOptions = (
-      <>
-        <DropdownMenuItem asChild>
-          <a href="https://www.linkedin.com/in/federico-cohen-correa/" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <a href="mailto:federico.cohen.c@gmail.com">
-            Email
-          </a>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <a href="https://calendar.app.google/M4aXEZ4oTvXxnsZy6" target="_blank" rel="noopener noreferrer">
-            Calendar
-          </a>
-        </DropdownMenuItem>
-      </>
-    );
-
     const drawerContactOptions = (
       <div className="flex flex-col items-center p-4">
         {/* Contact icon */}
@@ -219,15 +198,52 @@ export function Navbar() {
           </DrawerContent>
         </Drawer>
 
-        {/* Desktop: Dropdown trigger */}
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button className="hidden md:flex">{t.nav.contact}</Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            {contactOptions}
-          </DropdownMenuContent>
-        </DropdownMenu>
+        {/* Desktop: NavigationMenu trigger */}
+        <NavigationMenu className="hidden md:block" align="end">
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger variant="default" className="!body3-bold">{t.nav.contact}</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="w-[240px]">
+                  <li>
+                    <NavigationMenuLink asChild>
+                      <a
+                        href="https://www.linkedin.com/in/federico-cohen-correa/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative flex cursor-pointer select-none items-center !justify-start w-full rounded-sm py-[10px] pl-[12px] outline-none transition-colors hover:bg-neutral-100 hover:text-primary-base !body3 text-left"
+                      >
+                        Linkedin
+                      </a>
+                    </NavigationMenuLink>
+                  </li>
+                  <li>
+                    <NavigationMenuLink asChild>
+                      <a
+                        href="mailto:federico.cohen.c@gmail.com"
+                        className="relative flex cursor-pointer select-none items-center !justify-start w-full rounded-sm py-[10px] pl-[12px] outline-none transition-colors hover:bg-neutral-100 hover:text-primary-base !body3 text-left"
+                      >
+                        Email
+                      </a>
+                    </NavigationMenuLink>
+                  </li>
+                  <li>
+                    <NavigationMenuLink asChild>
+                      <a
+                        href="https://calendar.app.google/M4aXEZ4oTvXxnsZy6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative flex cursor-pointer select-none items-center !justify-start w-full rounded-sm py-[10px] pl-[12px] outline-none transition-colors hover:bg-neutral-100 hover:text-primary-base !body3 text-left"
+                      >
+                        Calendar
+                      </a>
+                    </NavigationMenuLink>
+                  </li>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
       </>
     );
   };
@@ -238,7 +254,7 @@ export function Navbar() {
       <nav className="flex h-[68px] items-center justify-between px-5 md:hidden">
         {/* Left: logo */}
         <div className="flex items-center">
-        <Logo />
+        <Logo size={28} />
         <div className="mx-2 flex h-6 items-center">
             <Separator orientation="vertical" className="bg-neutral-400" />
         </div>
@@ -270,16 +286,16 @@ export function Navbar() {
       <nav className="hidden h-[68px] relative items-center justify-between px-[72px] py-5 md:flex">
         {/* Left: logo */}
         <div className="flex items-center">
-        <Logo />
+        <Logo size={24} />
           <div className="mx-3 ml-7 flex h-6 items-center">
             <Separator orientation="vertical" className="bg-neutral-400" />
           </div>
         <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>{t.nav.projects}</NavigationMenuTrigger>
+                <NavigationMenuTrigger variant="ghost">{t.nav.projects}</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="w-[260px]">
+                  <ul className="w-[240px]">
                     {[...getPrimaryProjects(locale), ...secondaryProjects].filter((p) => !!p.href).map((project) => (
                       <li key={project.slug}>
                         <NavigationMenuLink asChild>
@@ -324,7 +340,7 @@ export function Navbar() {
             </a>
           </IconButton>
 
-          <div className="pl-3">
+          <div className="pl-4">
             <ContactMenu />
           </div>
         </div>

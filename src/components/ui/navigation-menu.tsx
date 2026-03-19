@@ -1,14 +1,17 @@
 import * as React from "react"
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
-import { cva } from "class-variance-authority"
-import { ChevronDown } from "lucide-react"
+import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 
+type NavigationMenuProps = React.ComponentPropsWithoutRef<
+  typeof NavigationMenuPrimitive.Root
+> & { align?: "start" | "end" }
+
 const NavigationMenu = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root>
->(({ className, children, ...props }, ref) => (
+  NavigationMenuProps
+>(({ className, children, align = "start", ...props }, ref) => (
   <NavigationMenuPrimitive.Root
     ref={ref}
     className={cn(
@@ -18,7 +21,7 @@ const NavigationMenu = React.forwardRef<
     {...props}
   >
     {children}
-    <NavigationMenuViewport />
+    <NavigationMenuViewport align={align} />
   </NavigationMenuPrimitive.Root>
 ))
 NavigationMenu.displayName = NavigationMenuPrimitive.Root.displayName
@@ -41,16 +44,33 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName
 const NavigationMenuItem = NavigationMenuPrimitive.Item
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-[36px] w-max items-center cursor-default justify-center whitespace-nowrap rounded-md px-[14px] py-[6px] body3 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-neutral-black lg:hover:bg-neutral-100 lg:hover:text-primary-base data-[state=open]:bg-neutral-100 data-[state=open]:text-primary-base"
+  "group inline-flex h-[36px] w-max items-center cursor-default justify-center whitespace-nowrap rounded-md px-[14px] py-[6px] body3 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  {
+    variants: {
+      variant: {
+        default:
+          "bg-neutral-black text-neutral-white lg:hover:bg-primary-base data-[state=open]:bg-primary-base data-[state=open]:text-neutral-white",
+        ghost:
+          "text-neutral-black lg:hover:bg-neutral-100 lg:hover:text-primary-base data-[state=open]:bg-neutral-100 data-[state=open]:text-primary-base",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+    },
+  }
 )
+
+type NavigationMenuTriggerProps =
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Trigger> &
+    VariantProps<typeof navigationMenuTriggerStyle>
 
 const NavigationMenuTrigger = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
+  NavigationMenuTriggerProps
+>(({ className, children, variant, ...props }, ref) => (
   <NavigationMenuPrimitive.Trigger
     ref={ref}
-    className={cn(navigationMenuTriggerStyle(), "group", className)}
+    className={cn(navigationMenuTriggerStyle({ variant }), "group", className)}
     {...props}
   >
     {children}{" "}
@@ -88,11 +108,21 @@ const NavigationMenuLink = React.forwardRef<
 ))
 NavigationMenuLink.displayName = NavigationMenuPrimitive.Link.displayName
 
+type NavigationMenuViewportProps =
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport> & {
+    align?: "start" | "end"
+  }
+
 const NavigationMenuViewport = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Viewport>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
->(({ className, ...props }, ref) => (
-  <div className={cn("absolute left-0 top-full flex justify-center")}>
+  NavigationMenuViewportProps
+>(({ className, align = "start", ...props }, ref) => (
+  <div
+    className={cn(
+      "absolute top-full flex justify-center",
+      align === "end" ? "right-0" : "left-0"
+    )}
+  >
     <NavigationMenuPrimitive.Viewport
       className={cn(
         "origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border-[1px] border-neutral-400 bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]",
