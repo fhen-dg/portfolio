@@ -2,7 +2,7 @@
 
 import { Languages, SendHorizontal } from "lucide-react";
 import { GithubIcon } from "@/components/ui/icons/GithubIcon";
-import { LinkedinIcon } from "@/components/ui/icons/LinkedinIcon";
+import { TranslateIcon } from "@/components/ui/icons/TranslateIcon";
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { useLocale } from "@/hooks/useLocale";
@@ -113,7 +113,7 @@ export function Navbar() {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <IconButton variant="ghost" aria-label="Switch language" className="hidden md:flex">
-              <Languages />
+              <Languages size={22} />
             </IconButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
@@ -233,19 +233,20 @@ export function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-neutral-400 bg-neutral-white">
+    <header className="sticky top-0 z-50 w-full border-b border-neutral-white bg-neutral-white">
       {/* ── Mobile nav (< md) ── */}
       <nav className="flex h-[68px] items-center justify-between px-5 md:hidden">
         {/* Left: logo */}
+        <div className="flex items-center">
         <Logo />
+        <div className="mx-2 flex h-6 items-center">
+            <Separator orientation="vertical" className="bg-neutral-400" />
+        </div>
+        <MobileMenuSheet />
+        </div>
 
         {/* Right: menu + language + contact */}
         <div className="flex items-center">
-          <MobileMenuSheet />
-
-          <div className="mx-2 flex h-6 items-center">
-            <Separator orientation="vertical" className="bg-neutral-400" />
-          </div>
 
           <LanguageSwitcher />
 
@@ -266,13 +267,14 @@ export function Navbar() {
       </nav>
 
       {/* ── Desktop nav (≥ md) ── */}
-      <nav className="hidden h-[68px] items-center justify-between px-[72px] py-5 md:flex">
+      <nav className="hidden h-[68px] relative items-center justify-between px-[72px] py-5 md:flex">
         {/* Left: logo */}
-        <Logo />
-
-        {/* Right: nav links + language + contact */}
         <div className="flex items-center">
-          <NavigationMenu>
+        <Logo />
+          <div className="mx-3 ml-7 flex h-6 items-center">
+            <Separator orientation="vertical" className="bg-neutral-400" />
+          </div>
+        <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>{t.nav.projects}</NavigationMenuTrigger>
@@ -300,6 +302,17 @@ export function Navbar() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+        </div>
+        <div className="flex items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          </div>
+        {/* Right: nav links + language + contact */}
+        <div className="flex items-center">
+
+          <div className="mx-[2px] flex h-6 items-center">
+            <Separator orientation="vertical" className="bg-neutral-400 hidden" />
+          </div>
+
+          <LanguageSwitcher />
 
           <div className="mx-3 flex h-6 items-center">
             <Separator orientation="vertical" className="bg-neutral-400" />
@@ -310,16 +323,6 @@ export function Navbar() {
               <GithubIcon size={20} />
             </a>
           </IconButton>
-
-          <div className="mx-3 flex h-6 items-center">
-            <Separator orientation="vertical" className="bg-neutral-400" />
-          </div>
-
-          <LanguageSwitcher />
-
-          <div className="mx-3 flex h-6 items-center">
-            <Separator orientation="vertical" className="bg-neutral-400" />
-          </div>
 
           <div className="pl-3">
             <ContactMenu />

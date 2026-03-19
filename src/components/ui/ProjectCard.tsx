@@ -55,7 +55,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
               {project.title}
             </p>
             {project.tagline && (
-              <p className="md:body2 lg:body1 body3 text-neutral-600 line-clamp-3 w-full">
+              <p className="md:body2 lg:body2 body3 text-neutral-600 line-clamp-3 w-full">
                 {project.tagline}
               </p>
             )}

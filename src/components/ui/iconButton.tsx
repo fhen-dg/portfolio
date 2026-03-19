@@ -11,7 +11,7 @@ const iconButtonVariants = cva(
     variants: {
       variant: {
         default: "bg-neutral-black text-neutral-white lg:hover:bg-primary-base",
-        ghost: "lg:hover:bg-neutral-200 text-neutral-black lg:hover:text-primary-base",
+        ghost: "lg:hover:bg-neutral-100 text-neutral-black lg:hover:text-primary-base",
       },
       size: {
         default: "h-[40px] w-[40px] rounded-[6px]",

@@ -3,16 +3,6 @@ import type { Locale } from "@/lib/i18n/types";
 
 const primaryProjectsEn: Project[] = [
   {
-    slug: "labor",
-    title: "Labor",
-    tagline: "A 0→1 marketplace shipped to production in 2 months. Vibecoded on Next.js, deployed on Vercel with Vercel Blob, Supabase, Clerk auth, and Google Maps.",
-    year: "2026",
-    coverImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
-    coverImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
-    coverImageAlt: "Labor – agricultural services marketplace",
-    href: "/case/laborapp",
-  },
-  {
     slug: "viramos",
     title: "Viramos",
     tagline: "A multi-role operational SaaS — rebuilt from a no-code MVP into a role-based, permission-driven platform serving 5 countries across Latin America.",
@@ -21,6 +11,16 @@ const primaryProjectsEn: Project[] = [
     coverImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
     coverImageAlt: "Viramos – regatta operating system",
     href: "/case/viramos",
+  },
+  {
+    slug: "labor",
+    title: "Labor",
+    tagline: "A 0→1 marketplace shipped to production in 2 months. Vibecoded on Next.js, deployed on Vercel with Vercel Blob, Supabase, Clerk auth, and Google Maps.",
+    year: "2026",
+    coverImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
+    coverImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
+    coverImageAlt: "Labor – agricultural services marketplace",
+    href: "/case/laborapp",
   },
 ];
 
