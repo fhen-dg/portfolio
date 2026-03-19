@@ -65,12 +65,12 @@ export const en: Translations = {
       certifications: "Certifications",
     },
     profile: {
-      role: "Senior Product Designer in Buenos Aires, Argentina",
+      role: "Senior Product Designer / Design Engineer in Buenos Aires, Argentina",
     },
     about: [
-      "Senior Product Designer with 5+ years building complex technical products for U.S. and LATAM startups — SaaS platforms, AI systems, and technically demanding software at scale.",
-      "I think in systems: role-based architectures, permission models, and scalable interaction patterns for products where operational complexity is the baseline. I connect user needs, engineering constraints, and business goals into decisions that hold at scale.",
-      "I vibecode production features using Next.js, Vercel, and AI-assisted tooling — shipping design decisions directly in code and eliminating traditional handoff cycles.",
+      "Senior Product Designer / Design Engineer with 5+ years in SaaS and AI products.",
+      "I care about solving real problems, connecting users, business, and engineering to ship clear, scalable experiences.",
+      "I ship production features using Next.js, Vercel, and AI-assisted tooling like Cursor and Claude Code—committing design decisions directly in code and eliminating traditional handoff cycles.",
     ],
     experience: {
       amalgama: {
