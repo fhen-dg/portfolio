@@ -9,7 +9,7 @@ export default function Home() {
       <RevealOnScroll className="w-full">
         <HeroSection />
       </RevealOnScroll>
-      <div className="h-[120px] lg:h-[80px] w-full" />
+      <div className="h-[80px] lg:h-[80px] w-full" />
         <ProjectsSection />
       <div className="h-[120px] lg:h-[200px] w-full" />
       <RevealOnScroll className="w-full" delay={100}>

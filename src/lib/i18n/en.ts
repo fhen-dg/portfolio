@@ -7,8 +7,8 @@ export const en: Translations = {
       "Senior Product Designer with 5+ years building complex technical products — SaaS platforms, role-based systems, and AI-driven tools — from architecture to production code.",
   },
   hero: {
-    introPrefix: "I'm Federico, but people call me ",
-    heading: "I design, build and ship\nproducts end-to-end",
+    introPrefix: "I'm Federico—Senior Product Designer / Design Engineer from Buenos Aires ",
+    heading: "I design, build and ship products end-to-end",
     tagline:"As systems, from strategy and architecture, to production-ready code.",
     role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
@@ -65,7 +65,7 @@ export const en: Translations = {
       certifications: "Certifications",
     },
     profile: {
-      role: "Senior Product Designer / Design Engineer in Buenos Aires, Argentina",
+      role: "Senior Product Designer / Design Engineer from Buenos Aires, Argentina",
     },
     about: [
       "Senior Product Designer / Design Engineer with 5+ years in SaaS and AI products.",
