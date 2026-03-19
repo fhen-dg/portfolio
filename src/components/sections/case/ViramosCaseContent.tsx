@@ -9,7 +9,6 @@ import { CaseSummarySection } from "@/components/sections/case/CaseSummarySectio
 import { CaseResponsibilitiesSection } from "@/components/sections/case/CaseResponsibilitiesSection";
 import { CaseStatementSection } from "@/components/sections/case/CaseStatementSection";
 import { CaseDisplayBreakdownSection } from "@/components/sections/case/CaseDisplayBreakdownSection";
-import { CaseDescriptiveBreakdownSection } from "@/components/sections/case/CaseDescriptiveBreakdownSection";
 import { CaseKeyValueSection } from "@/components/sections/case/CaseKeyValueSection";
 import { CaseShowcaseSection } from "@/components/sections/case/CaseShowcaseSection";
 import { CaseMetricsSection } from "@/components/sections/case/CaseMetricsSection";
