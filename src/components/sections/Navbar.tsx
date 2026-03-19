@@ -254,8 +254,8 @@ export function Navbar() {
       <nav className="flex h-[68px] items-center justify-between px-5 md:hidden">
         {/* Left: logo */}
         <div className="flex items-center">
-        <Logo size={28} />
-        <div className="mx-2 flex h-6 items-center">
+        <Logo size={24} />
+        <div className="mx-2 ml-4 flex h-6 items-center">
             <Separator orientation="vertical" className="bg-neutral-400" />
         </div>
         <MobileMenuSheet />
@@ -266,17 +266,17 @@ export function Navbar() {
 
           <LanguageSwitcher />
 
+          <div className="mx-2 flex h-6 items-center">
+            <Separator orientation="vertical" className="bg-neutral-400" />
+          </div>
+
           <IconButton variant="ghost" aria-label="GitHub profile" asChild className="md:hidden">
             <a href="https://github.com/fhen-dg" target="_blank" rel="noopener noreferrer">
               <GithubIcon size={22} />
             </a>
           </IconButton>
 
-          <div className="mx-2 flex h-6 items-center">
-            <Separator orientation="vertical" className="bg-neutral-400" />
-          </div>
-
-          <div className="pl-2">
+          <div className="ml-4">
             <ContactMenu />
           </div>
         </div>
