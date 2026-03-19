@@ -1,6 +1,8 @@
 "use client";
 
 import { Languages, SendHorizontal } from "lucide-react";
+import { GithubIcon } from "@/components/ui/icons/GithubIcon";
+import { LinkedinIcon } from "@/components/ui/icons/LinkedinIcon";
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { useLocale } from "@/hooks/useLocale";
@@ -16,7 +18,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
-import { getPrimaryProjects } from "@/content/projects";
+import { getPrimaryProjects, secondaryProjects } from "@/content/projects";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -247,6 +249,12 @@ export function Navbar() {
 
           <LanguageSwitcher />
 
+          <IconButton variant="ghost" aria-label="GitHub profile" asChild className="md:hidden">
+            <a href="https://github.com/fhen-dg" target="_blank" rel="noopener noreferrer">
+              <GithubIcon size={22} />
+            </a>
+          </IconButton>
+
           <div className="mx-2 flex h-6 items-center">
             <Separator orientation="vertical" className="bg-neutral-400" />
           </div>
@@ -270,7 +278,7 @@ export function Navbar() {
                 <NavigationMenuTrigger>{t.nav.projects}</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="w-[260px]">
-                    {getPrimaryProjects(locale).filter((p) => !!p.href).map((project) => (
+                    {[...getPrimaryProjects(locale), ...secondaryProjects].filter((p) => !!p.href).map((project) => (
                       <li key={project.slug}>
                         <NavigationMenuLink asChild>
                           <Link
@@ -292,6 +300,16 @@ export function Navbar() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+
+          <div className="mx-3 flex h-6 items-center">
+            <Separator orientation="vertical" className="bg-neutral-400" />
+          </div>
+
+          <IconButton variant="ghost" aria-label="GitHub profile" asChild className="hidden md:flex">
+            <a href="https://github.com/fhen-dg" target="_blank" rel="noopener noreferrer">
+              <GithubIcon size={20} />
+            </a>
+          </IconButton>
 
           <div className="mx-3 flex h-6 items-center">
             <Separator orientation="vertical" className="bg-neutral-400" />

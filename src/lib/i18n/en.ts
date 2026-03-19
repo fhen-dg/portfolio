@@ -8,8 +8,8 @@ export const en: Translations = {
   },
   hero: {
     introPrefix: "I'm Federico, but people call me ",
-    heading: "I design and ship purposeful \n products as systems",
-    tagline:"From strategy and architecture to production-ready code.",
+    heading: "I design, build and ship\nproducts end-to-end",
+    tagline:"As systems, from strategy and architecture, to production-ready code.",
     role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },

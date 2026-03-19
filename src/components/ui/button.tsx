@@ -13,7 +13,7 @@ const buttonVariants = cva(
         ghost: "lg:hover:bg-neutral-100 body3 text-neutral-800 lg:hover:text-primary-base",
       },
       size: {
-        default: "h-10 px-5 py-2",
+        default: "h-[36px] px-[14px]",
       },
     },
     defaultVariants: {
