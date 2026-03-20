@@ -9,36 +9,30 @@ const laborCaseStudyEn: LaborCaseStudy = {
   heroImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
   heroImageAlt: "Labor – agricultural services marketplace",
   description:
-    "A 0→1 marketplace shipped to production in 2 months. Vibecoded on Next.js, deployed on Vercel with Vercel Blob, Supabase, Clerk auth, and Google Maps.",
+    "A 0→1 agriculture marketplace shipped to production in 2 months. Built on Next.js, deployed on Vercel with Vercel Blob, Supabase, Clerk auth, and Google Maps.",
   snapshot: {
     role: "Product Designer / Design Engineer",
-    duration: "2 months",
+    duration: "2 months, 2025–2026",
     team: "Founders, Product Owner, Engineering Advisor (for weekly consulting), Designer (me)",
   },
   summary: [
-    { text: "Labor is a " },
-    { text: "0→1 marketplace MVP", emphasis: true },
-    { text: ". A structured digital interaction model built to validate a core hypothesis." },
+    { text: "Agricultural services in Argentina run on informal networks—" },
+    { text: "no structured way to connect", emphasis: true },
+    { text: " producers and contractors without intermediaries." },
     { type: "break", count: 2 },
-    { text: "The MVP centered around one core loop:" },
-    { type: "break" },
-    { text: "Publish service → Discover providers → Initiate direct contact", emphasis: true },
-    { type: "break", count: 2 },
-    { text: "With " },
-    { text: "early validation metrics", emphasis: true },
-    { text: " defined with the client to assess whether this loop generated " },
-    { text: "real engagement", emphasis: true },
-    { text: "." },
+    { text: "Tight budget, 2 months", emphasis: true },
+    { text: ", two people, one goal: ", },
+    { text: "validate the product core. ", emphasis: true },
   ],
   responsibilities: [
     {
       icon: "square-code",
-      title: "Vibecoded implementation",
-      description: "Built 50% of all production features directly in code, including authentication flows, publishing forms, geo-filtered search, and all third-party integrations.",
+      title: "Implementation—Vibecoded",
+      description: "Built 50% of all production features directly in code, including authentication flows, publishing forms, geo-filtered search, and third-party integrations.",
     },
     {
       icon: "component",
-      title: "Complete UI system",
+      title: "UI system",
       description: "All screens and UI patterns designed in Figma, aligned with shadcn components used in production, ensuring full parity between design and implementation.",
     },
     {
@@ -54,17 +48,12 @@ const laborCaseStudyEn: LaborCaseStudy = {
     {
       icon: "network",
       title: "Service taxonomy",
-      description: "Designed the information hierarchy and category logic for filtering services by type and geolocation, making results immediately actionable for users in specific regions.",
+      description: "Designed the category logic and information hierarchy for filtering services by type and geolocation—results pre-filtered by user location for immediate relevance.",
     },
     {
       icon: "sparkles",
       title: "AI-assisted workflow",
-      description: "Used AI to evaluate stack decisions, explore technical architecture, and accelerate iteration, including identifying and proposing Vercel Blob as the asset pipeline solution.",
-    },
-    {
-      icon: "bar-chart-3",
-      title: "Validation metrics",
-      description: "Aligned with client marketing to define early activation signals: listing creation rate, contact initiation, and return visits, measuring whether the core loop generated real engagement.",
+      description: "Used AI to evaluate stack decisions and accelerate iteration—including identifying Vercel Blob as the asset pipeline solution.",
     },
   ],
   problem: {
@@ -126,16 +115,16 @@ const laborCaseStudyEn: LaborCaseStudy = {
   },
   solution: {
     body: [
-      { text: "A " },
-      { text: "fluid participation marketplace", emphasis: true },
-      { text: " where role is defined by context, not pre-selection. A " },
+      { text: "A fluid participation " },
+      { text: "MVP", emphasis: true },
+      { text: " built around one core loop: " },
+      { text: "Publish → Discover → Contact → Review", emphasis: true },
+      { type: "break", count: 2 },
+      
+
+      { text: "Validation metrics ",emphasis: true, },
       {
-        text: "guided publishing flow with service & location-based discovery",
-        emphasis: true,
-      },
-      { text: " and a lightweight trust loop designed to " },
-      { text: "validate the product core", emphasis: true },
-      { text: " before scaling." },
+        text: "defined for the client to measure: listing creation, contact initiation, and return visits." },
     ],
   },
   showcase: [
@@ -151,7 +140,8 @@ const laborCaseStudyEn: LaborCaseStudy = {
       image: "",
       imageAlt: "Unified publishing flow",
       video: "/images/projects/laborapp/LaborPublishing.mp4",
-      imagePosition: "left",
+      imagePosition: "right",
+      videoFormat: "mobile",
     },
     {
       title: "Location & service-driven discovery",
@@ -183,7 +173,7 @@ const laborCaseStudyEn: LaborCaseStudy = {
     },
   ],
   overview: {
-    image: "/images/projects/laborapp/LaborUIOverview.png",
+    image: "/images/projects/laborapp/LaborOverview.png",
     imageAlt: "Labor platform overview",
     link: {
       label: "laborapp.com.ar",
@@ -386,7 +376,7 @@ const laborCaseStudyEs: LaborCaseStudy = {
     },
   ],
   overview: {
-    image: "/images/projects/laborapp/LaborUIOverview.png",
+    image: "/images/projects/laborapp/LaborOverview.png",
     imageAlt: "Resumen de la plataforma Labor",
     link: {
       label: "laborapp.com.ar",

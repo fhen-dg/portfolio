@@ -35,14 +35,8 @@ export function SecondaryProjectCard({ project, comingSoonLabel, className }: Se
         />
       </div>
 
-      <div className="h-10 w-full shrink-0" />
-
-      <Separator className="bg-neutral-300" />
-
-      <div className="h-10 w-full shrink-0" />
-
-      <div className="flex items-center justify-between px-[8px] w-full shrink-0">
-        <p className="lg:title3 title4 text-neutral-800 overflow-hidden text-ellipsis">
+      <div className="flex items-center justify-between px-[8px] w-full shrink-0 md:mt-[20px] mt-[12px]">
+        <p className="lg:title4 title4 text-neutral-800 overflow-hidden text-ellipsis">
           {project.title}
         </p>
         <div className="flex gap-[8px] items-center shrink-0">

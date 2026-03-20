@@ -201,7 +201,7 @@ export type LaborCaseStudy = {
     items: CaseStrategyItem[];
   };
   solution: {
-    body: RichTextSegment[];
+    body: CaseSummaryContentItem[];
   };
   showcase: CaseShowcaseItem[];
   overview: {

@@ -13,7 +13,7 @@ const viramosCaseStudyEn: ViramosCaseStudy = {
     "A multi-role operational SaaS for sailing championships—rebuilt from a no-code MVP into a role-based, permission-driven platform serving 5 countries across Latin America.",
   snapshot: {
     role: "Product Designer",
-    duration: "11 months\n2024 – 2025",
+    duration: "11 months, 2024–2025",
     team: "Founder, Sailing Advisor, Product Owner, Scrum Master (part-time), Engineers, QC, Designer (me)",
   },
   summary: [

@@ -50,7 +50,7 @@ export function LaborCaseContent() {
       <div className="h-[200px] md:h-[320px] w-full" />
 
       <RevealOnScroll className="w-full">
-        <CaseSummarySection items={cs.summary ?? []} />
+        <CaseSummarySection title={t.viramosSections.context} items={cs.summary ?? []} />
       </RevealOnScroll>
 
       <div className="h-[160px] md:h-[280px] w-full" />
@@ -62,9 +62,9 @@ export function LaborCaseContent() {
         />
       </RevealOnScroll>
 
-      <div className="h-[200px] md:h-[320px] w-full" />
+      <div className="h-[200px] md:h-[320px] w-full hidden" />
 
-      <RevealOnScroll className="w-full">
+      <RevealOnScroll className="w-full hidden">
         <CaseStatementSection
           body={cs.problem.body}
           heading={t.caseSections.problem}
@@ -80,9 +80,9 @@ export function LaborCaseContent() {
         />
       </RevealOnScroll>
 
-      <div className="h-[200px] lg:h-[320px] w-full" />
+      <div className="h-[200px] lg:h-[320px] w-full hidden" />
 
-      <RevealOnScroll className="w-full">
+      <RevealOnScroll className="w-full hidden">
         <CaseDescriptiveBreakdownSection
           intro={cs.strategicAlignment.intro}
           items={cs.strategicAlignment.items}
@@ -100,7 +100,7 @@ export function LaborCaseContent() {
         />
       </RevealOnScroll>
 
-      <div className="h-[120px] lg:h-[200px] w-full" />
+      <div className="h-[200px] lg:h-[320px] w-full" />
 
       <CaseShowcaseSection items={cs.showcase} />
 

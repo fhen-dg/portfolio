@@ -15,7 +15,7 @@ const primaryProjectsEn: Project[] = [
   {
     slug: "labor",
     title: "Labor",
-    tagline: "A 0→1 marketplace shipped to production in 2 months. Vibecoded on Next.js, deployed on Vercel with Vercel Blob, Supabase, Clerk auth, and Google Maps.",
+    tagline: "A 0→1 agriculture marketplace shipped to production in 2 months. Built on Next.js, deployed on Vercel with Vercel Blob, Supabase, Clerk auth, and Google Maps.",
     year: "2026",
     coverImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
     coverImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
