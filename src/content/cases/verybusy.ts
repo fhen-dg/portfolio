@@ -12,7 +12,7 @@ const verybusyCaseStudyEn: VerybusyCaseStudy = {
     "Permission architecture, workspace model, and monetization layer for a professional image proofing SaaS: structural work on a live product with an active user base.",
   snapshot: {
     role: "Lead Product Designer",
-    duration: "6 months",
+    duration: "6 months, 2023–2024",
     team: "Founders, Product Owner, Scrum Master, Engineers, QA, Designer (me)",
   },
   summary: [

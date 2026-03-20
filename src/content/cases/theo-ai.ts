@@ -12,7 +12,7 @@ const theoAICaseStudyEn: TheoAICaseStudy = {
     "Rapid product exploration at an early-stage legal AI startup: prompt-engineered research tooling and multi-format design for high-friction enterprise users.",
   snapshot: {
     role: "Product Designer",
-    duration: "4 months",
+    duration: "4 months, 2025",
     team: "CEO, CPO, CTO, Legal Advisors, Product Owner, Designer (me), Engineering Team",
   },
   summary: [

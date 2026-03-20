@@ -11,7 +11,7 @@ export const cvData: CVData = {
   about: [
     "Senior Product Designer with 5+ years building complex technical products for U.S. and LATAM startups — SaaS platforms, AI systems, and technically demanding software at scale.",
     "I think in systems: role-based architectures, permission models, and scalable interaction patterns are my natural territory. I bring structure to operational complexity and translate it into interfaces that work in the real world.",
-    "I vibecode production features directly in Next.js using AI-assisted workflows, eliminating handoff cycles and shipping design decisions at engineering speed.",
+    "I implement production features directly in Next.js using AI-assisted workflows, eliminating handoff cycles and shipping design decisions at engineering speed.",
   ],
   experience: [
     {

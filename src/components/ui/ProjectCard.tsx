@@ -43,19 +43,13 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
           />
         </div>
 
-        <div className="h-6 w-full shrink-0" />
-
-        <Separator className="bg-neutral-400" />
-
-        <div className="h-6 w-full shrink-0" />
-
-        <div className="flex flex-col md:flex-row md:items-end gap-[6px] md:gap-[80px] lg:gap-[240px] w-full px-2 shrink-0">
+        <div className="flex flex-col md:flex-row md:items-end gap-[6px] md:gap-[80px] lg:gap-[220px] w-full md:mt-[20px] mt-[12px] shrink-0">
           <div className="flex flex-col gap-[6px] items-start w-full">
-            <p className="md:title1 title3 text-neutral-800 overflow-hidden text-ellipsis w-full">
+            <p className="md:title3 title4 text-neutral-800 overflow-hidden text-ellipsis w-full">
               {project.title}
             </p>
             {project.tagline && (
-              <p className="md:body2 lg:body2 body3 text-neutral-600 line-clamp-3 w-full">
+              <p className="md:body2 lg:body1 body3 text-neutral-600 line-clamp-3 w-full">
                 {project.tagline}
               </p>
             )}
