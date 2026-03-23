@@ -12,6 +12,7 @@ import { CaseDisplayBreakdownSection } from "@/components/sections/case/CaseDisp
 import { CaseDescriptiveBreakdownSection } from "@/components/sections/case/CaseDescriptiveBreakdownSection";
 import { CaseShowcaseSection } from "@/components/sections/case/CaseShowcaseSection";
 import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSection";
+import { CaseStudyNextCasesSection } from "@/components/sections/case/CaseStudyNextCasesSection";
 import { ContactFooter } from "@/components/sections/ContactFooter";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { getPrimaryProjects } from "@/content/projects";
@@ -122,21 +123,24 @@ export function LaborCaseContent() {
 
       <div className="h-[120px] lg:h-[200px] w-full" />
 
-      <Separator />
-
+      <Separator className="bg-neutral-400 max-w-[1368px] mx-auto" />
+ 
       <div className="h-[80px] lg:h-[120px] w-full" />
+
+      <RevealOnScroll className="w-full">
+        <CaseStudyNextCasesSection currentSlug={cs.slug} locale={locale} />
+      </RevealOnScroll>
+
+      <div className="h-[100px] lg:h-[160px] w-full" />
+      
+      <Separator className="bg-neutral-400 max-w-[1368px] mx-auto" />
+
+      <div className="h-[100px] lg:h-[160px] w-full" />
+
 
       <ContactFooter />
 
       <div className="h-[80px] lg:h-[120px] w-full" />
-
-      <RevealOnScroll className="w-full">
-        <div className="max-w-[600px] mx-auto hidden">
-          <ProjectCard project={getPrimaryProjects(locale).find((p) => p.slug === "viramos")!} />
-        </div>
-      </RevealOnScroll>
-
-      <div className="h-[120px] w-full hidden" />
     </>
   );
 }
