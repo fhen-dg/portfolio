@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { AutoplayVideo } from "@/components/ui/AutoplayVideo";
+import { LazyImage } from "@/components/ui/LazyImage";
 import { ToolBadge } from "@/components/ui/ToolBadge";
 
 type CaseOverviewSectionProps = {
@@ -8,6 +8,7 @@ type CaseOverviewSectionProps = {
   images?: string[];
   imageAlt: string;
   video?: string;
+  videoPoster?: string;
   link: { label: string; href: string };
   tools?: string[];
 };
@@ -17,6 +18,7 @@ export function CaseOverviewSection({
   images,
   imageAlt,
   video,
+  videoPoster,
   link,
   tools,
 }: CaseOverviewSectionProps) {
@@ -27,21 +29,22 @@ export function CaseOverviewSection({
       <div className="flex flex-col gap-[40px] lg:gap-[120px] rounded-[12px] overflow-hidden max-w-[1368px] w-full">
         {video ? (
           <div className="w-full aspect-[16/9] rounded-[12px] overflow-hidden">
-            <AutoplayVideo
-              src={video}
-              className="w-full h-full object-contain"
-            />
+          <AutoplayVideo
+            src={video}
+            poster={videoPoster}
+            className="w-full h-full object-contain"
+          />
           </div>
         ) : imageList.length > 0 ? (
           <div className="flex flex-col gap-[16px]">
             {imageList.map((src, i) => (
               <div key={i} className="relative w-full aspect-[16/9] rounded-[12px] overflow-hidden">
-                <Image
-                  src={src}
-                  alt={imageList.length > 1 ? `${imageAlt} ${i + 1}` : imageAlt}
-                  fill
-                  className="object-contain"
-                />
+              <LazyImage
+                src={src}
+                alt={imageList.length > 1 ? `${imageAlt} ${i + 1}` : imageAlt}
+                sizes="(max-width: 1368px) 100vw, 1368px"
+                className="object-contain"
+              />
               </div>
             ))}
           </div>

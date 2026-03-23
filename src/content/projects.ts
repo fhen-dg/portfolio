@@ -71,3 +71,29 @@ export const secondaryProjects: Project[] = [
     href: "/case/verybusy",
   },
 ];
+
+const recommendedNextBySlug: Record<string, [string, string]> = {
+  viramos: ["labor", "theo-ai"],
+  labor: ["viramos", "theo-ai"],
+  laborapp: ["viramos", "theo-ai"],
+  "theo-ai": ["labor", "verybusy"],
+  verybusy: ["labor", "viramos"],
+};
+
+function getAllProjects(locale: Locale): Project[] {
+  return [...getPrimaryProjects(locale), ...secondaryProjects];
+}
+
+export function getRecommendedNextProjects(currentSlug: string, locale: Locale): Project[] {
+  const recommendationSlugs = recommendedNextBySlug[currentSlug];
+  if (!recommendationSlugs) {
+    return [];
+  }
+
+  const allProjects = getAllProjects(locale);
+  const bySlug = new Map<string, Project>(allProjects.map((project) => [project.slug, project]));
+
+  return recommendationSlugs
+    .map((slug) => bySlug.get(slug))
+    .filter((project): project is Project => Boolean(project));
+}

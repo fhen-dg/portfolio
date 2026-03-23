@@ -1,23 +1,52 @@
 "use client";
 
-import { useRef, useState, useEffect, type ReactNode } from "react";
+import { useRef, useState, useEffect, type CSSProperties, type ReactNode } from "react";
+
+export type RevealVariant = "slide-up" | "fade-blur";
 
 type RevealOnScrollProps = {
   children: ReactNode;
-  /** Delay before animation starts (ms). Use for staggered reveals. */
   delay?: number;
-  /** Only animate once when first entering view */
   once?: boolean;
-  /** Fraction of element that must be visible to trigger (0–1) */
+  /** 0 = any pixel visible; default 0.3 needs 30% (tall blocks may never hit). */
   threshold?: number;
+  variant?: RevealVariant;
+  durationMs?: number;
   className?: string;
 };
+
+function revealStyles(
+  variant: RevealVariant,
+  isVisible: boolean,
+  delay: number,
+  durationMs: number
+): CSSProperties {
+  const dur = `${durationMs}ms`;
+  const delayStr = `${delay}ms`;
+
+  if (variant === "fade-blur") {
+    return {
+      opacity: isVisible ? 1 : 0,
+      filter: isVisible ? "blur(0px)" : "blur(12px)",
+      transform: "none",
+      transition: `opacity ${dur} ease-in-out ${delayStr}, filter ${dur} ease-in-out ${delayStr}`,
+    };
+  }
+
+  return {
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateY(0)" : "translateY(20px)",
+    transition: `opacity ${dur} ease-out ${delayStr}, transform ${dur} ease-out ${delayStr}`,
+  };
+}
 
 export function RevealOnScroll({
   children,
   delay = 0,
   once = true,
   threshold = 0.3,
+  variant = "slide-up",
+  durationMs = 600,
   className,
 }: RevealOnScrollProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -46,11 +75,7 @@ export function RevealOnScroll({
     <div
       ref={ref}
       className={className}
-      style={{
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? "translateY(0)" : "translateY(20px)",
-        transition: `opacity 0.6s ease-out ${delay}ms, transform 0.6s ease-out ${delay}ms`,
-      }}
+      style={revealStyles(variant, isVisible, delay, durationMs)}
     >
       {children}
     </div>

@@ -10,6 +10,7 @@ import { CaseResponsibilitiesSection } from "@/components/sections/case/CaseResp
 import { CaseStatementSection } from "@/components/sections/case/CaseStatementSection";
 import { CaseDescriptiveBreakdownSection } from "@/components/sections/case/CaseDescriptiveBreakdownSection";
 import { CaseOverviewSection } from "@/components/sections/case/CaseOverviewSection";
+import { CaseStudyNextCasesSection } from "@/components/sections/case/CaseStudyNextCasesSection";
 import { ContactFooter } from "@/components/sections/ContactFooter";
 import { Separator } from "@/components/ui/separator";
 
@@ -19,7 +20,11 @@ export function TheoAICaseContent() {
 
   return (
     <>
-      <RevealOnScroll className="w-full">
+      <RevealOnScroll 
+      className="w-full"
+      variant="fade-blur"
+      durationMs={600}
+      >
         <CaseHeroSection
           heroImage={cs.heroImage}
           heroImageMobile={cs.heroImageMobile}
@@ -113,9 +118,20 @@ export function TheoAICaseContent() {
 
       <div className="h-[120px] lg:h-[200px] w-full" />
 
-      <Separator />
-
+      <Separator className="bg-neutral-400 max-w-[1368px] mx-auto" />
+ 
       <div className="h-[80px] lg:h-[120px] w-full" />
+
+      <RevealOnScroll className="w-full">
+        <CaseStudyNextCasesSection currentSlug={cs.slug} locale={locale} />
+      </RevealOnScroll>
+
+      <div className="h-[100px] lg:h-[160px] w-full" />
+      
+      <Separator className="bg-neutral-400 max-w-[1368px] mx-auto" />
+
+      <div className="h-[100px] lg:h-[160px] w-full" />
+
 
       <ContactFooter />
 
