@@ -20,7 +20,11 @@ export function VerybusyCaseContent() {
 
   return (
     <>
-      <RevealOnScroll className="w-full">
+      <RevealOnScroll 
+      className="w-full"
+      variant="fade-blur"
+      durationMs={600}
+      >
         <CaseHeroSection
           heroImage={cs.heroImage}
           heroImageMobile={cs.heroImageMobile}
@@ -99,6 +103,7 @@ export function VerybusyCaseContent() {
           images={cs.overview.images}
           imageAlt={cs.overview.imageAlt}
           video={cs.overview.video}
+          videoPoster={cs.overview.videoPoster}
           link={cs.overview.link}
           tools={cs.overview.tools}
         />

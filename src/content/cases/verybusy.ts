@@ -137,7 +137,8 @@ const verybusyCaseStudyEn: VerybusyCaseStudy = {
   overview: {
     image: "",
     imageAlt: "Verybusy platform overview",
-    video: "/images/projects/verybusy/VerybusyCaseOverviewVideo.mp4",
+    video: "/images/projects/verybusy/VerybusyCaseOverviewVideoCompressed.mp4",
+    videoPoster: "/images/projects/verybusy/VerybusyCaseOverviewVideoPoster.jpg",
     link: {
       label: "verybusy.io",
       href: "https://verybusy.io",
@@ -282,7 +283,8 @@ const verybusyCaseStudyEs: VerybusyCaseStudy = {
   overview: {
     image: "",
     imageAlt: "Resumen de la plataforma Verybusy",
-    video: "/images/projects/verybusy/VerybusyCaseOverviewVideo.mp4",
+    video: "/images/projects/verybusy/VerybusyCaseOverviewVideoCompressed.mp4",
+    videoPoster: "/images/projects/verybusy/VerybusyCaseOverviewVideoPoster.jpg",
     link: {
       label: "verybusy.io",
       href: "https://verybusy.io",

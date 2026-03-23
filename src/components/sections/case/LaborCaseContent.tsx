@@ -23,7 +23,11 @@ export function LaborCaseContent() {
 
   return (
     <>
-      <RevealOnScroll className="w-full">
+      <RevealOnScroll 
+      className="w-full"
+      variant="fade-blur"
+      durationMs={600}
+      >
         <CaseHeroSection
           heroImage={cs.heroImage}
           heroImageMobile={cs.heroImageMobile}

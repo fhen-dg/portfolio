@@ -66,6 +66,7 @@ export type CaseShowcaseItem = {
   image: string;
   imageAlt: string;
   video?: string;
+  videoPoster?: string;
   videoFormat?: "desktop" | "mobile";
   imagePosition: "left" | "right";
   showRing?: boolean;
@@ -122,6 +123,7 @@ export type ViramosCaseStudy = {
     images?: string[];
     imageAlt: string;
     video?: string;
+    videoPoster?: string;
     link: { label: string; href: string };
     tools: string[];
   };
@@ -209,6 +211,7 @@ export type LaborCaseStudy = {
     images?: string[];
     imageAlt: string;
     video?: string;
+    videoPoster?: string;
     link: { label: string; href: string };
     tools: string[];
   };
@@ -248,6 +251,7 @@ export type VerybusyCaseStudy = {
     images?: string[];
     imageAlt: string;
     video?: string;
+    videoPoster?: string;
     link: { label: string; href: string };
     tools: string[];
   };

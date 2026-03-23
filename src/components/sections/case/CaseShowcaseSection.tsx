@@ -1,6 +1,6 @@
-import Image from "next/image";
 import type { CaseShowcaseItem } from "@/lib/types";
 import { AutoplayVideo } from "@/components/ui/AutoplayVideo";
+import { LazyImage } from "@/components/ui/LazyImage";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
@@ -39,6 +39,7 @@ function ShowcaseItem({
       >
         <AutoplayVideo
           src={item.video}
+          poster={item.videoPoster}
           className="w-full h-full object-cover"
         />
       </div>
@@ -50,10 +51,10 @@ function ShowcaseItem({
         showRing && "ring-1 ring-neutral-400 shadow-md"
       )}
     >
-      <Image
+      <LazyImage
         src={item.image}
         alt={item.imageAlt}
-        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 380px, (max-width: 1280px) 520px, 640px"
         className="object-cover"
       />
     </div>
