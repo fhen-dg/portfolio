@@ -9,7 +9,7 @@ const videoRegistry = new Set<HTMLVideoElement>();
 const POSTER_PREFETCH_ROOT_MARGIN = "900px 0px";
 
 const PLAYBACK_THRESHOLD = 0.5;
-const CONTROL_HIDE_DELAY_MS = 2000;
+const CONTROL_HIDE_DELAY_MS = 800;
 
 type AutoplayVideoProps = {
   src: string;
@@ -42,6 +42,7 @@ export function AutoplayVideo({
   const isInViewRef = useRef(false);
   const manuallyPausedInViewRef = useRef(false);
   const hideControlsTimeoutRef = useRef<number | undefined>(undefined);
+  const keyboardFocusWithinRef = useRef(false);
   const [isFinePointerDevice, setIsFinePointerDevice] = useState(false);
   const [isControlVisible, setIsControlVisible] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -101,14 +102,14 @@ export function AutoplayVideo({
 
     if (!container || !video) return;
     if (!isFinePointerDevice || !isInViewRef.current || video.paused) return;
-    if (container.matches(":focus-within")) return;
+    if (keyboardFocusWithinRef.current) return;
 
     hideControlsTimeoutRef.current = window.setTimeout(() => {
       const activeContainer = containerRef.current;
       const activeVideo = videoRef.current;
 
       if (!activeContainer || !activeVideo) return;
-      if (!activeVideo.paused && !activeContainer.matches(":focus-within")) {
+      if (!activeVideo.paused && !keyboardFocusWithinRef.current) {
         setIsControlVisible(false);
       }
     }, CONTROL_HIDE_DELAY_MS);
@@ -258,11 +259,22 @@ export function AutoplayVideo({
         showControls();
         scheduleHideControls();
       }}
-      onFocusCapture={() => {
+      onPointerDownCapture={() => {
+        keyboardFocusWithinRef.current = false;
+      }}
+      onFocusCapture={(event) => {
         showControls();
-        clearHideControlsTimeout();
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
+        keyboardFocusWithinRef.current = target.matches(":focus-visible");
+        if (keyboardFocusWithinRef.current) {
+          clearHideControlsTimeout();
+          return;
+        }
+        scheduleHideControls();
       }}
       onBlurCapture={() => {
+        keyboardFocusWithinRef.current = false;
         scheduleHideControls();
       }}
     >
@@ -302,12 +314,12 @@ export function AutoplayVideo({
       >
         <span
           aria-hidden="true"
-          className="absolute inset-0 rounded-full"
+          className="absolute inset-0 rounded-full !bg-neutral-black"
           style={{
             background: `conic-gradient(#E50041 ${progressAngle}, rgba(255,255,255,0.22) ${progressAngle})`,
           }}
         />
-        <span className="relative flex h-[42px] w-[42px] items-center justify-center rounded-full bg-black/70 text-white shadow-[0_10px_25px_rgba(0,0,0,0.35)] backdrop-blur-md transition-colors duration-200 lg:group-hover:bg-black/82">
+        <span className="relative flex h-[42px] w-[42px] items-center justify-center rounded-full bg-black/70 text-white transition-colors duration-200 lg:group-hover:bg-black/82">
           {isPlaying ? (
             <Pause className="h-4 w-4 fill-current" strokeWidth={2.4} />
           ) : (
