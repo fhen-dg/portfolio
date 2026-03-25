@@ -9,7 +9,8 @@ export const en: Translations = {
   hero: {
     introPrefix: "I'm Federico—Senior Product Designer / Design Engineer from Buenos Aires ",
     heading: "I design, build and ship products end-to-end",
-    tagline:"As systems, from strategy and architecture, to production-ready code.",
+    tagline: "As systems, from strategy and architecture, to production-ready code.",
+    techStackLabel: "Tech stack",
     role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },

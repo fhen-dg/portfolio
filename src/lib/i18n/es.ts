@@ -10,6 +10,7 @@ export const es: Translations = {
     introPrefix: "Soy Federico, pero me llaman ",
     heading: "Diseño y construyo productos digitales como sistemas",
     tagline: "Desde la estrategia de producto, arquitectura del sistema y design systems, hasta código listo para producción.",
+    techStackLabel: "Stack técnico",
     role: "Senior Product Designer",
     location: "Buenos Aires, Argentina",
   },

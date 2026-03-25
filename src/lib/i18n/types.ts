@@ -9,6 +9,7 @@ export type Translations = {
     introPrefix: string;
     heading: string;
     tagline: string;
+    techStackLabel: string;
     role: string;
     location: string;
   };

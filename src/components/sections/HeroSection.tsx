@@ -1,8 +1,9 @@
 "use client";
 
+import { homeTechStack } from "@/content/home";
 import { useLocale } from "@/hooks/useLocale";
 import { Logo } from "@/components/ui/Logo";
-import { Button } from "@/components/ui/button";
+import { ToolBadge } from "@/components/ui/ToolBadge";
 
 export function HeroSection() {
   const { t } = useLocale();
@@ -25,7 +26,17 @@ export function HeroSection() {
             </p>
             <p className="body2 text-neutral-600 lg:body1 w-full">
               {t.hero.tagline}
-           </p>
+            </p>
+            <div className="flex flex-col items-center gap-[14px] w-full pt-[8px]">
+              <p className="body3 uppercase tracking-[0.18em] text-neutral-500">
+                {t.hero.techStackLabel}
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-[8px] max-w-[760px]">
+                {homeTechStack.map((tool) => (
+                  <ToolBadge key={tool} name={tool} />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
