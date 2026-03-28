@@ -372,29 +372,30 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
   showcase: [
     {
       eyebrow: "Clubes",
-      title: "Configuración basada en permisos (Clubes)",
+      title: "Gestión de campeonatos basada en permisos",
       description:
-        "Una arquitectura de formularios estructurada permite configuraciones consistentes entre categorías, reduciendo errores administrativos.",
+        "Arquitectura modular que permite configuraciones consistentes entre categorías y formatos regulatorios.",
       bullets: [
-        "Creación modular de campeonatos alineada a requerimientos regulatorios",
-        "Gestión centralizada de participantes, solicitudes y resultados",
-        "Accesos basados en permisos para roles internos del club",
+        "Estructura de campeonato alineada con requisitos regulatorios",
+        "Asignación de permisos a nivel de acción por miembro invitado",
+        "Control centralizado de publicación de múltiples ámbitos",
       ],
       image: "",
       imageAlt: "Configuración de campeonato para clubes",
       video: "/images/projects/viramos/ViramosClubsCompressed.mp4",
       videoPoster: "/images/projects/viramos/ViramosClubsPoster.jpg",
       imagePosition: "right",
+      showRing: true,
     },
     {
-      eyebrow: "Jueces",
-      title: "Workflows regulatorios formalizados (Jueces)",
+      eyebrow: "Comités",
+      title: "Workflows regulatorios formalizados",
       description:
-        "Workflows regulatorios formalizados en interacciones estructuradas y trazables, alineadas con procedimientos reales.",
+        "Interacciones trazables y estructuradas construidas en torno a procedimientos reales y límites de roles.",
       bullets: [
-        "Envío guiado de protestas con inputs estructurados",
-        "Referencias de participantes buscables (nombre o número de vela)",
-        "Fallos trazables con visibilidad controlada según rol",
+        "Plazos configurables con ventanas de envío",
+        "Resoluciones asignadas por comité con documentación estructurada de decisiones",
+        "Decisiones trazables con visibilidad controlada por rol",
       ],
       image: "",
       imageAlt: "Flujo de protesta y audiencia para jueces",
@@ -405,13 +406,13 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
     },
     {
       eyebrow: "Navegantes",
-      title: "Experiencia de campo mobile-first (Navegantes)",
+      title: "Acceso en tiempo real en el muelle",
       description:
         "Interfaz mobile-first diseñada para uso en tiempo real durante la competencia.",
       bullets: [
         "Acceso simplificado a resultados, avisos y actualizaciones",
-        "Menor profundidad de navegación en momentos de alta atención",
-        "Layouts responsivos optimizados para uso en movimiento",
+        "Acceso completo a solicitudes de competencia desde el campo",
+        "Mínima profundidad de navegación para uso en movimiento con alta atención",
       ],
       image: "",
       imageAlt: "Experiencia mobile en muelle para navegantes",
@@ -419,12 +420,13 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
       videoPoster: "/images/projects/viramos/ViramosSailorsPoster.jpg",
       imagePosition: "right",
       videoFormat: "mobile",
+      showRing: true,
     },
   ],
   metrics: {
     heading: "Impacto",
     intro:
-      "Viramos evolucionó de MVP a infraestructura operativa adoptada por clubes líderes en Latinoamérica.",
+      "Viramos opera hoy como la columna vertebral digital de los campeonatos de vela competitiva en Latinoamérica.",
     rows: [
       [
         { value: "43.000", label: "Usuarios únicos" },
@@ -437,7 +439,7 @@ const viramosCaseStudyEs: ViramosCaseStudy = {
       ],
     ],
     conclusion:
-      "Hoy, Viramos opera como la columna vertebral digital de los campeonatos de vela competitiva en la región.",
+      "",
     footnote: "Métricas 2025",
   },
   overview: {

@@ -271,7 +271,7 @@ const verybusyCaseStudyEs: VerybusyCaseStudy = {
       ],
       image: "/images/projects/verybusy/VerybusyShowcaseMonetization.png",
       imageAlt: "Capa de monetización: gates y rutas de upgrade",
-      imagePosition: "right",
+      imagePosition: "left",
       showRing: false,
     },
   ],

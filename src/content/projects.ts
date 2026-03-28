@@ -26,24 +26,24 @@ const primaryProjectsEn: Project[] = [
 
 const primaryProjectsEs: Project[] = [
   {
-    slug: "labor",
-    title: "Labor",
-    tagline: "Marketplace 0 a 1 llevado a producción en 2 meses, vibecodeado en Next.js y deployado en Vercel, con Vercel Blob para gestión de archivos, Supabase como base de datos, autenticación con Clerk e integración con Google Maps.",
-    year: "2026",
-    coverImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
-    coverImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
-    coverImageAlt: "Labor – marketplace de servicios agropecuarios",
-    href: "/case/laborapp",
-  },
-  {
     slug: "viramos",
     title: "Viramos",
-    tagline: "SaaS operativo multirol, reconstruido desde un MVP no-code hacia una plataforma robusta basada en roles y permisos, con operación en 5 países de Latinoamérica.",
+    tagline: "Un SaaS operativo multi-rol—reconstruido desde un MVP no-code hacia una plataforma basada en roles y permisos que opera en 5 países de Latinoamérica.",
     year: "2024 - 2025",
     coverImage: "/images/projects/viramos/ViramosCaseHeroImage.png",
     coverImageMobile: "/images/projects/viramos/ViramosCaseCoverMobile.png",
     coverImageAlt: "Viramos – sistema operativo para regatas",
     href: "/case/viramos",
+  },
+  {
+    slug: "labor",
+    title: "Labor",
+    tagline: "Un marketplace agropecuario 0→1 llevado a producción en 2 meses. Construido en Next.js, desplegado en Vercel con Vercel Blob, Supabase, autenticación con Clerk y Google Maps.",
+    year: "2026",
+    coverImage: "/images/projects/laborapp/LaborCaseHeroImage.png",
+    coverImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
+    coverImageAlt: "Labor – marketplace de servicios agropecuarios",
+    href: "/case/laborapp",
   },
 ];
 
