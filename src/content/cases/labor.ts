@@ -206,43 +206,36 @@ const laborCaseStudyEs: LaborCaseStudy = {
   heroImageMobile: "/images/projects/laborapp/LaborCaseCoverMobile.png",
   heroImageAlt: "Labor – marketplace de servicios agropecuarios",
   description:
-    "Marketplace 0 a 1 llevado a producción en 2 meses, vibecodeado en Next.js y deployado en Vercel, con Vercel Blob para gestión de archivos, Supabase como base de datos, autenticación con Clerk e integración con Google Maps.",
+    "Un marketplace agropecuario 0→1 llevado a producción en 2 meses. Construido en Next.js, desplegado en Vercel con Vercel Blob, Supabase, autenticación con Clerk y Google Maps.",
   snapshot: {
     role: "Product Designer / Design Engineer",
     duration: "2 meses",
     team: "Founders, Product owner, Asesor de desarrollo (consultoría semanal), Designer (yo)",
   },
   summary: [
-    { text: "Labor es un " },
-    { text: "MVP 0→1 de marketplace", emphasis: true },
-    { text: ". Un modelo de interacción digital estructurado construido para validar una hipótesis central." },
+    { text: "Los servicios agropecuarios en Argentina funcionan en redes informales—" },
+    { text: "sin una forma estructurada de conectar", emphasis: true },
+    { text: " productores y contratistas sin intermediarios." },
     { type: "break", count: 2 },
-    { text: "El MVP se centró en un loop central:" },
-    { type: "break" },
-    { text: "Publicar servicio → Descubrir proveedores → Iniciar contacto directo", emphasis: true },
-    { type: "break", count: 2 },
-    { text: "Con " },
-    { text: "métricas de validación temprana", emphasis: true },
-    { text: " definidas junto al cliente para evaluar si este loop generaba " },
-    { text: "engagement real", emphasis: true },
-    { text: "." },
+    { text: "Presupuesto ajustado, 2 meses", emphasis: true },
+    { text: ", dos personas, un objetivo: " },
+    { text: "validar el núcleo del producto.", emphasis: true },
   ],
   responsibilities: [
     {
       icon: "square-code",
-      title: "Implementación vibecodeada",
-      description:
-        "Construí el 50% de todas las features de producción directamente en código, incluyendo flujos de auth, formularios de publicación, búsqueda con filtro geográfico y todas las integraciones.",
+      title: "Implementación—Vibecoded",
+      description: "Construí el 50% de todas las features de producción directamente en código, incluyendo flujos de autenticación, formularios de publicación, búsqueda con filtro geográfico e integraciones con terceros.",
     },
     {
       icon: "component",
-      title: "Sistema de UI completo",
-      description: "Diseñé todas las pantallas y patrones de UI en Figma, alineados con los componentes shadcn usados en producción, asegurando paridad directa entre diseño e implementación.",
+      title: "Sistema de UI",
+      description: "Todas las pantallas y patrones de UI diseñados en Figma, alineados con los componentes shadcn usados en producción, asegurando plena paridad entre diseño e implementación.",
     },
     {
       icon: "layout-template",
       title: "Arquitectura de producto",
-      description: "Definí el modelo de dominio, flujos de usuario y loop de interacción, estructurando la plataforma alrededor de un único ciclo publicar-descubrir-contactar.",
+      description: "Definí el modelo de dominio central, flujos de usuario y loop de interacción, estructurando toda la plataforma alrededor de un único ciclo publicar-descubrir-contactar.",
     },
     {
       icon: "database",
@@ -252,17 +245,12 @@ const laborCaseStudyEs: LaborCaseStudy = {
     {
       icon: "network",
       title: "Taxonomía de servicios",
-      description: "Diseñé la jerarquía de información y lógica de categorías para filtrar servicios por tipo y geolocalización, haciendo los resultados inmediatamente accionables para usuarios en regiones específicas.",
+      description: "Diseñé la lógica de categorías y la jerarquía de información para filtrar servicios por tipo y geolocalización—resultados pre-filtrados por la ubicación del usuario para relevancia inmediata.",
     },
     {
       icon: "sparkles",
       title: "Workflow asistido por IA",
-      description: "Usé IA para investigar decisiones de stack, explorar arquitectura técnica y acelerar iteración, incluyendo identificar y proponer Vercel Blob como solución para el pipeline de assets.",
-    },
-    {
-      icon: "bar-chart-3",
-      title: "Métricas de validación",
-      description: "Alineé con el equipo de marketing para definir señales tempranas de activación: tasa de publicación, inicio de contacto y visitas recurrentes, midiendo si el core loop generaba engagement real.",
+      description: "Usé IA para evaluar decisiones de stack y acelerar la iteración—incluyendo identificar Vercel Blob como la solución de pipeline de assets.",
     },
   ],
   problem: {
@@ -298,84 +286,85 @@ const laborCaseStudyEs: LaborCaseStudy = {
   ],
   strategicAlignment: {
     intro:
-      "El proceso se apoyó en una colaboración estrecha con la Product Owner, stakeholders y expertos del dominio. Para asegurar que mantuviéramos el foco en nuestro objetivo central — generar valor operativo inmediato — tomamos una serie de decisiones estratégicas.",
+      "A través de sesiones colaborativas con el equipo fundador, alineamos cuatro decisiones estratégicas que moldearon cada elección de diseño y producto.",
     items: [
       {
         title: "Priorizar el encaje problema-solución por sobre la monetización",
         description:
-          "Postergamos la monetización para enfocarnos en adquisición y construcción de confianza. Invertimos en señales esenciales como imágenes verificables, descripciones guiadas y prueba social para impulsar la adopción temprana.",
+          "En lugar de construir mecanismos de ingresos temprano, nos enfocamos completamente en señales de confianza y utilidad central, probando el valor de la plataforma antes de extraerlo.",
       },
       {
         title: "Modelo de participación fluido",
         description:
-          "Diseñamos una arquitectura flexible en lugar de segmentación rígida por perfiles. Esto redujo fricción, optimizó desarrollo y permitió a los usuarios alternar entre productor y contratista sin fricciones estructurales.",
+          "En lugar de forzar a los usuarios a un rol fijo, diseñamos una arquitectura flexible donde el contexto determina si alguien es productor, contratista, o ambos.",
       },
       {
-        title: "Diseño orientado a viabilidad técnica y velocidad",
+        title: "Diseño para viabilidad técnica y velocidad",
         description:
-          "Priorizamos integraciones de alto impacto para lanzar rápido sin sobre-ingeniería. Utilizamos Clerk, Vercel Blob y Google Maps para validar el núcleo del producto con viabilidad técnica desde el inicio.",
+          "Delimitamos el MVP en torno a las integraciones nativas de Vercel—Vercel Blob para el pipeline completo de assets (auto-integrado), Supabase vía integración de Vercel para Postgres, Clerk para auth y Google Maps para ubicación—sin sacrificar la experiencia central.",
       },
       {
         title: "Métricas centradas en validación",
         description:
-          "Definimos el éxito en función de publicaciones activas e inicio de contacto directo. Esto mantuvo el foco en valor operativo real por sobre funcionalidades secundarias.",
+          "El éxito se definió por señales de activación: creación de publicaciones, inicio de contacto y visitas recurrentes—no métricas de vanidad.",
       },
     ],
   },
   solution: {
     body: [
       { text: "Un " },
-      { text: "marketplace flexible", emphasis: true },
-      {
-        text: " que integra publicación guiada, descubrimiento contextual y señales esenciales de confianza para ",
-      },
-      { text: "validar el núcleo del producto", emphasis: true },
-      { text: " bajo restricciones de MVP." },
+      { text: "MVP", emphasis: true },
+      { text: " de participación fluida construido alrededor de un loop central: " },
+      { text: "Publicar → Descubrir → Contactar → Reseñar", emphasis: true },
+      { type: "break", count: 2 },
+      { text: "Métricas de validación ", emphasis: true },
+      { text: "definidas para el cliente para medir: creación de publicaciones, inicio de contacto y visitas recurrentes." },
     ],
   },
   showcase: [
     {
       title: "Publicación unificada",
       description:
-        "Un flujo guiado que se adapta a la intención del usuario en cada momento, utilizando microcopy contextual para mejorar claridad y confianza sin generar fricción innecesaria.",
+        "Un flujo guiado que se adapta a la intención del usuario—ya sea publicar un servicio u ofertar uno—desde un único punto de entrada compartido.",
       bullets: [
-        "Un único home compartido como punto de entrada",
-        "El rol se define contextualmente, no de forma previa",
-        "Campos condicionales con guía orientada a generar confianza",
+        "Único home compartido como punto de entrada",
+        "Rol definido contextualmente, no pre-seleccionado",
+        "Campos condicionales con guía de UX orientada a la confianza",
       ],
       image: "",
       imageAlt: "Flujo de publicación unificada",
       video: "/images/projects/laborapp/LaborPublishingCompressed.mp4",
       videoPoster: "/images/projects/laborapp/LaborPublishingPoster.jpg",
       imagePosition: "right",
+      videoFormat: "mobile",
     },
     {
-      title: "Descubrimiento por servicio y ubicación",
+      title: "Descubrimiento por ubicación y servicio",
       description:
-        "Arquitectura centrada en relevancia, anclada en la ubicación del usuario y en filtros contextuales.",
+        "Una arquitectura centrada en relevancia, anclada en la ubicación del usuario, asegurando que los resultados sean inmediatamente accionables para personas que trabajan en regiones específicas.",
       bullets: [
         "Pre-filtrado según contexto del usuario",
         "Taxonomía jerárquica de servicios",
         "Contacto directo externalizado para validar interacción real",
       ],
       image: "",
-      imageAlt: "Descubrimiento por servicio y ubicación",
+      imageAlt: "Descubrimiento por ubicación y servicio",
       video: "/images/projects/laborapp/LaborDiscoveryCompressed.mp4",
       videoPoster: "/images/projects/laborapp/LaborDiscoveryPoster.jpg",
-      imagePosition: "left",
+      imagePosition: "right",
     },
     {
-      title: "Sistema de confianza simple",
+      title: "Loop de confianza ligero",
       description:
-        "Señales esenciales diseñadas para validar credibilidad antes de escalar hacia infraestructuras de verificación más complejas.",
+        "Un conjunto de señales ligeras que ayudan a los usuarios a tomar decisiones con confianza sin requerir garantías mediadas por la plataforma.",
       bullets: [
-        "Imágenes del servicio (hasta 3)",
-        "Descripciones guiadas",
-        "Reseñas visibles en el perfil",
+        "Imágenes del servicio (hasta 3 fotos)",
+        "Descripciones guiadas del servicio",
+        "Reseñas de pares visibles en el perfil",
       ],
       image: "/images/projects/laborapp/LaborTrustLoop.png",
-      imageAlt: "Sistema de confianza simple",
-      imagePosition: "right",
+      imageAlt: "Loop de confianza ligero",
+      imagePosition: "left",
       showRing: false,
     },
   ],
